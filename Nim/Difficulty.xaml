@@ -7,6 +7,19 @@
         mc:Ignorable="d"
         Title="Difficulty" Height="450" Width="800">
     <Grid>
+        <Grid.Background >
+            <ImageBrush ImageSource="Assets/Background.jpeg" />
+        </Grid.Background>
+
+        <TextBlock x:Name="txtBlk" HorizontalAlignment="Center" Margin="0,39,0,0" Text="Choose the Difficulty" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="32"/>
         
+        <Button x:Name="easyBtn" Content="Easy" HorizontalAlignment="Center" Margin="0,142,0,0" VerticalAlignment="Top" Height="44" Width="250" Click="easyBtn_Click"/>
+        <Button x:Name="medBtn" Content="Medium" HorizontalAlignment="Center" Margin="0,217,0,0" VerticalAlignment="Top" Height="44" Width="250" Click="medBtn_Click"/>
+        <Button x:Name="hardBtn" Content="Hard" HorizontalAlignment="Center" Margin="0,291,0,0" VerticalAlignment="Top" Height="44" Width="250" Click="hardBtn_Click"/>
+        <Button x:Name="backBtn" Content="Back" HorizontalAlignment="Left" Margin="68,361,0,0" VerticalAlignment="Top" Height="38" Width="116" Click="backBtn_Click"/>
+        <Button x:Name="nextBtn" Content="Play" HorizontalAlignment="Left" Margin="629,361,0,0" VerticalAlignment="Top" Height="38" Width="116" Click="nextBtn_Click"/>
+        
+        <Label x:Name="display" Content="Label" HorizontalAlignment="Left" Margin="606,142,0,0" VerticalAlignment="Top" Width="90"/>
+
     </Grid>
 </Window>

@@ -14,14 +14,52 @@ using System.Windows.Shapes;
 
 namespace Nim
 {
-    /// <summary>
-    /// Interaction logic for Difficulty.xaml
-    /// </summary>
     public partial class Difficulty : Window
     {
-        public Difficulty()
+        public enum Difficulties
+        {
+            Easy,
+            Medium,
+            Hard
+        }
+
+        public Name _name;
+
+        public Difficulty(Name name)
         {
             InitializeComponent();
+            _name = name;
+        }
+
+        public Difficulties chosen;
+
+        private void easyBtn_Click(object sender, RoutedEventArgs e)
+        {
+            chosen = Difficulties.Easy;
+        }
+
+        private void medBtn_Click(object sender, RoutedEventArgs e)
+        {
+            chosen = Difficulties.Medium;
+        }
+
+        private void hardBtn_Click(object sender, RoutedEventArgs e)
+        {
+            chosen = Difficulties.Hard;
+        }
+
+        private void backBtn_Click(object sender, RoutedEventArgs e)
+        {
+            /*Name name = new Name(this);
+            name.Show();
+            this.Close();*/
+        }
+
+        private void nextBtn_Click(object sender, RoutedEventArgs e)
+        {
+            /*Game game = new Game(this);
+            game.Show();
+            this.Close();*/
         }
     }
 }
