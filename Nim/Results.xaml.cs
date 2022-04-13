@@ -19,7 +19,7 @@ namespace Nim
     /// </summary>
     public partial class Results : Window
     {
-        public Results()
+        public Results(string player1, string player2, string difficulty, string winner)
         {
             InitializeComponent();
         }
