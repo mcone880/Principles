@@ -24,5 +24,17 @@ namespace Nim
         {
             InitializeComponent();
         }
+
+        private void btnStart_Click(object sender, RoutedEventArgs e)
+        {
+            Name name = new Name();
+            name.Show();
+            this.Close(); 
+        }
+
+        private void btnQuit_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }
