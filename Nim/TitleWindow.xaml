@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Nim"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <WrapPanel Margin="10">
-            <TextBlock Text="NIM" FontSize="64" Margin="10"/>
-            <Button x:Name="btnStart" Content="START" FontSize="32" Margin="10" Width="100" Height="50" Click="btnStart_Click"/>
-            <Button x:Name="btnQuit" Content="QUIT" FontSize="32" Margin="10" Width="100" Height="50" Click="btnQuit_Click"/>
-        </WrapPanel>
+        Title="Game of Nim" Height="450" Width="800">
+    <Grid Background="AliceBlue">
+        <StackPanel Margin="10">
+            <TextBlock Text="NIM" FontWeight="Bold" FontSize="64" Margin="50" Width="135" />
+            <Button x:Name="btnStart" Content="START" FontSize="32" Margin="10" Width="100" Height="50" Background="Green" Foreground="LightGray" Click="btnStart_Click"/>
+            <Button x:Name="btnQuit" Content="QUIT" FontSize="32" Margin="10" Width="100" Height="50" Background="DarkRed" Foreground="LightGray" Click="btnQuit_Click"/>
+        </StackPanel>
     </Grid>
 </Window>
