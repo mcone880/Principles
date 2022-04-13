@@ -50,14 +50,14 @@ namespace Nim
 
         private void backBtn_Click(object sender, RoutedEventArgs e)
         {
-            /*Name name = new Name(this);
+/*            Name name = new Name(this);
             name.Show();
             this.Close();*/
         }
 
         private void nextBtn_Click(object sender, RoutedEventArgs e)
         {
-            /*Game game = new Game(this);
+/*            Game game = new Game(this);
             game.Show();
             this.Close();*/
         }
