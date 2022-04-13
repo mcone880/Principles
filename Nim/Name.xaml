@@ -6,9 +6,20 @@
         xmlns:local="clr-namespace:Nim"
         mc:Ignorable="d"
         Title="Name" Height="450" Width="800">
-    <Grid Background="Background.jpeg">
-        <TextBox Width="200px" Height="30px" Margin="100,130,500,270" >
-        </TextBox>
+    <DockPanel>
+        <Grid>
+            <Grid.Background>
+                <ImageBrush ImageSource="/Background.jpeg"></ImageBrush>
+            </Grid.Background>
         
-    </Grid>
+            <Label FontSize="30" Margin="200,10,200,350" FontWeight="Bold">Please enter your name</Label>
+            <Label FontSize="30" Margin="50,82,550,275">Player one</Label>
+            <TextBox Margin="50,164,573,217" Name="playerOne"/>
+            <Label FontSize="30" Margin="550,78,50,275">Player Two</Label>
+            <TextBox Margin="550,164,50,217" Name="playerTwo"/>
+
+            <Button Margin="50,345,624,32" FontSize="20" FontWeight="Bold" Name="backButton" Click="backButton_Click">Back</Button>
+            <Button Margin="300,246,302,119" FontSize="30" FontWeight="Bold" Name="nextButton" Click="nextButton_Click">Next</Button>
+        </Grid>
+    </DockPanel>
 </Window>
