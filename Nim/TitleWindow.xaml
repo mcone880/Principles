@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <WrapPanel Margin="10">
+            <TextBlock Text="NIM" FontSize="64" Margin="10"/>
+            <Button x:Name="btnStart" Content="START" FontSize="32" Margin="10" Width="100" Height="50" Click="btnStart_Click"/>
+            <Button x:Name="btnQuit" Content="QUIT" FontSize="32" Margin="10" Width="100" Height="50" Click="btnQuit_Click"/>
+        </WrapPanel>
     </Grid>
 </Window>
