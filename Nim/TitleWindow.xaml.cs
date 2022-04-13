@@ -27,12 +27,14 @@ namespace Nim
 
         private void btnStart_Click(object sender, RoutedEventArgs e)
         {
-
+            Name name = new Name();
+            name.Show();
+            this.Close(); 
         }
 
         private void btnQuit_Click(object sender, RoutedEventArgs e)
         {
-            System.Windows.Application.Current.Shutdown();
+            Application.Current.Shutdown();
         }
     }
 }
