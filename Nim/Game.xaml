@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="Game" Height="450" Width="800">
     <Grid>
-        
+        <Grid.Background >
+            <ImageBrush ImageSource="/Background.jpeg" />
+        </Grid.Background>
+
+        <TextBlock FontWeight="DemiBold" Foreground="LightGray" FontSize="14" HorizontalAlignment="Left" Margin="10,270,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="157" Width="227"><Run Text="Rules"/><LineBreak/><Run Text="you can remove any number of matches but only from one row. Select any 'Row button' and click it to REMOVE matches. After each move click 'End Turn' . You win by making the other play be that last one to pick up a match "/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="44,49,0,0" FontSize ="24" Text="Player1" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="44,107,0,0" FontSize ="24" Text="Player2" TextWrapping="Wrap" VerticalAlignment="Top"/>
+
+
     </Grid>
 </Window>

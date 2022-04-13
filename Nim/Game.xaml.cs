@@ -20,7 +20,7 @@ namespace Nim
     public partial class Game : Window
     {
         // Mathew , Josh
-        public Game()
+        public Game(Difficulty d)
         {
             InitializeComponent();
         }
