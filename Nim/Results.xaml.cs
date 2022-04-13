@@ -19,11 +19,21 @@ namespace Nim
     /// </summary>
     public partial class Results : Window
     {
+        int player1Score = 0;
+        int player2Score = 0;
+
         public Results(string player1, string player2)
         {
             InitializeComponent();
             Player1Label.Content = player1;
             Player2Label.Content = player2;
+            updateScores();
+        }
+
+        private void updateScores()
+        {
+            Player1ScoreLabel.Content = player1Score;
+            Player2ScoreLabel.Content = player2Score;
         }
 
         private void RematchButton_Click(object sender, RoutedEventArgs e)
