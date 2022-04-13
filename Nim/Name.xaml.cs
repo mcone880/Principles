@@ -20,6 +20,8 @@ namespace Nim
     /// </summary>
     public partial class Name : Window
     {
+        public string firstPlayer ;
+        public string secondPlayer ;
         //David
         public Name()
         {
@@ -28,14 +30,19 @@ namespace Nim
 
         private void nextButton_Click(object sender, RoutedEventArgs e)
         {
-            string firstPlayer = playerOne.Text;
-            string secontPlayer = playerTwo.Text;
+            firstPlayer = playerOne.Text;
+            secondPlayer = playerTwo.Text;
+            Difficulty d = new Difficulty();
+            d.Show();
+            this.Close();
             
         }
 
         private void backButton_Click(object sender, RoutedEventArgs e)
         {
-
+            MainWindow wd = new MainWindow();
+            wd.Show();
+            this.Close();
         }
     }
 }
