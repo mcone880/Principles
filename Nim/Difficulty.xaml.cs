@@ -36,30 +36,33 @@ namespace Nim
         private void easyBtn_Click(object sender, RoutedEventArgs e)
         {
             chosen = Difficulties.Easy;
+            next();
         }
 
         private void medBtn_Click(object sender, RoutedEventArgs e)
         {
             chosen = Difficulties.Medium;
+            next();
         }
 
         private void hardBtn_Click(object sender, RoutedEventArgs e)
         {
             chosen = Difficulties.Hard;
+            next();
         }
 
         private void backBtn_Click(object sender, RoutedEventArgs e)
         {
-/*            Name name = new Name(this);
+            Name name = new Name();
             name.Show();
-            this.Close();*/
+            this.Close();
         }
 
-        private void nextBtn_Click(object sender, RoutedEventArgs e)
+        private void next()
         {
-/*            Game game = new Game(this);
+            Game game = new Game(this);
             game.Show();
-            this.Close();*/
+            this.Close();
         }
     }
 }
