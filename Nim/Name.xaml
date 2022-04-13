@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:Nim"
         mc:Ignorable="d"
         Title="Name" Height="450" Width="800">
-    <Grid>
+    <Grid Background="Background.jpeg">
+        <TextBox Width="200px" Height="30px" Margin="100,130,500,270" >
+        </TextBox>
         
     </Grid>
 </Window>

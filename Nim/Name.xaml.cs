@@ -19,9 +19,12 @@ namespace Nim
     /// </summary>
     public partial class Name : Window
     {
+        //David
         public Name()
         {
             InitializeComponent();
+
+
         }
     }
 }

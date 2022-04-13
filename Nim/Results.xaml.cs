@@ -19,6 +19,7 @@ namespace Nim
     /// </summary>
     public partial class Results : Window
     {
+        //tommy
         public Results()
         {
             InitializeComponent();
