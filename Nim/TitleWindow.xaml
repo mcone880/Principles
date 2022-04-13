@@ -6,11 +6,14 @@
         xmlns:local="clr-namespace:Nim"
         mc:Ignorable="d"
         Title="Game of Nim" Height="450" Width="800">
-    <Grid Background="AliceBlue">
+    <Grid>
+        <Grid.Background >
+            <ImageBrush ImageSource="/Background.jpeg" />
+        </Grid.Background>
         <StackPanel Margin="10">
-            <TextBlock Text="NIM" FontWeight="Bold" FontSize="64" Margin="50" Width="135" />
-            <Button x:Name="btnStart" Content="START" FontSize="32" Margin="10" Width="100" Height="50" Background="Green" Foreground="LightGray" Click="btnStart_Click"/>
-            <Button x:Name="btnQuit" Content="QUIT" FontSize="32" Margin="10" Width="100" Height="50" Background="DarkRed" Foreground="LightGray" Click="btnQuit_Click"/>
+            <TextBlock Text="NIM" FontWeight="DemiBold" Foreground="LightGray" FontSize="64" Margin="50" Width="135" TextAlignment="Center" />
+            <Button x:Name="btnStart" Content="START" FontSize="32" Margin="10" Width="100" Height="50" Background="Green" Foreground="LightGray" BorderThickness="1" BorderBrush="Black" Click="btnStart_Click"/>
+            <Button x:Name="btnQuit" Content="QUIT" FontSize="32" Margin="10" Width="100" Height="50" Background="DarkRed" Foreground="LightGray" BorderThickness="1" BorderBrush="Black" Click="btnQuit_Click"/>
         </StackPanel>
     </Grid>
 </Window>
