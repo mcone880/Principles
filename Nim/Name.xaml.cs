@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+
 namespace Nim
 {
     /// <summary>
@@ -19,9 +20,22 @@ namespace Nim
     /// </summary>
     public partial class Name : Window
     {
+        //David
         public Name()
         {
             InitializeComponent();
+        }
+
+        private void nextButton_Click(object sender, RoutedEventArgs e)
+        {
+            string firstPlayer = playerOne.Text;
+            string secontPlayer = playerTwo.Text;
+            
+        }
+
+        private void backButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
