@@ -23,7 +23,8 @@ namespace Nim
         List<Image> matches = new List<Image>();
         string p1;
         string p2;
-        Difficulty difficulty;
+        public Name names;
+        public Difficulty difficulty;
         int playerTurn = 1;
 
 
@@ -33,6 +34,7 @@ namespace Nim
             p1 = name.playerOne.Text;
             p2 = name.playerTwo.Text;
             difficulty = d;
+            names = name;
             StartGame(difficulty);
         }
 
@@ -106,7 +108,7 @@ namespace Nim
             string winner;
             if (playerTurn == 1) winner = p1;
             else winner = p2;
-            Results results = new Results(p1, p2, winner, this);
+            Results results = new Results(winner, this);
             results.Show();
             this.Hide();
         }

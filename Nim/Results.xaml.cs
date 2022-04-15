@@ -19,33 +19,23 @@ namespace Nim
     /// </summary>
     public partial class Results : Window
     {
-        int player1Score = 0;
-        int player2Score = 0;
         Game game;
 
-        public Results(string p1, string p2, string winner, Game game)
+        public Results(string winner, Game game)
         {
             InitializeComponent();
-            Player1Label.Content = p1;
-            Player2Label.Content = p2;
             PlayerWinLabel.Content = winner + " WINS";
             this.game = game;
-            if (p1 == winner) player1Score++;
-            else player2Score++;
-            updateScores();
         }
 
-        private void updateScores()
-        {
-            Player1ScoreLabel.Content = player1Score;
-            Player2ScoreLabel.Content = player2Score;
-        }
 
         private void RematchButton_Click(object sender, RoutedEventArgs e)
         {
             //Start up a brand new game
-            game.Show();
-            this.Hide();
+            Game newGame = new Game(game.difficulty, game.names);
+            game.Close();
+            newGame.Show();
+            this.Close();
         }
 
         private void StartOverButton_Click(object sender, RoutedEventArgs e)

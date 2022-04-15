@@ -12,15 +12,8 @@
         </Grid.Background>
         <Label x:Name="ResultsLabel" Content="RESULTS" HorizontalAlignment="Center" Margin="0,50,0,0" VerticalAlignment="Top" Height="75" Width="325" FontSize="60" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" VerticalContentAlignment="Center"/>
         <Label x:Name="PlayerWinLabel" Content="This Player WINS" HorizontalAlignment="Center" Margin="0,150,0,0" VerticalAlignment="Top" Height="95" Width="725" FontSize="60" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" VerticalContentAlignment="Center" Padding="0,0,0,0"/>
-        <Grid Margin="150,250,150,0" Grid.Row="2" Grid.Column="2" >
-            <Label x:Name="Player1Label" Content="PLAYER 1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="75" Width="250" FontSize="50" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" VerticalContentAlignment="Center"/>
-            <Label x:Name="Player2Label" Content="PLAYER 2" HorizontalAlignment="Right" VerticalAlignment="Top" Height="75" Width="250" FontSize="50" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" VerticalContentAlignment="Center"/>
-            <Label x:Name="ColonLabel" Content=":" VerticalAlignment="Top" Height="65" FontSize="50" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" VerticalContentAlignment="Center" Margin="225,80,225,0" Padding="0,0,0,0"/>
-            <Label x:Name="Player1ScoreLabel" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="65" Width="50" FontSize="50" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" VerticalContentAlignment="Center" Margin="165,87,0,0" Padding="0,0,0,0"/>
-            <Label x:Name="Player2ScoreLabel" Content="0" VerticalAlignment="Top" Height="65" FontSize="50" FontWeight="Bold" HorizontalContentAlignment="Center" Foreground="White" VerticalContentAlignment="Center" Margin="0,87,165,0" Padding="0,0,0,0" HorizontalAlignment="Right" Width="50"/>
-        </Grid>
-        <Button x:Name="RematchButton" Content="Rematch" HorizontalAlignment="Left" Margin="10,324,0,0" VerticalAlignment="Top" Width="100" Height="100" FontSize="25" Click="RematchButton_Click"/>
-        <Button x:Name="StartOverButton" Content="Restart" Margin="0,324,10,0" VerticalAlignment="Top" Height="100" FontSize="25" HorizontalAlignment="Right" Width="100" Click="StartOverButton_Click"/>
+        <Button x:Name="RematchButton" Content="Rematch" HorizontalAlignment="Left" Margin="100,265,0,0" VerticalAlignment="Top" Width="100" Height="100" FontSize="25" Click="RematchButton_Click"/>
+        <Button x:Name="StartOverButton" Content="Restart" Margin="0,265,100,0" VerticalAlignment="Top" Height="100" FontSize="25" HorizontalAlignment="Right" Width="100" Click="StartOverButton_Click"/>
 
     </Grid>
 </Window>
