@@ -7,10 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\Match.png" />
     <None Remove="Background.jpeg" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Assets\Match.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Background.jpeg" />
   </ItemGroup>
 

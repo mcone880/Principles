@@ -60,7 +60,7 @@ namespace Nim
 
         private void next()
         {
-            Game game = new Game(this);
+            Game game = new Game(this, _name);
             game.Show();
             this.Close();
         }
