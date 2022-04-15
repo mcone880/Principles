@@ -70,7 +70,6 @@ namespace Nim
             img.Visibility = Visibility.Visible;
             MainGrid.RegisterName("Match" + i + j, img);
             double width = MainGrid.ColumnDefinitions[1].ActualWidth;
-            Console.WriteLine(width);
             double spacePerImage = width / numPerRow[i];
             img.Margin = new Thickness(spacePerImage * (i + 1), 10, 0, 0);
             Grid.SetColumn(img, 1);

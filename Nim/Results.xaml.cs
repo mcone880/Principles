@@ -22,11 +22,11 @@ namespace Nim
         int player1Score = 0;
         int player2Score = 0;
 
-        public Results(string player1, string player2)
+        public Results(Name names, string winner)
         {
             InitializeComponent();
-            Player1Label.Content = player1;
-            Player2Label.Content = player2;
+            Player1Label.Content = names.playerOne;
+            Player2Label.Content = names.playerTwo;
             updateScores();
         }
 
