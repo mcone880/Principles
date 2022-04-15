@@ -21,16 +21,17 @@ namespace Nim
     {
         int player1Score = 0;
         int player2Score = 0;
-        Difficulty difficulty;
-        Name names;
+        Game game;
 
-        public Results(string p1, string p2, string winner, Difficulty d)
+        public Results(string p1, string p2, string winner, Game game)
         {
             InitializeComponent();
             Player1Label.Content = p1;
             Player2Label.Content = p2;
             PlayerWinLabel.Content = winner + " WINS";
-            this.difficulty = d;
+            this.game = game;
+            if (p1 == winner) player1Score++;
+            else player2Score++;
             updateScores();
         }
 
@@ -43,8 +44,7 @@ namespace Nim
         private void RematchButton_Click(object sender, RoutedEventArgs e)
         {
             //Start up a brand new game
-            Game newWindow = new Game(difficulty, names);
-            newWindow.Show();
+            game.Show();
             this.Hide();
         }
 
@@ -52,6 +52,7 @@ namespace Nim
         {
             Name newWindow = new Name();
             newWindow.Show();
+            game.Close();
             this.Close();
         }
     }

@@ -106,7 +106,7 @@ namespace Nim
             string winner;
             if (playerTurn == 1) winner = p1;
             else winner = p2;
-            Results results = new Results(p1, p2, winner, difficulty);
+            Results results = new Results(p1, p2, winner, this);
             results.Show();
             this.Hide();
         }
