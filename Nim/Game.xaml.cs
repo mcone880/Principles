@@ -78,7 +78,7 @@ namespace Nim
             MainGrid.RegisterName("Match" + i + j, img);
             double width = MainGrid.ColumnDefinitions[1].ActualWidth;
             double spacePerImage = width / numPerRow[i];
-            img.Margin = new Thickness(spacePerImage * (i + 1), 10, 0, 0);
+            img.Margin = new Thickness(spacePerImage * (j + 1), 10, 0, 0);
             Grid.SetColumn(img, 1);
             Grid.SetRow(img, i);
             MainGrid.Children.Add(img);
@@ -149,6 +149,7 @@ namespace Nim
                     btn.IsEnabled = true;
                 }
             }
+            btnEndTurn.IsEnabled = false;
         }
     }
 }
