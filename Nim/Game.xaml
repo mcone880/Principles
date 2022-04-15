@@ -24,8 +24,8 @@
         </Grid.RowDefinitions>
 
         <TextBlock FontWeight="DemiBold" Foreground="LightGray" FontSize="14" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="214" Width="150" Grid.RowSpan="3" Grid.Row="2"><Run Text="Rules"/><LineBreak/><Run Text="You can remove any number of matches but only from one row. Select any 'Row button' and click it to REMOVE matches. After each move click 'End Turn' . You win by making the other play be that last one to pick up a match "/><LineBreak/><Run/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="44,49,0,0" FontSize ="24" Text="Player1" TextWrapping="Wrap" VerticalAlignment="Top" Name="Player1" Grid.Column="0" Grid.Row="0"/>
-        <TextBlock HorizontalAlignment="Left" Margin="44,0,0,0" FontSize ="24" Text="Player2" TextWrapping="Wrap" VerticalAlignment="Center" Name="Player2" Grid.Column="0" Grid.Row="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="44,0,0,0" FontSize ="24" Text="Player1" TextWrapping="Wrap" VerticalAlignment="Center" Name="Player1" Grid.Column="0"/>
+        <TextBlock HorizontalAlignment="Left" Margin="44,11,0,0" FontSize ="24" Text="Player2" TextWrapping="Wrap" VerticalAlignment="Top" Name="Player2" Grid.Column="0" Grid.Row="1"/>
         <Image  HorizontalAlignment="Left" Height="64" Margin="212,10,0,0" VerticalAlignment="Top" Width="12" Source="/Assets/Match.png" Name="Match" Grid.Column="1"/>
         <Button Content="Row1" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Top" Height="32" Width="75" Click="RowDelete" Grid.Row="0" Margin="0,26,0,0"/>
         <Button Content="Row2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="33" Width="75" Click="RowDelete" Grid.Row="1"/>
