@@ -13,7 +13,7 @@
             </Grid.Background>
         
             <Label FontSize="30" Margin="200,10,200,350" FontWeight="Bold">Please enter your name</Label>
-            <Label FontSize="30" Margin="50,82,550,275">Player one</Label>
+            <Label FontSize="30" Margin="50,82,550,275">Player One</Label>
             <TextBox Margin="50,164,573,217" Name="playerOne"/>
             <Label FontSize="30" Margin="550,78,50,275">Player Two</Label>
             <TextBox Margin="550,164,50,217" Name="playerTwo"/>
