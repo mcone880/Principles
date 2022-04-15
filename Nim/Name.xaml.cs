@@ -32,6 +32,9 @@ namespace Nim
         {
             firstPlayer = playerOne.Text;
             secondPlayer = playerTwo.Text;
+            if (firstPlayer == "") firstPlayer = "Player 1";
+            if (secondPlayer == "") secondPlayer = "Player 2";
+
             Difficulty d = new Difficulty(this);
             d.Show();
             this.Close();
