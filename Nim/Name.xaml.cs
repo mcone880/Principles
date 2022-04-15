@@ -30,11 +30,16 @@ namespace Nim
 
         private void nextButton_Click(object sender, RoutedEventArgs e)
         {
+            if (playerOne.Text == "")
+            {
+                playerOne.Text = "Player 1";
+            }
+            if (playerTwo.Text == "")
+            {
+                playerTwo.Text = "Player 2";
+            }
             firstPlayer = playerOne.Text;
             secondPlayer = playerTwo.Text;
-            if (firstPlayer == "") firstPlayer = "Player 1";
-            if (secondPlayer == "") secondPlayer = "Player 2";
-
             Difficulty d = new Difficulty(this);
             d.Show();
             this.Close();
