@@ -29,6 +29,8 @@ namespace Nim
             InitializeComponent();
             Player1Label.Content = p1;
             Player2Label.Content = p2;
+            PlayerWinLabel.Content = winner + " WINS";
+            this.difficulty = d;
             updateScores();
         }
 
