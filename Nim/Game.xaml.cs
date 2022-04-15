@@ -23,12 +23,17 @@ namespace Nim
         List<Image> matches = new List<Image>();
         string p1;
         string p2;
+        Difficulty difficulty;
+        int playerTurn = 1;
+
+
         public Game(Difficulty d, Name name)
         {
             InitializeComponent();
             p1 = name.playerOne.Text;
             p2 = name.playerTwo.Text;
-            StartGame(d);
+            difficulty = d;
+            StartGame(difficulty);
         }
 
         public void StartGame(Difficulty d)
@@ -39,7 +44,7 @@ namespace Nim
             switch(d.chosen)
             {
                 case Difficulty.Difficulties.Easy:
-                    CreateGame(new List<int>{1});
+                    CreateGame(new List<int>{1,1});
                     break;
                 case Difficulty.Difficulties.Medium:
                     CreateGame(new List<int> { 1, 3, 5, 7 });
@@ -81,12 +86,17 @@ namespace Nim
         private void RowDelete(object sender, RoutedEventArgs e)
         {
             int row = Grid.GetRow((Button)sender);
+            if (playerTurn == 1) playerTurn = 2;
+            else playerTurn = 1;
             DeleteMatch(row);
         }
 
         public void Next(string p1, string p2)
         {
-            Results results = new Results(p1, p2);
+            string winner;
+            if (playerTurn == 1) winner = p1;
+            else winner = p2;
+            Results results = new Results(p1, p2, winner, difficulty);
             results.Show();
             this.Hide();
         }
