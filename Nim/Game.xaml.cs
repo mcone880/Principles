@@ -78,7 +78,7 @@ namespace Nim
             MainGrid.RegisterName("Match" + i + j, img);
             double width = MainGrid.ColumnDefinitions[1].ActualWidth;
             double spacePerImage = width / numPerRow[i];
-            img.Margin = new Thickness(spacePerImage * (j + 1), 10, 0, 0);
+            img.Margin = new Thickness(j * 40, 10, 0, 0);
             Grid.SetColumn(img, 1);
             Grid.SetRow(img, i);
             MainGrid.Children.Add(img);
@@ -138,10 +138,20 @@ namespace Nim
 
         private void EndTurn(object sender, RoutedEventArgs e)
         {
-            if (playerTurn == 1) playerTurn = 2;
-            else playerTurn = 1;
+            if (playerTurn == 1)
+            {
+                playerTurn = 2;
+                Player1Image.IsEnabled = false;
+                Player2Image.IsEnabled = true;
+            }
+            else
+            {
+                playerTurn = 1;
+                Player1Image.IsEnabled = true;
+                Player2Image.IsEnabled = false;
+            }
 
-            foreach (var element in MainGrid.Children)
+                foreach (var element in MainGrid.Children)
             {
                 if (element is Button)
                 {
