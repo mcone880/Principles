@@ -21,6 +21,8 @@ namespace Nim
     {
         int player1Score = 0;
         int player2Score = 0;
+        Difficulty difficulty;
+        Name names;
 
         public Results(string p1, string p2, string winner, Difficulty d)
         {
@@ -39,6 +41,9 @@ namespace Nim
         private void RematchButton_Click(object sender, RoutedEventArgs e)
         {
             //Start up a brand new game
+            Game newWindow = new Game(difficulty, names);
+            newWindow.Show();
+            this.Hide();
         }
 
         private void StartOverButton_Click(object sender, RoutedEventArgs e)
