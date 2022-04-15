@@ -67,6 +67,8 @@ namespace Nim
                 }
             }
             MainGrid.Children.Remove(Match);
+            CheckButtons();
+
         }
 
 
@@ -76,8 +78,6 @@ namespace Nim
             img.Source = Match.Source;
             img.Visibility = Visibility.Visible;
             MainGrid.RegisterName("Match" + i + j, img);
-            double width = MainGrid.ColumnDefinitions[1].ActualWidth;
-            double spacePerImage = width / numPerRow[i];
             img.Margin = new Thickness(j * 40, 10, 0, 0);
             Grid.SetColumn(img, 1);
             Grid.SetRow(img, i);
@@ -120,11 +120,15 @@ namespace Nim
                 if (element is Image)
                 {
                     Image image = (Image)element;
-                    if (Grid.GetRow(image) == row)
+                    if (image.Name != player1Image.Name && image.Name != player2Image.Name)
                     {
-                        MainGrid.Children.Remove(image);
-                        matches.Remove(image);
-                        break;
+                        if (Grid.GetRow(image) == row)
+                        {
+
+                            MainGrid.Children.Remove(image);
+                            matches.Remove(image);
+                            break;
+                        }
                     }
                 }
             }
@@ -134,24 +138,57 @@ namespace Nim
                 else playerTurn = 1;
                 Next(p1, p2);
             }
+            CheckButtons();
         }
 
+        public void CheckButtons()
+        {
+            foreach (var element in MainGrid.Children)
+            {
+                if (element is Button)
+                {
+                    
+                    Button b = (Button)element;
+                    if (b.Name == "btnEndTurn") continue ;
+                    int row = Grid.GetRow(b);
+                    bool empty = false;
+                    foreach(var match in MainGrid.Children)
+                    {
+                        if (match is Image)
+                        {
+                            Image image = (Image)match;
+                            int irow = Grid.GetRow(image);
+                            if (image.Name != player1Image.Name && image.Name != player2Image.Name && irow==row)
+                            {
+                                empty = false;
+                                break;
+                            }
+                        }
+                        empty = true;
+                    }
+                    if (empty)
+                    {
+                        b.Visibility = Visibility.Hidden;
+                    }
+                }
+            }
+        }
         private void EndTurn(object sender, RoutedEventArgs e)
         {
             if (playerTurn == 1)
             {
                 playerTurn = 2;
-                Player1Image.IsEnabled = false;
-                Player2Image.IsEnabled = true;
+                player1Image.Visibility = Visibility.Hidden;
+                player2Image.Visibility = Visibility.Visible;
             }
             else
             {
                 playerTurn = 1;
-                Player1Image.IsEnabled = true;
-                Player2Image.IsEnabled = false;
+                player1Image.Visibility = Visibility.Visible;
+                player2Image.Visibility = Visibility.Hidden;
             }
 
-                foreach (var element in MainGrid.Children)
+            foreach (var element in MainGrid.Children)
             {
                 if (element is Button)
                 {
