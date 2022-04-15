@@ -23,7 +23,7 @@
             <RowDefinition Height="*" x:Name="Row5"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <TextBlock FontWeight="DemiBold" Foreground="LightGray" FontSize="14" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="214" Width="150" Grid.RowSpan="3" Grid.Row="2"><Run Text="Rules"/><LineBreak/><Run Text="You can remove any number of matches but only from one row. Select any 'Row button' and click it to REMOVE matches. After each move click 'End Turn' . You win by making the other play be that last one to pick up a match "/><LineBreak/><Run/></TextBlock>
+        <TextBlock FontWeight="DemiBold" Foreground="LightGray" FontSize="14" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="214" Width="150" Grid.RowSpan="4" Grid.Row="1" Margin="18,48,0,0"><Run Text="Rules"/><LineBreak/><Run Text="You can remove any number of matches but only from one row. Select any 'Row button' and click it to REMOVE matches. After each move click 'End Turn' . You win by making the other play be that last one to pick up a match "/><LineBreak/><Run/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="44,0,0,0" FontSize ="24" Text="Player1" TextWrapping="Wrap" VerticalAlignment="Center" Name="Player1" Grid.Column="0"/>
         <TextBlock HorizontalAlignment="Left" Margin="44,11,0,0" FontSize ="24" Text="Player2" TextWrapping="Wrap" VerticalAlignment="Top" Name="Player2" Grid.Column="0" Grid.Row="1"/>
         <Image  HorizontalAlignment="Left" Height="64" Margin="212,10,0,0" VerticalAlignment="Top" Width="12" Source="/Assets/Match.png" Name="Match" Grid.Column="1"/>
@@ -32,6 +32,7 @@
         <Button Content="Row3" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Height="33" Width="75" Click="RowDelete" Grid.Row="2"/>
         <Button Content="Row4" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Top" Height="33" Width="75" Click="RowDelete" Grid.Row="3" Margin="0,22,0,0"/>
         <Button Content="Row5" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Top" Height="33" Width="75" Click="RowDelete" Grid.Row="4" Margin="0,22,0,0"/>
+        <Button Content="End Turn" Name="btnEndTurn" HorizontalAlignment="Left" VerticalAlignment="Top" Height="33" Width="75" Click="EndTurn" Grid.Row="4" Margin="55,22,0,0" IsEnabled="False"/>
 
     </Grid>
 </Window>

@@ -44,7 +44,7 @@ namespace Nim
             switch(d.chosen)
             {
                 case Difficulty.Difficulties.Easy:
-                    CreateGame(new List<int>{1,1});
+                    CreateGame(new List<int>{1, 3, 5});
                     break;
                 case Difficulty.Difficulties.Medium:
                     CreateGame(new List<int> { 1, 3, 5, 7 });
@@ -86,8 +86,18 @@ namespace Nim
         private void RowDelete(object sender, RoutedEventArgs e)
         {
             int row = Grid.GetRow((Button)sender);
-            if (playerTurn == 1) playerTurn = 2;
-            else playerTurn = 1;
+            foreach (var element in MainGrid.Children)
+            {
+                if (element is Button)
+                {
+                    Button btn = (Button)element;
+                    if(btn != sender && btn != btnEndTurn)
+                    {
+                        btn.IsEnabled = false;
+                    }
+                }
+            }
+            btnEndTurn.IsEnabled = true;
             DeleteMatch(row);
         }
 
@@ -116,7 +126,27 @@ namespace Nim
                     }
                 }
             }
-            if (matches.Count == 0) Next(p1, p2);
+            if (matches.Count == 0)
+            {
+                if (playerTurn == 1) playerTurn = 2;
+                else playerTurn = 1;
+                Next(p1, p2);
+            }
+        }
+
+        private void EndTurn(object sender, RoutedEventArgs e)
+        {
+            if (playerTurn == 1) playerTurn = 2;
+            else playerTurn = 1;
+
+            foreach (var element in MainGrid.Children)
+            {
+                if (element is Button)
+                {
+                    Button btn = (Button)element;
+                    btn.IsEnabled = true;
+                }
+            }
         }
     }
 }
