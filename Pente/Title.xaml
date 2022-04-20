@@ -15,8 +15,6 @@
         <Button x:Name="btnStart" Content="START" FontSize="32" Margin="350,167,350,217" Width="100" Height="50" Background="Green" Foreground="LightGray" BorderThickness="1" BorderBrush="Black" Click="btnStart_Click"/>
         <Button x:Name="btnRules" Content="RULES" FontSize="32" Margin="350,242,350,142" Width="100" Height="50" Background="Blue" Foreground="LightGray" BorderThickness="1" BorderBrush="Black" Click="btnStart_Click"/>
         <Button x:Name="btnQuit" Content="QUIT" FontSize="32" Margin="350,309,350,75" Width="100" Height="50" Background="DarkRed" Foreground="LightGray" BorderThickness="1" BorderBrush="Black" Click="btnQuit_Click"/>
-        Title="PENTE" Height="450" Width="800">
- 
 
         <Label FontSize="30" Margin="50,82,586,301">Player One</Label>
         <Label FontSize="24" Margin="31,219,689,169">Color;</Label>
