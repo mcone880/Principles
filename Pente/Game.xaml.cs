@@ -183,11 +183,34 @@ namespace Pente
 
         public int CheckVictory(int[,] board, int row, int col)
         {
-            
-            for (int i = 0; i < row; i++)
+            int longestCount = 1;
+            int playerCount = board[row, col];
+            //up
+            for (int i = 1; i < 5; i++)
             {
-
+                if (board[row - i, col] != playerCount) break;
+                if (longestCount < i) longestCount = i;
             }
+            //down
+            for(int i = 1; i < 5; i++)
+            {
+                if (board[row + i, col] != playerCount) break;
+                if (longestCount < i) longestCount = i;
+            }
+            //left
+            for (int i = 1; i < 5; i++)
+            {
+                if (board[row, col + i] != playerCount) break;
+                if (longestCount < i) longestCount = i;
+            }
+            //right
+            for (int i = 1; i < 5; i++)
+            {
+                if (board[row, col - i] != playerCount) break;
+                if (longestCount < i) longestCount = i;
+            }
+
+            return longestCount;
         }
         //checks each direction for the longest line
         //return the longest line
