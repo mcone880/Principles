@@ -1,26 +1,44 @@
-﻿<Window x:Class="Pente.MainWindow"
+﻿<Window Name="TitleWindow" x:Class="Pente.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pente"
         mc:Ignorable="d"
-        Title="PENTE" Height="450" Width="800">
+        Title="PENTE" Height="450" Width="800" MinWidth="800" MinHeight="450">
     <Grid Background="BurlyWood">
         <TextBlock Text="Pente" FontWeight="DemiBold" Foreground="Black" FontSize="64" Margin="298,50,298,285" TextAlignment="Center" />
 
-        <ComboBox Name ="P1color" HorizontalAlignment="Left" Margin="111,232,0,0" VerticalAlignment="Top" Width="103"/>
-        <ComboBox Name ="P2color" HorizontalAlignment="Left" Margin="607,231,0,0" VerticalAlignment="Top" Width="103"/>
+        <ComboBox Name ="P1color" HorizontalAlignment="Left" Margin="111,232,0,0" VerticalAlignment="Top" Width="103">
+            <ComboBoxItem Content="Blue"/>
+            <ComboBoxItem Content="Black"/>
+            <ComboBoxItem Content="Green"/>
+            <ComboBoxItem Content="Orange"/>
+            <ComboBoxItem Content="Purple"/>
+            <ComboBoxItem Content="Red"/>
+            <ComboBoxItem Content="White"/>
+            <ComboBoxItem Content="Yellow"/>
+        </ComboBox>
+        <ComboBox Name ="P2color" HorizontalAlignment="Left" Margin="607,231,0,0" VerticalAlignment="Top" Width="103">
+            <ComboBoxItem Content="Blue"/>
+            <ComboBoxItem Content="Black"/>
+            <ComboBoxItem Content="Green"/>
+            <ComboBoxItem Content="Orange"/>
+            <ComboBoxItem Content="Purple"/>
+            <ComboBoxItem Content="Red"/>
+            <ComboBoxItem Content="White"/>
+            <ComboBoxItem Content="Yellow"/>
+        </ComboBox>
 
         <Button x:Name="btnStart" Content="START" FontSize="32" Margin="350,167,350,217" Width="100" Height="50" Background="Green" Foreground="LightGray" BorderThickness="1" BorderBrush="Black" Click="btnStart_Click"/>
-        <Button x:Name="btnRules" Content="RULES" FontSize="32" Margin="350,242,350,142" Width="100" Height="50" Background="Blue" Foreground="LightGray" BorderThickness="1" BorderBrush="Black" Click="btnStart_Click"/>
+        <Button x:Name="btnRules" Content="RULES" FontSize="32" Margin="350,242,350,142" Width="100" Height="50" Background="Blue" Foreground="LightGray" BorderThickness="1" BorderBrush="Black" Click="btnRules_Click"/>
         <Button x:Name="btnQuit" Content="QUIT" FontSize="32" Margin="350,309,350,75" Width="100" Height="50" Background="DarkRed" Foreground="LightGray" BorderThickness="1" BorderBrush="Black" Click="btnQuit_Click"/>
 
-        <Label FontSize="30" Margin="50,82,586,301">Player One</Label>
-        <Label FontSize="24" Margin="31,219,689,169">Color;</Label>
-        <Label FontSize="24" Margin="527,219,193,169">Color;</Label>
-        <TextBox FontSize="20" Margin="50,164,586,217" Name="playerOne" TextChanged="playerOne_TextChanged"/>
-        <Label FontSize="30" Margin="550,78,90,301">Player Two</Label>
-        <TextBox Margin="550,164,90,217" Name="playerTwo"/>
+        <Label FontSize="30" Margin="50,106,586,277">Player One</Label>
+        <Label FontSize="24" Margin="31,219,689,169">Color:</Label>
+        <Label FontSize="24" Margin="527,219,193,169">Color:</Label>
+        <Label FontSize="30" Margin="550,102,90,277">Player Two</Label>
+        <TextBox Margin="50,164,586,217" Name="playerOne" FontSize="20"/>
+        <TextBox Margin="550,164,90,217" Name="playerTwo" FontSize="20"/>
     </Grid>
 </Window>
