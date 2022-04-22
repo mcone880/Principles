@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pente"
         mc:Ignorable="d"
-        Title="Game" Height="1080" Width="1900">
+        Title="Game" Height="1200" Width="1680">
     <DockPanel>
         <Grid ShowGridLines="True">
             <Grid.ColumnDefinitions>
@@ -54,388 +54,1110 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Button Name="btn01_01" Grid.Column="1" Grid.Row="1" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn01_02" Grid.Column="1" Grid.Row="2" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn01_03" Grid.Column="1" Grid.Row="3" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn01_04" Grid.Column="1" Grid.Row="4" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn01_05" Grid.Column="1" Grid.Row="5" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn01_06" Grid.Column="1" Grid.Row="6" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn01_07" Grid.Column="1" Grid.Row="7" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn01_08" Grid.Column="1" Grid.Row="8" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn01_09" Grid.Column="1" Grid.Row="9" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn01_10" Grid.Column="1" Grid.Row="10" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn01_11" Grid.Column="1" Grid.Row="11" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn01_12" Grid.Column="1" Grid.Row="12" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn01_13" Grid.Column="1" Grid.Row="13" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn01_14" Grid.Column="1" Grid.Row="14" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn01_15" Grid.Column="1" Grid.Row="15" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn01_16" Grid.Column="1" Grid.Row="16" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn01_17" Grid.Column="1" Grid.Row="17" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn01_18" Grid.Column="1" Grid.Row="18" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn01_19" Grid.Column="1" Grid.Row="19" Content="Btn" Click="btn_Click"/>
+            <Button Name="btn01_01" Grid.Column="1" Grid.Row="1" Click="btn_Click">
+                <Image Name="img01_01"></Image>
+            </Button>
+            <Button Name="btn01_02" Grid.Column="1" Grid.Row="2" Click="btn_Click">
+                <Image Name="img01_02"></Image>
+            </Button>
+            <Button Name="btn01_03" Grid.Column="1" Grid.Row="3" Click="btn_Click">
+                <Image Name="img01_03"></Image>
+            </Button>
+            <Button Name="btn01_04" Grid.Column="1" Grid.Row="4" Click="btn_Click">
+                <Image Name="img01_04"></Image>
+            </Button>
+            <Button Name="btn01_05" Grid.Column="1" Grid.Row="5" Click="btn_Click">
+                <Image Name="img01_05"></Image>
+            </Button>
+            <Button Name="btn01_06" Grid.Column="1" Grid.Row="6" Click="btn_Click">
+                <Image Name="img01_06"></Image>
+            </Button>
+            <Button Name="btn01_07" Grid.Column="1" Grid.Row="7" Click="btn_Click">
+                <Image Name="img01_07"></Image>
+            </Button>
+            <Button Name="btn01_08" Grid.Column="1" Grid.Row="8" Click="btn_Click">
+                <Image Name="img01_08"></Image>
+            </Button>
+            <Button Name="btn01_09" Grid.Column="1" Grid.Row="9" Click="btn_Click">
+                <Image Name="img01_09"></Image>
+            </Button>
+            <Button Name="btn01_10" Grid.Column="1" Grid.Row="10" Click="btn_Click">
+                <Image Name="img01_10"></Image>
+            </Button>
+            <Button Name="btn01_11" Grid.Column="1" Grid.Row="11" Click="btn_Click">
+                <Image Name="img01_11"></Image>
+            </Button>
+            <Button Name="btn01_12" Grid.Column="1" Grid.Row="12" Click="btn_Click">
+                <Image Name="img01_12"></Image>
+            </Button>
+            <Button Name="btn01_13" Grid.Column="1" Grid.Row="13" Click="btn_Click">
+                <Image Name="img01_13"></Image>
+            </Button>
+            <Button Name="btn01_14" Grid.Column="1" Grid.Row="14" Click="btn_Click">
+                <Image Name="img01_14"></Image>
+            </Button>
+            <Button Name="btn01_15" Grid.Column="1" Grid.Row="15" Click="btn_Click">
+                <Image Name="img01_15"></Image>
+            </Button>
+            <Button Name="btn01_16" Grid.Column="1" Grid.Row="16" Click="btn_Click">
+                <Image Name="img01_16"></Image>
+            </Button>
+            <Button Name="btn01_17" Grid.Column="1" Grid.Row="17" Click="btn_Click">
+                <Image Name="img01_17"></Image>
+            </Button>
+            <Button Name="btn01_18" Grid.Column="1" Grid.Row="18" Click="btn_Click">
+                <Image Name="img01_18"></Image>
+            </Button>
+            <Button Name="btn01_19" Grid.Column="1" Grid.Row="19" Click="btn_Click">
+                <Image Name="img01_19"></Image>
+            </Button>
 
-            <Button Name="btn02_01" Grid.Column="2" Grid.Row="1" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn02_02" Grid.Column="2" Grid.Row="2" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn02_03" Grid.Column="2" Grid.Row="3" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn02_04" Grid.Column="2" Grid.Row="4" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn02_05" Grid.Column="2" Grid.Row="5" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn02_06" Grid.Column="2" Grid.Row="6" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn02_07" Grid.Column="2" Grid.Row="7" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn02_08" Grid.Column="2" Grid.Row="8" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn02_09" Grid.Column="2" Grid.Row="9" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn02_10" Grid.Column="2" Grid.Row="10" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn02_11" Grid.Column="2" Grid.Row="11" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn02_12" Grid.Column="2" Grid.Row="12" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn02_13" Grid.Column="2" Grid.Row="13" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn02_14" Grid.Column="2" Grid.Row="14" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn02_15" Grid.Column="2" Grid.Row="15" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn02_16" Grid.Column="2" Grid.Row="16" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn02_17" Grid.Column="2" Grid.Row="17" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn02_18" Grid.Column="2" Grid.Row="18" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn02_19" Grid.Column="2" Grid.Row="19" Content="Btn" Click="btn_Click"/>
+            <Button Name="btn02_01" Grid.Column="2" Grid.Row="1" Click="btn_Click">
+                <Image Name="img02_01"></Image>
+            </Button>
+            <Button Name="btn02_02" Grid.Column="2" Grid.Row="2" Click="btn_Click">
+                <Image Name="img02_02"></Image>
+            </Button>
+            <Button Name="btn02_03" Grid.Column="2" Grid.Row="3" Click="btn_Click">
+                <Image Name="img02_03"></Image>
+            </Button>
+            <Button Name="btn02_04" Grid.Column="2" Grid.Row="4" Click="btn_Click">
+                <Image Name="img02_04"></Image>
+            </Button>
+            <Button Name="btn02_05" Grid.Column="2" Grid.Row="5" Click="btn_Click">
+                <Image Name="img02_05"></Image>
+            </Button>
+            <Button Name="btn02_06" Grid.Column="2" Grid.Row="6" Click="btn_Click">
+                <Image Name="img02_06"></Image>
+            </Button>
+            <Button Name="btn02_07" Grid.Column="2" Grid.Row="7" Click="btn_Click">
+                <Image Name="img02_07"></Image>
+            </Button>
+            <Button Name="btn02_08" Grid.Column="2" Grid.Row="8" Click="btn_Click">
+                <Image Name="img02_08"></Image>
+            </Button>
+            <Button Name="btn02_09" Grid.Column="2" Grid.Row="9" Click="btn_Click">
+                <Image Name="img02_09"></Image>
+            </Button>
+            <Button Name="btn02_10" Grid.Column="2" Grid.Row="10" Click="btn_Click">
+                <Image Name="img02_10"></Image>
+            </Button>
+            <Button Name="btn02_11" Grid.Column="2" Grid.Row="11" Click="btn_Click">
+                <Image Name="img02_11"></Image>
+            </Button>
+            <Button Name="btn02_12" Grid.Column="2" Grid.Row="12" Click="btn_Click">
+                <Image Name="img02_12"></Image>
+            </Button>
+            <Button Name="btn02_13" Grid.Column="2" Grid.Row="13" Click="btn_Click">
+                <Image Name="img02_13"></Image>
+            </Button>
+            <Button Name="btn02_14" Grid.Column="2" Grid.Row="14" Click="btn_Click">
+                <Image Name="img02_14"></Image>
+            </Button>
+            <Button Name="btn02_15" Grid.Column="2" Grid.Row="15" Click="btn_Click">
+                <Image Name="img02_15"></Image>
+            </Button>
+            <Button Name="btn02_16" Grid.Column="2" Grid.Row="16" Click="btn_Click">
+                <Image Name="img02_16"></Image>
+            </Button>
+            <Button Name="btn02_17" Grid.Column="2" Grid.Row="17" Click="btn_Click">
+                <Image Name="img02_17"></Image>
+            </Button>
+            <Button Name="btn02_18" Grid.Column="2" Grid.Row="18" Click="btn_Click">
+                <Image Name="img02_18"></Image>
+            </Button>
+            <Button Name="btn02_19" Grid.Column="2" Grid.Row="19" Click="btn_Click">
+                <Image Name="img02_19"></Image>
+            </Button>
 
-            <Button Name="btn03_01" Grid.Column="3" Grid.Row="1" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn03_02" Grid.Column="3" Grid.Row="2" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn03_03" Grid.Column="3" Grid.Row="3" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn03_04" Grid.Column="3" Grid.Row="4" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn03_05" Grid.Column="3" Grid.Row="5" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn03_06" Grid.Column="3" Grid.Row="6" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn03_07" Grid.Column="3" Grid.Row="7" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn03_08" Grid.Column="3" Grid.Row="8" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn03_09" Grid.Column="3" Grid.Row="9" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn03_10" Grid.Column="3" Grid.Row="10" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn03_11" Grid.Column="3" Grid.Row="11" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn03_12" Grid.Column="3" Grid.Row="12" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn03_13" Grid.Column="3" Grid.Row="13" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn03_14" Grid.Column="3" Grid.Row="14" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn03_15" Grid.Column="3" Grid.Row="15" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn03_16" Grid.Column="3" Grid.Row="16" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn03_17" Grid.Column="3" Grid.Row="17" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn03_18" Grid.Column="3" Grid.Row="18" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn03_19" Grid.Column="3" Grid.Row="19" Content="Btn" Click="btn_Click"/>
+            <Button Name="btn03_01" Grid.Column="3" Grid.Row="1" Click="btn_Click">
+                <Image Name="img03_01"></Image>
+            </Button>
+            <Button Name="btn03_02" Grid.Column="3" Grid.Row="2" Click="btn_Click">
+                <Image Name="img03_02"></Image>
+            </Button>
+            <Button Name="btn03_03" Grid.Column="3" Grid.Row="3" Click="btn_Click">
+                <Image Name="img03_03"></Image>
+            </Button>
+            <Button Name="btn03_04" Grid.Column="3" Grid.Row="4" Click="btn_Click">
+                <Image Name="img03_04"></Image>
+            </Button>
+            <Button Name="btn03_05" Grid.Column="3" Grid.Row="5" Click="btn_Click">
+                <Image Name="img03_05"></Image>
+            </Button>
+            <Button Name="btn03_06" Grid.Column="3" Grid.Row="6" Click="btn_Click">
+                <Image Name="img03_06"></Image>
+            </Button>
+            <Button Name="btn03_07" Grid.Column="3" Grid.Row="7" Click="btn_Click">
+                <Image Name="img03_07"></Image>
+            </Button>
+            <Button Name="btn03_08" Grid.Column="3" Grid.Row="8" Click="btn_Click">
+                <Image Name="img03_08"></Image>
+            </Button>
+            <Button Name="btn03_09" Grid.Column="3" Grid.Row="9" Click="btn_Click">
+                <Image Name="img03_09"></Image>
+            </Button>
+            <Button Name="btn03_10" Grid.Column="3" Grid.Row="10" Click="btn_Click">
+                <Image Name="img03_10"></Image>
+            </Button>
+            <Button Name="btn03_11" Grid.Column="3" Grid.Row="11" Click="btn_Click">
+                <Image Name="img03_11"></Image>
+            </Button>
+            <Button Name="btn03_12" Grid.Column="3" Grid.Row="12" Click="btn_Click">
+                <Image Name="img03_12"></Image>
+            </Button>
+            <Button Name="btn03_13" Grid.Column="3" Grid.Row="13" Click="btn_Click">
+                <Image Name="img03_13"></Image>
+            </Button>
+            <Button Name="btn03_14" Grid.Column="3" Grid.Row="14" Click="btn_Click">
+                <Image Name="img03_14"></Image>
+            </Button>
+            <Button Name="btn03_15" Grid.Column="3" Grid.Row="15" Click="btn_Click">
+                <Image Name="img03_15"></Image>
+            </Button>
+            <Button Name="btn03_16" Grid.Column="3" Grid.Row="16" Click="btn_Click">
+                <Image Name="img03_16"></Image>
+            </Button>
+            <Button Name="btn03_17" Grid.Column="3" Grid.Row="17" Click="btn_Click">
+                <Image Name="img03_17"></Image>
+            </Button>
+            <Button Name="btn03_18" Grid.Column="3" Grid.Row="18" Click="btn_Click">
+                <Image Name="img03_18"></Image>
+            </Button>
+            <Button Name="btn03_19" Grid.Column="3" Grid.Row="19" Click="btn_Click">
+                <Image Name="img03_19"></Image>
+            </Button>
 
-            <Button Name="btn04_01" Grid.Column="4" Grid.Row="1" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn04_02" Grid.Column="4" Grid.Row="2" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn04_03" Grid.Column="4" Grid.Row="3" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn04_04" Grid.Column="4" Grid.Row="4" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn04_05" Grid.Column="4" Grid.Row="5" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn04_06" Grid.Column="4" Grid.Row="6" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn04_07" Grid.Column="4" Grid.Row="7" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn04_08" Grid.Column="4" Grid.Row="8" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn04_09" Grid.Column="4" Grid.Row="9" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn04_10" Grid.Column="4" Grid.Row="10" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn04_11" Grid.Column="4" Grid.Row="11" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn04_12" Grid.Column="4" Grid.Row="12" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn04_13" Grid.Column="4" Grid.Row="13" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn04_14" Grid.Column="4" Grid.Row="14" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn04_15" Grid.Column="4" Grid.Row="15" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn04_16" Grid.Column="4" Grid.Row="16" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn04_17" Grid.Column="4" Grid.Row="17" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn04_18" Grid.Column="4" Grid.Row="18" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn04_19" Grid.Column="4" Grid.Row="19" Content="Btn" Click="btn_Click"/>
+            <Button Name="btn04_01" Grid.Column="4" Grid.Row="1" Click="btn_Click">
+                <Image Name="img04_01"></Image>
+            </Button>
+            <Button Name="btn04_02" Grid.Column="4" Grid.Row="2" Click="btn_Click">
+                <Image Name="img04_02"></Image>
+            </Button>
+            <Button Name="btn04_03" Grid.Column="4" Grid.Row="3" Click="btn_Click">
+                <Image Name="img04_03"></Image>
+            </Button>
+            <Button Name="btn04_04" Grid.Column="4" Grid.Row="4" Click="btn_Click">
+                <Image Name="img04_04"></Image>
+            </Button>
+            <Button Name="btn04_05" Grid.Column="4" Grid.Row="5" Click="btn_Click">
+                <Image Name="img04_05"></Image>
+            </Button>
+            <Button Name="btn04_06" Grid.Column="4" Grid.Row="6" Click="btn_Click">
+                <Image Name="img04_06"></Image>
+            </Button>
+            <Button Name="btn04_07" Grid.Column="4" Grid.Row="7" Click="btn_Click">
+                <Image Name="img04_07"></Image>
+            </Button>
+            <Button Name="btn04_08" Grid.Column="4" Grid.Row="8" Click="btn_Click">
+                <Image Name="img04_08"></Image>
+            </Button>
+            <Button Name="btn04_09" Grid.Column="4" Grid.Row="9" Click="btn_Click">
+                <Image Name="img04_09"></Image>
+            </Button>
+            <Button Name="btn04_10" Grid.Column="4" Grid.Row="10" Click="btn_Click">
+                <Image Name="img04_10"></Image>
+            </Button>
+            <Button Name="btn04_11" Grid.Column="4" Grid.Row="11" Click="btn_Click">
+                <Image Name="img04_11"></Image>
+            </Button>
+            <Button Name="btn04_12" Grid.Column="4" Grid.Row="12" Click="btn_Click">
+                <Image Name="img04_12"></Image>
+            </Button>
+            <Button Name="btn04_13" Grid.Column="4" Grid.Row="13" Click="btn_Click">
+                <Image Name="img04_13"></Image>
+            </Button>
+            <Button Name="btn04_14" Grid.Column="4" Grid.Row="14" Click="btn_Click">
+                <Image Name="img04_14"></Image>
+            </Button>
+            <Button Name="btn04_15" Grid.Column="4" Grid.Row="15" Click="btn_Click">
+                <Image Name="img04_15"></Image>
+            </Button>
+            <Button Name="btn04_16" Grid.Column="4" Grid.Row="16" Click="btn_Click">
+                <Image Name="img04_16"></Image>
+            </Button>
+            <Button Name="btn04_17" Grid.Column="4" Grid.Row="17" Click="btn_Click">
+                <Image Name="img04_17"></Image>
+            </Button>
+            <Button Name="btn04_18" Grid.Column="4" Grid.Row="18" Click="btn_Click">
+                <Image Name="img04_18"></Image>
+            </Button>
+            <Button Name="btn04_19" Grid.Column="4" Grid.Row="19" Click="btn_Click">
+                <Image Name="img04_19"></Image>
+            </Button>
 
-            <Button Name="btn05_01" Grid.Column="5" Grid.Row="1" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn05_02" Grid.Column="5" Grid.Row="2" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn05_03" Grid.Column="5" Grid.Row="3" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn05_04" Grid.Column="5" Grid.Row="4" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn05_05" Grid.Column="5" Grid.Row="5" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn05_06" Grid.Column="5" Grid.Row="6" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn05_07" Grid.Column="5" Grid.Row="7" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn05_08" Grid.Column="5" Grid.Row="8" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn05_09" Grid.Column="5" Grid.Row="9" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn05_10" Grid.Column="5" Grid.Row="10" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn05_11" Grid.Column="5" Grid.Row="11" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn05_12" Grid.Column="5" Grid.Row="12" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn05_13" Grid.Column="5" Grid.Row="13" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn05_14" Grid.Column="5" Grid.Row="14" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn05_15" Grid.Column="5" Grid.Row="15" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn05_16" Grid.Column="5" Grid.Row="16" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn05_17" Grid.Column="5" Grid.Row="17" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn05_18" Grid.Column="5" Grid.Row="18" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn05_19" Grid.Column="5" Grid.Row="19" Content="Btn" Click="btn_Click"/>
+            <Button Name="btn05_01" Grid.Column="5" Grid.Row="1" Click="btn_Click">
+                <Image Name="img05_01"></Image>
+            </Button>
+            <Button Name="btn05_02" Grid.Column="5" Grid.Row="2" Click="btn_Click">
+                <Image Name="img05_02"></Image>
+            </Button>
+            <Button Name="btn05_03" Grid.Column="5" Grid.Row="3" Click="btn_Click">
+                <Image Name="img05_03"></Image>
+            </Button>
+            <Button Name="btn05_04" Grid.Column="5" Grid.Row="4" Click="btn_Click">
+                <Image Name="img05_04"></Image>
+            </Button>
+            <Button Name="btn05_05" Grid.Column="5" Grid.Row="5" Click="btn_Click">
+                <Image Name="img05_05"></Image>
+            </Button>
+            <Button Name="btn05_06" Grid.Column="5" Grid.Row="6" Click="btn_Click">
+                <Image Name="img05_06"></Image>
+            </Button>
+            <Button Name="btn05_07" Grid.Column="5" Grid.Row="7" Click="btn_Click">
+                <Image Name="img05_07"></Image>
+            </Button>
+            <Button Name="btn05_08" Grid.Column="5" Grid.Row="8" Click="btn_Click">
+                <Image Name="img05_08"></Image>
+            </Button>
+            <Button Name="btn05_09" Grid.Column="5" Grid.Row="9" Click="btn_Click">
+                <Image Name="img05_09"></Image>
+            </Button>
+            <Button Name="btn05_10" Grid.Column="5" Grid.Row="10" Click="btn_Click">
+                <Image Name="img05_10"></Image>
+            </Button>
+            <Button Name="btn05_11" Grid.Column="5" Grid.Row="11" Click="btn_Click">
+                <Image Name="img05_11"></Image>
+            </Button>
+            <Button Name="btn05_12" Grid.Column="5" Grid.Row="12" Click="btn_Click">
+                <Image Name="img05_12"></Image>
+            </Button>
+            <Button Name="btn05_13" Grid.Column="5" Grid.Row="13" Click="btn_Click">
+                <Image Name="img05_13"></Image>
+            </Button>
+            <Button Name="btn05_14" Grid.Column="5" Grid.Row="14" Click="btn_Click">
+                <Image Name="img05_14"></Image>
+            </Button>
+            <Button Name="btn05_15" Grid.Column="5" Grid.Row="15" Click="btn_Click">
+                <Image Name="img05_15"></Image>
+            </Button>
+            <Button Name="btn05_16" Grid.Column="5" Grid.Row="16" Click="btn_Click">
+                <Image Name="img05_16"></Image>
+            </Button>
+            <Button Name="btn05_17" Grid.Column="5" Grid.Row="17" Click="btn_Click">
+                <Image Name="img05_17"></Image>
+            </Button>
+            <Button Name="btn05_18" Grid.Column="5" Grid.Row="18" Click="btn_Click">
+                <Image Name="img05_18"></Image>
+            </Button>
+            <Button Name="btn05_19" Grid.Column="5" Grid.Row="19" Click="btn_Click">
+                <Image Name="img05_19"></Image>
+            </Button>
 
-            <Button Name="btn06_01" Grid.Column="6" Grid.Row="1" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn06_02" Grid.Column="6" Grid.Row="2" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn06_03" Grid.Column="6" Grid.Row="3" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn06_04" Grid.Column="6" Grid.Row="4" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn06_05" Grid.Column="6" Grid.Row="5" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn06_06" Grid.Column="6" Grid.Row="6" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn06_07" Grid.Column="6" Grid.Row="7" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn06_08" Grid.Column="6" Grid.Row="8" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn06_09" Grid.Column="6" Grid.Row="9" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn06_10" Grid.Column="6" Grid.Row="10" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn06_11" Grid.Column="6" Grid.Row="11" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn06_12" Grid.Column="6" Grid.Row="12" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn06_13" Grid.Column="6" Grid.Row="13" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn06_14" Grid.Column="6" Grid.Row="14" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn06_15" Grid.Column="6" Grid.Row="15" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn06_16" Grid.Column="6" Grid.Row="16" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn06_17" Grid.Column="6" Grid.Row="17" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn06_18" Grid.Column="6" Grid.Row="18" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn06_19" Grid.Column="6" Grid.Row="19" Content="Btn" Click="btn_Click"/>
+            <Button Name="btn06_01" Grid.Column="6" Grid.Row="1" Click="btn_Click">
+                <Image Name="img06_01"></Image>
+            </Button>
+            <Button Name="btn06_02" Grid.Column="6" Grid.Row="2" Click="btn_Click">
+                <Image Name="img06_02"></Image>
+            </Button>
+            <Button Name="btn06_03" Grid.Column="6" Grid.Row="3" Click="btn_Click">
+                <Image Name="img06_03"></Image>
+            </Button>
+            <Button Name="btn06_04" Grid.Column="6" Grid.Row="4" Click="btn_Click">
+                <Image Name="img06_04"></Image>
+            </Button>
+            <Button Name="btn06_05" Grid.Column="6" Grid.Row="5" Click="btn_Click">
+                <Image Name="img06_05"></Image>
+            </Button>
+            <Button Name="btn06_06" Grid.Column="6" Grid.Row="6" Click="btn_Click">
+                <Image Name="img06_06"></Image>
+            </Button>
+            <Button Name="btn06_07" Grid.Column="6" Grid.Row="7" Click="btn_Click">
+                <Image Name="img06_07"></Image>
+            </Button>
+            <Button Name="btn06_08" Grid.Column="6" Grid.Row="8" Click="btn_Click">
+                <Image Name="img06_08"></Image>
+            </Button>
+            <Button Name="btn06_09" Grid.Column="6" Grid.Row="9" Click="btn_Click">
+                <Image Name="img06_09"></Image>
+            </Button>
+            <Button Name="btn06_10" Grid.Column="6" Grid.Row="10" Click="btn_Click">
+                <Image Name="img06_10"></Image>
+            </Button>
+            <Button Name="btn06_11" Grid.Column="6" Grid.Row="11" Click="btn_Click">
+                <Image Name="img06_11"></Image>
+            </Button>
+            <Button Name="btn06_12" Grid.Column="6" Grid.Row="12" Click="btn_Click">
+                <Image Name="img06_12"></Image>
+            </Button>
+            <Button Name="btn06_13" Grid.Column="6" Grid.Row="13" Click="btn_Click">
+                <Image Name="img06_13"></Image>
+            </Button>
+            <Button Name="btn06_14" Grid.Column="6" Grid.Row="14" Click="btn_Click">
+                <Image Name="img06_14"></Image>
+            </Button>
+            <Button Name="btn06_15" Grid.Column="6" Grid.Row="15" Click="btn_Click">
+                <Image Name="img06_15"></Image>
+            </Button>
+            <Button Name="btn06_16" Grid.Column="6" Grid.Row="16" Click="btn_Click">
+                <Image Name="img06_16"></Image>
+            </Button>
+            <Button Name="btn06_17" Grid.Column="6" Grid.Row="17" Click="btn_Click">
+                <Image Name="img06_17"></Image>
+            </Button>
+            <Button Name="btn06_18" Grid.Column="6" Grid.Row="18" Click="btn_Click">
+                <Image Name="img06_18"></Image>
+            </Button>
+            <Button Name="btn06_19" Grid.Column="6" Grid.Row="19" Click="btn_Click">
+                <Image Name="img06_19"></Image>
+            </Button>
 
-            <Button Name="btn07_01" Grid.Column="7" Grid.Row="1" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn07_02" Grid.Column="7" Grid.Row="2" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn07_03" Grid.Column="7" Grid.Row="3" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn07_04" Grid.Column="7" Grid.Row="4" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn07_05" Grid.Column="7" Grid.Row="5" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn07_06" Grid.Column="7" Grid.Row="6" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn07_07" Grid.Column="7" Grid.Row="7" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn07_08" Grid.Column="7" Grid.Row="8" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn07_09" Grid.Column="7" Grid.Row="9" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn07_10" Grid.Column="7" Grid.Row="10" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn07_11" Grid.Column="7" Grid.Row="11" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn07_12" Grid.Column="7" Grid.Row="12" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn07_13" Grid.Column="7" Grid.Row="13" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn07_14" Grid.Column="7" Grid.Row="14" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn07_15" Grid.Column="7" Grid.Row="15" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn07_16" Grid.Column="7" Grid.Row="16" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn07_17" Grid.Column="7" Grid.Row="17" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn07_18" Grid.Column="7" Grid.Row="18" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn07_19" Grid.Column="7" Grid.Row="19" Content="Btn" Click="btn_Click"/>
+            <Button Name="btn07_01" Grid.Column="7" Grid.Row="1" Click="btn_Click">
+                <Image Name="img07_01"></Image>
+            </Button>
+            <Button Name="btn07_02" Grid.Column="7" Grid.Row="2" Click="btn_Click">
+                <Image Name="img07_02"></Image>
+            </Button>
+            <Button Name="btn07_03" Grid.Column="7" Grid.Row="3" Click="btn_Click">
+                <Image Name="img07_03"></Image>
+            </Button>
+            <Button Name="btn07_04" Grid.Column="7" Grid.Row="4" Click="btn_Click">
+                <Image Name="img07_04"></Image>
+            </Button>
+            <Button Name="btn07_05" Grid.Column="7" Grid.Row="5" Click="btn_Click">
+                <Image Name="img07_05"></Image>
+            </Button>
+            <Button Name="btn07_06" Grid.Column="7" Grid.Row="6" Click="btn_Click">
+                <Image Name="img07_06"></Image>
+            </Button>
+            <Button Name="btn07_07" Grid.Column="7" Grid.Row="7" Click="btn_Click">
+                <Image Name="img07_07"></Image>
+            </Button>
+            <Button Name="btn07_08" Grid.Column="7" Grid.Row="8" Click="btn_Click">
+                <Image Name="img07_08"></Image>
+            </Button>
+            <Button Name="btn07_09" Grid.Column="7" Grid.Row="9" Click="btn_Click">
+                <Image Name="img07_09"></Image>
+            </Button>
+            <Button Name="btn07_10" Grid.Column="7" Grid.Row="10" Click="btn_Click">
+                <Image Name="img07_10"></Image>
+            </Button>
+            <Button Name="btn07_11" Grid.Column="7" Grid.Row="11" Click="btn_Click">
+                <Image Name="img07_11"></Image>
+            </Button>
+            <Button Name="btn07_12" Grid.Column="7" Grid.Row="12" Click="btn_Click">
+                <Image Name="img07_12"></Image>
+            </Button>
+            <Button Name="btn07_13" Grid.Column="7" Grid.Row="13" Click="btn_Click">
+                <Image Name="img07_13"></Image>
+            </Button>
+            <Button Name="btn07_14" Grid.Column="7" Grid.Row="14" Click="btn_Click">
+                <Image Name="img07_14"></Image>
+            </Button>
+            <Button Name="btn07_15" Grid.Column="7" Grid.Row="15" Click="btn_Click">
+                <Image Name="img07_15"></Image>
+            </Button>
+            <Button Name="btn07_16" Grid.Column="7" Grid.Row="16" Click="btn_Click">
+                <Image Name="img07_16"></Image>
+            </Button>
+            <Button Name="btn07_17" Grid.Column="7" Grid.Row="17" Click="btn_Click">
+                <Image Name="img07_17"></Image>
+            </Button>
+            <Button Name="btn07_18" Grid.Column="7" Grid.Row="18" Click="btn_Click">
+                <Image Name="img07_18"></Image>
+            </Button>
+            <Button Name="btn07_19" Grid.Column="7" Grid.Row="19" Click="btn_Click">
+                <Image Name="img07_19"></Image>
+            </Button>
 
-            <Button Name="btn08_01" Grid.Column="8" Grid.Row="1" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn08_02" Grid.Column="8" Grid.Row="2" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn08_03" Grid.Column="8" Grid.Row="3" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn08_04" Grid.Column="8" Grid.Row="4" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn08_05" Grid.Column="8" Grid.Row="5" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn08_06" Grid.Column="8" Grid.Row="6" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn08_07" Grid.Column="8" Grid.Row="7" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn08_08" Grid.Column="8" Grid.Row="8" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn08_09" Grid.Column="8" Grid.Row="9" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn08_10" Grid.Column="8" Grid.Row="10" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn08_11" Grid.Column="8" Grid.Row="11" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn08_12" Grid.Column="8" Grid.Row="12" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn08_13" Grid.Column="8" Grid.Row="13" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn08_14" Grid.Column="8" Grid.Row="14" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn08_15" Grid.Column="8" Grid.Row="15" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn08_16" Grid.Column="8" Grid.Row="16" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn08_17" Grid.Column="8" Grid.Row="17" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn08_18" Grid.Column="8" Grid.Row="18" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn08_19" Grid.Column="8" Grid.Row="19" Content="Btn" Click="btn_Click"/>
+            <Button Name="btn08_01" Grid.Column="8" Grid.Row="1" Click="btn_Click">
+                <Image Name="img08_01"></Image>
+            </Button>
+            <Button Name="btn08_02" Grid.Column="8" Grid.Row="2" Click="btn_Click">
+                <Image Name="img08_02"></Image>
+            </Button>
+            <Button Name="btn08_03" Grid.Column="8" Grid.Row="3" Click="btn_Click">
+                <Image Name="img08_03"></Image>
+            </Button>
+            <Button Name="btn08_04" Grid.Column="8" Grid.Row="4" Click="btn_Click">
+                <Image Name="img08_04"></Image>
+            </Button>
+            <Button Name="btn08_05" Grid.Column="8" Grid.Row="5" Click="btn_Click">
+                <Image Name="img08_05"></Image>
+            </Button>
+            <Button Name="btn08_06" Grid.Column="8" Grid.Row="6" Click="btn_Click">
+                <Image Name="img08_06"></Image>
+            </Button>
+            <Button Name="btn08_07" Grid.Column="8" Grid.Row="7" Click="btn_Click">
+                <Image Name="img08_07"></Image>
+            </Button>
+            <Button Name="btn08_08" Grid.Column="8" Grid.Row="8" Click="btn_Click">
+                <Image Name="img08_08"></Image>
+            </Button>
+            <Button Name="btn08_09" Grid.Column="8" Grid.Row="9" Click="btn_Click">
+                <Image Name="img08_09"></Image>
+            </Button>
+            <Button Name="btn08_10" Grid.Column="8" Grid.Row="10" Click="btn_Click">
+                <Image Name="img08_10"></Image>
+            </Button>
+            <Button Name="btn08_11" Grid.Column="8" Grid.Row="11" Click="btn_Click">
+                <Image Name="img08_11"></Image>
+            </Button>
+            <Button Name="btn08_12" Grid.Column="8" Grid.Row="12" Click="btn_Click">
+                <Image Name="img08_12"></Image>
+            </Button>
+            <Button Name="btn08_13" Grid.Column="8" Grid.Row="13" Click="btn_Click">
+                <Image Name="img08_13"></Image>
+            </Button>
+            <Button Name="btn08_14" Grid.Column="8" Grid.Row="14" Click="btn_Click">
+                <Image Name="img08_14"></Image>
+            </Button>
+            <Button Name="btn08_15" Grid.Column="8" Grid.Row="15" Click="btn_Click">
+                <Image Name="img08_15"></Image>
+            </Button>
+            <Button Name="btn08_16" Grid.Column="8" Grid.Row="16" Click="btn_Click">
+                <Image Name="img08_16"></Image>
+            </Button>
+            <Button Name="btn08_17" Grid.Column="8" Grid.Row="17" Click="btn_Click">
+                <Image Name="img08_17"></Image>
+            </Button>
+            <Button Name="btn08_18" Grid.Column="8" Grid.Row="18" Click="btn_Click">
+                <Image Name="img08_18"></Image>
+            </Button>
+            <Button Name="btn08_19" Grid.Column="8" Grid.Row="19" Click="btn_Click">
+                <Image Name="img08_19"></Image>
+            </Button>
 
-            <Button Name="btn09_01" Grid.Column="9" Grid.Row="1" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn09_02" Grid.Column="9" Grid.Row="2" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn09_03" Grid.Column="9" Grid.Row="3" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn09_04" Grid.Column="9" Grid.Row="4" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn09_05" Grid.Column="9" Grid.Row="5" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn09_06" Grid.Column="9" Grid.Row="6" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn09_07" Grid.Column="9" Grid.Row="7" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn09_08" Grid.Column="9" Grid.Row="8" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn09_09" Grid.Column="9" Grid.Row="9" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn09_10" Grid.Column="9" Grid.Row="10" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn09_11" Grid.Column="9" Grid.Row="11" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn09_12" Grid.Column="9" Grid.Row="12" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn09_13" Grid.Column="9" Grid.Row="13" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn09_14" Grid.Column="9" Grid.Row="14" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn09_15" Grid.Column="9" Grid.Row="15" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn09_16" Grid.Column="9" Grid.Row="16" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn09_17" Grid.Column="9" Grid.Row="17" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn09_18" Grid.Column="9" Grid.Row="18" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn09_19" Grid.Column="9" Grid.Row="19" Content="Btn" Click="btn_Click"/>
+            <Button Name="btn09_01" Grid.Column="9" Grid.Row="1" Click="btn_Click">
+                <Image Name="img09_01"></Image>
+            </Button>
+            <Button Name="btn09_02" Grid.Column="9" Grid.Row="2" Click="btn_Click">
+                <Image Name="img09_02"></Image>
+            </Button>
+            <Button Name="btn09_03" Grid.Column="9" Grid.Row="3" Click="btn_Click">
+                <Image Name="img09_03"></Image>
+            </Button>
+            <Button Name="btn09_04" Grid.Column="9" Grid.Row="4" Click="btn_Click">
+                <Image Name="img09_04"></Image>
+            </Button>
+            <Button Name="btn09_05" Grid.Column="9" Grid.Row="5" Click="btn_Click">
+                <Image Name="img09_05"></Image>
+            </Button>
+            <Button Name="btn09_06" Grid.Column="9" Grid.Row="6" Click="btn_Click">
+                <Image Name="img09_06"></Image>
+            </Button>
+            <Button Name="btn09_07" Grid.Column="9" Grid.Row="7" Click="btn_Click">
+                <Image Name="img09_07"></Image>
+            </Button>
+            <Button Name="btn09_08" Grid.Column="9" Grid.Row="8" Click="btn_Click">
+                <Image Name="img09_08"></Image>
+            </Button>
+            <Button Name="btn09_09" Grid.Column="9" Grid.Row="9" Click="btn_Click">
+                <Image Name="img09_09"></Image>
+            </Button>
+            <Button Name="btn09_10" Grid.Column="9" Grid.Row="10" Click="btn_Click">
+                <Image Name="img09_10"></Image>
+            </Button>
+            <Button Name="btn09_11" Grid.Column="9" Grid.Row="11" Click="btn_Click">
+                <Image Name="img09_11"></Image>
+            </Button>
+            <Button Name="btn09_12" Grid.Column="9" Grid.Row="12" Click="btn_Click">
+                <Image Name="img09_12"></Image>
+            </Button>
+            <Button Name="btn09_13" Grid.Column="9" Grid.Row="13" Click="btn_Click">
+                <Image Name="img09_13"></Image>
+            </Button>
+            <Button Name="btn09_14" Grid.Column="9" Grid.Row="14" Click="btn_Click">
+                <Image Name="img09_14"></Image>
+            </Button>
+            <Button Name="btn09_15" Grid.Column="9" Grid.Row="15" Click="btn_Click">
+                <Image Name="img09_15"></Image>
+            </Button>
+            <Button Name="btn09_16" Grid.Column="9" Grid.Row="16" Click="btn_Click">
+                <Image Name="img09_16"></Image>
+            </Button>
+            <Button Name="btn09_17" Grid.Column="9" Grid.Row="17" Click="btn_Click">
+                <Image Name="img09_17"></Image>
+            </Button>
+            <Button Name="btn09_18" Grid.Column="9" Grid.Row="18" Click="btn_Click">
+                <Image Name="img09_18"></Image>
+            </Button>
+            <Button Name="btn09_19" Grid.Column="9" Grid.Row="19" Click="btn_Click">
+                <Image Name="img09_19"></Image>
+            </Button>
 
-            <Button Name="btn10_01" Grid.Column="10" Grid.Row="1" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn10_02" Grid.Column="10" Grid.Row="2" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn10_03" Grid.Column="10" Grid.Row="3" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn10_04" Grid.Column="10" Grid.Row="4" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn10_05" Grid.Column="10" Grid.Row="5" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn10_06" Grid.Column="10" Grid.Row="6" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn10_07" Grid.Column="10" Grid.Row="7" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn10_08" Grid.Column="10" Grid.Row="8" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn10_09" Grid.Column="10" Grid.Row="9" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn10_10" Grid.Column="10" Grid.Row="10" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn10_11" Grid.Column="10" Grid.Row="11" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn10_12" Grid.Column="10" Grid.Row="12" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn10_13" Grid.Column="10" Grid.Row="13" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn10_14" Grid.Column="10" Grid.Row="14" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn10_15" Grid.Column="10" Grid.Row="15" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn10_16" Grid.Column="10" Grid.Row="16" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn10_17" Grid.Column="10" Grid.Row="17" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn10_18" Grid.Column="10" Grid.Row="18" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn10_19" Grid.Column="10" Grid.Row="19" Content="Btn" Click="btn_Click"/>
+            <Button Name="btn10_01" Grid.Column="10" Grid.Row="1" Click="btn_Click">
+                <Image Name="img10_01"></Image>
+            </Button>
+            <Button Name="btn10_02" Grid.Column="10" Grid.Row="2" Click="btn_Click">
+                <Image Name="img10_02"></Image>
+            </Button>
+            <Button Name="btn10_03" Grid.Column="10" Grid.Row="3" Click="btn_Click">
+                <Image Name="img10_03"></Image>
+            </Button>
+            <Button Name="btn10_04" Grid.Column="10" Grid.Row="4" Click="btn_Click">
+                <Image Name="img10_04"></Image>
+            </Button>
+            <Button Name="btn10_05" Grid.Column="10" Grid.Row="5" Click="btn_Click">
+                <Image Name="img10_05"></Image>
+            </Button>
+            <Button Name="btn10_06" Grid.Column="10" Grid.Row="6" Click="btn_Click">
+                <Image Name="img10_06"></Image>
+            </Button>
+            <Button Name="btn10_07" Grid.Column="10" Grid.Row="7" Click="btn_Click">
+                <Image Name="img10_07"></Image>
+            </Button>
+            <Button Name="btn10_08" Grid.Column="10" Grid.Row="8" Click="btn_Click">
+                <Image Name="img10_08"></Image>
+            </Button>
+            <Button Name="btn10_09" Grid.Column="10" Grid.Row="9" Click="btn_Click">
+                <Image Name="img10_09"></Image>
+            </Button>
+            <Button Name="btn10_10" Grid.Column="10" Grid.Row="10" Click="btn_Click">
+                <Image Name="img10_10"></Image>
+            </Button>
+            <Button Name="btn10_11" Grid.Column="10" Grid.Row="11" Click="btn_Click">
+                <Image Name="img10_11"></Image>
+            </Button>
+            <Button Name="btn10_12" Grid.Column="10" Grid.Row="12" Click="btn_Click">
+                <Image Name="img10_12"></Image>
+            </Button>
+            <Button Name="btn10_13" Grid.Column="10" Grid.Row="13" Click="btn_Click">
+                <Image Name="img10_13"></Image>
+            </Button>
+            <Button Name="btn10_14" Grid.Column="10" Grid.Row="14" Click="btn_Click">
+                <Image Name="img10_14"></Image>
+            </Button>
+            <Button Name="btn10_15" Grid.Column="10" Grid.Row="15" Click="btn_Click">
+                <Image Name="img10_15"></Image>
+            </Button>
+            <Button Name="btn10_16" Grid.Column="10" Grid.Row="16" Click="btn_Click">
+                <Image Name="img10_16"></Image>
+            </Button>
+            <Button Name="btn10_17" Grid.Column="10" Grid.Row="17" Click="btn_Click">
+                <Image Name="img10_17"></Image>
+            </Button>
+            <Button Name="btn10_18" Grid.Column="10" Grid.Row="18" Click="btn_Click">
+                <Image Name="img10_18"></Image>
+            </Button>
+            <Button Name="btn10_19" Grid.Column="10" Grid.Row="19" Click="btn_Click">
+                <Image Name="img10_19"></Image>
+            </Button>
 
-            <Button Name="btn11_01" Grid.Column="11" Grid.Row="1" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn11_02" Grid.Column="11" Grid.Row="2" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn11_03" Grid.Column="11" Grid.Row="3" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn11_04" Grid.Column="11" Grid.Row="4" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn11_05" Grid.Column="11" Grid.Row="5" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn11_06" Grid.Column="11" Grid.Row="6" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn11_07" Grid.Column="11" Grid.Row="7" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn11_08" Grid.Column="11" Grid.Row="8" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn11_09" Grid.Column="11" Grid.Row="9" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn11_10" Grid.Column="11" Grid.Row="10" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn11_11" Grid.Column="11" Grid.Row="11" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn11_12" Grid.Column="11" Grid.Row="12" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn11_13" Grid.Column="11" Grid.Row="13" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn11_14" Grid.Column="11" Grid.Row="14" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn11_15" Grid.Column="11" Grid.Row="15" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn11_16" Grid.Column="11" Grid.Row="16" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn11_17" Grid.Column="11" Grid.Row="17" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn11_18" Grid.Column="11" Grid.Row="18" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn11_19" Grid.Column="11" Grid.Row="19" Content="Btn" Click="btn_Click"/>
+            <Button Name="btn11_01" Grid.Column="11" Grid.Row="1" Click="btn_Click">
+                <Image Name="img11_01"></Image>
+            </Button>
+            <Button Name="btn11_02" Grid.Column="11" Grid.Row="2" Click="btn_Click">
+                <Image Name="img11_02"></Image>
+            </Button>
+            <Button Name="btn11_03" Grid.Column="11" Grid.Row="3" Click="btn_Click">
+                <Image Name="img11_03"></Image>
+            </Button>
+            <Button Name="btn11_04" Grid.Column="11" Grid.Row="4" Click="btn_Click">
+                <Image Name="img11_04"></Image>
+            </Button>
+            <Button Name="btn11_05" Grid.Column="11" Grid.Row="5" Click="btn_Click">
+                <Image Name="img11_05"></Image>
+            </Button>
+            <Button Name="btn11_06" Grid.Column="11" Grid.Row="6" Click="btn_Click">
+                <Image Name="img11_06"></Image>
+            </Button>
+            <Button Name="btn11_07" Grid.Column="11" Grid.Row="7" Click="btn_Click">
+                <Image Name="img11_07"></Image>
+            </Button>
+            <Button Name="btn11_08" Grid.Column="11" Grid.Row="8" Click="btn_Click">
+                <Image Name="img11_08"></Image>
+            </Button>
+            <Button Name="btn11_09" Grid.Column="11" Grid.Row="9" Click="btn_Click">
+                <Image Name="img11_09"></Image>
+            </Button>
+            <Button Name="btn11_10" Grid.Column="11" Grid.Row="10" Click="btn_Click">
+                <Image Name="img11_10"></Image>
+            </Button>
+            <Button Name="btn11_11" Grid.Column="11" Grid.Row="11" Click="btn_Click">
+                <Image Name="img11_11"></Image>
+            </Button>
+            <Button Name="btn11_12" Grid.Column="11" Grid.Row="12" Click="btn_Click">
+                <Image Name="img11_12"></Image>
+            </Button>
+            <Button Name="btn11_13" Grid.Column="11" Grid.Row="13" Click="btn_Click">
+                <Image Name="img11_13"></Image>
+            </Button>
+            <Button Name="btn11_14" Grid.Column="11" Grid.Row="14" Click="btn_Click">
+                <Image Name="img11_14"></Image>
+            </Button>
+            <Button Name="btn11_15" Grid.Column="11" Grid.Row="15" Click="btn_Click">
+                <Image Name="img11_15"></Image>
+            </Button>
+            <Button Name="btn11_16" Grid.Column="11" Grid.Row="16" Click="btn_Click">
+                <Image Name="img11_16"></Image>
+            </Button>
+            <Button Name="btn11_17" Grid.Column="11" Grid.Row="17" Click="btn_Click">
+                <Image Name="img11_17"></Image>
+            </Button>
+            <Button Name="btn11_18" Grid.Column="11" Grid.Row="18" Click="btn_Click">
+                <Image Name="img11_18"></Image>
+            </Button>
+            <Button Name="btn11_19" Grid.Column="11" Grid.Row="19" Click="btn_Click">
+                <Image Name="img11_19"></Image>
+            </Button>
 
-            <Button Name="btn12_01" Grid.Column="12" Grid.Row="1" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn12_02" Grid.Column="12" Grid.Row="2" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn12_03" Grid.Column="12" Grid.Row="3" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn12_04" Grid.Column="12" Grid.Row="4" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn12_05" Grid.Column="12" Grid.Row="5" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn12_06" Grid.Column="12" Grid.Row="6" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn12_07" Grid.Column="12" Grid.Row="7" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn12_08" Grid.Column="12" Grid.Row="8" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn12_09" Grid.Column="12" Grid.Row="9" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn12_10" Grid.Column="12" Grid.Row="10" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn12_11" Grid.Column="12" Grid.Row="11" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn12_12" Grid.Column="12" Grid.Row="12" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn12_13" Grid.Column="12" Grid.Row="13" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn12_14" Grid.Column="12" Grid.Row="14" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn12_15" Grid.Column="12" Grid.Row="15" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn12_16" Grid.Column="12" Grid.Row="16" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn12_17" Grid.Column="12" Grid.Row="17" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn12_18" Grid.Column="12" Grid.Row="18" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn12_19" Grid.Column="12" Grid.Row="19" Content="Btn" Click="btn_Click"/>
+            <Button Name="btn12_01" Grid.Column="12" Grid.Row="1" Click="btn_Click">
+                <Image Name="img12_01"></Image>
+            </Button>
+            <Button Name="btn12_02" Grid.Column="12" Grid.Row="2" Click="btn_Click">
+                <Image Name="img12_02"></Image>
+            </Button>
+            <Button Name="btn12_03" Grid.Column="12" Grid.Row="3" Click="btn_Click">
+                <Image Name="img12_03"></Image>
+            </Button>
+            <Button Name="btn12_04" Grid.Column="12" Grid.Row="4" Click="btn_Click">
+                <Image Name="img12_04"></Image>
+            </Button>
+            <Button Name="btn12_05" Grid.Column="12" Grid.Row="5" Click="btn_Click">
+                <Image Name="img12_05"></Image>
+            </Button>
+            <Button Name="btn12_06" Grid.Column="12" Grid.Row="6" Click="btn_Click">
+                <Image Name="img12_06"></Image>
+            </Button>
+            <Button Name="btn12_07" Grid.Column="12" Grid.Row="7" Click="btn_Click">
+                <Image Name="img12_07"></Image>
+            </Button>
+            <Button Name="btn12_08" Grid.Column="12" Grid.Row="8" Click="btn_Click">
+                <Image Name="img12_08"></Image>
+            </Button>
+            <Button Name="btn12_09" Grid.Column="12" Grid.Row="9" Click="btn_Click">
+                <Image Name="img12_09"></Image>
+            </Button>
+            <Button Name="btn12_10" Grid.Column="12" Grid.Row="10" Click="btn_Click">
+                <Image Name="img12_10"></Image>
+            </Button>
+            <Button Name="btn12_11" Grid.Column="12" Grid.Row="11" Click="btn_Click">
+                <Image Name="img12_11"></Image>
+            </Button>
+            <Button Name="btn12_12" Grid.Column="12" Grid.Row="12" Click="btn_Click">
+                <Image Name="img12_12"></Image>
+            </Button>
+            <Button Name="btn12_13" Grid.Column="12" Grid.Row="13" Click="btn_Click">
+                <Image Name="img12_13"></Image>
+            </Button>
+            <Button Name="btn12_14" Grid.Column="12" Grid.Row="14" Click="btn_Click">
+                <Image Name="img12_14"></Image>
+            </Button>
+            <Button Name="btn12_15" Grid.Column="12" Grid.Row="15" Click="btn_Click">
+                <Image Name="img12_15"></Image>
+            </Button>
+            <Button Name="btn12_16" Grid.Column="12" Grid.Row="16" Click="btn_Click">
+                <Image Name="img12_16"></Image>
+            </Button>
+            <Button Name="btn12_17" Grid.Column="12" Grid.Row="17" Click="btn_Click">
+                <Image Name="img12_17"></Image>
+            </Button>
+            <Button Name="btn12_18" Grid.Column="12" Grid.Row="18" Click="btn_Click">
+                <Image Name="img12_18"></Image>
+            </Button>
+            <Button Name="btn12_19" Grid.Column="12" Grid.Row="19" Click="btn_Click">
+                <Image Name="img12_19"></Image>
+            </Button>
 
-            <Button Name="btn13_01" Grid.Column="13" Grid.Row="1" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn13_02" Grid.Column="13" Grid.Row="2" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn13_03" Grid.Column="13" Grid.Row="3" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn13_04" Grid.Column="13" Grid.Row="4" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn13_05" Grid.Column="13" Grid.Row="5" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn13_06" Grid.Column="13" Grid.Row="6" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn13_07" Grid.Column="13" Grid.Row="7" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn13_08" Grid.Column="13" Grid.Row="8" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn13_09" Grid.Column="13" Grid.Row="9" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn13_10" Grid.Column="13" Grid.Row="10" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn13_11" Grid.Column="13" Grid.Row="11" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn13_12" Grid.Column="13" Grid.Row="12" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn13_13" Grid.Column="13" Grid.Row="13" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn13_14" Grid.Column="13" Grid.Row="14" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn13_15" Grid.Column="13" Grid.Row="15" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn13_16" Grid.Column="13" Grid.Row="16" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn13_17" Grid.Column="13" Grid.Row="17" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn13_18" Grid.Column="13" Grid.Row="18" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn13_19" Grid.Column="13" Grid.Row="19" Content="Btn" Click="btn_Click"/>
+            <Button Name="btn13_01" Grid.Column="13" Grid.Row="1" Click="btn_Click">
+                <Image Name="img13_01"></Image>
+            </Button>
+            <Button Name="btn13_02" Grid.Column="13" Grid.Row="2" Click="btn_Click">
+                <Image Name="img13_02"></Image>
+            </Button>
+            <Button Name="btn13_03" Grid.Column="13" Grid.Row="3" Click="btn_Click">
+                <Image Name="img13_03"></Image>
+            </Button>
+            <Button Name="btn13_04" Grid.Column="13" Grid.Row="4" Click="btn_Click">
+                <Image Name="img13_04"></Image>
+            </Button>
+            <Button Name="btn13_05" Grid.Column="13" Grid.Row="5" Click="btn_Click">
+                <Image Name="img13_05"></Image>
+            </Button>
+            <Button Name="btn13_06" Grid.Column="13" Grid.Row="6" Click="btn_Click">
+                <Image Name="img13_06"></Image>
+            </Button>
+            <Button Name="btn13_07" Grid.Column="13" Grid.Row="7" Click="btn_Click">
+                <Image Name="img13_07"></Image>
+            </Button>
+            <Button Name="btn13_08" Grid.Column="13" Grid.Row="8" Click="btn_Click">
+                <Image Name="img13_08"></Image>
+            </Button>
+            <Button Name="btn13_09" Grid.Column="13" Grid.Row="9" Click="btn_Click">
+                <Image Name="img13_09"></Image>
+            </Button>
+            <Button Name="btn13_10" Grid.Column="13" Grid.Row="10" Click="btn_Click">
+                <Image Name="img13_10"></Image>
+            </Button>
+            <Button Name="btn13_11" Grid.Column="13" Grid.Row="11" Click="btn_Click">
+                <Image Name="img13_11"></Image>
+            </Button>
+            <Button Name="btn13_12" Grid.Column="13" Grid.Row="12" Click="btn_Click">
+                <Image Name="img13_12"></Image>
+            </Button>
+            <Button Name="btn13_13" Grid.Column="13" Grid.Row="13" Click="btn_Click">
+                <Image Name="img13_13"></Image>
+            </Button>
+            <Button Name="btn13_14" Grid.Column="13" Grid.Row="14" Click="btn_Click">
+                <Image Name="img13_14"></Image>
+            </Button>
+            <Button Name="btn13_15" Grid.Column="13" Grid.Row="15" Click="btn_Click">
+                <Image Name="img13_15"></Image>
+            </Button>
+            <Button Name="btn13_16" Grid.Column="13" Grid.Row="16" Click="btn_Click">
+                <Image Name="img13_16"></Image>
+            </Button>
+            <Button Name="btn13_17" Grid.Column="13" Grid.Row="17" Click="btn_Click">
+                <Image Name="img13_17"></Image>
+            </Button>
+            <Button Name="btn13_18" Grid.Column="13" Grid.Row="18" Click="btn_Click">
+                <Image Name="img13_18"></Image>
+            </Button>
+            <Button Name="btn13_19" Grid.Column="13" Grid.Row="19" Click="btn_Click">
+                <Image Name="img13_19"></Image>
+            </Button>
 
-            <Button Name="btn14_01" Grid.Column="14" Grid.Row="1" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn14_02" Grid.Column="14" Grid.Row="2" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn14_03" Grid.Column="14" Grid.Row="3" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn14_04" Grid.Column="14" Grid.Row="4" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn14_05" Grid.Column="14" Grid.Row="5" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn14_06" Grid.Column="14" Grid.Row="6" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn14_07" Grid.Column="14" Grid.Row="7" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn14_08" Grid.Column="14" Grid.Row="8" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn14_09" Grid.Column="14" Grid.Row="9" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn14_10" Grid.Column="14" Grid.Row="10" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn14_11" Grid.Column="14" Grid.Row="11" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn14_12" Grid.Column="14" Grid.Row="12" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn14_13" Grid.Column="14" Grid.Row="13" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn14_14" Grid.Column="14" Grid.Row="14" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn14_15" Grid.Column="14" Grid.Row="15" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn14_16" Grid.Column="14" Grid.Row="16" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn14_17" Grid.Column="14" Grid.Row="17" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn14_18" Grid.Column="14" Grid.Row="18" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn14_19" Grid.Column="14" Grid.Row="19" Content="Btn" Click="btn_Click"/>
+            <Button Name="btn14_01" Grid.Column="14" Grid.Row="1" Click="btn_Click">
+                <Image Name="img14_01"></Image>
+            </Button>
+            <Button Name="btn14_02" Grid.Column="14" Grid.Row="2" Click="btn_Click">
+                <Image Name="img14_02"></Image>
+            </Button>
+            <Button Name="btn14_03" Grid.Column="14" Grid.Row="3" Click="btn_Click">
+                <Image Name="img14_03"></Image>
+            </Button>
+            <Button Name="btn14_04" Grid.Column="14" Grid.Row="4" Click="btn_Click">
+                <Image Name="img14_04"></Image>
+            </Button>
+            <Button Name="btn14_05" Grid.Column="14" Grid.Row="5" Click="btn_Click">
+                <Image Name="img14_05"></Image>
+            </Button>
+            <Button Name="btn14_06" Grid.Column="14" Grid.Row="6" Click="btn_Click">
+                <Image Name="img14_06"></Image>
+            </Button>
+            <Button Name="btn14_07" Grid.Column="14" Grid.Row="7" Click="btn_Click">
+                <Image Name="img14_07"></Image>
+            </Button>
+            <Button Name="btn14_08" Grid.Column="14" Grid.Row="8" Click="btn_Click">
+                <Image Name="img14_08"></Image>
+            </Button>
+            <Button Name="btn14_09" Grid.Column="14" Grid.Row="9" Click="btn_Click">
+                <Image Name="img14_09"></Image>
+            </Button>
+            <Button Name="btn14_10" Grid.Column="14" Grid.Row="10" Click="btn_Click">
+                <Image Name="img14_10"></Image>
+            </Button>
+            <Button Name="btn14_11" Grid.Column="14" Grid.Row="11" Click="btn_Click">
+                <Image Name="img14_11"></Image>
+            </Button>
+            <Button Name="btn14_12" Grid.Column="14" Grid.Row="12" Click="btn_Click">
+                <Image Name="img14_12"></Image>
+            </Button>
+            <Button Name="btn14_13" Grid.Column="14" Grid.Row="13" Click="btn_Click">
+                <Image Name="img14_13"></Image>
+            </Button>
+            <Button Name="btn14_14" Grid.Column="14" Grid.Row="14" Click="btn_Click">
+                <Image Name="img14_14"></Image>
+            </Button>
+            <Button Name="btn14_15" Grid.Column="14" Grid.Row="15" Click="btn_Click">
+                <Image Name="img14_15"></Image>
+            </Button>
+            <Button Name="btn14_16" Grid.Column="14" Grid.Row="16" Click="btn_Click">
+                <Image Name="img14_16"></Image>
+            </Button>
+            <Button Name="btn14_17" Grid.Column="14" Grid.Row="17" Click="btn_Click">
+                <Image Name="img14_17"></Image>
+            </Button>
+            <Button Name="btn14_18" Grid.Column="14" Grid.Row="18" Click="btn_Click">
+                <Image Name="img14_18"></Image>
+            </Button>
+            <Button Name="btn14_19" Grid.Column="14" Grid.Row="19" Click="btn_Click">
+                <Image Name="img14_19"></Image>
+            </Button>
 
-            <Button Name="btn15_01" Grid.Column="15" Grid.Row="1" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn15_02" Grid.Column="15" Grid.Row="2" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn15_03" Grid.Column="15" Grid.Row="3" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn15_04" Grid.Column="15" Grid.Row="4" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn15_05" Grid.Column="15" Grid.Row="5" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn15_06" Grid.Column="15" Grid.Row="6" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn15_07" Grid.Column="15" Grid.Row="7" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn15_08" Grid.Column="15" Grid.Row="8" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn15_09" Grid.Column="15" Grid.Row="9" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn15_10" Grid.Column="15" Grid.Row="10" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn15_11" Grid.Column="15" Grid.Row="11" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn15_12" Grid.Column="15" Grid.Row="12" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn15_13" Grid.Column="15" Grid.Row="13" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn15_14" Grid.Column="15" Grid.Row="14" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn15_15" Grid.Column="15" Grid.Row="15" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn15_16" Grid.Column="15" Grid.Row="16" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn15_17" Grid.Column="15" Grid.Row="17" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn15_18" Grid.Column="15" Grid.Row="18" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn15_19" Grid.Column="15" Grid.Row="19" Content="Btn" Click="btn_Click"/>
+            <Button Name="btn15_01" Grid.Column="15" Grid.Row="1" Click="btn_Click">
+                <Image Name="img15_01"></Image>
+            </Button>
+            <Button Name="btn15_02" Grid.Column="15" Grid.Row="2" Click="btn_Click">
+                <Image Name="img15_02"></Image>
+            </Button>
+            <Button Name="btn15_03" Grid.Column="15" Grid.Row="3" Click="btn_Click">
+                <Image Name="img15_03"></Image>
+            </Button>
+            <Button Name="btn15_04" Grid.Column="15" Grid.Row="4" Click="btn_Click">
+                <Image Name="img15_04"></Image>
+            </Button>
+            <Button Name="btn15_05" Grid.Column="15" Grid.Row="5" Click="btn_Click">
+                <Image Name="img15_05"></Image>
+            </Button>
+            <Button Name="btn15_06" Grid.Column="15" Grid.Row="6" Click="btn_Click">
+                <Image Name="img15_06"></Image>
+            </Button>
+            <Button Name="btn15_07" Grid.Column="15" Grid.Row="7" Click="btn_Click">
+                <Image Name="img15_07"></Image>
+            </Button>
+            <Button Name="btn15_08" Grid.Column="15" Grid.Row="8" Click="btn_Click">
+                <Image Name="img15_08"></Image>
+            </Button>
+            <Button Name="btn15_09" Grid.Column="15" Grid.Row="9" Click="btn_Click">
+                <Image Name="img15_09"></Image>
+            </Button>
+            <Button Name="btn15_10" Grid.Column="15" Grid.Row="10" Click="btn_Click">
+                <Image Name="img15_10"></Image>
+            </Button>
+            <Button Name="btn15_11" Grid.Column="15" Grid.Row="11" Click="btn_Click">
+                <Image Name="img15_11"></Image>
+            </Button>
+            <Button Name="btn15_12" Grid.Column="15" Grid.Row="12" Click="btn_Click">
+                <Image Name="img15_12"></Image>
+            </Button>
+            <Button Name="btn15_13" Grid.Column="15" Grid.Row="13" Click="btn_Click">
+                <Image Name="img15_13"></Image>
+            </Button>
+            <Button Name="btn15_14" Grid.Column="15" Grid.Row="14" Click="btn_Click">
+                <Image Name="img15_14"></Image>
+            </Button>
+            <Button Name="btn15_15" Grid.Column="15" Grid.Row="15" Click="btn_Click">
+                <Image Name="img15_15"></Image>
+            </Button>
+            <Button Name="btn15_16" Grid.Column="15" Grid.Row="16" Click="btn_Click">
+                <Image Name="img15_16"></Image>
+            </Button>
+            <Button Name="btn15_17" Grid.Column="15" Grid.Row="17" Click="btn_Click">
+                <Image Name="img15_17"></Image>
+            </Button>
+            <Button Name="btn15_18" Grid.Column="15" Grid.Row="18" Click="btn_Click">
+                <Image Name="img15_18"></Image>
+            </Button>
+            <Button Name="btn15_19" Grid.Column="15" Grid.Row="19" Click="btn_Click">
+                <Image Name="img15_19"></Image>
+            </Button>
 
-            <Button Name="btn16_01" Grid.Column="16" Grid.Row="1" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn16_02" Grid.Column="16" Grid.Row="2" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn16_03" Grid.Column="16" Grid.Row="3" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn16_04" Grid.Column="16" Grid.Row="4" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn16_05" Grid.Column="16" Grid.Row="5" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn16_06" Grid.Column="16" Grid.Row="6" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn16_07" Grid.Column="16" Grid.Row="7" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn16_08" Grid.Column="16" Grid.Row="8" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn16_09" Grid.Column="16" Grid.Row="9" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn16_10" Grid.Column="16" Grid.Row="10" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn16_11" Grid.Column="16" Grid.Row="11" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn16_12" Grid.Column="16" Grid.Row="12" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn16_13" Grid.Column="16" Grid.Row="13" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn16_14" Grid.Column="16" Grid.Row="14" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn16_15" Grid.Column="16" Grid.Row="15" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn16_16" Grid.Column="16" Grid.Row="16" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn16_17" Grid.Column="16" Grid.Row="17" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn16_18" Grid.Column="16" Grid.Row="18" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn16_19" Grid.Column="16" Grid.Row="19" Content="Btn" Click="btn_Click"/>
+            <Button Name="btn16_01" Grid.Column="16" Grid.Row="1" Click="btn_Click">
+                <Image Name="img16_01"></Image>
+            </Button>
+            <Button Name="btn16_02" Grid.Column="16" Grid.Row="2" Click="btn_Click">
+                <Image Name="img16_02"></Image>
+            </Button>
+            <Button Name="btn16_03" Grid.Column="16" Grid.Row="3" Click="btn_Click">
+                <Image Name="img16_03"></Image>
+            </Button>
+            <Button Name="btn16_04" Grid.Column="16" Grid.Row="4" Click="btn_Click">
+                <Image Name="img16_04"></Image>
+            </Button>
+            <Button Name="btn16_05" Grid.Column="16" Grid.Row="5" Click="btn_Click">
+                <Image Name="img16_05"></Image>
+            </Button>
+            <Button Name="btn16_06" Grid.Column="16" Grid.Row="6" Click="btn_Click">
+                <Image Name="img16_06"></Image>
+            </Button>
+            <Button Name="btn16_07" Grid.Column="16" Grid.Row="7" Click="btn_Click">
+                <Image Name="img16_07"></Image>
+            </Button>
+            <Button Name="btn16_08" Grid.Column="16" Grid.Row="8" Click="btn_Click">
+                <Image Name="img16_08"></Image>
+            </Button>
+            <Button Name="btn16_09" Grid.Column="16" Grid.Row="9" Click="btn_Click">
+                <Image Name="img16_09"></Image>
+            </Button>
+            <Button Name="btn16_10" Grid.Column="16" Grid.Row="10" Click="btn_Click">
+                <Image Name="img16_10"></Image>
+            </Button>
+            <Button Name="btn16_11" Grid.Column="16" Grid.Row="11" Click="btn_Click">
+                <Image Name="img16_11"></Image>
+            </Button>
+            <Button Name="btn16_12" Grid.Column="16" Grid.Row="12" Click="btn_Click">
+                <Image Name="img16_12"></Image>
+            </Button>
+            <Button Name="btn16_13" Grid.Column="16" Grid.Row="13" Click="btn_Click">
+                <Image Name="img16_13"></Image>
+            </Button>
+            <Button Name="btn16_14" Grid.Column="16" Grid.Row="14" Click="btn_Click">
+                <Image Name="img16_14"></Image>
+            </Button>
+            <Button Name="btn16_15" Grid.Column="16" Grid.Row="15" Click="btn_Click">
+                <Image Name="img16_15"></Image>
+            </Button>
+            <Button Name="btn16_16" Grid.Column="16" Grid.Row="16" Click="btn_Click">
+                <Image Name="img16_16"></Image>
+            </Button>
+            <Button Name="btn16_17" Grid.Column="16" Grid.Row="17" Click="btn_Click">
+                <Image Name="img16_17"></Image>
+            </Button>
+            <Button Name="btn16_18" Grid.Column="16" Grid.Row="18" Click="btn_Click">
+                <Image Name="img16_18"></Image>
+            </Button>
+            <Button Name="btn16_19" Grid.Column="16" Grid.Row="19" Click="btn_Click">
+                <Image Name="img16_19"></Image>
+            </Button>
 
-            <Button Name="btn17_01" Grid.Column="17" Grid.Row="1" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn17_02" Grid.Column="17" Grid.Row="2" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn17_03" Grid.Column="17" Grid.Row="3" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn17_04" Grid.Column="17" Grid.Row="4" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn17_05" Grid.Column="17" Grid.Row="5" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn17_06" Grid.Column="17" Grid.Row="6" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn17_07" Grid.Column="17" Grid.Row="7" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn17_08" Grid.Column="17" Grid.Row="8" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn17_09" Grid.Column="17" Grid.Row="9" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn17_10" Grid.Column="17" Grid.Row="10" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn17_11" Grid.Column="17" Grid.Row="11" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn17_12" Grid.Column="17" Grid.Row="12" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn17_13" Grid.Column="17" Grid.Row="13" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn17_14" Grid.Column="17" Grid.Row="14" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn17_15" Grid.Column="17" Grid.Row="15" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn17_16" Grid.Column="17" Grid.Row="16" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn17_17" Grid.Column="17" Grid.Row="17" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn17_18" Grid.Column="17" Grid.Row="18" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn17_19" Grid.Column="17" Grid.Row="19" Content="Btn" Click="btn_Click"/>
+            <Button Name="btn17_01" Grid.Column="17" Grid.Row="1" Click="btn_Click">
+                <Image Name="img17_01"></Image>
+            </Button>
+            <Button Name="btn17_02" Grid.Column="17" Grid.Row="2" Click="btn_Click">
+                <Image Name="img17_02"></Image>
+            </Button>
+            <Button Name="btn17_03" Grid.Column="17" Grid.Row="3" Click="btn_Click">
+                <Image Name="img17_03"></Image>
+            </Button>
+            <Button Name="btn17_04" Grid.Column="17" Grid.Row="4" Click="btn_Click">
+                <Image Name="img17_04"></Image>
+            </Button>
+            <Button Name="btn17_05" Grid.Column="17" Grid.Row="5" Click="btn_Click">
+                <Image Name="img17_05"></Image>
+            </Button>
+            <Button Name="btn17_06" Grid.Column="17" Grid.Row="6" Click="btn_Click">
+                <Image Name="img17_06"></Image>
+            </Button>
+            <Button Name="btn17_07" Grid.Column="17" Grid.Row="7" Click="btn_Click">
+                <Image Name="img17_07"></Image>
+            </Button>
+            <Button Name="btn17_08" Grid.Column="17" Grid.Row="8" Click="btn_Click">
+                <Image Name="img17_08"></Image>
+            </Button>
+            <Button Name="btn17_09" Grid.Column="17" Grid.Row="9" Click="btn_Click">
+                <Image Name="img17_09"></Image>
+            </Button>
+            <Button Name="btn17_10" Grid.Column="17" Grid.Row="10" Click="btn_Click">
+                <Image Name="img17_10"></Image>
+            </Button>
+            <Button Name="btn17_11" Grid.Column="17" Grid.Row="11" Click="btn_Click">
+                <Image Name="img17_11"></Image>
+            </Button>
+            <Button Name="btn17_12" Grid.Column="17" Grid.Row="12" Click="btn_Click">
+                <Image Name="img17_12"></Image>
+            </Button>
+            <Button Name="btn17_13" Grid.Column="17" Grid.Row="13" Click="btn_Click">
+                <Image Name="img17_13"></Image>
+            </Button>
+            <Button Name="btn17_14" Grid.Column="17" Grid.Row="14" Click="btn_Click">
+                <Image Name="img17_14"></Image>
+            </Button>
+            <Button Name="btn17_15" Grid.Column="17" Grid.Row="15" Click="btn_Click">
+                <Image Name="img17_15"></Image>
+            </Button>
+            <Button Name="btn17_16" Grid.Column="17" Grid.Row="16" Click="btn_Click">
+                <Image Name="img17_16"></Image>
+            </Button>
+            <Button Name="btn17_17" Grid.Column="17" Grid.Row="17" Click="btn_Click">
+                <Image Name="img17_17"></Image>
+            </Button>
+            <Button Name="btn17_18" Grid.Column="17" Grid.Row="18" Click="btn_Click">
+                <Image Name="img17_18"></Image>
+            </Button>
+            <Button Name="btn17_19" Grid.Column="17" Grid.Row="19" Click="btn_Click">
+                <Image Name="img17_19"></Image>
+            </Button>
 
-            <Button Name="btn18_01" Grid.Column="18" Grid.Row="1" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn18_02" Grid.Column="18" Grid.Row="2" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn18_03" Grid.Column="18" Grid.Row="3" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn18_04" Grid.Column="18" Grid.Row="4" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn18_05" Grid.Column="18" Grid.Row="5" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn18_06" Grid.Column="18" Grid.Row="6" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn18_07" Grid.Column="18" Grid.Row="7" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn18_08" Grid.Column="18" Grid.Row="8" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn18_09" Grid.Column="18" Grid.Row="9" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn18_10" Grid.Column="18" Grid.Row="10" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn18_11" Grid.Column="18" Grid.Row="11" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn18_12" Grid.Column="18" Grid.Row="12" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn18_13" Grid.Column="18" Grid.Row="13" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn18_14" Grid.Column="18" Grid.Row="14" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn18_15" Grid.Column="18" Grid.Row="15" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn18_16" Grid.Column="18" Grid.Row="16" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn18_17" Grid.Column="18" Grid.Row="17" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn18_18" Grid.Column="18" Grid.Row="18" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn18_19" Grid.Column="18" Grid.Row="19" Content="Btn" Click="btn_Click"/>
+            <Button Name="btn18_01" Grid.Column="18" Grid.Row="1" Click="btn_Click">
+                <Image Name="img18_01"></Image>
+            </Button>
+            <Button Name="btn18_02" Grid.Column="18" Grid.Row="2" Click="btn_Click">
+                <Image Name="img18_02"></Image>
+            </Button>
+            <Button Name="btn18_03" Grid.Column="18" Grid.Row="3" Click="btn_Click">
+                <Image Name="img18_03"></Image>
+            </Button>
+            <Button Name="btn18_04" Grid.Column="18" Grid.Row="4" Click="btn_Click">
+                <Image Name="img18_04"></Image>
+            </Button>
+            <Button Name="btn18_05" Grid.Column="18" Grid.Row="5" Click="btn_Click">
+                <Image Name="img18_05"></Image>
+            </Button>
+            <Button Name="btn18_06" Grid.Column="18" Grid.Row="6" Click="btn_Click">
+                <Image Name="img18_06"></Image>
+            </Button>
+            <Button Name="btn18_07" Grid.Column="18" Grid.Row="7" Click="btn_Click">
+                <Image Name="img18_07"></Image>
+            </Button>
+            <Button Name="btn18_08" Grid.Column="18" Grid.Row="8" Click="btn_Click">
+                <Image Name="img18_08"></Image>
+            </Button>
+            <Button Name="btn18_09" Grid.Column="18" Grid.Row="9" Click="btn_Click">
+                <Image Name="img18_09"></Image>
+            </Button>
+            <Button Name="btn18_10" Grid.Column="18" Grid.Row="10" Click="btn_Click">
+                <Image Name="img18_10"></Image>
+            </Button>
+            <Button Name="btn18_11" Grid.Column="18" Grid.Row="11" Click="btn_Click">
+                <Image Name="img18_11"></Image>
+            </Button>
+            <Button Name="btn18_12" Grid.Column="18" Grid.Row="12" Click="btn_Click">
+                <Image Name="img18_12"></Image>
+            </Button>
+            <Button Name="btn18_13" Grid.Column="18" Grid.Row="13" Click="btn_Click">
+                <Image Name="img18_13"></Image>
+            </Button>
+            <Button Name="btn18_14" Grid.Column="18" Grid.Row="14" Click="btn_Click">
+                <Image Name="img18_14"></Image>
+            </Button>
+            <Button Name="btn18_15" Grid.Column="18" Grid.Row="15" Click="btn_Click">
+                <Image Name="img18_15"></Image>
+            </Button>
+            <Button Name="btn18_16" Grid.Column="18" Grid.Row="16" Click="btn_Click">
+                <Image Name="img18_16"></Image>
+            </Button>
+            <Button Name="btn18_17" Grid.Column="18" Grid.Row="17" Click="btn_Click">
+                <Image Name="img18_17"></Image>
+            </Button>
+            <Button Name="btn18_18" Grid.Column="18" Grid.Row="18" Click="btn_Click">
+                <Image Name="img18_18"></Image>
+            </Button>
+            <Button Name="btn18_19" Grid.Column="18" Grid.Row="19" Click="btn_Click">
+                <Image Name="img18_19"></Image>
+            </Button>
 
-            <Button Name="btn19_01" Grid.Column="19" Grid.Row="1" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn19_02" Grid.Column="19" Grid.Row="2" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn19_03" Grid.Column="19" Grid.Row="3" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn19_04" Grid.Column="19" Grid.Row="4" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn19_05" Grid.Column="19" Grid.Row="5" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn19_06" Grid.Column="19" Grid.Row="6" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn19_07" Grid.Column="19" Grid.Row="7" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn19_08" Grid.Column="19" Grid.Row="8" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn19_09" Grid.Column="19" Grid.Row="9" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn19_10" Grid.Column="19" Grid.Row="10" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn19_11" Grid.Column="19" Grid.Row="11" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn19_12" Grid.Column="19" Grid.Row="12" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn19_13" Grid.Column="19" Grid.Row="13" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn19_14" Grid.Column="19" Grid.Row="14" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn19_15" Grid.Column="19" Grid.Row="15" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn19_16" Grid.Column="19" Grid.Row="16" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn19_17" Grid.Column="19" Grid.Row="17" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn19_18" Grid.Column="19" Grid.Row="18" Content="Btn" Click="btn_Click"/>
-            <Button Name="btn19_19" Grid.Column="19" Grid.Row="19" Content="Btn" Click="btn_Click"/>
+            <Button Name="btn19_01" Grid.Column="19" Grid.Row="1" Click="btn_Click">
+                <Image Name="img19_01"></Image>
+            </Button>
+            <Button Name="btn19_02" Grid.Column="19" Grid.Row="2" Click="btn_Click">
+                <Image Name="img19_02"></Image>
+            </Button>
+            <Button Name="btn19_03" Grid.Column="19" Grid.Row="3" Click="btn_Click">
+                <Image Name="img19_03"></Image>
+            </Button>
+            <Button Name="btn19_04" Grid.Column="19" Grid.Row="4" Click="btn_Click">
+                <Image Name="img19_04"></Image>
+            </Button>
+            <Button Name="btn19_05" Grid.Column="19" Grid.Row="5" Click="btn_Click">
+                <Image Name="img19_05"></Image>
+            </Button>
+            <Button Name="btn19_06" Grid.Column="19" Grid.Row="6" Click="btn_Click">
+                <Image Name="img19_06"></Image>
+            </Button>
+            <Button Name="btn19_07" Grid.Column="19" Grid.Row="7" Click="btn_Click">
+                <Image Name="img19_07"></Image>
+            </Button>
+            <Button Name="btn19_08" Grid.Column="19" Grid.Row="8" Click="btn_Click">
+                <Image Name="img19_08"></Image>
+            </Button>
+            <Button Name="btn19_09" Grid.Column="19" Grid.Row="9" Click="btn_Click">
+                <Image Name="img19_09"></Image>
+            </Button>
+            <Button Name="btn19_10" Grid.Column="19" Grid.Row="10" Click="btn_Click">
+                <Image Name="img19_10"></Image>
+            </Button>
+            <Button Name="btn19_11" Grid.Column="19" Grid.Row="11" Click="btn_Click">
+                <Image Name="img19_11"></Image>
+            </Button>
+            <Button Name="btn19_12" Grid.Column="19" Grid.Row="12" Click="btn_Click">
+                <Image Name="img19_12"></Image>
+            </Button>
+            <Button Name="btn19_13" Grid.Column="19" Grid.Row="13" Click="btn_Click">
+                <Image Name="img19_13"></Image>
+            </Button>
+            <Button Name="btn19_14" Grid.Column="19" Grid.Row="14" Click="btn_Click">
+                <Image Name="img19_14"></Image>
+            </Button>
+            <Button Name="btn19_15" Grid.Column="19" Grid.Row="15" Click="btn_Click">
+                <Image Name="img19_15"></Image>
+            </Button>
+            <Button Name="btn19_16" Grid.Column="19" Grid.Row="16" Click="btn_Click">
+                <Image Name="img19_16"></Image>
+            </Button>
+            <Button Name="btn19_17" Grid.Column="19" Grid.Row="17" Click="btn_Click">
+                <Image Name="img19_17"></Image>
+            </Button>
+            <Button Name="btn19_18" Grid.Column="19" Grid.Row="18" Click="btn_Click">
+                <Image Name="img19_18"></Image>
+            </Button>
+            <Button Name="btn19_19" Grid.Column="19" Grid.Row="19" Click="btn_Click">
+                <Image Name="img19_19"></Image>
+            </Button>
 
-            <Label Grid.Column="0" Content="Player" FontSize="35"/>
-            <Label Grid.Column="20" Content="Player" FontSize="35"/>
+            <Label x:Name="Player1Name" Grid.Column="0" Content="Player" FontSize="35"/>
+            <Label Grid.Column="20" Content="Player" FontSize="35" x:Name="Player2Name"/>
         </Grid>
     </DockPanel>
 </Window>
