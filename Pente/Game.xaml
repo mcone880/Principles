@@ -1156,8 +1156,11 @@
                 <Image Name="img19_19"></Image>
             </Button>
 
-            <Label x:Name="Player1Name" Grid.Column="0" Content="Player" FontSize="35"/>
-            <Label Grid.Column="20" Content="Player" FontSize="35" x:Name="Player2Name"/>
+            <Label Name="Player1Name" Grid.Column="0" Content="Player" FontSize="35"/>
+            <Label Grid.Column="20" Content="Player" FontSize="35" Name="Player2Name"/>
+
+            <Label Name="Player1Steals" Grid.Column="0" Grid.Row="1" FontSize="30" Content="Steals"/>
+            <Label Name="Player2Steals" Grid.Column="20" Grid.Row="1" FontSize="30" Content="Steals"/>
         </Grid>
     </DockPanel>
 </Window>
