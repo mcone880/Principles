@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Game" Height="1200" Width="1680">
     <DockPanel>
-        <Grid ShowGridLines="True">
+        <Grid ShowGridLines="True" Name="Grid">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="200"/>
                 <ColumnDefinition Width="*"/>

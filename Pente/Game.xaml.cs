@@ -20,7 +20,7 @@ namespace Pente
     public class Player 
     {
         public string name;
-        public string color;
+        public Color color;
         public int points;
     } 
 
@@ -36,8 +36,12 @@ namespace Pente
         {
             p1.name = p1Name;
             p2.name = p2Name;
-            p1.color = p1Color;
-            p2.color = p2Color;
+            switch (p1Color)
+            {
+                case "black":
+                    p1.color = Brushes.Black.Color;
+                    break;
+            }
             InitializeComponent();
             //Set Player 1 has first player
             currentPlayer = p1;
@@ -46,38 +50,41 @@ namespace Pente
         private void btn_Click(object sender, RoutedEventArgs e)
         {
             Button btn = sender as Button;
+            int row = Grid.GetRow(btn);
+            int col = Grid.GetColumn(btn);
+
             //btn.Background = currentPlayer.color;
             if(currentPlayer.name == p1.name)
             {
-                board[1, 1] = 1;
+                board[row, col] = 1;
             }
             else
             {
-                board[1, 1] = 2;
+                board[row, col] = 2;
             }
 
-            currentPlayer.points += CheckSteals(board, 1, 1); //Needs actual values
+            currentPlayer.points += CheckSteals(board, row, col); //Needs actual values
             if(currentPlayer.points >= 10)
             {
-                PlayerWins(currentPlayer.name, currentPlayer.color);
+                //PlayerWins(currentPlayer.name, currentPlayer.color);
 
             }
             else
             {
-                switch (CheckVictory(board, 1, 1)) // Needs actual values
+                switch (CheckVictory(board, row, col)) // Needs actual values
                 {
                     case 3:
                         break;
                     case 4:
                         break;
                     case 5:
-                        PlayerWins(QueryCursorEvent.Name, currentPlayer.color);
+                        //PlayerWins(QueryCursorEvent.Name, currentPlayer.color);
                         break;
                     default:
                         break;
                 }
             }
-            
+            UpdateBoard();
             if(currentPlayer.name == p1.name)
             {
                 p1 = currentPlayer;
@@ -88,7 +95,7 @@ namespace Pente
                 p2 = currentPlayer;
                 currentPlayer = p1;
             }
-            UpdateGame(board);
+
         }
         //button being pressed
         //set colors / button
@@ -288,32 +295,32 @@ namespace Pente
         }
         //Opens up results window
 
-       public void UpdateGame(int[,] board)
-       {
-            //Updates the board with our values
-            for(int row = 1; row < 21; row++)
+        public void UpdateBoard()
+        {
+            for (int row = 1; row < 20; row++)
             {
-                for(int col = 1; col < 21; col++)
+                for (int col = 1; col < 20; col++)
                 {
-                    if(board[row, col] == 0)
+                    
+                    switch (board[row, col])
                     {
-                        //Enable the button
-                        //Clear colors
-                    }
-                    else if(board[row, col] == 1)
-                    {
-                        //Set button color to Player 1 color
-                        //Disable the button
-                    }
-                    else
-                    {
-                        //Set button color to Player 2 color
-                        //Disable the button
+                        case 0:
+                            //Switch Color to Grey
+                            //Find Button
+                            //Enable button
+                            break;
+                        case 1:
+                            //Switch to P1 Color
+                            //Disable Button
+                            break;
+                        case 2:
+                            //Switch to P2 Color
+                            //Disable Button
+                            break;
                     }
                 }
             }
-       }
-
+        }
 
     }
 }
