@@ -21,7 +21,7 @@ namespace Pente
     {
         public string name;
         public Color color;
-        public int points;
+        public int points = 0;
     } 
 
     public partial class Game : Window
@@ -45,6 +45,11 @@ namespace Pente
             InitializeComponent();
             //Set Player 1 has first player
             currentPlayer = p1;
+            UpdateBoard();
+        }
+        public Game()
+        {
+
         }
 
         private void btn_Click(object sender, RoutedEventArgs e)
@@ -52,7 +57,8 @@ namespace Pente
             Button btn = sender as Button;
             int row = Grid.GetRow(btn);
             int col = Grid.GetColumn(btn);
-
+            if (btn.Background != Brushes.Gray) return;
+            
             //btn.Background = currentPlayer.color;
             if(currentPlayer.name == p1.name)
             {
@@ -66,7 +72,7 @@ namespace Pente
             currentPlayer.points += CheckSteals(board, row, col); //Needs actual values
             if(currentPlayer.points >= 10)
             {
-                //PlayerWins(currentPlayer.name, currentPlayer.color);
+                PlayerWins(p1, p2, currentPlayer);
 
             }
             else
@@ -78,7 +84,7 @@ namespace Pente
                     case 4:
                         break;
                     case 5:
-                        //PlayerWins(QueryCursorEvent.Name, currentPlayer.color);
+                        PlayerWins(p1, p2, currentPlayer);
                         break;
                     default:
                         break;
@@ -131,8 +137,8 @@ namespace Pente
                 {
                     board[row - 1, col] = 0;
                     board[row - 2, col] = 0;
+                    pointsGained += 2;
                 }
-                pointsGained += 2;
             }
             //Check Down
             if (row + 3 < 21) 
@@ -144,8 +150,8 @@ namespace Pente
                 {
                     board[row + 1, col] = 0;
                     board[row + 2, col] = 0;
+                    pointsGained += 2;
                 }
-                pointsGained += 2;
             }
             //Check Left
             if (col - 3 > 0) 
@@ -157,8 +163,8 @@ namespace Pente
                 {
                     board[row, col - 1] = 0;
                     board[row, col - 2] = 0;
+                    pointsGained += 2;
                 }
-                pointsGained += 2;
             }
             //Check Right
             if(col + 3 < 21) 
@@ -170,8 +176,8 @@ namespace Pente
                 {
                     board[row, col + 1] = 0;
                     board[row, col + 2] = 0;
+                    pointsGained += 2;
                 }
-                pointsGained += 2;
             }
 
             //Check Top Left
@@ -184,8 +190,8 @@ namespace Pente
                 {
                     board[row - 1, col - 1] = 0;
                     board[row - 2, col - 2] = 0;
+                    pointsGained += 2;
                 }
-                pointsGained += 2;
             }
             //Check Top Right
             if(row - 3 > 0 && col + 3 < 21) {
@@ -196,8 +202,8 @@ namespace Pente
                 {
                     board[row - 1, col + 1] = 0;
                     board[row - 2, col + 2] = 0;
+                    pointsGained += 2;
                 }
-                pointsGained += 2;
             }
             //Check Bottom Left
             if(row + 3 < 21 && col - 3 > 0) {
@@ -208,8 +214,8 @@ namespace Pente
                 {
                     board[row + 1, col - 1] = 0;
                     board[row + 2, col - 2] = 0;
+                    pointsGained += 2;
                 }
-                pointsGained += 2;
             }
             //Check Bottom Right
             if(row + 3 < 21 && col + 3 < 21) {
@@ -220,8 +226,8 @@ namespace Pente
                 {
                     board[row + 1, col + 1] = 0;
                     board[row + 2, col + 2] = 0;
+                    pointsGained += 2;
                 }
-                pointsGained += 2;
             }
 
             return pointsGained;
@@ -287,7 +293,7 @@ namespace Pente
         }
 
 
-        public void PlayerWins(string playerName, string color)
+        public void PlayerWins(Player p1, Player p2, Player winner)
         {
             Results results = new Results();// Need to add a player who won
             results.Show();
@@ -297,25 +303,29 @@ namespace Pente
 
         public void UpdateBoard()
         {
+            Player1Name.Content = p1.name;
+            Player2Name.Content = p2.name;
+            Player1Steals.Content = "Steals: " + p1.points;
+            Player2Steals.Content = "Steals: " + p2.points;
             for (int row = 1; row < 20; row++)
             {
-                for (int col = 1; col < 20; col++)
+                for (int col = 1; col < 20; col++) 
                 {
-                    
+                    Button btn = Grid.Children.Cast<Button>().First(e => Grid.GetRow(e) == row && Grid.GetColumn(e) == col);
+
                     switch (board[row, col])
                     {
                         case 0:
-                            //Switch Color to Grey
-                            //Find Button
-                            //Enable button
+                            //Switch Color to Gray
+                            btn.Background = Brushes.Gray;
                             break;
                         case 1:
                             //Switch to P1 Color
-                            //Disable Button
+                            btn.Background = Brushes.White;
                             break;
                         case 2:
                             //Switch to P2 Color
-                            //Disable Button
+                            btn.Background = Brushes.Black;
                             break;
                     }
                 }
