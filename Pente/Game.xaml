@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Game" Height="1200" Width="1680">
     <DockPanel>
-        <Grid ShowGridLines="True">
+        <Grid ShowGridLines="True" Name="Grid">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="200"/>
                 <ColumnDefinition Width="*"/>
@@ -1156,11 +1156,11 @@
                 <Image Name="img19_19"></Image>
             </Button>
 
-            <Label Name="Player1Name" Grid.Column="0" Content="Player" FontSize="35"/>
-            <Label Grid.Column="20" Content="Player" FontSize="35" Name="Player2Name"/>
+            <Label Name="Player1Name" Grid.Column="0" Content="Player" FontSize="25"/>
+            <Label Grid.Column="20" Content="Player" FontSize="25" Name="Player2Name"/>
 
-            <Label Name="Player1Steals" Grid.Column="0" Grid.Row="1" FontSize="30" Content="Steals"/>
-            <Label Name="Player2Steals" Grid.Column="20" Grid.Row="1" FontSize="30" Content="Steals"/>
+            <Label Name="Player1Steals" Grid.Column="0" Grid.Row="1" FontSize="20" Content="Steals"/>
+            <Label Name="Player2Steals" Grid.Column="20" Grid.Row="1" FontSize="20" Content="Steals"/>
         </Grid>
     </DockPanel>
 </Window>

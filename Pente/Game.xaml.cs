@@ -20,8 +20,8 @@ namespace Pente
     public class Player 
     {
         public string name;
-        public string color;
-        public int points;
+        public Color color;
+        public int points = 0;
     } 
 
     public partial class Game : Window
@@ -36,20 +36,72 @@ namespace Pente
         {
             p1.name = p1Name;
             p2.name = p2Name;
-            p1.color = p1Color;
-            p2.color = p2Color;
+            switch (p1Color)
+            {
+                case "black":
+                    p1.color = Brushes.Black.Color;
+                    break;
+            }
             InitializeComponent();
             //Set Player 1 has first player
             currentPlayer = p1;
+            UpdateBoard();
+        }
+        public Game()
+        {
+
         }
 
         private void btn_Click(object sender, RoutedEventArgs e)
         {
             Button btn = sender as Button;
+            int row = Grid.GetRow(btn);
+            int col = Grid.GetColumn(btn);
+            if (btn.Background != Brushes.Gray) return;
+            
             //btn.Background = currentPlayer.color;
-            currentPlayer.points += CheckSteals(board, 1, 1); //Needs actual values
-            
-            
+            if(currentPlayer.name == p1.name)
+            {
+                board[row, col] = 1;
+            }
+            else
+            {
+                board[row, col] = 2;
+            }
+
+            currentPlayer.points += CheckSteals(board, row, col); //Needs actual values
+            if(currentPlayer.points >= 10)
+            {
+                PlayerWins(p1, p2, currentPlayer);
+
+            }
+            else
+            {
+                switch (CheckVictory(board, row, col)) // Needs actual values
+                {
+                    case 3:
+                        break;
+                    case 4:
+                        break;
+                    case 5:
+                        PlayerWins(p1, p2, currentPlayer);
+                        break;
+                    default:
+                        break;
+                }
+            }
+            UpdateBoard();
+            if(currentPlayer.name == p1.name)
+            {
+                p1 = currentPlayer;
+                currentPlayer = p2;
+            }
+            else
+            {
+                p2 = currentPlayer;
+                currentPlayer = p1;
+            }
+
         }
         //button being pressed
         //set colors / button
@@ -85,8 +137,8 @@ namespace Pente
                 {
                     board[row - 1, col] = 0;
                     board[row - 2, col] = 0;
+                    pointsGained += 2;
                 }
-                pointsGained += 2;
             }
             //Check Down
             if (row + 3 < 21) 
@@ -98,8 +150,8 @@ namespace Pente
                 {
                     board[row + 1, col] = 0;
                     board[row + 2, col] = 0;
+                    pointsGained += 2;
                 }
-                pointsGained += 2;
             }
             //Check Left
             if (col - 3 > 0) 
@@ -111,8 +163,8 @@ namespace Pente
                 {
                     board[row, col - 1] = 0;
                     board[row, col - 2] = 0;
+                    pointsGained += 2;
                 }
-                pointsGained += 2;
             }
             //Check Right
             if(col + 3 < 21) 
@@ -124,8 +176,8 @@ namespace Pente
                 {
                     board[row, col + 1] = 0;
                     board[row, col + 2] = 0;
+                    pointsGained += 2;
                 }
-                pointsGained += 2;
             }
 
             //Check Top Left
@@ -138,8 +190,8 @@ namespace Pente
                 {
                     board[row - 1, col - 1] = 0;
                     board[row - 2, col - 2] = 0;
+                    pointsGained += 2;
                 }
-                pointsGained += 2;
             }
             //Check Top Right
             if(row - 3 > 0 && col + 3 < 21) {
@@ -150,8 +202,8 @@ namespace Pente
                 {
                     board[row - 1, col + 1] = 0;
                     board[row - 2, col + 2] = 0;
+                    pointsGained += 2;
                 }
-                pointsGained += 2;
             }
             //Check Bottom Left
             if(row + 3 < 21 && col - 3 > 0) {
@@ -162,8 +214,8 @@ namespace Pente
                 {
                     board[row + 1, col - 1] = 0;
                     board[row + 2, col - 2] = 0;
+                    pointsGained += 2;
                 }
-                pointsGained += 2;
             }
             //Check Bottom Right
             if(row + 3 < 21 && col + 3 < 21) {
@@ -174,8 +226,8 @@ namespace Pente
                 {
                     board[row + 1, col + 1] = 0;
                     board[row + 2, col + 2] = 0;
+                    pointsGained += 2;
                 }
-                pointsGained += 2;
             }
 
             return pointsGained;
@@ -183,6 +235,8 @@ namespace Pente
 
         public int CheckVictory(int[,] board, int row, int col)
         {
+            //checks each direction for the longest line
+            //return the longest line
             int longestCount = 1;
             int playerCount = board[row, col];
             //up
@@ -209,14 +263,37 @@ namespace Pente
                 if (board[row, col - i] != playerCount) break;
                 if (longestCount < i) longestCount = i;
             }
+            //top left
+            for (int i = 1; i < 5; i++)
+            {
+                if (board[row - i, col - i] != playerCount) break;
+                if (longestCount < i) longestCount = i;
+            }
+            //top right
+            for (int i = 1; i < 5; i++)
+            {
+                if (board[row - i, col + i] != playerCount) break;
+                if (longestCount < i) longestCount = i;
+            }
+            //bottom left
+            for (int i = 1; i < 5; i++)
+            {
+                if (board[row + i, col - i] != playerCount) break;
+                if (longestCount < i) longestCount = i;
+            }
+            //bottom right
+            for (int i = 1; i < 5; i++)
+            {
+                if (board[row + i, col + i] != playerCount) break;
+                if (longestCount < i) longestCount = i;
+            }
+
 
             return longestCount;
         }
-        //checks each direction for the longest line
-        //return the longest line
 
 
-        public void PlayerWins(string playerName, string color)
+        public void PlayerWins(Player p1, Player p2, Player winner)
         {
             Results results = new Results();// Need to add a player who won
             results.Show();
@@ -224,8 +301,36 @@ namespace Pente
         }
         //Opens up results window
 
-       
+        public void UpdateBoard()
+        {
+            Player1Name.Content = p1.name;
+            Player2Name.Content = p2.name;
+            Player1Steals.Content = "Steals: " + p1.points;
+            Player2Steals.Content = "Steals: " + p2.points;
+            for (int row = 1; row < 20; row++)
+            {
+                for (int col = 1; col < 20; col++) 
+                {
+                    Button btn = Grid.Children.Cast<Button>().First(e => Grid.GetRow(e) == row && Grid.GetColumn(e) == col);
 
+                    switch (board[row, col])
+                    {
+                        case 0:
+                            //Switch Color to Gray
+                            btn.Background = Brushes.Gray;
+                            break;
+                        case 1:
+                            //Switch to P1 Color
+                            btn.Background = Brushes.White;
+                            break;
+                        case 2:
+                            //Switch to P2 Color
+                            btn.Background = Brushes.Black;
+                            break;
+                    }
+                }
+            }
+        }
 
     }
 }
