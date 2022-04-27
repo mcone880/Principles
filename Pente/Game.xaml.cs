@@ -47,9 +47,48 @@ namespace Pente
         {
             Button btn = sender as Button;
             //btn.Background = currentPlayer.color;
+            if(currentPlayer.name == p1.name)
+            {
+                board[1, 1] = 1;
+            }
+            else
+            {
+                board[1, 1] = 2;
+            }
+
             currentPlayer.points += CheckSteals(board, 1, 1); //Needs actual values
+            if(currentPlayer.points >= 10)
+            {
+                PlayerWins(currentPlayer.name, currentPlayer.color);
+
+            }
+            else
+            {
+                switch (CheckVictory(board, 1, 1)) // Needs actual values
+                {
+                    case 3:
+                        break;
+                    case 4:
+                        break;
+                    case 5:
+                        PlayerWins(QueryCursorEvent.Name, currentPlayer.color);
+                        break;
+                    default:
+                        break;
+                }
+            }
             
-            
+            if(currentPlayer.name == p1.name)
+            {
+                p1 = currentPlayer;
+                currentPlayer = p2;
+            }
+            else
+            {
+                p2 = currentPlayer;
+                currentPlayer = p1;
+            }
+            UpdateGame(board);
         }
         //button being pressed
         //set colors / button
@@ -183,6 +222,8 @@ namespace Pente
 
         public int CheckVictory(int[,] board, int row, int col)
         {
+            //checks each direction for the longest line
+            //return the longest line
             int longestCount = 1;
             int playerCount = board[row, col];
             //up
@@ -209,11 +250,34 @@ namespace Pente
                 if (board[row, col - i] != playerCount) break;
                 if (longestCount < i) longestCount = i;
             }
+            //top left
+            for (int i = 1; i < 5; i++)
+            {
+                if (board[row - i, col - i] != playerCount) break;
+                if (longestCount < i) longestCount = i;
+            }
+            //top right
+            for (int i = 1; i < 5; i++)
+            {
+                if (board[row - i, col + i] != playerCount) break;
+                if (longestCount < i) longestCount = i;
+            }
+            //bottom left
+            for (int i = 1; i < 5; i++)
+            {
+                if (board[row + i, col - i] != playerCount) break;
+                if (longestCount < i) longestCount = i;
+            }
+            //bottom right
+            for (int i = 1; i < 5; i++)
+            {
+                if (board[row + i, col + i] != playerCount) break;
+                if (longestCount < i) longestCount = i;
+            }
+
 
             return longestCount;
         }
-        //checks each direction for the longest line
-        //return the longest line
 
 
         public void PlayerWins(string playerName, string color)
@@ -224,7 +288,31 @@ namespace Pente
         }
         //Opens up results window
 
-       
+       public void UpdateGame(int[,] board)
+       {
+            //Updates the board with our values
+            for(int row = 1; row < 21; row++)
+            {
+                for(int col = 1; col < 21; col++)
+                {
+                    if(board[row, col] == 0)
+                    {
+                        //Enable the button
+                        //Clear colors
+                    }
+                    else if(board[row, col] == 1)
+                    {
+                        //Set button color to Player 1 color
+                        //Disable the button
+                    }
+                    else
+                    {
+                        //Set button color to Player 2 color
+                        //Disable the button
+                    }
+                }
+            }
+       }
 
 
     }
