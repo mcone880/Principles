@@ -19,7 +19,7 @@ namespace Pente
     /// </summary>
     public partial class Results : Window
     {
-        public Results()
+        public Results(string p1, string p2, string p1Color, string p2Color, string winner)
         {
             InitializeComponent();
         }
@@ -31,12 +31,14 @@ namespace Pente
 
         private void StartOverButton_Click(object sender, RoutedEventArgs e)
         {
-
+            MainWindow main = new MainWindow();
+            main.Show();
+            Close();
         }
 
         private void RematchButton_Click(object sender, RoutedEventArgs e)
         {
-
+            Application.Current.Shutdown();
         }
     }
 }
