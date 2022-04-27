@@ -23,5 +23,20 @@ namespace Pente
         {
             InitializeComponent();
         }
+
+        private void btnQuit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void StartOverButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RematchButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
