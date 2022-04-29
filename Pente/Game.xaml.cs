@@ -80,10 +80,10 @@ namespace Pente
                 switch (CheckVictory(board, row, col)) // Needs actual values
                 {
                     case 3:
-                        MessageBox.Show("Tria", "Lets Go!");
+                        MessageBox.Show("Tria!", currentPlayer.name);
                         break;
                     case 4:
-                        MessageBox.Show("Tessera", "Lets Go!");
+                        MessageBox.Show("Tessera!", currentPlayer.name);
                         break;
                     case 5:
                         PlayerWins(p1, p2, currentPlayer);
