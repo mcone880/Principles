@@ -35,9 +35,9 @@ namespace Pente
             string p2Color = P2color.Text.ToString();
 
             if (p1Name == "") p1Name = "Player 1";
-            if (p1Color == ".png") p1Color = "White";
+            if (p1Color == "") p1Color = "White";
             if (p2Name == "") p2Name = "Player 2";
-            if (p2Color == ".png") p2Color = "Black";
+            if (p2Color == "") p2Color = "Black";
             if (p1Name.Equals(p2Name))  
             {
                 MessageBox.Show("You can't choose the same name. Please choose a different name.", "Name Error");
