@@ -240,49 +240,49 @@ namespace Pente
             int longestCount = 1;
             int playerCount = board[row, col];
             //up
-            for (int i = 1; i < 5; i++)
+            for (int i = 0; i < 5; i++)
             {
                 if (board[row - i, col] != playerCount) break;
                 if (longestCount < i) longestCount = i;
             }
             //down
-            for(int i = 1; i < 5; i++)
+            for(int i = 0; i < 5; i++)
             {
                 if (board[row + i, col] != playerCount) break;
                 if (longestCount < i) longestCount = i;
             }
             //left
-            for (int i = 1; i < 5; i++)
-            {
-                if (board[row, col + i] != playerCount) break;
-                if (longestCount < i) longestCount = i;
-            }
-            //right
-            for (int i = 1; i < 5; i++)
+            for (int i = 0; i < 5; i++)
             {
                 if (board[row, col - i] != playerCount) break;
                 if (longestCount < i) longestCount = i;
             }
+            //right
+            for (int i = 0; i < 5; i++)
+            {
+                if (board[row, col + i] != playerCount) break;
+                if (longestCount < i) longestCount = i;
+            }
             //top left
-            for (int i = 1; i < 5; i++)
+            for (int i = 0; i < 5; i++)
             {
                 if (board[row - i, col - i] != playerCount) break;
                 if (longestCount < i) longestCount = i;
             }
             //top right
-            for (int i = 1; i < 5; i++)
+            for (int i = 0; i < 5; i++)
             {
                 if (board[row - i, col + i] != playerCount) break;
                 if (longestCount < i) longestCount = i;
             }
             //bottom left
-            for (int i = 1; i < 5; i++)
+            for (int i = 0; i < 5; i++)
             {
                 if (board[row + i, col - i] != playerCount) break;
                 if (longestCount < i) longestCount = i;
             }
             //bottom right
-            for (int i = 1; i < 5; i++)
+            for (int i = 0; i < 5; i++)
             {
                 if (board[row + i, col + i] != playerCount) break;
                 if (longestCount < i) longestCount = i;
