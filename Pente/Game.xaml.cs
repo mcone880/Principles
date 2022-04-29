@@ -20,7 +20,7 @@ namespace Pente
     public class Player 
     {
         public string name;
-        public Color color;
+        public string color;
         public int points = 0;
     } 
 
@@ -36,20 +36,12 @@ namespace Pente
         {
             p1.name = p1Name;
             p2.name = p2Name;
-            switch (p1Color)
-            {
-                case "black":
-                    p1.color = Brushes.Black.Color;
-                    break;
-            }
+            p1.color = p1Color;
+            p2.color = p2Color;
             InitializeComponent();
             //Set Player 1 has first player
             currentPlayer = p1;
             UpdateBoard();
-        }
-        public Game()
-        {
-
         }
 
         private void btn_Click(object sender, RoutedEventArgs e)
@@ -241,55 +233,71 @@ namespace Pente
             //return the longest line
             int longestCount = 0;
             int playerCount = board[row, col];
+            int count = 0;
             //up
             for (int i = 0; i < 5; i++)
             {
                 if (board[row - i, col] != playerCount) break;
-                if (longestCount < i + 1) longestCount = i + 1;
+                count++;
             }
             //down
             for(int i = 0; i < 5; i++)
             {
                 if (board[row + i, col] != playerCount) break;
-                if (longestCount < i + 1) longestCount = i + 1;
+                count++;
             }
+
+            count--;
+            if (longestCount < count) longestCount = count;
+            count = 0;
             //left
             for (int i = 0; i < 5; i++)
             {
                 if (board[row, col - i] != playerCount) break;
-                if (longestCount < i + 1) longestCount = i + 1;
+                count++;
             }
             //right
             for (int i = 0; i < 5; i++)
             {
                 if (board[row, col + i] != playerCount) break;
-                if (longestCount < i + 1) longestCount = i + 1;
+                count++;
             }
+
+            count--;
+            if (longestCount < count) longestCount = count;
+            count = 0;
             //top left
             for (int i = 0; i < 5; i++)
             {
                 if (board[row - i, col - i] != playerCount) break;
-                if (longestCount < i + 1) longestCount = i + 1;
-            }
-            //top right
-            for (int i = 0; i < 5; i++)
-            {
-                if (board[row - i, col + i] != playerCount) break;
-                if (longestCount < i + 1) longestCount = i + 1;
-            }
-            //bottom left
-            for (int i = 0; i < 5; i++)
-            {
-                if (board[row + i, col - i] != playerCount) break;
-                if (longestCount < i + 1) longestCount = i + 1;
+                count++;
             }
             //bottom right
             for (int i = 0; i < 5; i++)
             {
                 if (board[row + i, col + i] != playerCount) break;
-                if (longestCount < i + 1) longestCount = i + 1;
+                count++;
             }
 
+            count--;
+            if (longestCount < count) longestCount = count;
+            count = 0;
+
+            //top right
+            for (int i = 0; i < 5; i++)
+            {
+                if (board[row - i, col + i] != playerCount) break;
+                count++;
+            }
+            //bottom left
+            for (int i = 0; i < 5; i++)
+            {
+                if (board[row + i, col - i] != playerCount) break;
+                count++;
+            }
+
+            count--;
+            if (longestCount < count) longestCount = count;
 
             return longestCount;
         }
@@ -323,11 +331,64 @@ namespace Pente
                             break;
                         case 1:
                             //Switch to P1 Color
-                            btn.Background = Brushes.White;
+                            switch (p1.color)
+                            {
+                                case "Blue":
+                                    btn.Background = Brushes.Blue;
+                                    break;
+                                case "Black":
+                                    btn.Background = Brushes.Black;
+                                    break;
+                                case "Green":
+                                    btn.Background = Brushes.Green;
+                                    break;
+                                case "Orange":
+                                    btn.Background = Brushes.Orange;
+                                    break;
+                                case "Purple":
+                                    btn.Background = Brushes.Purple;
+                                    break;
+                                case "Red":
+                                    btn.Background = Brushes.Red;
+                                    break;
+                                case "White":
+                                    btn.Background = Brushes.White;
+                                    break;
+                                case "Yellow":
+                                    btn.Background = Brushes.Yellow;
+                                    break;
+                            }
+                            
                             break;
                         case 2:
                             //Switch to P2 Color
-                            btn.Background = Brushes.Black;
+                            switch (p2.color)
+                            {
+                                case "Blue":
+                                    btn.Background = Brushes.Blue;
+                                    break;
+                                case "Black":
+                                    btn.Background = Brushes.Black;
+                                    break;
+                                case "Green":
+                                    btn.Background = Brushes.Green;
+                                    break;
+                                case "Orange":
+                                    btn.Background = Brushes.Orange;
+                                    break;
+                                case "Purple":
+                                    btn.Background = Brushes.Purple;
+                                    break;
+                                case "Red":
+                                    btn.Background = Brushes.Red;
+                                    break;
+                                case "White":
+                                    btn.Background = Brushes.White;
+                                    break;
+                                case "Yellow":
+                                    btn.Background = Brushes.Yellow;
+                                    break;
+                            }
                             break;
                     }
                 }

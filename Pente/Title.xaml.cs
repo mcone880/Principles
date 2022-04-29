@@ -30,14 +30,14 @@ namespace Pente
         private void btnStart_Click(object sender, RoutedEventArgs e)
         {
             string p1Name = playerOne.Text.ToString();
-            string p1Color = P1color.Text.ToString() + ".png";
+            string p1Color = P1color.Text.ToString();
             string p2Name = playerTwo.Text.ToString();
-            string p2Color = P2color.Text.ToString() + ".png";
+            string p2Color = P2color.Text.ToString();
 
             if (p1Name == "") p1Name = "Player 1";
-            if (p1Color == ".png") p1Color = "White.png";
+            if (p1Color == ".png") p1Color = "White";
             if (p2Name == "") p2Name = "Player 2";
-            if (p2Color == ".png") p2Color = "Black.png";
+            if (p2Color == ".png") p2Color = "Black";
             if (p1Name.Equals(p2Name))  
             {
                 MessageBox.Show("You can't choose the same name. Please choose a different name.", "Name Error");
