@@ -38,6 +38,11 @@ namespace Pente
             if (p1Color == ".png") p1Color = "White.png";
             if (p2Name == "") p2Name = "Player 2";
             if (p2Color == ".png") p2Color = "Black.png";
+            if (p1Name.Equals(p2Name))  
+            {
+                MessageBox.Show("You can't choose the same name. Please choose a different name.", "Name Error");
+                return;
+            }
             if (p1Color.Equals(p2Color))
             {
                 MessageBox.Show("You can't choose the same color. The default for player 1 is white, the default for player 2 is black.", "Color Problem");

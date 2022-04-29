@@ -33,6 +33,7 @@ namespace Pente
             p2Color = p2color;
             ResultsWindow.Width = 815;
             ResultsWindow.Height = 475;
+            PlayerWinLabel.Content = winner + " Wins";
         }
 
         private void btnQuit_Click(object sender, RoutedEventArgs e)

@@ -1163,4 +1163,5 @@
             <Label Name="Player2Steals" Grid.Column="20" Grid.Row="1" FontSize="20" Content="Steals"/>
         </Grid>
     </DockPanel>
+
 </Window>
