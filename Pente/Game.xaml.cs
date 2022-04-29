@@ -133,7 +133,7 @@ namespace Pente
                 check1 = board[row - 1, col];
                 check2 = board[row - 2, col];
                 check3 = board[row - 3, col];
-                if(playerColor != check1 && playerColor != check2 && playerColor == check3)
+                if(playerColor == check3 && check2 == check1 && check2 != 0 && check1 != 0 && playerColor != check1)
                 {
                     board[row - 1, col] = 0;
                     board[row - 2, col] = 0;
@@ -146,7 +146,7 @@ namespace Pente
                 check1 = board[row + 1, col];
                 check2 = board[row + 2, col];
                 check3 = board[row + 3, col];
-                if (playerColor != check1 && playerColor != check2 && playerColor == check3)
+                if (playerColor == check3 && check2 == check1 && check2 != 0 && check1 != 0 && playerColor != check1)
                 {
                     board[row + 1, col] = 0;
                     board[row + 2, col] = 0;
@@ -159,7 +159,7 @@ namespace Pente
                 check1 = board[row, col - 1];
                 check2 = board[row, col - 2];
                 check3 = board[row, col - 3];
-                if (playerColor != check1 && playerColor != check2 && playerColor == check3)
+                if (playerColor == check3 && check2 == check1 && check2 != 0 && check1 != 0 && playerColor != check1)
                 {
                     board[row, col - 1] = 0;
                     board[row, col - 2] = 0;
@@ -172,7 +172,7 @@ namespace Pente
                 check1 = board[row, col + 1];
                 check2 = board[row, col + 2];
                 check3 = board[row, col + 3];
-                if (playerColor != check1 && playerColor != check2 && playerColor == check3)
+                if (playerColor == check3 && check2 == check1 && check2 != 0 && check1 != 0 && playerColor != check1)
                 {
                     board[row, col + 1] = 0;
                     board[row, col + 2] = 0;
@@ -186,7 +186,7 @@ namespace Pente
                 check1 = board[row - 1, col - 1];
                 check2 = board[row - 2, col - 2];
                 check3 = board[row - 3, col - 3];
-                if (playerColor != check1 && playerColor != check2 && playerColor == check3)
+                if (playerColor == check3 && check2 == check1 && check2 != 0 && check1 != 0 && playerColor != check1)
                 {
                     board[row - 1, col - 1] = 0;
                     board[row - 2, col - 2] = 0;
@@ -198,7 +198,7 @@ namespace Pente
                 check1 = board[row - 1, col + 1];
                 check2 = board[row - 2, col + 2];
                 check3 = board[row - 3, col + 3];
-                if (playerColor != check1 && playerColor != check2 && playerColor == check3)
+                if (playerColor == check3 && check2 == check1 && check2 != 0 && check1 != 0 && playerColor != check1)
                 {
                     board[row - 1, col + 1] = 0;
                     board[row - 2, col + 2] = 0;
@@ -210,7 +210,7 @@ namespace Pente
                 check1 = board[row + 1, col - 1];
                 check2 = board[row + 2, col - 2];
                 check3 = board[row + 3, col - 3];
-                if (playerColor != check1 && playerColor != check2 && playerColor == check3)
+                if (playerColor == check3 && check2 == check1 && check2 != 0 && check1 != 0 && playerColor != check1)
                 {
                     board[row + 1, col - 1] = 0;
                     board[row + 2, col - 2] = 0;
@@ -222,7 +222,7 @@ namespace Pente
                 check1 = board[row + 1, col + 1];
                 check2 = board[row + 2, col + 2];
                 check3 = board[row + 3, col + 3];
-                if (playerColor != check1 && playerColor != check2 && playerColor == check3)
+                if (playerColor == check3 && check2 == check1 && check2 != 0 && check1 != 0 && playerColor != check1)
                 {
                     board[row + 1, col + 1] = 0;
                     board[row + 2, col + 2] = 0;
