@@ -19,14 +19,25 @@ namespace Pente
     /// </summary>
     public partial class Results : Window
     {
-        public Results(string p1, string p2, string p1Color, string p2Color, string winner)
+        string p1Name;
+        string p2Name;
+        string p1Color;
+        string p2Color;
+
+        public Results(string p1, string p2, string p1color, string p2color, string winner)
         {
             InitializeComponent();
+            p1Name = p1;
+            p2Name = p2;
+            p1Color = p1color;
+            p2Color = p2color;
+            ResultsWindow.Width = 815;
+            ResultsWindow.Height = 475;
         }
 
         private void btnQuit_Click(object sender, RoutedEventArgs e)
         {
-
+            Application.Current.Shutdown();
         }
 
         private void StartOverButton_Click(object sender, RoutedEventArgs e)
@@ -38,7 +49,9 @@ namespace Pente
 
         private void RematchButton_Click(object sender, RoutedEventArgs e)
         {
-            Application.Current.Shutdown();
+            Game game = new Game(p1Name, p2Name, p1Color, p2Color);
+            game.Show();
+            Close();
         }
     }
 }

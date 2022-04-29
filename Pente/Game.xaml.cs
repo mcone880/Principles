@@ -295,7 +295,7 @@ namespace Pente
 
         public void PlayerWins(Player p1, Player p2, Player winner)
         {
-            Results results = new Results();// Need to add a player who won
+            Results results = new Results(p1.name, p2.name, p1.color.ToString(), p2.color.ToString(), winner.name);// Need to add a player who won
             results.Show();
             this.Close();
         }
