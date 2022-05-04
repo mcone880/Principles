@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.32002.261
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nim", "Nim\Nim.csproj", "{C5F80D92-D434-4753-9C5E-4DA5BDBFEDB6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pente", "Pente\Pente.csproj", "{C5296E11-5111-43E7-BBBA-37AB9786AF36}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pente", "Pente\Pente.csproj", "{C5296E11-5111-43E7-BBBA-37AB9786AF36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Casino", "Casino\Casino.csproj", "{58CABB4D-6E9F-488F-A02F-C509B910EE18}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{C5296E11-5111-43E7-BBBA-37AB9786AF36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5296E11-5111-43E7-BBBA-37AB9786AF36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5296E11-5111-43E7-BBBA-37AB9786AF36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58CABB4D-6E9F-488F-A02F-C509B910EE18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58CABB4D-6E9F-488F-A02F-C509B910EE18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58CABB4D-6E9F-488F-A02F-C509B910EE18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58CABB4D-6E9F-488F-A02F-C509B910EE18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
