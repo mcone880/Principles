@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="Poker" Height="450" Width="800">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Overall UI/Generic Felt Mat.jpeg"/>
+        </Grid.Background>
         
     </Grid>
 </Window>
