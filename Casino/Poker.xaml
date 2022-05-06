@@ -25,9 +25,14 @@
         <Button x:Name="btnRules" Content="RULES" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="25" FontSize="15" Click="btnRules_Click" />
         <Button x:Name="btnBet" Content="BET" Grid.Column="2" Grid.Row="2" Margin="10" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="100" Height="25" FontSize="15" Click="btnBet_Click" />
 
-        <WrapPanel Grid.Column="1" Grid.Row="2">
-            <Button x:Name="btnChip1" Content="Chip1" Width="50" Height="45" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Center" Click="btnChip1_Click" />
-            <Button x:Name="btnChip5" Content="Chip5" Width="50" Height="45" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Center" Click="btnChip5_Click" />
+        <WrapPanel Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button x:Name="btnChip1" Content="Chip1" Width="50" Height="45" Margin="10" Click="btnChip1_Click" />
+            <Button x:Name="btnChip5" Content="Chip5" Width="50" Height="45" Margin="10" Click="btnChip5_Click" />
+            <Button x:Name="btnChip10" Content="Chip10" Width="50" Height="45" Margin="10" Click="btnChip10_Click" />
+            <Button x:Name="btnChip20" Content="Chip20" Width="50" Height="45" Margin="10" Click="btnChip20_Click" />
+            <Button x:Name="btnChip50" Content="Chip50" Width="50" Height="45" Margin="10" Click="btnChip50_Click" />
+            <Button x:Name="btnChip100" Content="Chip100" Width="50" Height="45" Margin="10" Click="btnChip100_Click" />
+            <Button x:Name="btnChip1K" Content="Chip1K" Width="50" Height="45" Margin="10" Click="btnChip1K_Click" />
         </WrapPanel>
 
         <Border BorderThickness="2" BorderBrush="Black" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
@@ -35,5 +40,10 @@
                 Bets will be listed here.
             </TextBlock>
         </Border>
+
+        <StackPanel Grid.Column="2" Grid.Row="1" Margin="10" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+            <TextBlock x:Name="txtChips" Text="CHIPS:" FontSize="24" Foreground="White" FontWeight="Bold" />
+            <TextBlock x:Name="txtMoney" Text="$10,000" FontSize="24" Foreground="White" FontWeight="Bold" />
+        </StackPanel>
     </Grid>
 </Window>
