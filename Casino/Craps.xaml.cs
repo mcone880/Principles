@@ -22,6 +22,23 @@ namespace Casino
         public Craps(int money)
         {
             InitializeComponent();
+            lblMoney.Content = "Money: " + money.ToString();
         }
+
+        public int[] Roll()
+        {
+            Random r = new Random();
+            int dice1 = r.Next(1, 7);
+            int dice2 = r.Next(1, 7);
+            int total = dice1 + dice2;
+            int[] nums = new int[3];
+            nums[0] = dice1;
+            nums[1] = dice2;
+            nums[2] = total;
+
+            return nums;
+        }
+
+
     }
 }
