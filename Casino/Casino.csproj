@@ -7,11 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="GenericFeltMat.jpeg" />
+    <None Remove="Background.jpeg" />
+    <None Remove="Generic Felt Mat.jpeg" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="GenericFeltMat.jpeg" />
+    <Resource Include="Background.jpeg" />
+    <Resource Include="Generic Felt Mat.jpeg" />
   </ItemGroup>
 
 </Project>

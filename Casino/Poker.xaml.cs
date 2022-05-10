@@ -23,5 +23,27 @@ namespace Casino
         {
             InitializeComponent();
         }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e) // goes back to the game menu and closes this window 
+        {
+            GameSelection gameSelection = new GameSelection();
+            gameSelection.Show();
+            this.Close();
+        }
+
+        private void btnRules_Click(object sender, RoutedEventArgs e) // shows the game rules in a popup window 
+        {
+            MessageBox.Show("Poker Rules", "Poker Rules");
+        }
+
+        private void btnBet_Click(object sender, RoutedEventArgs e) // places bet and draws cards 
+        {
+
+        }
+
+        private void btnChip1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
