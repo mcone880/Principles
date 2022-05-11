@@ -45,5 +45,35 @@ namespace Casino
         {
 
         }
+
+        private void btnChip5_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnChip10_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnChip20_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnChip50_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnChip100_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnChip1K_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
