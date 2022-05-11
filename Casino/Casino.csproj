@@ -14,10 +14,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Assets\Craps\Dice1.png" />
     <None Remove="GenericFeltMat.jpeg" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Assets\Craps\Dice1.png" />
     <Resource Include="GenericFeltMat.jpeg" />
   </ItemGroup>
 

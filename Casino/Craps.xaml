@@ -39,5 +39,6 @@
                VerticalContentAlignment="Center" Name="lblMoney"/>
 
 
+        <Image Source="Assets/Craps/Dice1.png"/>
     </Grid>
 </Window>
