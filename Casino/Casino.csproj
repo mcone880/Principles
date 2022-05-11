@@ -8,10 +8,12 @@
 
   <ItemGroup>
     <None Remove="Assets\Overall UI\Slot Machine Icon.png" />
+    <None Remove="ButtonUp.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Assets\Overall UI\Slot Machine Icon.png" />
+    <Resource Include="ButtonUp.png" />
   </ItemGroup>
 
 </Project>
