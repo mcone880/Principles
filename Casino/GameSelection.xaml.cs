@@ -19,9 +19,46 @@ namespace Casino
     /// </summary>
     public partial class GameSelection : Window
     {
-        public GameSelection()
+        int bankAmount;
+        public GameSelection(int money)
         {
+            bankAmount = money;
             InitializeComponent();
+        }
+
+        private void PlayRoulette_Click(object sender, RoutedEventArgs e)
+        {
+            Roulette newWindow = new Roulette(bankAmount);
+            newWindow.Show();
+            this.Close();
+        }
+
+        private void PlayBlackJack_Click(object sender, RoutedEventArgs e)
+        {
+            Blackjack newWindow = new Blackjack(bankAmount);
+            newWindow.Show();
+            this.Close();
+        }
+
+        private void PlayPoker_Click(object sender, RoutedEventArgs e)
+        {
+            Poker newWindow = new Poker(bankAmount);
+            newWindow.Show();
+            this.Close();
+        }
+
+        private void PlayCraps_Click(object sender, RoutedEventArgs e)
+        {
+            Craps newWindow = new Craps(bankAmount);
+            newWindow.Show();
+            this.Close();
+        }
+
+        private void PlaySlots_Click(object sender, RoutedEventArgs e)
+        {
+            Slots newWindow = new Slots(bankAmount);
+            newWindow.Show();
+            this.Close();
         }
     }
 }
