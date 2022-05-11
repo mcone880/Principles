@@ -28,16 +28,6 @@ namespace Casino
             this.money = money;
         }
 
-        public void Spin()
-        {
-            //on click the spin
-
-            //for each slot display an random image 
-
-
-            checkForWin();
-        }
-
         private void checkForWin()
         {
             /*Cherry(4 in 10 per Wheel) - 15:1
@@ -58,6 +48,17 @@ namespace Casino
             GameSelection gameSelection = new GameSelection(money);
             gameSelection.Show();
             this.Close();
+        }
+
+        private void Spin_Click(object sender, RoutedEventArgs e)
+        {
+            /*Cherry(4 in 10 per Wheel) - 15:1
+              Bells(3 in 10 per Wheel) - 35:1
+              Bars(2 in 10 per Wheel) - 100:1
+              Sevens(1 in 10 per Wheel) - 1000:1*/
+            int payout = 1;
+            //check and calculate pay out
+            Payout(payout);
         }
     }
 }
