@@ -21,19 +21,23 @@
         </Grid.RowDefinitions>
 
         <Image x:Name="imgBoard" Stretch="Fill" Source="/Assets/Craps/CrapsBoard.png" Margin="0,0,0,10" Grid.Column="1" Grid.Row="0"/>
-        <Image Stretch="Fill" Visibility="Visible" Source="/Assets\Craps\Dice1.png" Margin="342,184,350,395" Width="105" Height="105"/>
-        <Image Stretch="Fill" Visibility="Hidden" Source="\Assets\Craps\Dice2.png" Margin="342,184,350,395" Width="105" Height="105"/>
-        <Image Stretch="Fill" Visibility="Hidden" Source="\Assets\Craps\Dice3.png" Margin="342,184,350,395" Width="105" Height="105"/>
-        <Image Stretch="Fill" Visibility="Hidden" Source="\Assets\Craps\Dice4.png" Margin="342,184,350,395" Width="105" Height="105"/>
-        <Image Stretch="Fill" Visibility="Hidden" Source="\Assets\Craps\Dice5.png" Margin="342,184,350,395" Width="105" Height="105"/>
-        <Image Stretch="Fill" Visibility="Hidden" Source="\Assets\Craps\Dice6.png" Margin="342,184,350,395" Width="105" Height="105"/>
-
-        <Image Stretch="Fill" Visibility="Visible" Source="/Assets\Craps\Dice1.png" Margin="145,184,550,395"/>
-        <Image Stretch="Fill" Visibility="Hidden" Source="\Assets\Craps\Dice2.png" Margin="145,184,550,395"/>
-        <Image Stretch="Fill" Visibility="Hidden" Source="\Assets\Craps\Dice3.png" Margin="145,184,550,395"/>
-        <Image Stretch="Fill" Visibility="Hidden" Source="\Assets\Craps\Dice4.png" Margin="145,184,550,395"/>
-        <Image Stretch="Fill" Visibility="Hidden" Source="\Assets\Craps\Dice5.png" Margin="145,184,550,395"/>
-        <Image Stretch="Fill" Visibility="Hidden" Source="\Assets\Craps\Dice6.png" Margin="145,184,550,395"/>
+        <Image Stretch="Fill" Visibility="Visible" Source="/Assets\Craps\Dice1.png" Margin="348,184,348,281" Width="105" Height="105"/>
+        <Image Stretch="Fill" Visibility="Visible" Source="/Assets\Craps\Dice2.png" Margin="348,184,348,281" Width="105" Height="105"/>
+        <Image Stretch="Fill" Visibility="Visible" Source="/Assets\Craps\Dice3.png" Margin="348,184,348,281" Width="105" Height="105"/>
+        <Image Stretch="Fill" Visibility="Visible" Source="/Assets\Craps\Dice4.png" Margin="348,184,348,281" Width="105" Height="105"/>
+        <Image Stretch="Fill" Visibility="Visible" Source="/Assets\Craps\Dice5.png" Margin="348,184,348,281" Width="105" Height="105"/>
+        <Image Stretch="Fill" Visibility="Visible" Source="/Assets\Craps\Dice6.png" Margin="348,184,347,281" Width="105" Height="105"/>
+        
+        <Image Stretch="Fill" Visibility="Visible" Source="/Assets\Craps\Dice1.png" Margin="130,184,565,281" Width="105" Height="105"/>
+        <Image Stretch="Fill" Visibility="Visible" Source="/Assets\Craps\Dice2.png" Margin="130,184,565,281" Width="105" Height="105"/>
+        <Image Stretch="Fill" Visibility="Visible" Source="/Assets\Craps\Dice3.png" Margin="130,184,565,281" Width="105" Height="105"/>
+        <Image Stretch="Fill" Visibility="Visible" Source="/Assets\Craps\Dice4.png" Margin="130,184,565,281" Width="105" Height="105"/>
+        <Image Stretch="Fill" Visibility="Visible" Source="/Assets\Craps\Dice5.png" Margin="130,184,565,281" Width="105" Height="105"/>
+        <Image Stretch="Fill" Visibility="Visible" Source="/Assets\Craps\Dice6.png" Margin="130,184,565,281" Width="105" Height="105"/>
+        
+        
+        
+        
         <Label Content="Money: " HorizontalAlignment="Left" Margin="580,465,0,0" VerticalAlignment="Top" 
                Height="95" Width="210" FontSize="24" BorderBrush="White" BorderThickness="2" 
                VerticalContentAlignment="Center" Name="lblMoney"/>
