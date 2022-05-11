@@ -19,8 +19,10 @@ namespace Casino
     /// </summary>
     public partial class Roulette : Window
     {
+        public int money;
         public Roulette(int money)
         {
+            this.money = money;
             InitializeComponent();
         }
 
@@ -31,8 +33,9 @@ namespace Casino
 
         private void Button_Back(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
+
+            GameSelection game = new GameSelection(money);
+            game.Show();
             this.Close();
         }
 
