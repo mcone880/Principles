@@ -7,13 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Assets\Overall UI\Slot Machine Icon.png" />
+    <Compile Remove="Assets\Overall UI\**" />
+    <EmbeddedResource Remove="Assets\Overall UI\**" />
+    <None Remove="Assets\Overall UI\**" />
+    <Page Remove="Assets\Overall UI\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Assets\Overall UI\Slot Machine Icon.png" />
-    <Resource Include="Background.jpeg" />
-    <Resource Include="Generic Felt Mat.jpeg" />
+    <None Remove="GenericFeltMat.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="GenericFeltMat.jpeg" />
   </ItemGroup>
 
 </Project>
