@@ -28,5 +28,17 @@ namespace Casino
             craps.Show();
             this.Hide();
         }
+
+        private void MainMenu(object sender, RoutedEventArgs e)
+        {
+            GameSelection gameSelection = new GameSelection(10000);
+            gameSelection.Show();
+            this.Close();
+        }
+
+        private void CreditsButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
