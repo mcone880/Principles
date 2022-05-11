@@ -8,14 +8,10 @@
 
   <ItemGroup>
     <None Remove="Assets\Overall UI\Slot Machine Icon.png" />
-    <None Remove="Background.jpeg" />
-    <None Remove="Generic Felt Mat.jpeg" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Assets\Overall UI\Slot Machine Icon.png" />
-    <Resource Include="Background.jpeg" />
-    <Resource Include="Generic Felt Mat.jpeg" />
   </ItemGroup>
 
 </Project>
