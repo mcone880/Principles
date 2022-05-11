@@ -42,7 +42,7 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            
+            <TextBlock Grid.Row="0" Grid.Column="5" Grid.ColumnSpan="7" FontWeight="Bold" FontSize="30" HorizontalAlignment="Center"  VerticalAlignment="Center" Foreground="Gold">ROULETTE WHEELE</TextBlock>
             <Button Grid.Row="4" Grid.Column="3" Content="1" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
             <Button Grid.Row="3" Grid.Column="3" Content="2" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
             <Button Grid.Row="2" Grid.Column="3" Content="3" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
@@ -93,10 +93,16 @@
             <Button Grid.Row="6" Grid.Column="7" Grid.ColumnSpan="2" FontSize="30" Content="Red" Foreground="White" Background="Red" Click="Button_Click"></Button>
             <Button Grid.Row="6" Grid.Column="9" Grid.ColumnSpan="2" FontSize="30" Content="Black" Foreground="White" Background="Black" Click="Button_Click"></Button>
             <Button Grid.Row="2" Grid.RowSpan="3" Grid.Column="2" Content="0" FontSize="50" Background="Green" Click="Button_Click"></Button>
-            <TextBlock Grid.Row="0" Grid.Column="16" Grid.ColumnSpan="2" Name="Currency" TextAlignment="Center"> Ammount</TextBlock>
+            <TextBlock Grid.Row="0" Grid.Column="14" Grid.ColumnSpan="4" Name="Currency" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"> Amount</TextBlock>
 
             <Button Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" Content="Back" FontSize="25" Click="Button_Back"></Button>
             <Button Grid.Row="8" Grid.Column="16" Grid.ColumnSpan="2" Content="Spin" FontSize="25" Click="Button_Spin"></Button>
+            <Button Grid.Row="8" Grid.Column="4"  Grid.ColumnSpan="2" Content="1 Chip" FontSize="15" Click="Button_Bet"></Button>
+            <Button Grid.Row="8" Grid.Column="6"  Grid.ColumnSpan="2" Content="5 Chip" FontSize="15" Click="Button_Bet"></Button>
+            <Button Grid.Row="8" Grid.Column="8"  Grid.ColumnSpan="2" Content="100 Chip" FontSize="15" Click="Button_Bet"></Button>
+            <Button Grid.Row="8" Grid.Column="10"  Grid.ColumnSpan="2" Content="500 Chip" FontSize="15" Click="Button_Bet"></Button>
+            <Button Grid.Row="8" Grid.Column="12"  Grid.ColumnSpan="2" Content="1000 Chip" FontSize="15" Click="Button_Bet"></Button>
+            <Image Source="/Assets/Roulette/RouletteWheel_SingleZero.png" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="5" Grid.RowSpan="3"></Image>
         </Grid> 
     </DockPanel>
 </Window>

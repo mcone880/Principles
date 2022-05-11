@@ -20,7 +20,9 @@
             <RowDefinition Height="4.5*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        
+
+        <Image Source="/Assets/Poker/PokerTable.png" Grid.Column="1" Grid.Row="1" />
+
         <Button x:Name="btnBack" Content="BACK" Grid.Row="2" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="100" Height="25" FontSize="15" Click="btnBack_Click" />
         <Button x:Name="btnRules" Content="RULES" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="25" FontSize="15" Click="btnRules_Click" />
         <Button x:Name="btnBet" Content="BET" Grid.Column="2" Grid.Row="2" Margin="10" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="100" Height="25" FontSize="15" Click="btnBet_Click" />

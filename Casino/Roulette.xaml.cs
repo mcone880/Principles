@@ -40,5 +40,10 @@ namespace Casino
         {
 
         }
+
+        private void Button_Bet(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
