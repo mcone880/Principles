@@ -20,10 +20,12 @@ namespace Casino
     public partial class Slots : Window
     {
         //public List<string> options = new { "Cherry", "Cherry", "Cherry", "Cherry", "Bells", "Bells", "Bells", "Bars", "Bars", "Sevens" };
+        int money;
 
         public Slots(int money)
         {
             InitializeComponent();
+            this.money = money;
         }
 
         public void Spin()
@@ -53,7 +55,7 @@ namespace Casino
         }
         private void btnBack_Click(object sender, RoutedEventArgs e) // goes back to the game menu and closes this window 
         {
-            GameSelection gameSelection = new GameSelection();
+            GameSelection gameSelection = new GameSelection(money);
             gameSelection.Show();
             this.Close();
         }
