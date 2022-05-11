@@ -25,8 +25,8 @@ namespace Casino
             InitializeComponent();
 
             Craps craps = new Craps(1000);
-            craps.Show();
-            this.Hide();
+            //craps.Show();
+            //this.Hide();
         }
 
         private void MainMenu(object sender, RoutedEventArgs e)

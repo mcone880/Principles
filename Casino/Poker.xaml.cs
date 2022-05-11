@@ -23,7 +23,6 @@ namespace Casino
 
         public Poker(int money)
         {
-            bankAmount = money; 
             InitializeComponent();
             this.money = money;
         }
