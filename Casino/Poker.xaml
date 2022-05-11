@@ -22,9 +22,10 @@
         </Grid.RowDefinitions>
 
         <Image Source="/Assets/Poker/PokerTable.png" Grid.Column="1" Grid.Row="1" />
+        <Image Source="/Assets/OverallUI/Poker Icon.png" />
 
         <Button x:Name="btnBack" Content="BACK" Grid.Row="2" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="100" Height="25" FontSize="15" Click="btnBack_Click" />
-        <Button x:Name="btnRules" Content="RULES" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="25" FontSize="15" Click="btnRules_Click" />
+        <Button x:Name="btnRules" Content="RULES" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="50" Height="20" FontSize="12" Click="btnRules_Click" />
         <Button x:Name="btnBet" Content="BET" Grid.Column="2" Grid.Row="2" Margin="10" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="100" Height="25" FontSize="15" Click="btnBet_Click" />
 
         <WrapPanel Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
@@ -38,8 +39,8 @@
         </WrapPanel>
 
         <Border BorderThickness="2" BorderBrush="Black" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <TextBlock x:Name="txtBets" VerticalAlignment="Center" HorizontalAlignment="Center" Height="275" Background="LightGreen">
-                Bets will be listed here.
+            <TextBlock x:Name="txtBets" VerticalAlignment="Center" HorizontalAlignment="Center" Padding="5" Width="130" Height="275" TextWrapping="Wrap" Background="LightGreen">
+                Bets will be listed in here. Extra works here for formatting purposes. 
             </TextBlock>
         </Border>
 
