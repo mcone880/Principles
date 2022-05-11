@@ -10,16 +10,12 @@
         <Grid.Background>
             <ImageBrush ImageSource="/GenericFeltMat.jpeg"/>
         </Grid.Background>
-        <Image Source="/CasinoIcon.png" Margin="155,32,155,136"/>
+        <!--<Image Source="/CasinoIcon.png" Margin="155,32,155,136"/> -->
         <Button x:Name="StartButton" Margin="309,316,309,40" Content="START" Click="MainMenu" FontSize="36" FontFamily="Bodoni MT Black" >
-            <Button.Background>
-                <ImageBrush ImageSource="/ButtonUp.png"/>
-            </Button.Background>
+            
         </Button>
         <Button x:Name="CreditsButton" Margin="642,356,32,24" Content="CREDITS" Click="CreditsButton_Click" FontSize="22" FontFamily="Bodoni MT Black" >
-            <Button.Background>
-                <ImageBrush ImageSource="/ButtonUp.png"/>
-            </Button.Background>
+           
         </Button>
 
     </Grid>
