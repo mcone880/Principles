@@ -7,6 +7,34 @@
         mc:Ignorable="d"
         Title="Slots" Height="450" Width="800">
     <Grid>
-        
+        <Grid.Background >
+            <ImageBrush ImageSource="/Generic Felt Mat.jpeg" />
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3.5*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="4.5*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Image Source="/Assets/Slots/Slot Machine Barrel.png" Grid.Column="1" HorizontalAlignment="Left" Height="239" Margin="48,0,0,0" VerticalAlignment="Top" Width="459" Grid.Row="1"/>
+        <Image Source="/Assets/Overall UI/Slot Machine Icon.png" HorizontalAlignment="Left" Height="49" Margin="33,10,0,0" VerticalAlignment="Top" Width="94"/>
+        <Button x:Name="btnBack" Content="BACK" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="25" FontSize="15" Click="btnBack_Click" Grid.Row="2" />
+        <Button x:Name="Spin" Content="Spin"  Margin="0,0,0,129" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="135" Height="54" FontSize="15" Click="Spin_Click" Grid.Column="2" Grid.Row="1" />
+
+        <StackPanel Grid.Column="2" Grid.Row="1" Margin="10" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+            <TextBlock x:Name="txtChips" Text="CHIPS:" FontSize="24" Foreground="White" FontWeight="Bold" />
+            <TextBlock x:Name="txtMoney" Text="$" FontSize="24" Foreground="White" FontWeight="Bold" />
+        </StackPanel>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Text="BET :" FontSize="36" FontWeight="Bold" Foreground="White" TextWrapping="Wrap" VerticalAlignment="Top" Height="47" Width="93" Margin="187,11,0,0"/>
+        <TextBlock  x:Name="Bet" Grid.Column="1" HorizontalAlignment="Left" Text="$" FontSize="36" FontWeight="Bold" Foreground="White" TextWrapping="Wrap" VerticalAlignment="Top" Height="47" Width="127" Margin="280,14,0,0"/>
+        <Image x:Name="I1" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="90,103,0,0" Grid.Row="1" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="I2" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="187,103,0,0" Grid.Row="1" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="I3" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="295,103,0,0" Grid.Row="1" VerticalAlignment="Top" Width="100"/>
+
     </Grid>
 </Window>

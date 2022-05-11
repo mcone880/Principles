@@ -5,8 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Casino"
         mc:Ignorable="d"
-        Title="Craps" Height="450" Width="800">
+        Title="Craps" Height="700" Width="800">
     <Grid>
-        
+        <Grid.Background>
+            <ImageBrush ImageSource="/GenericFeltMat.jpeg" />
+        </Grid.Background>
+
+        <Image x:Name="imgBoard" Stretch="Fill" Source="/Assets/Craps/CrapsBoard.png" Margin="0,0,0,135"/>
+        <Image Stretch="Fill" Visibility="Visible" Source="/Assets\Craps\Dice1.png" Margin="342,184,350,395" Width="105" Height="105"/>
+        <Image Stretch="Fill" Visibility="Hidden" Source="\Assets\Craps\Dice2.png" Margin="342,184,350,395" Width="105" Height="105"/>
+        <Image Stretch="Fill" Visibility="Hidden" Source="\Assets\Craps\Dice3.png" Margin="342,184,350,395" Width="105" Height="105"/>
+        <Image Stretch="Fill" Visibility="Hidden" Source="\Assets\Craps\Dice4.png" Margin="342,184,350,395" Width="105" Height="105"/>
+        <Image Stretch="Fill" Visibility="Hidden" Source="\Assets\Craps\Dice5.png" Margin="342,184,350,395" Width="105" Height="105"/>
+        <Image Stretch="Fill" Visibility="Hidden" Source="\Assets\Craps\Dice6.png" Margin="342,184,350,395" Width="105" Height="105"/>
+
+        <Image Stretch="Fill" Visibility="Visible" Source="/Assets\Craps\Dice1.png" Margin="145,184,550,395"/>
+        <Image Stretch="Fill" Visibility="Hidden" Source="\Assets\Craps\Dice2.png" Margin="145,184,550,395"/>
+        <Image Stretch="Fill" Visibility="Hidden" Source="\Assets\Craps\Dice3.png" Margin="145,184,550,395"/>
+        <Image Stretch="Fill" Visibility="Hidden" Source="\Assets\Craps\Dice4.png" Margin="145,184,550,395"/>
+        <Image Stretch="Fill" Visibility="Hidden" Source="\Assets\Craps\Dice5.png" Margin="145,184,550,395"/>
+        <Image Stretch="Fill" Visibility="Hidden" Source="\Assets\Craps\Dice6.png" Margin="145,184,550,395"/>
+        <Label Content="Money: " HorizontalAlignment="Left" Margin="580,454,0,0" VerticalAlignment="Top" 
+               Height="95" Width="210" FontSize="24" BorderBrush="White" BorderThickness="2" 
+               VerticalContentAlignment="Center" Name="lblMoney"/>
+
+
     </Grid>
 </Window>

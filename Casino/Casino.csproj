@@ -7,15 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="ButtonUp.png" />
-    <None Remove="CasinoIcon.png" />
-    <None Remove="GenericFeltMat.jpeg" />
+    <None Remove="Assets\Overall UI\Slot Machine Icon.png" />
+    <None Remove="Background.jpeg" />
+    <None Remove="Generic Felt Mat.jpeg" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="ButtonUp.png" />
-    <Resource Include="CasinoIcon.png" />
-    <Resource Include="GenericFeltMat.jpeg" />
+    <Resource Include="Assets\Overall UI\Slot Machine Icon.png" />
+    <Resource Include="Background.jpeg" />
+    <Resource Include="Generic Felt Mat.jpeg" />
   </ItemGroup>
 
 </Project>
