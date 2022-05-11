@@ -25,7 +25,8 @@ namespace Casino
             InitializeComponent();
 
             Craps craps = new Craps(1000);
-            //craps.Show();
+            //Poker poker = new Poker(1000);
+            //poker.Show();
             //this.Hide();
         }
 
