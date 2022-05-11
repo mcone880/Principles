@@ -21,4 +21,8 @@
     <Resource Include="GenericFeltMat.jpeg" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Assets\" />
+  </ItemGroup>
+
 </Project>
