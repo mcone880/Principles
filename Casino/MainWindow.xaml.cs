@@ -23,11 +23,6 @@ namespace Casino
         public MainWindow()
         {
             InitializeComponent();
-
-            Craps craps = new Craps(1000);
-            //Poker poker = new Poker(1000);
-            //poker.Show();
-            //this.Hide();
         }
 
         private void MainMenu(object sender, RoutedEventArgs e)
