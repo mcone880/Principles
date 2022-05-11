@@ -31,7 +31,7 @@ namespace Casino
 
         private void MainMenu(object sender, RoutedEventArgs e)
         {
-            GameSelection gameSelection = new GameSelection();
+            GameSelection gameSelection = new GameSelection(10000);
             gameSelection.Show();
             this.Close();
         }

@@ -10,27 +10,27 @@
         <Grid.Background>
             <ImageBrush ImageSource="/GenericFeltMat.jpeg"/>
         </Grid.Background>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="100,100,0,0" VerticalAlignment="Top" Width="150" Height="100">
+        <Button x:Name="PlayRoulette" Content="Button" HorizontalAlignment="Left" Margin="100,100,0,0" VerticalAlignment="Top" Width="150" Height="100" Click="PlayRoulette_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/CasinoIcon.png"/>
             </Button.Background>
         </Button>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="300,100,0,0" VerticalAlignment="Top" Width="150" Height="100">
+        <Button x:Name="PlayBlackJack" Content="Button" HorizontalAlignment="Left" Margin="300,100,0,0" VerticalAlignment="Top" Width="150" Height="100" Click="PlayBlackJack_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/CasinoIcon.png"/>
             </Button.Background>
         </Button>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="500,100,0,0" VerticalAlignment="Top" Width="150" Height="100">
+        <Button x:Name="PlayPoker" Content="Button" HorizontalAlignment="Left" Margin="500,100,0,0" VerticalAlignment="Top" Width="150" Height="100" Click="PlayPoker_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/CasinoIcon.png"/>
             </Button.Background>
         </Button>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="200,250,0,0" VerticalAlignment="Top" Width="150" Height="100">
+        <Button x:Name="PlayCraps" Content="Button" HorizontalAlignment="Left" Margin="200,250,0,0" VerticalAlignment="Top" Width="150" Height="100" Click="PlayCraps_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/CasinoIcon.png"/>
             </Button.Background>
         </Button>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="400,250,0,0" VerticalAlignment="Top" Width="150" Height="100">
+        <Button x:Name="PlaySlots" Content="Button" HorizontalAlignment="Left" Margin="400,250,0,0" VerticalAlignment="Top" Width="150" Height="100" Click="PlaySlots_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/CasinoIcon.png"/>
             </Button.Background>
