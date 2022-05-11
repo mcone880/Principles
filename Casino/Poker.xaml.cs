@@ -19,14 +19,16 @@ namespace Casino
     /// </summary>
     public partial class Poker : Window
     {
+        int bankAmount; 
         public Poker(int money)
         {
+            bankAmount = money; 
             InitializeComponent();
         }
 
         private void btnBack_Click(object sender, RoutedEventArgs e) // goes back to the game menu and closes this window 
         {
-            GameSelection gameSelection = new GameSelection();
+            GameSelection gameSelection = new GameSelection(bankAmount);
             gameSelection.Show();
             this.Close();
         }
