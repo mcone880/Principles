@@ -24,5 +24,17 @@ namespace Casino
         {
             InitializeComponent();
         }
+
+        private void MainMenu(object sender, RoutedEventArgs e)
+        {
+            GameSelection gameSelection = new GameSelection();
+            gameSelection.Show();
+            this.Close();
+        }
+
+        private void CreditsButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

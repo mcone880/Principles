@@ -6,4 +6,16 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="ButtonUp.png" />
+    <None Remove="CasinoIcon.png" />
+    <None Remove="GenericFeltMat.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="ButtonUp.png" />
+    <Resource Include="CasinoIcon.png" />
+    <Resource Include="GenericFeltMat.jpeg" />
+  </ItemGroup>
+
 </Project>
