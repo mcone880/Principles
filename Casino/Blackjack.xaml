@@ -11,6 +11,7 @@
             <ImageBrush ImageSource="/GenericFeltMat.jpeg"/>
         </Grid.Background>
 
+        <Image Source="Assets/OverallUI/BlackjackIcon.png" Margin="0,0,700,380"/>
         <Image Source="Assets/BlackJack/BlackJackTable.png"/>
     </Grid>
 </Window>
