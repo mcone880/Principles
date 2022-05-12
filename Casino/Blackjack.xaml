@@ -5,13 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Casino"
         mc:Ignorable="d"
-        Title="Blackjack" Height="450" Width="800">
+        Title="Blackjack" Height="800" Width="1500">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="/GenericFeltMat.jpeg"/>
         </Grid.Background>
 
-        <Image Source="Assets/OverallUI/BlackjackIcon.png" Margin="0,0,700,380"/>
-        <Image Source="Assets/BlackJack/BlackJackTable.png"/>
+        <Image Source="Assets/OverallUI/BlackjackIcon.png" Width="250" Height="150" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+        <Button Name="btnRules" Content="RULES" FontSize="20" FontFamily="Bodoni MT Black" Width="100" Height="35" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,171,0,0"/>
+        <Button Name="btnBack" Content="BACK" FontSize="50" FontFamily="Bodoni MT Black" Width="300" Height="70" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,0,10"/>
+        <Button Name="btnDeal" Content="DEAL" FontSize="50" FontFamily="Bodoni MT Black" Width="300" Height="70" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10"/>
+        <Button Name="btnStand" Content="STAND" FontSize="50" FontFamily="Bodoni MT Black" Width="300" Height="70" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,85" IsEnabled="False"/>
+
+        <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,689,0,0" Width="805" Height="100">
+            <Button Name="btnChip1" Content="1" Width="80" Height="70" FontSize="35" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="10"/>
+            <Button Name="btnChip5" Content="5" Width="80" Height="70" FontSize="35" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="10"/>
+            <Button Name="btnChip10" Content="10" Width="80" Height="70" FontSize="35" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="10"/>
+            <Button Name="btnChip20" Content="20" Width="80" Height="70" FontSize="35" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="10"/>
+            <Button Name="btnChip50" Content="50" Width="80" Height="70" FontSize="35" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="10"/>
+            <Button Name="btnChip100" Content="100" Width="80" Height="70" FontSize="35" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="10"/>
+            <Button Name="btnChip1k" Content="1k" Width="80" Height="70" FontSize="35" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="10"/>
+            <Button Name="btnChip5k" Content="5k" Width="80" Height="70" FontSize="35" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="10"/>
+        </WrapPanel>
+
+        <Label Content="CHIPS:" FontSize="35" FontFamily="Bodoni MT Black" HorizontalAlignment="Right" Margin="0,239,1303,495" Foreground="White"/>
+        <Label Name="Money" Content="$" FontSize="35" FontFamily="Bodoni MT Black" HorizontalAlignment="Right" Margin="0,320,1246,400" Width="238" Foreground="White"/>
+
+        <Image Source="Assets/BlackJack/BlackJackTable.png" HorizontalAlignment="Center" VerticalAlignment="Top" Height="645" Width="1040" Margin="0,25,0,0"/>
     </Grid>
 </Window>
