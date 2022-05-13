@@ -36,14 +36,22 @@ namespace Casino
 
         private void btnRules_Click(object sender, RoutedEventArgs e) // shows the game rules in a popup window 
         {
-            MessageBox.Show("Poker Rules", "Poker Rules");
+            MessageBox.Show("- Click Chips to Place Bets\n" +
+                "- Click Draw Button\n" +
+                "- Choose Which Cards to Keep\n" +
+                "- Click Draw Button Again to Get New Cards\n" +
+                "- Claim Winnings Based On Cards Drawn\n\n" +
+                "- Play Again or Exit\n", 
+                "Poker Rules");
         }
 
-        private void btnBet_Click(object sender, RoutedEventArgs e) // places bet and draws cards 
+        private void btnDraw_Click(object sender, RoutedEventArgs e) // places bet and draws cards 
         {
 
         }
 
+
+        // Chips Buttons
         private void btnChip1_Click(object sender, RoutedEventArgs e)
         {
 
@@ -77,6 +85,39 @@ namespace Casino
         private void btnChip1K_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        // Hold Cards
+        private void btnHold1_Click(object sender, RoutedEventArgs e)
+        {
+            if (lblHold1.Visibility == Visibility.Hidden) lblHold1.Visibility = Visibility.Visible;
+            else lblHold1.Visibility = Visibility.Hidden;
+
+        }
+
+        private void btnHold2_Click(object sender, RoutedEventArgs e)
+        {
+            if (lblHold2.Visibility == Visibility.Hidden) lblHold2.Visibility = Visibility.Visible;
+            else lblHold2.Visibility = Visibility.Hidden;
+
+        }
+
+        private void btnHold3_Click(object sender, RoutedEventArgs e)
+        {
+            if (lblHold3.Visibility == Visibility.Hidden) lblHold3.Visibility = Visibility.Visible;
+            else lblHold3.Visibility = Visibility.Hidden;
+        }
+
+        private void btnHold4_Click(object sender, RoutedEventArgs e)
+        {
+            if (lblHold4.Visibility == Visibility.Hidden) lblHold4.Visibility = Visibility.Visible;
+            else lblHold4.Visibility = Visibility.Hidden;
+        }
+
+        private void btnHold5_Click(object sender, RoutedEventArgs e)
+        {
+            if (lblHold5.Visibility == Visibility.Hidden) lblHold5.Visibility = Visibility.Visible;
+            else lblHold5.Visibility = Visibility.Hidden;
         }
     }
 }
