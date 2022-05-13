@@ -13,14 +13,15 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
 namespace Casino
-{ 
+{
     /// <summary>
-  /// Interaction logic for Slots.xaml
-  /// </summary>
+    /// Interaction logic for Slots.xaml
+    /// </summary>
     public partial class Slots : Window
     {
         //public List<string> options = new { "Cherry", "Cherry", "Cherry", "Cherry", "Bells", "Bells", "Bells", "Bars", "Bars", "Sevens" };
         int money;
+        bool betPlaysted;
 
         public Slots(int money)
         {

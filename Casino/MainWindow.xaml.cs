@@ -23,22 +23,19 @@ namespace Casino
         public MainWindow()
         {
             InitializeComponent();
-
-            Craps craps = new Craps(1000);
-            //craps.Show();
-            //this.Hide();
         }
 
         private void MainMenu(object sender, RoutedEventArgs e)
         {
-            GameSelection gameSelection = new GameSelection(10000);
+            GameSelection gameSelection = new GameSelection(10);
             gameSelection.Show();
             this.Close();
         }
 
         private void CreditsButton_Click(object sender, RoutedEventArgs e)
         {
-
+            Credits newWindow = new Credits();
+            newWindow.Show();
         }
     }
 }

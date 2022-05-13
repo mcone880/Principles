@@ -5,35 +5,48 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Casino"
         mc:Ignorable="d"
+        ResizeMode="NoResize"
         Title="GameSelection" Height="450" Width="800">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="/GenericFeltMat.jpeg"/>
+            <ImageBrush ImageSource="/Assets/OverallUI/GenericFeltMat.jpeg"/>
         </Grid.Background>
-        <Button x:Name="PlayRoulette" Content="Button" HorizontalAlignment="Left" Margin="100,100,0,0" VerticalAlignment="Top" Width="150" Height="100" Click="PlayRoulette_Click">
+
+        <Button x:Name="PlayRoulette" HorizontalAlignment="Left" Margin="100,100,0,0" VerticalAlignment="Top" Width="150" Height="100" Click="PlayRoulette_Click">
             <Button.Background>
-                <ImageBrush ImageSource="/CasinoIcon.png"/>
+                <ImageBrush ImageSource="/Assets/OverallUI/RouletteIcon.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="PlayBlackJack" Content="Button" HorizontalAlignment="Left" Margin="300,100,0,0" VerticalAlignment="Top" Width="150" Height="100" Click="PlayBlackJack_Click">
+        <Button x:Name="PlayBlackJack" HorizontalAlignment="Left" Margin="300,100,0,0" VerticalAlignment="Top" Width="150" Height="100" Click="PlayBlackJack_Click">
             <Button.Background>
-                <ImageBrush ImageSource="/CasinoIcon.png"/>
+                <ImageBrush ImageSource="/Assets/OverallUI/BlackjackIcon.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="PlayPoker" Content="Button" HorizontalAlignment="Left" Margin="500,100,0,0" VerticalAlignment="Top" Width="150" Height="100" Click="PlayPoker_Click">
+        <Button x:Name="PlayPoker" HorizontalAlignment="Left" Margin="500,100,0,0" VerticalAlignment="Top" Width="150" Height="100" Click="PlayPoker_Click">
             <Button.Background>
-                <ImageBrush ImageSource="/CasinoIcon.png"/>
+                <ImageBrush ImageSource="/Assets/OverallUI/PokerIcon.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="PlayCraps" Content="Button" HorizontalAlignment="Left" Margin="200,250,0,0" VerticalAlignment="Top" Width="150" Height="100" Click="PlayCraps_Click">
+        <Button x:Name="PlayCraps" HorizontalAlignment="Left" Margin="200,250,0,0" VerticalAlignment="Top" Width="150" Height="100" Click="PlayCraps_Click">
             <Button.Background>
-                <ImageBrush ImageSource="/CasinoIcon.png"/>
+                <ImageBrush ImageSource="/Assets/OverallUI/CrapsIcon.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="PlaySlots" Content="Button" HorizontalAlignment="Left" Margin="400,250,0,0" VerticalAlignment="Top" Width="150" Height="100" Click="PlaySlots_Click">
+        <Button x:Name="PlaySlots" HorizontalAlignment="Left" Margin="400,250,0,0" VerticalAlignment="Top" Width="150" Height="100" Click="PlaySlots_Click">
             <Button.Background>
-                <ImageBrush ImageSource="/CasinoIcon.png"/>
+                <ImageBrush ImageSource="/Assets/OverallUI/SlotMachineIcon.png"/>
             </Button.Background>
         </Button>
+        <Button x:Name="BackButton" Content="BACK" HorizontalAlignment="Left" Margin="30,350,0,0" VerticalAlignment="Top" Width="85" Height="50" FontSize="22" FontFamily="Bodoni MT Black" Click="BackButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/OverallUI/ButtonUp.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="BankButton" Content="BANK" Margin="0,350,30,0" VerticalAlignment="Top" Height="50" FontSize="22" FontFamily="Bodoni MT Black" HorizontalAlignment="Right" Width="85" Click="BankButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/OverallUI/ButtonUp.png"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="BankAmountLabel" Content="Chips: $0" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Height="64" Width="564" FontSize="36" FontFamily="Bodoni MT Black" Foreground="White" HorizontalContentAlignment="Center"/>
     </Grid>
 </Window>

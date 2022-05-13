@@ -19,9 +19,28 @@ namespace Casino
     /// </summary>
     public partial class Blackjack : Window
     {
+        int money;
+
         public Blackjack(int money)
         {
             InitializeComponent();
+            this.money = money;
+        }
+
+        //Go Back to Game Selection
+        private void BackClicked(object sender, RoutedEventArgs e)
+        {
+            GameSelection gameSelection = new GameSelection(money);
+            gameSelection.Show();
+
+            this.Close();
+        }
+
+        //Show Rules
+        private void RulesClicked(object sender, RoutedEventArgs e)
+        {
+            string message = "\t Objective: \n Win money by having the closest card total to 21, but nothing over 21. \n \t Hit: \n Take a card, up to 5 cards \n \t Stand: \n End turn \n \n Face Cards count as 10 whil Ace is 1";
+            MessageBox.Show(message, "Blackjack Rules");
         }
     }
 }
