@@ -93,7 +93,7 @@
             <Button Grid.Row="6" Grid.Column="7" Grid.ColumnSpan="2" FontSize="30" Content="Red" Foreground="White" Background="Red" Click="Button_Click"></Button>
             <Button Grid.Row="6" Grid.Column="9" Grid.ColumnSpan="2" FontSize="30" Content="Black" Foreground="White" Background="Black" Click="Button_Click"></Button>
             <Button Grid.Row="2" Grid.RowSpan="3" Grid.Column="2" Content="0" FontSize="50" Background="Green" Click="Button_Click"></Button>
-            <TextBlock Grid.Row="0" Grid.RowSpan="2" Grid.Column="14" Grid.ColumnSpan="4" Name="Currency" TextAlignment="Center" FontSize="20" Foreground="AliceBlue"> Amount </TextBlock>
+            <Label Grid.Row="0" Grid.RowSpan="2" Grid.Column="14" Grid.ColumnSpan="4" Name="Currency" FontSize="20" Foreground="AliceBlue"> Amount </Label>
 
             <Button Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" Content="Back" FontSize="25" Click="Button_Back"></Button>
             <Button Grid.Row="8" Grid.Column="16" Grid.ColumnSpan="2" Content="Spin" FontSize="25" Click="Button_Spin"></Button>

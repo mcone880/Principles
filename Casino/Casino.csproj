@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Assets\OverallUI\**" />
+    <EmbeddedResource Remove="Assets\OverallUI\**" />
+    <None Remove="Assets\OverallUI\**" />
+    <Page Remove="Assets\OverallUI\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Assets\BlackJack\BlackJackTable.png" />
     <None Remove="Assets\BlackJack\Cards\cardBack_blue1.png" />
     <None Remove="Assets\BlackJack\Cards\cardBack_blue2.png" />
@@ -87,28 +94,6 @@
     <None Remove="Assets\Craps\Dice4.png" />
     <None Remove="Assets\Craps\Dice5.png" />
     <None Remove="Assets\Craps\Dice6.png" />
-    <None Remove="Assets\OverallUI\ArrowDown.png" />
-    <None Remove="Assets\OverallUI\BlackjackIcon.png" />
-    <None Remove="Assets\OverallUI\ButtonDown.png" />
-    <None Remove="Assets\OverallUI\ButtonUp.png" />
-    <None Remove="Assets\OverallUI\CasinoIcon.png" />
-    <None Remove="Assets\OverallUI\Checkbox.png" />
-    <None Remove="Assets\OverallUI\Checkbox_mark.png" />
-    <None Remove="Assets\OverallUI\Chip1.png" />
-    <None Remove="Assets\OverallUI\Chip10.png" />
-    <None Remove="Assets\OverallUI\Chip100.png" />
-    <None Remove="Assets\OverallUI\Chip1000.png" />
-    <None Remove="Assets\OverallUI\Chip20.png" />
-    <None Remove="Assets\OverallUI\Chip5.png" />
-    <None Remove="Assets\OverallUI\Chip50.png" />
-    <None Remove="Assets\OverallUI\Chip500.png" />
-    <None Remove="Assets\OverallUI\Chip5000.png" />
-    <None Remove="Assets\OverallUI\ComingSoonStamp.png" />
-    <None Remove="Assets\OverallUI\CrapsIcon.png" />
-    <None Remove="Assets\OverallUI\GenericFeltMat.jpeg" />
-    <None Remove="Assets\OverallUI\PokerIcon.png" />
-    <None Remove="Assets\OverallUI\RouletteIcon.png" />
-    <None Remove="Assets\OverallUI\SlotMachineIcon.png" />
     <None Remove="Assets\Poker\PokerTable.png" />
     <None Remove="Assets\Roulette\CircleBlack.png" />
     <None Remove="Assets\Roulette\CircleGreen.png" />
@@ -209,28 +194,6 @@
     <Resource Include="Assets\Craps\Dice4.png" />
     <Resource Include="Assets\Craps\Dice5.png" />
     <Resource Include="Assets\Craps\Dice6.png" />
-    <Resource Include="Assets\OverallUI\ArrowDown.png" />
-    <Resource Include="Assets\OverallUI\BlackjackIcon.png" />
-    <Resource Include="Assets\OverallUI\ButtonDown.png" />
-    <Resource Include="Assets\OverallUI\ButtonUp.png" />
-    <Resource Include="Assets\OverallUI\CasinoIcon.png" />
-    <Resource Include="Assets\OverallUI\Checkbox.png" />
-    <Resource Include="Assets\OverallUI\Checkbox_mark.png" />
-    <Resource Include="Assets\OverallUI\Chip1.png" />
-    <Resource Include="Assets\OverallUI\Chip10.png" />
-    <Resource Include="Assets\OverallUI\Chip100.png" />
-    <Resource Include="Assets\OverallUI\Chip1000.png" />
-    <Resource Include="Assets\OverallUI\Chip20.png" />
-    <Resource Include="Assets\OverallUI\Chip5.png" />
-    <Resource Include="Assets\OverallUI\Chip50.png" />
-    <Resource Include="Assets\OverallUI\Chip500.png" />
-    <Resource Include="Assets\OverallUI\Chip5000.png" />
-    <Resource Include="Assets\OverallUI\ComingSoonStamp.png" />
-    <Resource Include="Assets\OverallUI\CrapsIcon.png" />
-    <Resource Include="Assets\OverallUI\GenericFeltMat.jpeg" />
-    <Resource Include="Assets\OverallUI\PokerIcon.png" />
-    <Resource Include="Assets\OverallUI\RouletteIcon.png" />
-    <Resource Include="Assets\OverallUI\SlotMachineIcon.png" />
     <Resource Include="Assets\Poker\PokerTable.png" />
     <Resource Include="Assets\Roulette\CircleBlack.png" />
     <Resource Include="Assets\Roulette\CircleGreen.png" />
