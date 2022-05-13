@@ -1,4 +1,5 @@
 ﻿<Window x:Class="Casino.Craps"
+        x:Name="CrapsWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -20,27 +21,40 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
+        <Button x:Name="BackButton" Margin="10,29,618,28" Content="BACK" Click="BackButton_Click" FontSize="36" FontFamily="Bodoni MT Black" Grid.Row="1">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/OverallUI/ButtonUp.png"/>
+            </Button.Background>
+        </Button>
+
         <Image x:Name="imgBoard" Stretch="Fill" Source="/Assets/Craps/CrapsBoard.png" Margin="0,0,0,10" Grid.Column="1" Grid.Row="0"/>
-        <Image Stretch="Fill" Visibility="Visible" Source="/Assets\Craps\Dice1.png" Margin="348,184,348,281" Width="105" Height="105"/>
-        <Image Stretch="Fill" Visibility="Visible" Source="/Assets\Craps\Dice2.png" Margin="348,184,348,281" Width="105" Height="105"/>
-        <Image Stretch="Fill" Visibility="Visible" Source="/Assets\Craps\Dice3.png" Margin="348,184,348,281" Width="105" Height="105"/>
-        <Image Stretch="Fill" Visibility="Visible" Source="/Assets\Craps\Dice4.png" Margin="348,184,348,281" Width="105" Height="105"/>
-        <Image Stretch="Fill" Visibility="Visible" Source="/Assets\Craps\Dice5.png" Margin="348,184,348,281" Width="105" Height="105"/>
-        <Image Stretch="Fill" Visibility="Visible" Source="/Assets\Craps\Dice6.png" Margin="348,184,347,281" Width="105" Height="105"/>
         
-        <Image Stretch="Fill" Visibility="Visible" Source="/Assets\Craps\Dice1.png" Margin="130,184,565,281" Width="105" Height="105"/>
-        <Image Stretch="Fill" Visibility="Visible" Source="/Assets\Craps\Dice2.png" Margin="130,184,565,281" Width="105" Height="105"/>
-        <Image Stretch="Fill" Visibility="Visible" Source="/Assets\Craps\Dice3.png" Margin="130,184,565,281" Width="105" Height="105"/>
-        <Image Stretch="Fill" Visibility="Visible" Source="/Assets\Craps\Dice4.png" Margin="130,184,565,281" Width="105" Height="105"/>
-        <Image Stretch="Fill" Visibility="Visible" Source="/Assets\Craps\Dice5.png" Margin="130,184,565,281" Width="105" Height="105"/>
-        <Image Stretch="Fill" Visibility="Visible" Source="/Assets\Craps\Dice6.png" Margin="130,184,565,281" Width="105" Height="105"/>
-        
-        
-        
-        
+        <Image x:Name="Col2Dice1" Stretch="Fill" Visibility="Hidden" Source="/Assets\Craps\Dice1.png" Margin="348,184,348,281" Width="105" Height="105"/>
+        <Image x:Name="Col2Dice2" Stretch="Fill" Visibility="Hidden" Source="/Assets\Craps\Dice2.png" Margin="348,184,348,281" Width="105" Height="105"/>
+        <Image x:Name="Col2Dice3" Stretch="Fill" Visibility="Hidden" Source="/Assets\Craps\Dice3.png" Margin="348,184,348,281" Width="105" Height="105"/>
+        <Image x:Name="Col2Dice4" Stretch="Fill" Visibility="Hidden" Source="/Assets\Craps\Dice4.png" Margin="348,184,348,281" Width="105" Height="105"/>
+        <Image x:Name="Col2Dice5" Stretch="Fill" Visibility="Hidden" Source="/Assets\Craps\Dice5.png" Margin="348,184,348,281" Width="105" Height="105"/>
+        <Image x:Name="Col2Dice6" Stretch="Fill" Visibility="Hidden" Source="/Assets\Craps\Dice6.png" Margin="348,184,347,281" Width="105" Height="105"/>
+                                                            
+        <Image x:Name="Col1Dice1" Stretch="Fill" Visibility="Hidden" Source="/Assets\Craps\Dice1.png" Margin="130,184,565,281" Width="105" Height="105"/>
+        <Image x:Name="Col1Dice2" Stretch="Fill" Visibility="Hidden" Source="/Assets\Craps\Dice2.png" Margin="130,184,565,281" Width="105" Height="105"/>
+        <Image x:Name="Col1Dice3" Stretch="Fill" Visibility="Hidden" Source="/Assets\Craps\Dice3.png" Margin="130,184,565,281" Width="105" Height="105"/>
+        <Image x:Name="Col1Dice4" Stretch="Fill" Visibility="Hidden" Source="/Assets\Craps\Dice4.png" Margin="130,184,565,281" Width="105" Height="105"/>
+        <Image x:Name="Col1Dice5" Stretch="Fill" Visibility="Hidden" Source="/Assets\Craps\Dice5.png" Margin="130,184,565,281" Width="105" Height="105"/>
+        <Image x:Name="Col1Dice6" Stretch="Fill" Visibility="Hidden" Source="/Assets\Craps\Dice6.png" Margin="130,184,565,281" Width="105" Height="105"/>
+
+
+
+
         <Label Content="Money: " HorizontalAlignment="Left" Margin="580,465,0,0" VerticalAlignment="Top" 
                Height="95" Width="210" FontSize="24" BorderBrush="White" BorderThickness="2" 
                VerticalContentAlignment="Center" Name="lblMoney"/>
+        
+        <Button x:Name="RollButton" Margin="618,29,10,28" Content="ROLL" Click="RollButton_Click" FontSize="36" FontFamily="Bodoni MT Black" Grid.Row="1">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/OverallUI/ButtonUp.png"/>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Window>
