@@ -5,13 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Casino"
         mc:Ignorable="d"
-        Title="Roulette" Height="450" Width="800">
+        Title="Roulette" Height="450" Width="900">
     <DockPanel>
         <Grid >
             <Grid.Background>
                 <ImageBrush ImageSource="/GenericFeltMat.jpeg"></ImageBrush>
             </Grid.Background>
             <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
@@ -42,67 +46,69 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <TextBlock Grid.Row="0" Grid.Column="5" Grid.ColumnSpan="7" FontWeight="Bold" FontSize="30" HorizontalAlignment="Center"  VerticalAlignment="Center" Foreground="Gold">ROULETTE WHEEL</TextBlock>
-            <Button Grid.Row="4" Grid.Column="3" Content="1" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
-            <Button Grid.Row="3" Grid.Column="3" Content="2" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
-            <Button Grid.Row="2" Grid.Column="3" Content="3" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
-            <Button Grid.Row="4" Grid.Column="4" Content="4" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
-            <Button Grid.Row="3" Grid.Column="4" Content="5" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
-            <Button Grid.Row="2" Grid.Column="4" Content="6" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
-            <Button Grid.Row="4" Grid.Column="5" Content="7" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
-            <Button Grid.Row="3" Grid.Column="5" Content="8" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
-            <Button Grid.Row="2" Grid.Column="5" Content="9" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
-            <Button Grid.Row="4" Grid.Column="6" Content="10" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
-            <Button Grid.Row="3" Grid.Column="6" Content="11" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
-            <Button Grid.Row="2" Grid.Column="6" Content="12" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
-            <Button Grid.Row="4" Grid.Column="7" Content="13" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
-            <Button Grid.Row="3" Grid.Column="7" Content="14" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
-            <Button Grid.Row="2" Grid.Column="7" Content="15" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
-            <Button Grid.Row="4" Grid.Column="8" Content="16" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
-            <Button Grid.Row="3" Grid.Column="8" Content="17" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
-            <Button Grid.Row="2" Grid.Column="8" Content="18" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
-            <Button Grid.Row="4" Grid.Column="9" Content="19" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
-            <Button Grid.Row="3" Grid.Column="9" Content="20" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
-            <Button Grid.Row="2" Grid.Column="9" Content="21" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
-            <Button Grid.Row="4" Grid.Column="10" Content="22" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
-            <Button Grid.Row="3" Grid.Column="10" Content="23" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
-            <Button Grid.Row="2" Grid.Column="10" Content="24" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
-            <Button Grid.Row="4" Grid.Column="11" Content="25" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
-            <Button Grid.Row="3" Grid.Column="11" Content="26" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
-            <Button Grid.Row="2" Grid.Column="11" Content="27" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
-            <Button Grid.Row="4" Grid.Column="12" Content="28" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
-            <Button Grid.Row="3" Grid.Column="12" Content="29" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
-            <Button Grid.Row="2" Grid.Column="12" Content="30" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
-            <Button Grid.Row="2" Grid.Column="13" Content="33" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
-            <Button Grid.Row="3" Grid.Column="13" Content="32" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
-            <Button Grid.Row="4" Grid.Column="13" Content="31" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
-            <Button Grid.Row="2" Grid.Column="14" Content="36" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
-            <Button Grid.Row="3" Grid.Column="14" Content="35" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
-            <Button Grid.Row="4" Grid.Column="14" Content="34" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
-            <Button Grid.Row="4" Grid.Column="15" Content="2 to 1" FontSize="10" Click="Button_Click" Foreground="White" Background="Green"></Button>
-            <Button Grid.Row="3" Grid.Column="15" Content="2 to 1" FontSize="10" Click="Button_Click" Foreground="White" Background="Green"></Button>
-            <Button Grid.Row="2" Grid.Column="15" Content="2 to 1" FontSize="10" Click="Button_Click" Foreground="White" Background="Green"></Button>
+            <TextBlock Grid.Row="0" Grid.Column="7" Grid.ColumnSpan="7" FontWeight="Bold" FontSize="30" HorizontalAlignment="Center"  VerticalAlignment="Center" Foreground="Gold">ROULETTE WHEEL</TextBlock>
+            <Button Grid.Row="4" Grid.Column="5" Content="1" FontSize="35" Click="Button_Click" Foreground="White" Background="Red" Height="48" VerticalAlignment="Top"></Button>
+            <Button Grid.Row="3" Grid.Column="5" Content="2" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
+            <Button Grid.Row="2" Grid.Column="5" Content="3" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
+            <Button Grid.Row="4" Grid.Column="6" Content="4" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
+            <Button Grid.Row="3" Grid.Column="6" Content="5" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
+            <Button Grid.Row="2" Grid.Column="6" Content="6" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
+            <Button Grid.Row="4" Grid.Column="7" Content="7" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
+            <Button Grid.Row="3" Grid.Column="7" Content="8" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
+            <Button Grid.Row="2" Grid.Column="7" Content="9" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
+            <Button Grid.Row="4" Grid.Column="8" Content="10" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
+            <Button Grid.Row="3" Grid.Column="8" Content="11" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
+            <Button Grid.Row="2" Grid.Column="8" Content="12" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
+            <Button Grid.Row="4" Grid.Column="9" Content="13" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
+            <Button Grid.Row="3" Grid.Column="9" Content="14" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
+            <Button Grid.Row="2" Grid.Column="9" Content="15" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
+            <Button Grid.Row="4" Grid.Column="10" Content="16" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
+            <Button Grid.Row="3" Grid.Column="10" Content="17" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
+            <Button Grid.Row="2" Grid.Column="10" Content="18" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
+            <Button Grid.Row="4" Grid.Column="11" Content="19" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
+            <Button Grid.Row="3" Grid.Column="11" Content="20" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
+            <Button Grid.Row="2" Grid.Column="11" Content="21" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
+            <Button Grid.Row="4" Grid.Column="12" Content="22" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
+            <Button Grid.Row="3" Grid.Column="12" Content="23" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
+            <Button Grid.Row="2" Grid.Column="12" Content="24" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
+            <Button Grid.Row="4" Grid.Column="13" Content="25" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
+            <Button Grid.Row="3" Grid.Column="13" Content="26" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
+            <Button Grid.Row="2" Grid.Column="13" Content="27" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
+            <Button Grid.Row="4" Grid.Column="14" Content="28" FontSize="35" Click="Button_Click" Foreground="White" Background="Black" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="41"></Button>
+            <Button Grid.Row="3" Grid.Column="14" Content="29" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
+            <Button Grid.Row="2" Grid.Column="14" Content="30" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
+            <Button Grid.Row="2" Grid.Column="15" Content="33" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
+            <Button Grid.Row="3" Grid.Column="15" Content="32" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
+            <Button Grid.Row="4" Grid.Column="15" Content="31" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
+            <Button Grid.Row="2" Grid.Column="16" Content="36" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
+            <Button Grid.Row="3" Grid.Column="16" Content="35" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
+            <Button Grid.Row="4" Grid.Column="16" Content="34" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
+            <Button Grid.Row="4" Grid.Column="17" Content="2 to 1" FontSize="10" Click="Button_Click" Foreground="White" Background="Green"></Button>
+            <Button Grid.Row="3" Grid.Column="17" Content="2 to 1" FontSize="10" Click="Button_Click" Foreground="White" Background="Green"></Button>
+            <Button Grid.Row="2" Grid.Column="17" Content="2 to 1" FontSize="10" Click="Button_Click" Foreground="White" Background="Green"></Button>
 
-            <Button Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="4" Content="1st 12" FontSize="30" Click="Button_Click" Foreground="White" Background="Green"></Button>
-            <Button Grid.Row="5" Grid.Column="7" Grid.ColumnSpan="4" Content="2nd 12" FontSize="30" Click="Button_Click" Foreground="White" Background="Green"></Button>
-            <Button Grid.Row="5" Grid.Column="11" Grid.ColumnSpan="4" Content="3rd 12" FontSize="30" Click="Button_Click" Foreground="White" Background="Green"></Button>
-            <Button Grid.Row="6" Grid.Column="3" Grid.ColumnSpan="2" Content="1-18" FontSize="30" Click="Button_Click" Foreground="White" Background="Green"></Button>
-            <Button Grid.Row="6" Grid.Column="13" Grid.ColumnSpan="2" Content="19-36" FontSize="30" Click="Button_Click" Foreground="White" Background="Green"></Button>
-            <Button Grid.Row="6" Grid.Column="5" Grid.ColumnSpan="2" Content="Even" FontSize="30" Click="Button_Click" Foreground="White" Background="Green"></Button>
-            <Button Grid.Row="6" Grid.Column="11" Grid.ColumnSpan="2" Content="Odd" FontSize="30" Click="Button_Click" Foreground="White" Background="Green"></Button>
-            <Button Grid.Row="6" Grid.Column="7" Grid.ColumnSpan="2" FontSize="30" Content="Red" Foreground="White" Background="Red" Click="Button_Click"></Button>
-            <Button Grid.Row="6" Grid.Column="9" Grid.ColumnSpan="2" FontSize="30" Content="Black" Foreground="White" Background="Black" Click="Button_Click"></Button>
-            <Button Grid.Row="2" Grid.RowSpan="3" Grid.Column="2" Content="0" FontSize="50" Background="Green" Click="Button_Click"></Button>
-            <Label Grid.Row="0" Grid.RowSpan="2" Grid.Column="14" Grid.ColumnSpan="4" Name="Currency" FontSize="20" Foreground="AliceBlue"> Amount </Label>
+            <Button Grid.Row="5" Grid.Column="6" Grid.ColumnSpan="4" Content="1st 12" FontSize="30" Click="Button_Click" Foreground="White" Background="Green"></Button>
+            <Button Grid.Row="5" Grid.Column="10" Grid.ColumnSpan="4" Content="2nd 12" FontSize="30" Click="Button_Click" Foreground="White" Background="Green"></Button>
+            <Button Grid.Row="5" Grid.Column="14" Grid.ColumnSpan="4" Content="3rd 12" FontSize="30" Click="Button_Click" Foreground="White" Background="Green"></Button>
+            <Button Grid.Row="6" Grid.Column="6" Grid.ColumnSpan="2" Content="1-18" FontSize="30" Click="Button_Click" Foreground="White" Background="Green"></Button>
+            <Button Grid.Row="6" Grid.Column="16" Grid.ColumnSpan="2" Content="19-36" FontSize="30" Click="Button_Click" Foreground="White" Background="Green"></Button>
+            <Button Grid.Row="6" Grid.Column="8" Grid.ColumnSpan="2" Content="Even" FontSize="30" Click="Button_Click" Foreground="White" Background="Green"></Button>
+            <Button Grid.Row="6" Grid.Column="14" Grid.ColumnSpan="2" Content="Odd" FontSize="30" Click="Button_Click" Foreground="White" Background="Green"></Button>
+            <Button Grid.Row="6" Grid.Column="10" Grid.ColumnSpan="2" FontSize="30" Content="Red" Foreground="White" Background="Red" Click="Button_Click"></Button>
+            <Button Grid.Row="6" Grid.Column="12" Grid.ColumnSpan="2" FontSize="30" Content="Black" Foreground="White" Background="Black" Click="Button_Click"></Button>
+            <Button Grid.Row="2" Grid.RowSpan="3" Grid.Column="4" Content="0" FontSize="50" Background="Green" Click="Button_Click"></Button>
+            <Label Grid.Row="0" Grid.RowSpan="2" Grid.Column="18" Grid.ColumnSpan="4" Name="Currency" FontSize="20" Foreground="White"> Amount </Label>
 
             <Button Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" Content="Back" FontSize="25" Click="Button_Back"></Button>
-            <Button Grid.Row="8" Grid.Column="16" Grid.ColumnSpan="2" Content="Spin" FontSize="25" Click="Button_Spin"></Button>
+            <Button Grid.Row="8" Grid.Column="20" Grid.ColumnSpan="2" Content="Spin" FontSize="25" Click="Button_Spin"></Button>
             <Button Grid.Row="8" Grid.Column="4"  Grid.ColumnSpan="2" Content="1 Chip" FontSize="15" Click="Button_Bet"></Button>
             <Button Grid.Row="8" Grid.Column="6"  Grid.ColumnSpan="2" Content="5 Chip" FontSize="15" Click="Button_Bet"></Button>
-            <Button Grid.Row="8" Grid.Column="8"  Grid.ColumnSpan="2" Content="100 Chip" FontSize="15" Click="Button_Bet"></Button> 
-            <Button Grid.Row="8" Grid.Column="10"  Grid.ColumnSpan="2" Content="500 Chip" FontSize="15" Click="Button_Bet"></Button>
-            <Button Grid.Row="8" Grid.Column="12"  Grid.ColumnSpan="2" Content="1000 Chip" FontSize="15" Click="Button_Bet"></Button>
-            <TextBlock Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="3" Name="Results" FontSize="30" VerticalAlignment="Center"> Results</TextBlock>
+            <Button Grid.Row="8" Grid.Column="8"  Grid.ColumnSpan="2" Content="10 Chip" FontSize="15" Click="Button_Bet"></Button> 
+            <Button Grid.Row="8" Grid.Column="10"  Grid.ColumnSpan="2" Content="25 Chip" FontSize="15" Click="Button_Bet"></Button>
+            <Button Grid.Row="8" Grid.Column="12"  Grid.ColumnSpan="2" Content="50 Chip" FontSize="15" Click="Button_Bet"></Button>
+            <Button Grid.Row="8" Grid.Column="14"  Grid.ColumnSpan="2" Content="100 Chip" FontSize="15" Click="Button_Bet"></Button>
+            <Button Grid.Row="8" Grid.Column="16"  Grid.ColumnSpan="2" Content="1000 Chip" FontSize="15" Click="Button_Bet"></Button>
+            <TextBlock Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="5" Name="Results" FontSize="30" VerticalAlignment="Center" Foreground="White" TextAlignment="Center"> Results</TextBlock>
             
             <Image Source="/Assets/Roulette/RouletteWheel_SingleZero.png" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="5" Grid.RowSpan="3"></Image>
         </Grid> 
