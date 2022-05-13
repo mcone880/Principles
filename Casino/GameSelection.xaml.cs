@@ -24,6 +24,7 @@ namespace Casino
         {
             bankAmount = money;
             InitializeComponent();
+            BankAmountLabel.Content = "Chips: $" + bankAmount;
         }
 
         private void PlayRoulette_Click(object sender, RoutedEventArgs e)
@@ -60,5 +61,18 @@ namespace Casino
             newWindow.Show();
             this.Close();
         }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow newWindow = new MainWindow();
+            newWindow.Show();
+            this.Close();
+        }
+
+        private void BankButton_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
     }
 }

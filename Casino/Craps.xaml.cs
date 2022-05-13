@@ -19,10 +19,31 @@ namespace Casino
     /// </summary>
     public partial class Craps : Window
     {
+        int Money;
+        Image[] Images = new Image[12];
+
         public Craps(int money)
         {
             InitializeComponent();
+            Money = money;
+            CrapsWindow.Width = 815;
+            CrapsWindow.Height = 725;
+            CrapsWindow.ResizeMode = ResizeMode.NoResize;
             lblMoney.Content = "Money: " + money.ToString();
+
+            int j = 0;
+            for (int i = 1; i < 7; i++)
+            {
+                Image img = (Image)FindName("Col1Dice" + i);
+                Images[j] = img;
+                j++;
+            }
+            for (int i = 1; i < 7; i++)
+            {
+                Image img = (Image)FindName("Col2Dice" + i);
+                Images[j] = img;
+                j++;
+            }
         }
 
         public int[] Roll()
@@ -39,6 +60,30 @@ namespace Casino
             return nums;
         }
 
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            GameSelection game = new GameSelection(Money);
+            game.Show();
+            Close();
+        }
 
+        private void RollButton_Click(object sender, RoutedEventArgs e)
+        {
+            var results = Roll();
+            SetImages(results[0], results[1]);
+        }
+
+        private void SetImages(int dice1, int dice2)
+        {
+            foreach (Image image in Images)
+            {
+                image.Visibility = Visibility.Hidden;
+            }
+
+            Image image1 = (Image)FindName("Col1Dice" + dice1);
+            Image image2 = (Image)FindName("Col2Dice" + dice2);
+            image1.Visibility = Visibility.Visible;
+            image2.Visibility = Visibility.Visible;
+        }
     }
 }
