@@ -22,7 +22,7 @@ namespace Casino
         public Credits()
         {
             InitializeComponent();
-            Credits1.Content = "Made by:\nTobie Allen\nDavid Brockmeyer\nJosh Cole\nMathew Cone\nHailey White\nTommy Watson";
+            Credits1.Content = "Made by:\nTobie Allen\nDavid Brockmeyer\nJosh Cole\nMatthew Cone\nHailey White\nTommy Watson";
         }
     }
 }
