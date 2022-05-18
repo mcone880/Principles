@@ -19,7 +19,7 @@ namespace Casino
     /// </summary>
     public partial class GameSelection : Window
     {
-        int chipAmount = 0;
+        int chipAmount = 1000;
         int bankAmount;
         public GameSelection(int money)
         {
