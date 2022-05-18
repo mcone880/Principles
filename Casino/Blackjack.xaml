@@ -5,81 +5,81 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Casino"
         mc:Ignorable="d"
-        Title="Blackjack" Height="800" Width="1500">
+        Title="Blackjack" Height="450" Width="800">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="Assets/OverallUI/GenericFeltMat.jpeg"/>
         </Grid.Background>
 
-        <Image Source="Assets/OverallUI/BlackjackIcon.png" Width="250" Height="150" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Image Source="Assets/OverallUI/BlackjackIcon.png" Width="120" Height="88" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
-        <Button Name="btnRules" Content="RULES" FontSize="20" FontFamily="Bodoni MT Black" Width="100" Height="35" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,171,0,0" Click="RulesClicked">
-            <Button.Background>
-                <ImageBrush ImageSource="Assets/OverallUI/ButtonUp.png"/>
-            </Button.Background>  
-        </Button>
-        <Button Name="btnBack" Content="BACK" FontSize="50" FontFamily="Bodoni MT Black" Width="300" Height="70" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,0,10" Click="BackClicked">
+        <Button Name="btnRules" Content="RULES" FontSize="15" FontFamily="Bodoni MT Black" Width="75" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="60,60,0,0" Click="RulesClicked">
             <Button.Background>
                 <ImageBrush ImageSource="Assets/OverallUI/ButtonUp.png"/>
             </Button.Background>
         </Button>
-        <Button Name="btnDeal" Content="DEAL" FontSize="50" FontFamily="Bodoni MT Black" Width="300" Height="70" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10">
+        <Button Name="btnBack" Content="BACK" FontSize="35" FontFamily="Bodoni MT Black" Width="125" Height="45" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,0,10" Click="BackClicked">
             <Button.Background>
                 <ImageBrush ImageSource="Assets/OverallUI/ButtonUp.png"/>
             </Button.Background>
         </Button>
-        <Button Name="btnStand" Content="STAND" FontSize="50" FontFamily="Bodoni MT Black" Width="300" Height="70" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,85" IsEnabled="False">
+        <Button Name="btnDeal" Content="DEAL" FontSize="35" FontFamily="Bodoni MT Black" Width="125" Height="45" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/OverallUI/ButtonUp.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="btnStand" Content="STAND" FontSize="30" FontFamily="Bodoni MT Black" Width="125" Height="45" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,60" IsEnabled="False">
             <Button.Background>
                 <ImageBrush ImageSource="Assets/OverallUI/ButtonUp.png"/>
             </Button.Background>
         </Button>
 
-        <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,670,0,0" Width="805" Height="100">
-            <Button Name="btnChip1" Width="80" Height="70" FontSize="35" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="10">
+        <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="520" Height="60">
+            <Button Name="btnChip1" Width="45" Height="45" VerticalAlignment="Bottom" Margin="10, 5, 10, 5">
                 <Button.Background>
                     <ImageBrush ImageSource="Assets/OverallUI/Chip1.png"/>
                 </Button.Background>
             </Button>
-            <Button Name="btnChip5" Width="80" Height="70" FontSize="35" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="10">
+            <Button Name="btnChip5" Width="45" Height="45" VerticalAlignment="Bottom" Margin="10, 5, 10, 5">
                 <Button.Background>
                     <ImageBrush ImageSource="Assets/OverallUI/Chip5.png"/>
                 </Button.Background>
             </Button>
-            <Button Name="btnChip10" Width="80" Height="70" FontSize="35" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="10">
+            <Button Name="btnChip10"  Width="45" Height="45" VerticalAlignment="Bottom" Margin="10, 5, 10, 5">
                 <Button.Background>
                     <ImageBrush ImageSource="Assets/OverallUI/Chip10.png"/>
                 </Button.Background>
             </Button>
-            <Button Name="btnChip20" Width="80" Height="70" FontSize="35" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="10">
+            <Button Name="btnChip20"  Width="45" Height="45" VerticalAlignment="Bottom" Margin="10, 5, 10, 5">
                 <Button.Background>
                     <ImageBrush ImageSource="Assets/OverallUI/Chip20.png"/>
                 </Button.Background>
             </Button>
-            <Button Name="btnChip50" Width="80" Height="70" FontSize="35" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="10">
+            <Button Name="btnChip50"  Width="45" Height="45" VerticalAlignment="Bottom" Margin="10, 5, 10, 5">
                 <Button.Background>
                     <ImageBrush ImageSource="Assets/OverallUI/Chip50.png"/>
                 </Button.Background>
             </Button>
-            <Button Name="btnChip100" Width="80" Height="70" FontSize="35" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="10">
+            <Button Name="btnChip100"  Width="45" Height="45" VerticalAlignment="Bottom" Margin="10, 5, 10, 5">
                 <Button.Background>
                     <ImageBrush ImageSource="Assets/OverallUI/Chip100.png"/>
                 </Button.Background>
             </Button>
-            <Button Name="btnChip1k" Width="80" Height="70" FontSize="35" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="10">
+            <Button Name="btnChip1k"  Width="45" Height="45" VerticalAlignment="Bottom" Margin="10, 5, 10, 5">
                 <Button.Background>
                     <ImageBrush ImageSource="Assets/OverallUI/Chip1000.png"/>
                 </Button.Background>
             </Button>
-            <Button Name="btnChip5k" Width="80" Height="70" FontSize="35" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="10">
+            <Button Name="btnChip5k"  Width="45" Height="45" VerticalAlignment="Bottom" Margin="10, 5, 10, 5">
                 <Button.Background>
                     <ImageBrush ImageSource="Assets/OverallUI/Chip5000.png"/>
                 </Button.Background>
             </Button>
         </WrapPanel>
 
-        <Label Content="CHIPS:" FontSize="35" FontFamily="Bodoni MT Black" HorizontalAlignment="Right" Margin="0,239,1303,469" Foreground="White"/>
-        <Label Name="Money" Content="$" FontSize="35" FontFamily="Bodoni MT Black" HorizontalAlignment="Right" Margin="0,320,1246,400" Width="238" Foreground="White"/>
+        <Label Content="CHIPS:" FontSize="25" FontFamily="Bodoni MT Black" HorizontalAlignment="Right" Foreground="White" Margin="0,105,685,270"/>
+        <Label x:Name="Money" Content="$" FontSize="20" FontFamily="Bodoni MT Black" HorizontalAlignment="Right" Width="125" Foreground="White" Margin="0,145,665,215"/>
 
-        <Image Source="Assets/BlackJack/BlackJackTable.png" HorizontalAlignment="Center" VerticalAlignment="Top" Height="639" Width="1030" Margin="0,25,0,0"/>
+        <Image Source="Assets/BlackJack/BlackJackTable.png" HorizontalAlignment="Center" VerticalAlignment="Top" Height="340" Width="555" Margin="0,10,0,0"/>
     </Grid>
 </Window>
