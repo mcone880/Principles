@@ -22,6 +22,8 @@ namespace Casino
         public int money;
         public int numbers = 0;
         public string color = "";
+        public int bettingPool = 0;
+        
         public Roulette(int money)
         {
             this.money = money;
@@ -60,6 +62,7 @@ namespace Casino
                 {
                     case 0:
                         numbers = 0;
+                        color = "Green";
                         break;
                     case 1:
                         numbers = 1;
@@ -217,11 +220,17 @@ namespace Casino
             }
         }
 
+        //Betting
         private void Button_Bet(object sender, RoutedEventArgs e)
         {
+
+
             if (money > 0)
             {
-                
+                //Get button to set what bet it on
+                Button btn = (Button)sender;
+                bettingPool = int.Parse(btn.Content.ToString());
+                BettingAmount.Content = "Bet: " + bettingPool.ToString() + " Chips";
             }
             else
             {

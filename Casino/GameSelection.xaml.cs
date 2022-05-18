@@ -19,45 +19,54 @@ namespace Casino
     /// </summary>
     public partial class GameSelection : Window
     {
+        int chipAmount = 1000;
         int bankAmount;
         public GameSelection(int money)
         {
             bankAmount = money;
             InitializeComponent();
-            BankAmountLabel.Content = "Chips: $" + bankAmount;
+            BankAmountLabel.Content = "Chips: $0";
+        }
+
+        public GameSelection(int chips, int bankAmount)
+        {
+            this.bankAmount = bankAmount;
+            chipAmount = chips;
+            InitializeComponent();
+            BankAmountLabel.Content = "Chips: $" + chips;
         }
 
         private void PlayRoulette_Click(object sender, RoutedEventArgs e)
         {
-            Roulette newWindow = new Roulette(bankAmount);
+            Roulette newWindow = new Roulette(chipAmount);
             newWindow.Show();
             this.Close();
         }
 
         private void PlayBlackJack_Click(object sender, RoutedEventArgs e)
         {
-            Blackjack newWindow = new Blackjack(bankAmount);
+            Blackjack newWindow = new Blackjack(chipAmount);
             newWindow.Show();
             this.Close();
         }
 
         private void PlayPoker_Click(object sender, RoutedEventArgs e)
         {
-            Poker newWindow = new Poker(bankAmount);
+            Poker newWindow = new Poker(chipAmount);
             newWindow.Show();
             this.Close();
         }
 
         private void PlayCraps_Click(object sender, RoutedEventArgs e)
         {
-            Craps newWindow = new Craps(bankAmount);
+            Craps newWindow = new Craps(chipAmount);
             newWindow.Show();
             this.Close();
         }
 
         private void PlaySlots_Click(object sender, RoutedEventArgs e)
         {
-            Slots newWindow = new Slots(bankAmount);
+            Slots newWindow = new Slots(chipAmount);
             newWindow.Show();
             this.Close();
         }
@@ -71,7 +80,9 @@ namespace Casino
 
         private void BankButton_Click(object sender, RoutedEventArgs e)
         {
-            
+            Bank bank = new Bank(chipAmount, bankAmount);
+            bank.Show();
+            this.Close();
         }
 
     }
