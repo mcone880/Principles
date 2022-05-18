@@ -97,7 +97,8 @@
             <Button Grid.Row="6" Grid.Column="10" Grid.ColumnSpan="2" FontSize="30" Content="Red" Foreground="White" Background="Red" Click="Button_Click"></Button>
             <Button Grid.Row="6" Grid.Column="12" Grid.ColumnSpan="2" FontSize="30" Content="Black" Foreground="White" Background="Black" Click="Button_Click"></Button>
             <Button Grid.Row="2" Grid.RowSpan="3" Grid.Column="4" Content="0" FontSize="50" Background="Green" Click="Button_Click"></Button>
-            <Label Grid.Row="0" Grid.RowSpan="2" Grid.Column="18" Grid.ColumnSpan="4" Name="Currency" FontSize="20" Foreground="White"> Amount </Label>
+            <Label Grid.Row="0" Grid.Column="18" Grid.ColumnSpan="4" Name="Currency" FontSize="20" Foreground="White"> Amount </Label>
+            <Label Grid.Row="1" Grid.Column="18" Grid.ColumnSpan="4" Name="BettingAmount" FontSize="20" Foreground="White"> Betting </Label>
 
             <Button Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" Content="Back" FontSize="25" Click="Button_Back"></Button>
             <Button Grid.Row="8" Grid.Column="20" Grid.ColumnSpan="2" Content="Spin" FontSize="25" Click="Button_Spin"></Button>

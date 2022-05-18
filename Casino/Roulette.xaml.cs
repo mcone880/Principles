@@ -230,7 +230,7 @@ namespace Casino
                 //Get button to set what bet it on
                 Button btn = (Button)sender;
                 bettingPool = int.Parse(btn.Content.ToString());
-                Currency.Content = bettingPool.ToString();
+                BettingAmount.Content = "Bet: " + bettingPool.ToString() + " Chips";
             }
             else
             {
