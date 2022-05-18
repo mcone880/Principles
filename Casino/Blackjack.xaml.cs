@@ -25,6 +25,8 @@ namespace Casino
         {
             InitializeComponent();
             this.money = money;
+
+            Money.Content = "$ " + money;
         }
 
         //Go Back to Game Selection
