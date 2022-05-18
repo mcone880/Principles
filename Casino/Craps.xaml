@@ -21,21 +21,21 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Button x:Name="BackButton" Margin="10,29,618,28" Content="BACK" Click="BackButton_Click" FontSize="36" FontFamily="Bodoni MT Black" Grid.Row="1">
+        <Button x:Name="BackButton" Margin="10,29,665,28" Content="BACK" Click="BackButton_Click" FontSize="36" FontFamily="Bodoni MT Black" Grid.Row="1">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/OverallUI/ButtonUp.png"/>
             </Button.Background>
         </Button>
 
         <Image x:Name="imgBoard" Stretch="Fill" Source="/Assets/Craps/CrapsBoard.png" Margin="0,0,0,10" Grid.Column="1" Grid.Row="0"/>
-        
+
         <Image x:Name="Col2Dice1" Stretch="Fill" Visibility="Hidden" Source="/Assets\Craps\Dice1.png" Margin="348,184,348,281" Width="105" Height="105"/>
         <Image x:Name="Col2Dice2" Stretch="Fill" Visibility="Hidden" Source="/Assets\Craps\Dice2.png" Margin="348,184,348,281" Width="105" Height="105"/>
         <Image x:Name="Col2Dice3" Stretch="Fill" Visibility="Hidden" Source="/Assets\Craps\Dice3.png" Margin="348,184,348,281" Width="105" Height="105"/>
         <Image x:Name="Col2Dice4" Stretch="Fill" Visibility="Hidden" Source="/Assets\Craps\Dice4.png" Margin="348,184,348,281" Width="105" Height="105"/>
         <Image x:Name="Col2Dice5" Stretch="Fill" Visibility="Hidden" Source="/Assets\Craps\Dice5.png" Margin="348,184,348,281" Width="105" Height="105"/>
         <Image x:Name="Col2Dice6" Stretch="Fill" Visibility="Hidden" Source="/Assets\Craps\Dice6.png" Margin="348,184,347,281" Width="105" Height="105"/>
-                                                            
+
         <Image x:Name="Col1Dice1" Stretch="Fill" Visibility="Hidden" Source="/Assets\Craps\Dice1.png" Margin="130,184,565,281" Width="105" Height="105"/>
         <Image x:Name="Col1Dice2" Stretch="Fill" Visibility="Hidden" Source="/Assets\Craps\Dice2.png" Margin="130,184,565,281" Width="105" Height="105"/>
         <Image x:Name="Col1Dice3" Stretch="Fill" Visibility="Hidden" Source="/Assets\Craps\Dice3.png" Margin="130,184,565,281" Width="105" Height="105"/>
@@ -46,13 +46,52 @@
 
 
 
-        <Label Content="Money: " HorizontalAlignment="Left" Margin="580,465,0,0" VerticalAlignment="Top" 
-               Height="95" Width="210" FontSize="24" BorderBrush="White" BorderThickness="2" 
+        <Label Content="Money: " HorizontalAlignment="Left" Margin="580,455,0,0" VerticalAlignment="Top" 
+               Height="54" Width="210" FontSize="24" BorderBrush="White" BorderThickness="2" 
                VerticalContentAlignment="Center" Name="lblMoney"/>
-        
-        <Button x:Name="RollButton" Margin="618,29,10,28" Content="ROLL" Click="RollButton_Click" FontSize="36" FontFamily="Bodoni MT Black" Grid.Row="1">
+
+        <Button x:Name="RollButton" Margin="665,29,10,28" Content="ROLL" Click="RollButton_Click" FontSize="36" FontFamily="Bodoni MT Black" Grid.Row="1">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/OverallUI/ButtonUp.png"/>
+            </Button.Background>
+        </Button>
+        <Label Content="Bet: " HorizontalAlignment="Left" Margin="580,514,0,0" VerticalAlignment="Top" 
+            Height="54" Width="210" FontSize="24" BorderBrush="White" BorderThickness="2" 
+            VerticalContentAlignment="Center" x:Name="lblBet"/>
+
+        <Button Name="btn1" Height="45" VerticalAlignment="Bottom" Margin="162,0,596,28" Grid.Row="1" Click="btnClick">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/OverallUI/Chip1.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="btn5" Width="45" Height="45" VerticalAlignment="Bottom" Margin="225,0,530,28" Grid.Row="1" Click="btnClick">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/OverallUI/Chip5.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="btn10"  Width="45" Height="45" VerticalAlignment="Bottom" Margin="290,0,465,28" Grid.Row="1" Click="btnClick">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/OverallUI/Chip10.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="btn20"  Width="45" Height="45" VerticalAlignment="Top" Margin="355,41,400,0" Grid.Row="1" Click="btnClick">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/OverallUI/Chip20.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="btn50"  Width="45" Height="45" VerticalAlignment="Bottom" Margin="425,0,330,28" Grid.Row="1" Click="btnClick">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/OverallUI/Chip50.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="btn100"  Width="45" Height="45" VerticalAlignment="Bottom" Margin="495,0,260,28" Grid.Row="1" Click="btnClick">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/OverallUI/Chip100.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="btn1000"  Width="45" Height="45" VerticalAlignment="Bottom" Margin="565,0,190,28" Grid.Row="1" Click="btnClick">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/OverallUI/Chip1000.png"/>
             </Button.Background>
         </Button>
 
