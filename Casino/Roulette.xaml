@@ -101,13 +101,13 @@
 
             <Button Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" Content="Back" FontSize="25" Click="Button_Back"></Button>
             <Button Grid.Row="8" Grid.Column="20" Grid.ColumnSpan="2" Content="Spin" FontSize="25" Click="Button_Spin"></Button>
-            <Button Grid.Row="8" Grid.Column="4"  Grid.ColumnSpan="2" Content="1 Chip" FontSize="15" Click="Button_Bet"></Button>
-            <Button Grid.Row="8" Grid.Column="6"  Grid.ColumnSpan="2" Content="5 Chip" FontSize="15" Click="Button_Bet"></Button>
-            <Button Grid.Row="8" Grid.Column="8"  Grid.ColumnSpan="2" Content="10 Chip" FontSize="15" Click="Button_Bet"></Button> 
-            <Button Grid.Row="8" Grid.Column="10"  Grid.ColumnSpan="2" Content="25 Chip" FontSize="15" Click="Button_Bet"></Button>
-            <Button Grid.Row="8" Grid.Column="12"  Grid.ColumnSpan="2" Content="50 Chip" FontSize="15" Click="Button_Bet"></Button>
-            <Button Grid.Row="8" Grid.Column="14"  Grid.ColumnSpan="2" Content="100 Chip" FontSize="15" Click="Button_Bet"></Button>
-            <Button Grid.Row="8" Grid.Column="16"  Grid.ColumnSpan="2" Content="1000 Chip" FontSize="15" Click="Button_Bet"></Button>
+            <Button Grid.Row="8" Grid.Column="4"  Grid.ColumnSpan="2" Content="1" FontSize="15" Click="Button_Bet"/>
+            <Button Grid.Row="8" Grid.Column="6"  Grid.ColumnSpan="2" Content="5" FontSize="15" Click="Button_Bet"></Button>
+            <Button Grid.Row="8" Grid.Column="8"  Grid.ColumnSpan="2" Content="10" FontSize="15" Click="Button_Bet"></Button> 
+            <Button Grid.Row="8" Grid.Column="10"  Grid.ColumnSpan="2" Content="20" FontSize="15" Click="Button_Bet"></Button>
+            <Button Grid.Row="8" Grid.Column="12"  Grid.ColumnSpan="2" Content="50" FontSize="15" Click="Button_Bet"></Button>
+            <Button Grid.Row="8" Grid.Column="14"  Grid.ColumnSpan="2" Content="100" FontSize="15" Click="Button_Bet"></Button>
+            <Button Grid.Row="8" Grid.Column="16"  Grid.ColumnSpan="2" Content="1000" FontSize="15" Click="Button_Bet"></Button>
             <TextBlock Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="5" Name="Results" FontSize="30" VerticalAlignment="Center" Foreground="White" TextAlignment="Center"> Results</TextBlock>
             
             <Image Source="/Assets/Roulette/RouletteWheel_SingleZero.png" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="5" Grid.RowSpan="3"></Image>
