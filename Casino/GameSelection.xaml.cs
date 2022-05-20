@@ -84,6 +84,5 @@ namespace Casino
             bank.Show();
             this.Close();
         }
-
     }
 }
