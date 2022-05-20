@@ -6,6 +6,10 @@
         xmlns:local="clr-namespace:Casino"
         mc:Ignorable="d"
         Title="Poker" Height="450" Width="800">
+    <Window.Resources>
+        <Image x:Key="Clubs2" Source="/Assets/BlackJack/Cards/cardClubs2.png" Height="90" Width="60" />
+        <Image x:Key="Clubs3" Source="/Assets/BlackJack/Cards/cardClubs3.png" Height="90" Width="60" />
+    </Window.Resources>
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="/GenericFeltMat.jpeg"/>
@@ -35,11 +39,19 @@
                 <ImageBrush ImageSource="/Assets/OverallUI/ButtonUp.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnDraw" Content="DRAW" Grid.Column="2" Grid.Row="2" Margin="10" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="100" Height="25" FontSize="15" FontFamily="Bodoni MT Black" Click="btnDraw_Click" >
-            <Button.Background>
-                <ImageBrush ImageSource="/Assets/OverallUI/ButtonUp.png"/>
-            </Button.Background>
-        </Button>
+
+        <StackPanel Grid.Column="2" Grid.Row="2" Margin="5">
+            <Button x:Name="btnDraw" Content="DRAW"  Margin="2" HorizontalAlignment="Right" Width="100" Height="25" FontSize="15" FontFamily="Bodoni MT Black" Click="btnDraw_Click" >
+                <Button.Background>
+                    <ImageBrush ImageSource="/Assets/OverallUI/ButtonUp.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btnReset" Content="RESET" Margin="2" HorizontalAlignment="Right" Width="100" Height="25" FontSize="15" FontFamily="Bodoni MT Black" Click="btnReset_Click" >
+                <Button.Background>
+                    <ImageBrush ImageSource="/Assets/OverallUI/ButtonUp.png"/>
+                </Button.Background>
+            </Button>            
+        </StackPanel>
 
         <WrapPanel Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Button x:Name="btnChip1" Width="60" Height="45" Margin="5" FontFamily="Bodoni MT Black" BorderThickness="0" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Click="btnChip1_Click" >
@@ -100,7 +112,7 @@
         </StackPanel>
 
         <TextBlock x:Name="txtBet" Text="BET:" Grid.Row="0" Grid.Column="1" FontSize="42" FontFamily="Bodoni MT Black" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" />
-        <TextBlock x:Name="txtBetAmount" Text="$100" Grid.Row="1" Grid.Column="1" FontSize="34" FontFamily="Bodoni MT Black" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Center" />
+        <TextBlock x:Name="txtBetAmount" Text="$0" Grid.Row="1" Grid.Column="1" FontSize="34" FontFamily="Bodoni MT Black" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Center" />
 
         <WrapPanel Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" Height="150" Margin="0,150,108,0" Grid.ColumnSpan="2">
             <Label Name="lblHold1" Content="HOLD" FontSize="15" FontFamily="Bodoni MT Black" Foreground="White" Height="27" Width="60" Visibility="Hidden"  Margin="0, 0, 55, 0" VerticalAlignment="Top" />
@@ -108,27 +120,27 @@
             <Label Name="lblHold3" Content="HOLD" FontSize="15" FontFamily="Bodoni MT Black" Foreground="White" Height="27" Width="60" Visibility="Hidden"  Margin="0, 0, 55, 0" VerticalAlignment="Top" />
             <Label Name="lblHold4" Content="HOLD" FontSize="15" FontFamily="Bodoni MT Black" Foreground="White" Height="27" Width="60" Visibility="Hidden"  Margin="0, 0, 55, 0" VerticalAlignment="Top" />
             <Label Name="lblHold5" Content="HOLD" FontSize="15" FontFamily="Bodoni MT Black" Foreground="White" Height="27" Width="60" Visibility="Hidden"  VerticalAlignment="Top" />
-            <Button x:Name="btnHold1" Height="90" Width="60" Margin="0, 0, 55, 0" Click="btnHold1_Click" >
+            <Button x:Name="btnHold1" Height="90" Width="60" Margin="0, 0, 55, 0" IsEnabled="False" Click="btnHold1_Click" >
                 <Button.Background>
                     <ImageBrush ImageSource="/Assets/Blackjack/Cards/cardBack_blue1.png"/>
                 </Button.Background>
             </Button>
-            <Button x:Name="btnHold2" Height="90" Width="60" Margin="0, 0, 55, 0" Click="btnHold2_Click">
+            <Button x:Name="btnHold2" Height="90" Width="60" Margin="0, 0, 55, 0" IsEnabled="False" Click="btnHold2_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/Assets/Blackjack/Cards/cardBack_blue1.png"/>
                 </Button.Background>
             </Button>
-            <Button x:Name="btnHold3" Height="90" Width="60" Margin="0, 0, 55, 0" Click="btnHold3_Click">
+            <Button x:Name="btnHold3" Height="90" Width="60" Margin="0, 0, 55, 0" IsEnabled="False" Click="btnHold3_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/Assets/Blackjack/Cards/cardBack_blue1.png"/>
                 </Button.Background>
             </Button>
-            <Button x:Name="btnHold4" Height="90" Width="60" Margin="0, 0, 55, 0" Click="btnHold4_Click">
+            <Button x:Name="btnHold4" Height="90" Width="60" Margin="0, 0, 55, 0" IsEnabled="False" Click="btnHold4_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/Assets/Blackjack/Cards/cardBack_blue1.png"/>
                 </Button.Background>
             </Button>
-            <Button x:Name="btnHold5" Height="90" Width="60" Click="btnHold5_Click">
+            <Button x:Name="btnHold5" Height="90" Width="60" IsEnabled="False" Click="btnHold5_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/Assets/Blackjack/Cards/cardBack_blue1.png"/>
                 </Button.Background>
