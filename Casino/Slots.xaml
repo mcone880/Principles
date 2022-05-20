@@ -17,6 +17,8 @@
     </Window.Resources>
     
     
+        ResizeMode="NoResize"
+        Title="Slots" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.Background >
             <ImageBrush ImageSource="/GenericFeltMat.jpeg" />

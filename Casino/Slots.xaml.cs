@@ -21,16 +21,19 @@ namespace Casino
     {
         public string[] options = new string[]{ "Cherry", "Cherry", "Cherry", "Cherry", "Bells", "Bells", "Bells", "Bars", "Bars", "Sevens" };
         int money;
-        bool betPlaysted =false;
+        int bank;
+        bool betPlaysted;
+        
         int bet;
         String SlotOne;
         String SlotTwo;
         String SlotThree;
 
-        public Slots(int money)
+        public Slots(int money, int bank)
         {
             InitializeComponent();
             this.money = money;
+            this.bank = bank;
         }
 
         private void checkForWin()
@@ -74,7 +77,7 @@ namespace Casino
         }
         private void btnBack_Click(object sender, RoutedEventArgs e) // goes back to the game menu and closes this window 
         {
-            GameSelection gameSelection = new GameSelection(money);
+            GameSelection gameSelection = new GameSelection(money, bank);
             gameSelection.Show();
             this.Close();
         }

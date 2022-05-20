@@ -20,18 +20,27 @@ namespace Casino
     public partial class Craps : Window
     {
         int credits;
+        int bank; //Do not alter or Change, This is so that we can keep track of our Bank Amount ~ Tommy
         int bet = 0;
         Image[] Images = new Image[12];
+        //Button[] BetButtons = new Button[11];
 
-        public Craps(int money)
+        public Craps(int money, int bank)
         {
             InitializeComponent();
+            this.bank = bank;
             credits = money;
             CrapsWindow.Width = 815;
             CrapsWindow.Height = 725;
             CrapsWindow.ResizeMode = ResizeMode.NoResize;
             lblMoney.Content = "Money: " + money.ToString();
             lblBet.Content = "Bet: " + bet;
+            //BetButtons = GetBetButtons();
+
+            //foreach(var button in BetButtons)
+            //{
+            //    button.IsEnabled = false;
+            //}
 
             int j = 0;
             for (int i = 1; i < 7; i++)
@@ -62,9 +71,29 @@ namespace Casino
             return nums;
         }
 
+        //public Button[] GetBetButtons()
+        //{
+        //    List<Button> buttons = new List<Button>();
+        //    List<Button> betButtons = new List<Button>();
+
+        //    foreach(var thing in MainGrid.Children)
+        //    {
+        //        if(thing.GetType().Equals(typeof(Button)))
+        //        {
+        //            buttons.Add((Button)thing);
+        //        }
+        //    }
+
+        //    foreach(var button in buttons)
+        //    {
+        //        if (button.Tag != null && button.Tag.ToString() == "BetButton") betButtons.Add(button);
+        //    }
+        //    return betButtons.ToArray();
+        //}
+
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            GameSelection game = new GameSelection(credits);
+            GameSelection game = new GameSelection(credits, bank);
             game.Show();
             Close();
         }
@@ -78,6 +107,7 @@ namespace Casino
 
             bet = 0;
             lblBet.Content = "Bet: " + bet;
+            RollButton.IsEnabled = false;
         }
 
         private void SetImages(int dice1, int dice2)
@@ -103,6 +133,7 @@ namespace Casino
             else if (sender == btn100 && bet + 100 <= credits) bet += 100;
             else if (sender == btn1000 && bet + 1000 <= credits) bet += 1000; 
             lblBet.Content = "Bet: " + bet;
+            RollButton.IsEnabled = true;
         }
     }
 }

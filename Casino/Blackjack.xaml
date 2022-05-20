@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Casino"
         mc:Ignorable="d"
-        Title="Blackjack" Height="450" Width="800">
+        ResizeMode="NoResize"
+        Title="Blackjack" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="Assets/OverallUI/GenericFeltMat.jpeg"/>
@@ -23,18 +24,23 @@
                 <ImageBrush ImageSource="Assets/OverallUI/ButtonUp.png"/>
             </Button.Background>
         </Button>
-        <Button Name="btnDeal" Content="DEAL" FontSize="35" FontFamily="Bodoni MT Black" Width="125" Height="45" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10" Click="DealClicked">
+        <Button Name="btnDeal" Content="DEAL" FontSize="35" FontFamily="Bodoni MT Black" Width="125" Height="45" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,10,0" Click="DealClicked" IsEnabled="False">
             <Button.Background>
                 <ImageBrush ImageSource="Assets/OverallUI/ButtonUp.png"/>
             </Button.Background>
         </Button>
-        <Button Name="btnStand" Content="STAND" FontSize="30" FontFamily="Bodoni MT Black" Width="125" Height="45" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,60" IsEnabled="False">
+        <Button Name="btnStand" Content="STAND" FontSize="30" FontFamily="Bodoni MT Black" Width="125" Height="45" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,60" Click="StandClicked" IsEnabled="False">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/OverallUI/ButtonUp.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="btnHit" Content="HIT" FontSize="30" FontFamily="Bodoni MT Black" Width="125" Height="45" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10" Click="HitClicked" IsEnabled="False">
             <Button.Background>
                 <ImageBrush ImageSource="Assets/OverallUI/ButtonUp.png"/>
             </Button.Background>
         </Button>
 
-        <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Top" Width="495" Height="60" Margin="0,375,0,0">
+        <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Top" Width="496" Height="60" Margin="0,372,0,0">
             <Button Name="btnChip1" Width="50" Height="50" VerticalAlignment="Bottom" Margin="10, 5, 10, 5" Click="ChipClicked">
                 <Button.Background>
                     <ImageBrush ImageSource="Assets/OverallUI/Chip1.png"/>
@@ -76,5 +82,12 @@
         <Label x:Name="Money" Content="$" FontSize="20" FontFamily="Bodoni MT Black" HorizontalAlignment="Right" Width="125" Foreground="White" Margin="0,145,665,215"/>
 
         <Image Source="Assets/BlackJack/BlackJackTable.png" HorizontalAlignment="Center" VerticalAlignment="Top" Height="340" Width="555" Margin="0,10,0,0"/>
+
+        <Label Name="PlayerSum" Content="0" FontSize="20" FontFamily="Bodoni MT Black" HorizontalAlignment="Center" Foreground="White" Margin="0,231,0,144"/>
+
+        <Image Name="PlayerCard" Source="Assets/BlackJack/Cards/cardBack_blue1.png" HorizontalAlignment="Center" VerticalAlignment="Top" Height="75" Margin="0,275,0,0" Width="55"/>
+        <Image Name="DealerCard" Source="Assets/BlackJack/Cards/cardBack_blue1.png" HorizontalAlignment="Center" VerticalAlignment="Top" Height="75" Margin="0,35,0,0" Width="55"/>
+        <Image Name="DeckCard" Source="Assets/BlackJack/Cards/cardBack_blue1.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="75" Margin="580,10,0,0" Width="55"/>
+
     </Grid>
 </Window>

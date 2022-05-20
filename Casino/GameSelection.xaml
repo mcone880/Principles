@@ -6,43 +6,46 @@
         xmlns:local="clr-namespace:Casino"
         mc:Ignorable="d"
         ResizeMode="NoResize"
-        Title="GameSelection" Height="450" Width="800">
+        Title="GameSelection" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
         <Grid.Background>
             <ImageBrush ImageSource="/Assets/OverallUI/GenericFeltMat.jpeg"/>
         </Grid.Background>
 
-        <Button x:Name="PlayRoulette" HorizontalAlignment="Left" Margin="100,100,0,0" VerticalAlignment="Top" Width="150" Height="100" Click="PlayRoulette_Click">
+        <Button x:Name="PlayRoulette" HorizontalAlignment="Left" Margin="100,100,0,0" VerticalAlignment="Top" Width="150" Height="100" Click="PlayRoulette_Click" BorderBrush="{x:Null}" Foreground="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/OverallUI/RouletteIcon.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="PlayBlackJack" HorizontalAlignment="Left" Margin="300,100,0,0" VerticalAlignment="Top" Width="150" Height="100" Click="PlayBlackJack_Click">
+        <Button x:Name="PlayBlackJack" Margin="0,100,0,0" VerticalAlignment="Top" Height="100" Click="PlayBlackJack_Click" HorizontalAlignment="Center" Width="150" BorderBrush="{x:Null}" Foreground="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/OverallUI/BlackjackIcon.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="PlayPoker" HorizontalAlignment="Left" Margin="500,100,0,0" VerticalAlignment="Top" Width="150" Height="100" Click="PlayPoker_Click">
+        <Button x:Name="PlayPoker" Margin="0,100,100,0" VerticalAlignment="Top" Height="100" Click="PlayPoker_Click" HorizontalAlignment="Right" Width="150" BorderBrush="{x:Null}" Foreground="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/OverallUI/PokerIcon.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="PlayCraps" HorizontalAlignment="Left" Margin="200,250,0,0" VerticalAlignment="Top" Width="150" Height="100" Click="PlayCraps_Click">
+        <Button x:Name="PlayCraps" HorizontalAlignment="Left" Margin="215,250,0,0" VerticalAlignment="Top" Width="150" Height="100" Click="PlayCraps_Click" BorderBrush="{x:Null}" Foreground="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/OverallUI/CrapsIcon.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="PlaySlots" HorizontalAlignment="Left" Margin="400,250,0,0" VerticalAlignment="Top" Width="150" Height="100" Click="PlaySlots_Click">
+        <Button x:Name="PlaySlots" Margin="0,250,215,0" VerticalAlignment="Top" Height="100" Click="PlaySlots_Click" HorizontalAlignment="Right" Width="150" BorderBrush="{x:Null}" Foreground="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/OverallUI/SlotMachineIcon.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="BackButton" Content="BACK" HorizontalAlignment="Left" Margin="30,350,0,0" VerticalAlignment="Top" Width="85" Height="50" FontSize="22" FontFamily="Bodoni MT Black" Click="BackButton_Click">
+        <Button x:Name="BackButton" Content="BACK" HorizontalAlignment="Left" Margin="30,350,0,0" VerticalAlignment="Top" Width="85" Height="50" FontSize="22" FontFamily="Bodoni MT Black" Click="BackButton_Click" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/OverallUI/ButtonUp.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="BankButton" Content="BANK" Margin="0,350,30,0" VerticalAlignment="Top" Height="50" FontSize="22" FontFamily="Bodoni MT Black" HorizontalAlignment="Right" Width="85" Click="BankButton_Click">
+        <Button x:Name="BankButton" Content="BANK" Margin="0,350,30,0" VerticalAlignment="Top" Height="50" FontSize="22" FontFamily="Bodoni MT Black" HorizontalAlignment="Right" Width="85" Click="BankButton_Click" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/OverallUI/ButtonUp.png"/>
             </Button.Background>

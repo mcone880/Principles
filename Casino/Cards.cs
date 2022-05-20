@@ -33,6 +33,8 @@ namespace Casino
             King = 13
         }
 
+        public bool isHeld = false;
+
         public eSuit Suit { get; set; }
         public eCardNumber CardNumber { get; set; }
 
