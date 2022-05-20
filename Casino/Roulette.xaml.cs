@@ -23,6 +23,56 @@ namespace Casino
         public int numbers = 0;
         public string color = "";
         public int bettingPool = 0;
+        private int one = 0;
+        private int two = 0;
+        private int three = 0;
+        private int four = 0;
+        private int five = 0;
+        private int six = 0;
+        private int seven = 0;
+        private int eight = 0;
+        private int nine = 0;
+        private int ten = 0;
+        private int eleven = 0;
+        private int twelve = 0;
+        private int thirteen = 0;
+        private int fourteen = 0;
+        private int fifteen = 0;
+        private int sixteen = 0;
+        private int seventeen = 0;
+        private int eighteen = 0;
+        private int nineteen = 0;
+        private int twenty = 0;
+        private int twentyOne = 0;
+        private int twentyTwo = 0;
+        private int twentyThree = 0;
+        private int twentyFout = 0;
+        private int twentyFive = 0;
+        private int twentySix = 0;
+        private int twentySeven = 0;
+        private int twentyEight = 0;
+        private int twentyNine = 0;
+        private int thirty = 0;
+        private int thirtyOne = 0;
+        private int thirtyTwo = 0;
+        private int thirtyThree = 0;
+        private int thirtyFour = 0;
+        private int thirtyFive = 0;
+        private int thirtySix = 0;
+        private int zero = 0;
+        private int red = 0;
+        private int black = 0;
+        private int column1 = 0;
+        private int column2 = 0;
+        private int column3 = 0;
+        private int first12 = 0;
+        private int second12 = 0;
+        private int third12 = 0;
+        private int firstHalf = 0;
+        private int secondHalf = 0;
+        private int odd = 0;
+        private int even = 0;
+        
         
         public Roulette(int money)
         {
@@ -223,8 +273,6 @@ namespace Casino
         //Betting
         private void Button_Bet(object sender, RoutedEventArgs e)
         {
-
-
             if (money > 0)
             {
                 //Get button to set what bet it on
