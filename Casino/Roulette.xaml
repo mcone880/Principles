@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Casino"
         mc:Ignorable="d"
-        Title="Roulette" Height="450" Width="900">
+        ResizeMode="NoResize"
+        Title="Roulette" Height="450" Width="900" WindowStartupLocation="CenterScreen">
     <DockPanel>
         <Grid >
             <Grid.Background>

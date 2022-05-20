@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Casino"
         ResizeMode="NoResize"
         mc:Ignorable="d"
-        Title="Bank" Height="450" Width="800">
+        Title="Bank" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="/GenericFeltMat.jpeg"/>
