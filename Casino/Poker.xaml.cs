@@ -21,6 +21,7 @@ namespace Casino
     {
         int money;
         int bank; //Do not alter or Change, This is so that we can keep track of our Bank Amount ~ Tommy
+        bool firstDraw = false; 
 
         public Poker(int money, int bank)
         {
