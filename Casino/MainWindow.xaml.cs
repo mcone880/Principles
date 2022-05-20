@@ -27,7 +27,7 @@ namespace Casino
 
         private void MainMenu(object sender, RoutedEventArgs e)
         {
-            GameSelection gameSelection = new GameSelection(1000);
+            GameSelection gameSelection = new GameSelection(1000); //Change before final update
             gameSelection.Show();
             this.Close();
         }

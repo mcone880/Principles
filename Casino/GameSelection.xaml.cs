@@ -20,7 +20,7 @@ namespace Casino
     public partial class GameSelection : Window
     {
         int chipAmount = 1000;
-        int bankAmount;
+        int bankAmount; //Do not alter or Change, This is so that we can keep track of our Bank Amount ~ Tommy
         public GameSelection(int money)
         {
             bankAmount = money;
@@ -38,35 +38,35 @@ namespace Casino
 
         private void PlayRoulette_Click(object sender, RoutedEventArgs e)
         {
-            Roulette newWindow = new Roulette(chipAmount);
+            Roulette newWindow = new Roulette(chipAmount, bankAmount);
             newWindow.Show();
             this.Close();
         }
 
         private void PlayBlackJack_Click(object sender, RoutedEventArgs e)
         {
-            Blackjack newWindow = new Blackjack(chipAmount);
+            Blackjack newWindow = new Blackjack(chipAmount, bankAmount);
             newWindow.Show();
             this.Close();
         }
 
         private void PlayPoker_Click(object sender, RoutedEventArgs e)
         {
-            Poker newWindow = new Poker(chipAmount);
+            Poker newWindow = new Poker(chipAmount, bankAmount);
             newWindow.Show();
             this.Close();
         }
 
         private void PlayCraps_Click(object sender, RoutedEventArgs e)
         {
-            Craps newWindow = new Craps(chipAmount);
+            Craps newWindow = new Craps(chipAmount, bankAmount);
             newWindow.Show();
             this.Close();
         }
 
         private void PlaySlots_Click(object sender, RoutedEventArgs e)
         {
-            Slots newWindow = new Slots(chipAmount);
+            Slots newWindow = new Slots(chipAmount, bankAmount);
             newWindow.Show();
             this.Close();
         }
