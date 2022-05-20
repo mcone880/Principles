@@ -20,6 +20,7 @@ namespace Casino
     public partial class Roulette : Window
     {
         public int money;
+        public int bank; //Do not alter or Change, This is so that we can keep track of our Bank Amount ~ Tommy
         public int numbers = 0;
         public string color = "";
         public int bettingPool = 0;
@@ -74,9 +75,10 @@ namespace Casino
         private int even = 0;
         
         
-        public Roulette(int money)
+        public Roulette(int money, int bank)
         {
             this.money = money;
+            this.bank = bank;
             InitializeComponent();
             Currency.Content = "Amount: " + money.ToString();
         }
@@ -97,7 +99,7 @@ namespace Casino
 
         private void Button_Back(object sender, RoutedEventArgs e)
         {
-            GameSelection game = new GameSelection(money);
+            GameSelection game = new GameSelection(money, bank);
             game.Show();
             this.Close();
         }

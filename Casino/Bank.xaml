@@ -12,9 +12,9 @@
             <ImageBrush ImageSource="/GenericFeltMat.jpeg"/>
         </Grid.Background>
         <Label x:Name="ChipLabel" Content="Chips" HorizontalAlignment="Left" Margin="150,100,0,0" VerticalAlignment="Top" FontSize="48" FontFamily="Bodoni MT Black" Foreground="White"/>
-        <Label x:Name="ChipAmountLabel" Content="$0" HorizontalAlignment="Left" Margin="100,179,0,0" VerticalAlignment="Top" FontSize="36" FontFamily="Bodoni MT Black" Foreground="White" Width="250"/>
+        <Label x:Name="ChipAmountLabel" Content="$0" HorizontalAlignment="Left" Margin="100,179,0,0" VerticalAlignment="Top" FontSize="36" FontFamily="Bodoni MT Black" Foreground="White" Width="250" HorizontalContentAlignment="Center"/>
         <Label x:Name="BankLabel" Content="Bank" Margin="0,100,150,0" VerticalAlignment="Top" FontSize="48" FontFamily="Bodoni MT Black" Foreground="White" HorizontalAlignment="Right" Width="145"/>
-        <Label x:Name="BankAmountLabel" Content="$0" Margin="0,179,100,0" VerticalAlignment="Top" FontSize="36" FontFamily="Bodoni MT Black" Foreground="White" HorizontalAlignment="Right" Width="250"/>
+        <Label x:Name="BankAmountLabel" Content="$0" Margin="0,179,100,0" VerticalAlignment="Top" FontSize="36" FontFamily="Bodoni MT Black" Foreground="White" HorizontalAlignment="Right" Width="250" HorizontalContentAlignment="Center"/>
 
         <TextBox x:Name="AmountBox" Margin="315,300,315,0" Height="52" VerticalAlignment="Top" Text="0" FontFamily="Bernard MT Condensed" FontSize="40" TextAlignment="Center"></TextBox>
 
