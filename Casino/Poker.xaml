@@ -5,11 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Casino"
         mc:Ignorable="d"
-        Title="Poker" Height="450" Width="800">
-    <Window.Resources>
-        <Image x:Key="Clubs2" Source="/Assets/BlackJack/Cards/cardClubs2.png" Height="90" Width="60" />
-        <Image x:Key="Clubs3" Source="/Assets/BlackJack/Cards/cardClubs3.png" Height="90" Width="60" />
-    </Window.Resources>
+        ResizeMode="NoResize"
+        Title="Poker" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="/GenericFeltMat.jpeg"/>

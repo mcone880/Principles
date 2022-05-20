@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Casino"
         mc:Ignorable="d"
-        Title="Roulette" Height="450" Width="900">
+        ResizeMode="NoResize"
+        Title="Roulette" Height="450" Width="900" WindowStartupLocation="CenterScreen">
     <DockPanel>
         <Grid >
             <Grid.Background>
@@ -83,9 +84,9 @@
             <Button Grid.Row="2" Grid.Column="16" Content="36" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
             <Button Grid.Row="3" Grid.Column="16" Content="35" FontSize="35" Click="Button_Click" Foreground="White" Background="Black"></Button>
             <Button Grid.Row="4" Grid.Column="16" Content="34" FontSize="35" Click="Button_Click" Foreground="White" Background="Red"></Button>
-            <Button Grid.Row="4" Grid.Column="17" Content="2 to 1" FontSize="10" Click="Button_Click" Foreground="White" Background="Green"></Button>
-            <Button Grid.Row="3" Grid.Column="17" Content="2 to 1" FontSize="10" Click="Button_Click" Foreground="White" Background="Green"></Button>
-            <Button Grid.Row="2" Grid.Column="17" Content="2 to 1" FontSize="10" Click="Button_Click" Foreground="White" Background="Green"></Button>
+            <Button Grid.Row="4" Grid.Column="17" Content="col1" FontSize="10" Click="Button_Click" Foreground="White" Background="Green"></Button>
+            <Button Grid.Row="3" Grid.Column="17" Content="col2" FontSize="10" Click="Button_Click" Foreground="White" Background="Green"></Button>
+            <Button Grid.Row="2" Grid.Column="17" Content="col3" FontSize="10" Click="Button_Click" Foreground="White" Background="Green"></Button>
 
             <Button Grid.Row="5" Grid.Column="6" Grid.ColumnSpan="4" Content="1st 12" FontSize="30" Click="Button_Click" Foreground="White" Background="Green"></Button>
             <Button Grid.Row="5" Grid.Column="10" Grid.ColumnSpan="4" Content="2nd 12" FontSize="30" Click="Button_Click" Foreground="White" Background="Green"></Button>
