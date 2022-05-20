@@ -40,12 +40,12 @@
                 <ImageBrush ImageSource="/Assets/OverallUI/SlotMachineIcon.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="BackButton" Content="BACK" HorizontalAlignment="Left" Margin="30,350,0,0" VerticalAlignment="Top" Width="85" Height="50" FontSize="22" FontFamily="Bodoni MT Black" Click="BackButton_Click">
+        <Button x:Name="BackButton" Content="BACK" HorizontalAlignment="Left" Margin="30,350,0,0" VerticalAlignment="Top" Width="85" Height="50" FontSize="22" FontFamily="Bodoni MT Black" Click="BackButton_Click" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/OverallUI/ButtonUp.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="BankButton" Content="BANK" Margin="0,350,30,0" VerticalAlignment="Top" Height="50" FontSize="22" FontFamily="Bodoni MT Black" HorizontalAlignment="Right" Width="85" Click="BankButton_Click">
+        <Button x:Name="BankButton" Content="BANK" Margin="0,350,30,0" VerticalAlignment="Top" Height="50" FontSize="22" FontFamily="Bodoni MT Black" HorizontalAlignment="Right" Width="85" Click="BankButton_Click" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/OverallUI/ButtonUp.png"/>
             </Button.Background>

@@ -18,17 +18,17 @@
 
         <TextBox x:Name="AmountBox" Margin="315,300,315,0" Height="52" VerticalAlignment="Top" Text="0" FontFamily="Bernard MT Condensed" FontSize="40" TextAlignment="Center"></TextBox>
 
-        <Button x:Name="BackButton" Content="BACK" Margin="30,350,0,0" VerticalAlignment="Top" Height="50" FontSize="22" FontFamily="Bodoni MT Black" Click="BackButtonClick" HorizontalAlignment="Left" Width="85">
+        <Button x:Name="BackButton" Content="BACK" Margin="30,350,0,0" VerticalAlignment="Top" Height="50" FontSize="22" FontFamily="Bodoni MT Black" Click="BackButtonClick" HorizontalAlignment="Left" Width="85" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/OverallUI/ButtonUp.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="DepositButton" Content="DEPOSIT" Margin="0,302,158,0" VerticalAlignment="Top" Height="50" FontSize="22" FontFamily="Bodoni MT Black" HorizontalAlignment="Right" Width="135" Click="DepositClick">
+        <Button x:Name="DepositButton" Content="DEPOSIT" Margin="0,302,158,0" VerticalAlignment="Top" Height="50" FontSize="22" FontFamily="Bodoni MT Black" HorizontalAlignment="Right" Width="135" Click="DepositClick" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/OverallUI/ButtonUp.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="WithdrawButton" Content="WITHDRAW" Margin="120,300,505,0" VerticalAlignment="Top" Height="50" FontSize="22" FontFamily="Bodoni MT Black" Click="WithdrawClick">
+        <Button x:Name="WithdrawButton" Content="WITHDRAW" Margin="120,300,505,0" VerticalAlignment="Top" Height="50" FontSize="22" FontFamily="Bodoni MT Black" Click="WithdrawClick" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/OverallUI/ButtonUp.png"/>
             </Button.Background>

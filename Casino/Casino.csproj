@@ -110,6 +110,7 @@
     <None Remove="Assets\Slots\Wheel - Orange.png" />
     <None Remove="Assets\Slots\Wheel - Plum.png" />
     <None Remove="Assets\Slots\Wheel - Seven.png" />
+    <None Remove="ButtonUp.png" />
     <None Remove="GenericFeltMat.jpeg" />
   </ItemGroup>
 
@@ -231,6 +232,7 @@
     <Resource Include="Assets\Slots\Wheel - Orange.png" />
     <Resource Include="Assets\Slots\Wheel - Plum.png" />
     <Resource Include="Assets\Slots\Wheel - Seven.png" />
+    <Resource Include="ButtonUp.png" />
     <Resource Include="GenericFeltMat.jpeg" />
   </ItemGroup>
 
