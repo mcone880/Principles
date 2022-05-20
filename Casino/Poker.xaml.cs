@@ -20,23 +20,18 @@ namespace Casino
     public partial class Poker : Window
     {
         int money;
-        bool firstDraw = false; 
+        int bank; //Do not alter or Change, This is so that we can keep track of our Bank Amount ~ Tommy
 
-        public Poker(int money)
+        public Poker(int money, int bank)
         {
             InitializeComponent();
             this.money = money;
-            txtMoney.Text = "$" + money; 
-        }
-
-        private void CheckWin() // do this
-        {
-            //
+            this.bank = bank;
         }
 
         private void btnBack_Click(object sender, RoutedEventArgs e) // goes back to the game menu and closes this window 
         {
-            GameSelection gameSelection = new GameSelection(money);
+            GameSelection gameSelection = new GameSelection(money, bank);
             gameSelection.Show();
             this.Close();
         }
