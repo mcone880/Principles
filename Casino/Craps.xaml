@@ -6,8 +6,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Casino"
         mc:Ignorable="d"
-        Title="Craps" Height="700" Width="800">
-    <Grid x:Name="MainGrid">
+        ResizeMode="NoResize"
+        Title="Craps" Height="700" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="/GenericFeltMat.jpeg" />
         </Grid.Background>

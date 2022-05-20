@@ -20,12 +20,14 @@ namespace Casino
     public partial class Blackjack : Window
     {
         int money;
+        int bank; //Do not alter or Change, This is so that we can keep track of our Bank Amount ~ Tommy
         int bet = 0;
 
-        public Blackjack(int money)
+        public Blackjack(int money, int bank)
         {
             InitializeComponent();
             this.money = money;
+            this.bank = bank;
 
             Money.Content = "$ " + money;
         }
@@ -33,7 +35,7 @@ namespace Casino
         //Go Back to Game Selection
         private void BackClicked(object sender, RoutedEventArgs e)
         {
-            GameSelection gameSelection = new GameSelection(money);
+            GameSelection gameSelection = new GameSelection(money, bank);
             gameSelection.Show();
 
             this.Close();

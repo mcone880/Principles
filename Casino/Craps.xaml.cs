@@ -20,13 +20,15 @@ namespace Casino
     public partial class Craps : Window
     {
         int credits;
+        int bank; //Do not alter or Change, This is so that we can keep track of our Bank Amount ~ Tommy
         int bet = 0;
         Image[] Images = new Image[12];
         //Button[] BetButtons = new Button[11];
 
-        public Craps(int money)
+        public Craps(int money, int bank)
         {
             InitializeComponent();
+            this.bank = bank;
             credits = money;
             CrapsWindow.Width = 815;
             CrapsWindow.Height = 725;
@@ -91,7 +93,7 @@ namespace Casino
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-            GameSelection game = new GameSelection(credits);
+            GameSelection game = new GameSelection(credits, bank);
             game.Show();
             Close();
         }

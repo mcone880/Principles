@@ -20,16 +20,19 @@ namespace Casino
     public partial class Poker : Window
     {
         int money;
+        int bank; //Do not alter or Change, This is so that we can keep track of our Bank Amount ~ Tommy
+        bool firstDraw = false; 
 
-        public Poker(int money)
+        public Poker(int money, int bank)
         {
             InitializeComponent();
             this.money = money;
+            this.bank = bank;
         }
 
         private void btnBack_Click(object sender, RoutedEventArgs e) // goes back to the game menu and closes this window 
         {
-            GameSelection gameSelection = new GameSelection(money);
+            GameSelection gameSelection = new GameSelection(money, bank);
             gameSelection.Show();
             this.Close();
         }
@@ -47,9 +50,29 @@ namespace Casino
 
         private void btnDraw_Click(object sender, RoutedEventArgs e) // places bet and draws cards 
         {
+            // bet stuff 
+
+            // if firstDraw is false, then draw cards and disable back button and set firstDraw to true 
+            if (firstDraw == false)
+            {
+                btnBack.IsEnabled = false;
+
+                // draw cards 
+
+                firstDraw = true; 
+            }
+
+            // if firstDraw is true, redraw cards for ones not held and check wins and set firstDraw to false
+            else
+            {
+                btnBack.IsEnabled = true;
+
+                // draw cards 
+
+                firstDraw = false;
+            }
 
         }
-
 
         // Chips Buttons
         private void btnChip1_Click(object sender, RoutedEventArgs e)
