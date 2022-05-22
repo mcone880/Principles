@@ -40,7 +40,7 @@
             </Button.Background>
         </Button>
 
-        <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Top" Width="496" Height="60" Margin="0,372,0,0">
+        <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="496" Height="60">
             <Button Name="btnChip1" Width="50" Height="50" VerticalAlignment="Bottom" Margin="10, 5, 10, 5" Click="ChipClicked">
                 <Button.Background>
                     <ImageBrush ImageSource="Assets/OverallUI/Chip1.png"/>
@@ -83,10 +83,53 @@
 
         <Image Source="Assets/BlackJack/BlackJackTable.png" HorizontalAlignment="Center" VerticalAlignment="Top" Height="340" Width="555" Margin="0,10,0,0"/>
 
-        <Label Name="PlayerSum" Content="0" FontSize="20" FontFamily="Bodoni MT Black" HorizontalAlignment="Center" Foreground="White" Margin="0,231,0,144"/>
+        <Label Name="PlayerSum" Content="0" FontSize="20" FontFamily="Bodoni MT Black" HorizontalAlignment="Center" Foreground="White" Margin="0,231,0,122"/>
 
-        <Image Name="PlayerCard" Source="Assets/BlackJack/Cards/cardBack_blue1.png" HorizontalAlignment="Center" VerticalAlignment="Top" Height="75" Margin="0,275,0,0" Width="55"/>
-        <Image Name="DealerCard" Source="Assets/BlackJack/Cards/cardBack_blue1.png" HorizontalAlignment="Center" VerticalAlignment="Top" Height="75" Margin="0,35,0,0" Width="55"/>
+        <Image Name="PlayerCard1" Source="Assets/BlackJack/Cards/cardBack_blue1.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="75" Margin="135,240,0,0" Width="55" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="15"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Name="PlayerCard2" Source="Assets/BlackJack/Cards/cardBack_blue1.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="75" Margin="255,265,0,0" Width="55" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="8"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Name="PlayerCard3" Source="Assets/BlackJack/Cards/cardBack_blue1.png" HorizontalAlignment="Center" VerticalAlignment="Top" Height="75" Margin="0,275,0,0" Width="55"/>
+        <Image Name="PlayerCard4" Source="Assets/BlackJack/Cards/cardBack_blue1.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="75" Margin="490,265,0,0" Width="55" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-8"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image Name="PlayerCard5" Source="Assets/BlackJack/Cards/cardBack_blue1.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="75" Margin="610,240,0,0" Width="55" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-15"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+        <Image Name="DealerCard2" Source="Assets/BlackJack/Cards/cardBack_blue1.png" HorizontalAlignment="Center" VerticalAlignment="Top" Height="76" Margin="0,30,0,0" Width="55"/>
+        <Image Name="DealerCard1" Source="Assets/BlackJack/Cards/cardBack_blue1.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="76" Margin="390,30,0,0" Width="55"/>
+
         <Image Name="DeckCard" Source="Assets/BlackJack/Cards/cardBack_blue1.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="75" Margin="580,10,0,0" Width="55"/>
 
     </Grid>
