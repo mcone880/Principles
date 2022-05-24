@@ -34,6 +34,8 @@ namespace Casino
             InitializeComponent();
             this.money = money;
             this.bank = bank;
+
+            txtMoney.Text ="$ "+ money.ToString();
         }
 
         private void checkForWin()
@@ -68,12 +70,25 @@ namespace Casino
             {
                 bet = 0;
             }
+            Bet.Text = "$ 0";
+            if(bet> 0)
+            {
+                Result.Text = "Winner";
+            }
+            else
+            {
+                Result.Text = "loser";
+            }
             Payout(bet);
+            bet = 0;
+
+            
         }
         public void Payout(int payout)
         {
             //add to the balance
             money += payout;
+            txtMoney.Text = money.ToString();
         }
         private void btnBack_Click(object sender, RoutedEventArgs e) // goes back to the game menu and closes this window 
         {
@@ -102,9 +117,6 @@ namespace Casino
               Bells(3 in 10 per Wheel) - 35:1
               Bars(2 in 10 per Wheel) - 100:1
               Sevens(1 in 10 per Wheel) - 1000:1*/
-            // int payout = 1;
-            //check and calculate pay out
-            //Payout(payout);
 
             betPlaysted = false;
             btnBack.IsEnabled = true;
@@ -123,51 +135,84 @@ namespace Casino
 
         private void btnChip1_Click(object sender, RoutedEventArgs e)
         {
+            if(money< 1) { return; }
             betPlaysted = true;
             btnBack.IsEnabled = false;
             Spin.IsEnabled = true;
+            SetBet(1);
+
         }
         private void btnChip5_Click(object sender, RoutedEventArgs e)
         {
+            if (money < 5) { return; }
+
             betPlaysted = true;
             btnBack.IsEnabled = false;
             Spin.IsEnabled = true;
+            SetBet(5);
 
         }
         private void btnChip10_Click(object sender, RoutedEventArgs e)
         {
+            if (money < 10) { return; }
+
             betPlaysted = true;
             btnBack.IsEnabled = false;
             Spin.IsEnabled = true;
+            SetBet(10);
 
         }
         private void btnChip20_Click(object sender, RoutedEventArgs e)
         {
+            if (money < 20) { return; }
+
             betPlaysted = true;
             btnBack.IsEnabled = false;
             Spin.IsEnabled = true;
-
+            SetBet(20);
         }
+
+
         private void btnChip50_Click(object sender, RoutedEventArgs e)
         {
+            if (money < 50) { return; }
+
             betPlaysted = true;
             btnBack.IsEnabled = false;
             Spin.IsEnabled = true;
+            SetBet(50);
 
         }
         private void btnChip100_Click(object sender, RoutedEventArgs e)
         {
+            if (money < 100) { return; }
+
             betPlaysted = true;
             btnBack.IsEnabled = false;
             Spin.IsEnabled = true;
+            SetBet(100);
 
         }
         private void btnChip1k_Click(object sender, RoutedEventArgs e)
         {
+            if (money < 1000) { return; }
+
             betPlaysted = true;
             btnBack.IsEnabled = false;
             Spin.IsEnabled = true;
+            SetBet(1000);
 
+        }
+        private void SetBet(int v)
+        {
+            Result.Text = "";
+            if(v<= money && money != 0)
+            {
+                bet += v;
+                Bet.Text = "$ " +  bet.ToString();
+                money = money - v;
+                txtMoney.Text = money.ToString();
+            }
         }
 
 
