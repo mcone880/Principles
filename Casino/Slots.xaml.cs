@@ -229,7 +229,7 @@ namespace Casino
             }
         }
 
-        private void btnRules_Click(object sender, RoutedEventArgs e) // shows the game rules in a popup window 
+        private void RulesClicked(object sender, RoutedEventArgs e) // shows the game rules in a popup window 
         {
             MessageBox.Show("- Click Chips to Place Bets\n" +
                 "- Click Spin Button to play\n" );
