@@ -126,47 +126,43 @@ namespace Casino
             switch (myBet)
             {
                 case BET.TWO:
-                    if (results[2] != 2) credits -= bet;
+                    if (results[2] != 2) break;
                     else credits += bet * 31;
                     break;
                 case BET.THREE:
-                    if (results[2] != 3) credits -= bet;
+                    if (results[2] != 3) break;
                     else credits += bet * 16;
                     break;
                 case BET.SEVEN:
-                    if (results[2] != 7) credits -= bet;
+                    if (results[2] != 7) break;
                     else credits += bet * 5;
                     break;
                 case BET.ELEVEN:
-                    if (results[2] != 11) credits -= bet;
+                    if (results[2] != 11) break;
                     else credits += bet * 16;
                     break;
                 case BET.TWELVE:
-                    if (results[2] != 12) credits -= bet;
+                    if (results[2] != 12) break;
                     else credits += bet * 31;
                     break;
                 case BET.ANY:
-                    if (results[2] != 2 || results[2] != 3 || results[2] == 12) /*2,3,12*/credits -= bet;
+                    if (results[2] != 2 || results[2] != 3 || results[2] == 12) break;
                     else credits += bet * 8;
                     break;
                 case BET.D_TWO:
                     if (results[0] == 2 && results[1] == 2) credits += bet * 8;
-                    else credits -= bet;
                     break;
                 case BET.D_THREE:
                     if (results[0] == 3 && results[1] == 3) credits += bet * 9;
-                    else credits -= bet;
                     break;
                 case BET.D_FOUR:
                     if (results[0] == 4 && results[1] == 4) credits += bet * 9;
-                    else credits -= bet;
                     break;
                 case BET.D_FIVE:
                     if (results[0] == 5 && results[1] == 5) credits += bet * 8;
-                    else credits -= bet;
                     break;
                 case BET.FIELD:
-                    if (results[2] == 5 || results[2] == 6 || results[2] == 7 || results[2] == 8) credits -= bet;
+                    if (results[2] == 5 || results[2] == 6 || results[2] == 7 || results[2] == 8) break;
                     else if (results[2] == 2) credits += bet * 3;
                     else if (results[2] == 12) credits += bet * 4;
                     else credits += bet * 2;
