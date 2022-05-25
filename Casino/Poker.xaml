@@ -110,6 +110,7 @@
 
         <TextBlock x:Name="txtBet" Text="BET:" Grid.Row="0" Grid.Column="1" FontSize="42" FontFamily="Bodoni MT Black" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center" />
         <TextBlock x:Name="txtBetAmount" Text="$0" Grid.Row="1" Grid.Column="1" FontSize="34" FontFamily="Bodoni MT Black" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Center" />
+        <Label x:Name="txtWinAmount" Content="Win/Lose Amount Here" Grid.Row="1" Grid.Column="1" FontSize="34" FontFamily="Bodoni MT Black" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="75" Visibility="Hidden" />
 
         <WrapPanel Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" Height="150" Margin="0,150,108,0" Grid.ColumnSpan="2">
             <Label Name="lblHold1" Content="HOLD" FontSize="15" FontFamily="Bodoni MT Black" Foreground="White" Height="27" Width="60" Visibility="Hidden"  Margin="0, 0, 55, 0" VerticalAlignment="Top" />

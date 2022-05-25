@@ -17,8 +17,28 @@ namespace Casino
     /// <summary>
     /// Interaction logic for Craps.xaml
     /// </summary>
+    /// 
+
+    public enum BET
+    {
+        TWO,
+        THREE,
+        SEVEN,
+        ELEVEN,
+        TWELVE,
+        ANY,
+        D_TWO,
+        D_THREE,
+        D_FOUR,
+        D_FIVE,
+        FIELD
+    }
+
     public partial class Craps : Window
     {
+        BET myBet;
+        bool betPlaced = false;
+        bool betChosen = false;
         int credits;
         int bank; //Do not alter or Change, This is so that we can keep track of our Bank Amount ~ Tommy
         int bet = 0;
@@ -103,10 +123,58 @@ namespace Casino
             var results = Roll();
             SetImages(results[0], results[1]);
 
-
+            switch (myBet)
+            {
+                case BET.TWO:
+                    if (results[2] != 2) break;
+                    else credits += bet * 31;
+                    break;
+                case BET.THREE:
+                    if (results[2] != 3) break;
+                    else credits += bet * 16;
+                    break;
+                case BET.SEVEN:
+                    if (results[2] != 7) break;
+                    else credits += bet * 5;
+                    break;
+                case BET.ELEVEN:
+                    if (results[2] != 11) break;
+                    else credits += bet * 16;
+                    break;
+                case BET.TWELVE:
+                    if (results[2] != 12) break;
+                    else credits += bet * 31;
+                    break;
+                case BET.ANY:
+                    if (results[2] != 2 || results[2] != 3 || results[2] == 12) break;
+                    else credits += bet * 8;
+                    break;
+                case BET.D_TWO:
+                    if (results[0] == 2 && results[1] == 2) credits += bet * 8;
+                    break;
+                case BET.D_THREE:
+                    if (results[0] == 3 && results[1] == 3) credits += bet * 9;
+                    break;
+                case BET.D_FOUR:
+                    if (results[0] == 4 && results[1] == 4) credits += bet * 9;
+                    break;
+                case BET.D_FIVE:
+                    if (results[0] == 5 && results[1] == 5) credits += bet * 8;
+                    break;
+                case BET.FIELD:
+                    if (results[2] == 5 || results[2] == 6 || results[2] == 7 || results[2] == 8) break;
+                    else if (results[2] == 2) credits += bet * 3;
+                    else if (results[2] == 12) credits += bet * 4;
+                    else credits += bet * 2;
+                    break;
+            }
 
             bet = 0;
             lblBet.Content = "Bet: " + bet;
+            lblMoney.Content = "Money: " + credits;
+
+            betPlaced = false;
+            betChosen = false;
             RollButton.IsEnabled = false;
         }
 
@@ -125,15 +193,37 @@ namespace Casino
 
         private void btnClick(object sender, RoutedEventArgs e)
         {
-            if (sender == btn1 && bet + 1 <= credits) bet += 1;
-            else if (sender == btn5 && bet + 5 <= credits) bet += 5;
-            else if (sender == btn10 && bet + 10 <= credits) bet += 10;
-            else if (sender == btn20 && bet + 20 <= credits) bet += 20;
-            else if (sender == btn50 && bet + 50 <= credits) bet += 50;
-            else if (sender == btn100 && bet + 100 <= credits) bet += 100;
-            else if (sender == btn1000 && bet + 1000 <= credits) bet += 1000; 
+            int betAmount = bet;
+            if (sender == btn1 && credits >= 1) bet += 1;
+            else if (sender == btn5 && credits >= 5) bet += 5;
+            else if (sender == btn10 && credits >= 10) bet += 10;
+            else if (sender == btn20 && credits >= 20) bet += 20;
+            else if (sender == btn50 && credits >= 50) bet += 50;
+            else if (sender == btn100 && credits >= 100) bet += 100;
+            else if (sender == btn1000 && credits >= 1000) bet += 1000;
+            credits -= bet - betAmount;
+            lblMoney.Content = "Money: " + credits;
             lblBet.Content = "Bet: " + bet;
-            RollButton.IsEnabled = true;
+            betPlaced = true;
+            if (betPlaced && betChosen) RollButton.IsEnabled = true;
+        }
+
+        private void BetButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (sender == Bet2 && !betChosen) myBet = BET.TWO;
+            else if (sender == Bet3 && !betChosen) myBet = BET.THREE;
+            else if (sender == Bet7 && !betChosen) myBet = BET.SEVEN;
+            else if (sender == Bet11 && !betChosen) myBet = BET.ELEVEN;
+            else if (sender == Bet12 && !betChosen) myBet = BET.TWELVE;
+            else if (sender == BetAny && !betChosen) myBet = BET.ANY;
+            else if (sender == BetDouble2 && !betChosen) myBet = BET.D_TWO;
+            else if (sender == BetDouble3 && !betChosen) myBet = BET.D_THREE;
+            else if (sender == BetDouble4 && !betChosen) myBet = BET.D_FOUR;
+            else if (sender == BetDouble5 && !betChosen) myBet = BET.D_FIVE;
+            else if (sender == BetField && !betChosen) myBet = BET.FIELD;
+
+            betChosen = true;
+            if (betPlaced && betChosen) RollButton.IsEnabled = true;
         }
     }
 }

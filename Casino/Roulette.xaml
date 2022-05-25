@@ -98,22 +98,66 @@
             <Button Grid.Row="6" Grid.Column="10" Grid.ColumnSpan="2" FontSize="30" Content="Red" Foreground="White" Background="Red" Click="Button_Click"></Button>
             <Button Grid.Row="6" Grid.Column="12" Grid.ColumnSpan="2" FontSize="30" Content="Black" Foreground="White" Background="Black" Click="Button_Click"></Button>
             <Button Grid.Row="2" Grid.RowSpan="3" Grid.Column="4" Content="0" FontSize="50" Background="Green" Click="Button_Click"></Button>
-            <Label Grid.Row="0" Grid.Column="18" Grid.ColumnSpan="4" Name="Currency" FontSize="20" Foreground="White"> Amount </Label>
-            <Label Grid.Row="1" Grid.Column="18" Grid.ColumnSpan="4" Name="BettingAmount" FontSize="20" Foreground="White"> Betting </Label>
+            <Label Grid.Row="0" Grid.Column="18" Grid.ColumnSpan="4" Name="Currency" FontSize="20" Foreground="White">Amount</Label>
+            <Label Grid.Row="1" Grid.Column="18" Grid.ColumnSpan="4" Name="BettingAmount" FontSize="20" Foreground="White">Betting</Label>
 
-            <Button Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" Name="Back" FontSize="25" Click="Button_Back">Back</Button>
-            <Button Grid.Row="8" Grid.Column="20" Grid.ColumnSpan="2" Name="Spin" FontSize="25" Click="Button_Spin">Spin</Button>
-            <Button Grid.Row="7" Grid.Column="20" Grid.ColumnSpan="2" Content="Rule" FontSize="25" Click="Button_Rule"></Button>
-            <Button Grid.Row="8" Grid.Column="4"  Grid.ColumnSpan="2" Content="1" FontSize="15" Click="Button_Bet"/>
-            <Button Grid.Row="8" Grid.Column="6"  Grid.ColumnSpan="2" Content="5" FontSize="15" Click="Button_Bet"></Button>
-            <Button Grid.Row="8" Grid.Column="8"  Grid.ColumnSpan="2" Content="10" FontSize="15" Click="Button_Bet"></Button> 
-            <Button Grid.Row="8" Grid.Column="10"  Grid.ColumnSpan="2" Content="20" FontSize="15" Click="Button_Bet"></Button>
-            <Button Grid.Row="8" Grid.Column="12"  Grid.ColumnSpan="2" Content="50" FontSize="15" Click="Button_Bet"></Button>
-            <Button Grid.Row="8" Grid.Column="14"  Grid.ColumnSpan="2" Content="100" FontSize="15" Click="Button_Bet"></Button>
-            <Button Grid.Row="8" Grid.Column="16"  Grid.ColumnSpan="2" Content="1000" FontSize="15" Click="Button_Bet"></Button>
-            <TextBlock Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="5" Name="Results" FontSize="30" VerticalAlignment="Center" Foreground="White" TextAlignment="Center"> Results</TextBlock>
+            <Button x:Name="Back" Content="BACK" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="25" FontSize="15" Click="Button_Back" Grid.Row="8" Grid.ColumnSpan="3" Margin="13,5,0,0" >
+                <Button.Background>
+                    <ImageBrush ImageSource="/Assets/OverallUI/ButtonUp.png"/>
+                </Button.Background>
+            </Button>
+
+
+            <Button x:Name="Spin" Content="Spin"  Margin="20,5,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Height="29" FontSize="15" Click="Button_Spin" Grid.Column="19" Grid.Row="8" IsEnabled="False" Grid.ColumnSpan="3" >
+                <Button.Background>
+                    <ImageBrush ImageSource="/Assets/OverallUI/ButtonUp.png"/>
+                </Button.Background>
+            </Button>
             
+            <Button Grid.Row="7" Grid.Column="20" Grid.ColumnSpan="2" Content="Rule" FontSize="25" Click="Button_Rule"></Button>
+
+            <WrapPanel Grid.Row="7"  HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="655" Height="77" Grid.ColumnSpan="17" Margin="30,0,0,0" Grid.RowSpan="2" Grid.Column="3" >
+                <Button Name="btnChip1" Width="75" Height="70" FontSize="1" Content="1" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="5,5,5,3" Click="Button_Bet" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Assets/OverallUI/Chip1.png" Stretch="Fill"/>
+                    </Button.Background>
+                </Button>
+                <Button Name="btnChip5" Width="80" Height="70" FontSize="5" Content="5" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="5,5,5,3" Click="Button_Bet" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Assets/OverallUI/Chip5.png"/>
+                    </Button.Background>
+                </Button>
+                <Button Name="btnChip10" Width="80" Height="70" FontSize="1" Content="10" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="5,5,5,3" Click="Button_Bet" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Assets/OverallUI/Chip10.png"/>
+                    </Button.Background>
+                </Button>
+                <Button Name="btnChip20" Width="80" Height="70" FontSize="1" Content="20" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="5,5,5,3" Click="Button_Bet" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Assets/OverallUI/Chip20.png"/>
+                    </Button.Background>
+                </Button>
+                <Button Name="btnChip50" Width="80" Height="70" FontSize="1" Content="50" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="5,5,5,3" Click="Button_Bet" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Assets/OverallUI/Chip50.png"/>
+                    </Button.Background>
+                </Button>
+                <Button Name="btnChip100" Width="80" Height="70" FontSize="1" Content="100" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="5,5,5,3" Click="Button_Bet" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Assets/OverallUI/Chip100.png"/>
+                    </Button.Background>
+                </Button>
+                <Button Name="btnChip1k" Width="80" Height="70" FontSize="1" Content="1000" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="5,5,5,3" Click="Button_Bet" BorderBrush="{x:Null}">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Assets/OverallUI/Chip1000.png"/>
+                    </Button.Background>
+                </Button>
+
+            </WrapPanel>
+
+            <TextBlock Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="5" Name="Results" FontSize="30" VerticalAlignment="Center" Foreground="White" TextAlignment="Center"> Results</TextBlock>
+
             <Image Source="/Assets/Roulette/RouletteWheel_SingleZero.png" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="5" Grid.RowSpan="3"></Image>
-        </Grid> 
+        </Grid>
     </DockPanel>
 </Window>

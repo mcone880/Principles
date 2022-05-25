@@ -49,7 +49,53 @@ namespace Casino
 
         private void CheckWin() // need to do this 
         {
-            MessageBox.Show("Made it to the win check! Unfortunately, I have not yet made the win check.");
+            MessageBox.Show("Made it to the win check! Unfortunately, I have not yet finished the win check.");
+
+
+            if (card1 == null) 
+            {
+                // placeholder
+            }
+            else if ((card1.CardNumber == card2.CardNumber) && (card3.CardNumber == card4.CardNumber) || // 1+2 and 3+4
+                     (card1.CardNumber == card2.CardNumber) && (card3.CardNumber == card5.CardNumber) || // 1+2 and 3+5
+                     (card1.CardNumber == card2.CardNumber) && (card4.CardNumber == card5.CardNumber) || // 1+2 and 4+5
+                     (card1.CardNumber == card3.CardNumber) && (card2.CardNumber == card4.CardNumber) || // 1+3 and 2+4
+                     (card1.CardNumber == card3.CardNumber) && (card2.CardNumber == card5.CardNumber) || // 1+3 and 2+5
+                     (card1.CardNumber == card3.CardNumber) && (card4.CardNumber == card5.CardNumber) || // 1+3 and 4+5
+                     (card1.CardNumber == card4.CardNumber) && (card2.CardNumber == card3.CardNumber) || // 1+4 and 2+3
+                     (card1.CardNumber == card4.CardNumber) && (card2.CardNumber == card5.CardNumber) || // 1+4 and 2+5
+                     (card1.CardNumber == card4.CardNumber) && (card3.CardNumber == card5.CardNumber) || // 1+4 and 3+4
+                     (card1.CardNumber == card5.CardNumber) && (card2.CardNumber == card3.CardNumber) || // 1+5 and 2+3
+                     (card1.CardNumber == card5.CardNumber) && (card2.CardNumber == card4.CardNumber) || // 1+5 and 2+4
+                     (card1.CardNumber == card5.CardNumber) && (card3.CardNumber == card4.CardNumber) || // 1+5 and 3+4
+                     (card2.CardNumber == card3.CardNumber) && (card4.CardNumber == card5.CardNumber) || // 2+3 and 4+5
+                     (card2.CardNumber == card4.CardNumber) && (card3.CardNumber == card5.CardNumber) || // 2+4 and 3+5
+                     (card2.CardNumber == card5.CardNumber) && (card3.CardNumber == card4.CardNumber))   // 2+5 and 3+4
+            {
+                // two pairs
+            }
+            else if ((card1.CardNumber == card2.CardNumber && card1.CardNumber == card3.CardNumber) || // 1+2+3
+                (card1.CardNumber == card2.CardNumber && card1.CardNumber == card4.CardNumber) ||      // 1+2+4
+                (card1.CardNumber == card2.CardNumber && card1.CardNumber == card5.CardNumber) ||      // 1+2+5
+                (card1.CardNumber == card3.CardNumber && card1.CardNumber == card4.CardNumber) ||      // 1+3+4
+                (card1.CardNumber == card3.CardNumber && card1.CardNumber == card5.CardNumber) ||      // 1+3+5
+                (card2.CardNumber == card3.CardNumber && card2.CardNumber == card4.CardNumber) ||      // 2+3+4
+                (card2.CardNumber == card3.CardNumber && card2.CardNumber == card5.CardNumber) ||      // 2+3+5
+                (card2.CardNumber == card4.CardNumber && card2.CardNumber == card5.CardNumber) ||      // 2+4+5
+                (card3.CardNumber == card4.CardNumber && card3.CardNumber == card5.CardNumber))        // 3+4+5
+            {
+                // three of a kind 
+            }
+            else if (card1.CardNumber == card2.CardNumber || card1.CardNumber == card3.CardNumber || card1.CardNumber == card4.CardNumber || card1.CardNumber == card5.CardNumber ||
+                card2.CardNumber == card3.CardNumber || card2.CardNumber == card4.CardNumber || card2.CardNumber == card5.CardNumber ||
+                card3.CardNumber == card4.CardNumber || card3.CardNumber == card5.CardNumber || card4.CardNumber == card5.CardNumber)
+            {
+                // pair 
+            }
+            else if (card1.Suit == card2.Suit && card1.Suit == card3.Suit && card1.Suit == card4.Suit && card1.Suit == card5.Suit)
+            {
+                // flush 
+            }
         }
 
         private void SetCardButtonImage(Button button, Cards card)
@@ -112,11 +158,12 @@ namespace Casino
         {
             if (gameSet == true)
             {
-                // bet stuff 
-
                 // if firstDraw is false, then draw cards and disable back button and set firstDraw to true 
                 if (firstDraw == false)
                 {
+                    btnReset.IsEnabled = false;
+                    btnBack.IsEnabled = false; 
+
                     // disable bet buttons 
                     btnChip1.IsEnabled = false; 
                     btnChip5.IsEnabled = false; 
@@ -155,6 +202,9 @@ namespace Casino
                 // if firstDraw is true, redraw cards for ones not held and check wins and set firstDraw to false
                 else
                 {
+                    btnReset.IsEnabled = true;
+                    btnBack.IsEnabled = true; 
+
                     // disable hold cards
                     btnHold1.IsEnabled = false;
                     btnHold2.IsEnabled = false;
@@ -240,6 +290,8 @@ namespace Casino
             ResetCardButtonImage(btnHold4);
             ResetCardButtonImage(btnHold5);
 
+            txtWinAmount.Visibility = Visibility.Hidden;
+
             betMoney = 0;
             betAmount = "";
             gameSet = true;
@@ -252,6 +304,9 @@ namespace Casino
             {
                 betMoney += 1;
                 money -= 1;
+
+                btnReset.IsEnabled = false;
+                btnBack.IsEnabled = false;
             }
             else MessageBox.Show("Not Enough Money");
 
@@ -266,6 +321,9 @@ namespace Casino
             {
                 betMoney += 5;
                 money -= 5;
+
+                btnReset.IsEnabled = false;
+                btnBack.IsEnabled = false;
             }
             else MessageBox.Show("Not Enough Money");
 
@@ -280,6 +338,9 @@ namespace Casino
             {
                 betMoney += 10;
                 money -= 10;
+
+                btnReset.IsEnabled = false;
+                btnBack.IsEnabled = false;
             }
             else MessageBox.Show("Not Enough Money");
 
@@ -294,6 +355,9 @@ namespace Casino
             {
                 betMoney += 20;
                 money -= 20;
+
+                btnReset.IsEnabled = false;
+                btnBack.IsEnabled = false;
             }
             else MessageBox.Show("Not Enough Money");
 
@@ -308,6 +372,9 @@ namespace Casino
             {
                 betMoney += 50;
                 money -= 50;
+
+                btnReset.IsEnabled = false;
+                btnBack.IsEnabled = false;
             }
             else MessageBox.Show("Not Enough Money");
 
@@ -322,6 +389,9 @@ namespace Casino
             {
                 betMoney += 100;
                 money -= 100;
+
+                btnReset.IsEnabled = false;
+                btnBack.IsEnabled = false;
             }
             else MessageBox.Show("Not Enough Money");
 
@@ -336,6 +406,9 @@ namespace Casino
             {
                 betMoney += 1000;
                 money -= 1000;
+
+                btnReset.IsEnabled = false;
+                btnBack.IsEnabled = false;
             }
             else MessageBox.Show("Not Enough Money");
 
