@@ -61,38 +61,38 @@
         <Image x:Name="I3" Source="/Assets/Slots/Wheel - Seven.png" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="311,103,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
 
 
-        <WrapPanel Grid.Row="2"  HorizontalAlignment="Left" VerticalAlignment="Center" Width="655" Height="77" Grid.ColumnSpan="3" Margin="145,0,0,0" >
-            <Button Name="btnChip1" Width="75" Height="70" FontSize="35" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="5" Click="btnChip1_Click">
+        <WrapPanel Grid.Row="1"  HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="655" Height="77" Grid.ColumnSpan="3" Margin="145,0,0,0" Grid.RowSpan="2" >
+            <Button Name="btnChip1" Width="75" Height="70" FontSize="35" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="5,5,5,3" Click="btnChip1_Click" BorderBrush="{x:Null}">
                 <Button.Background>
-                    <ImageBrush ImageSource="Assets/OverallUI/Chip1.png"/>
+                    <ImageBrush ImageSource="Assets/OverallUI/Chip1.png" Stretch="Fill"/>
                 </Button.Background>
             </Button>
-            <Button Name="btnChip5" Width="80" Height="70" FontSize="35" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="5" Click="btnChip5_Click">
+            <Button Name="btnChip5" Width="80" Height="70" FontSize="35" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="5,5,5,3" Click="btnChip5_Click" BorderBrush="{x:Null}">
                 <Button.Background>
                     <ImageBrush ImageSource="Assets/OverallUI/Chip5.png"/>
                 </Button.Background>
             </Button>
-            <Button Name="btnChip10" Width="80" Height="70" FontSize="35" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="5" Click="btnChip10_Click">
+            <Button Name="btnChip10" Width="80" Height="70" FontSize="35" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="5,5,5,3" Click="btnChip10_Click" BorderBrush="{x:Null}">
                 <Button.Background>
                     <ImageBrush ImageSource="Assets/OverallUI/Chip10.png"/>
                 </Button.Background>
             </Button>
-            <Button Name="btnChip20" Width="80" Height="70" FontSize="35" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="5" Click="btnChip20_Click">
+            <Button Name="btnChip20" Width="80" Height="70" FontSize="35" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="5,5,5,3" Click="btnChip20_Click" BorderBrush="{x:Null}">
                 <Button.Background>
                     <ImageBrush ImageSource="Assets/OverallUI/Chip20.png"/>
                 </Button.Background>
             </Button>
-            <Button Name="btnChip50" Width="80" Height="70" FontSize="35" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="5" Click="btnChip50_Click">
+            <Button Name="btnChip50" Width="80" Height="70" FontSize="35" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="5,5,5,3" Click="btnChip50_Click" BorderBrush="{x:Null}">
                 <Button.Background>
                     <ImageBrush ImageSource="Assets/OverallUI/Chip50.png"/>
                 </Button.Background>
             </Button>
-            <Button Name="btnChip100" Width="80" Height="70" FontSize="35" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="5" Click="btnChip100_Click">
+            <Button Name="btnChip100" Width="80" Height="70" FontSize="35" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="5,5,5,3" Click="btnChip100_Click" BorderBrush="{x:Null}">
                 <Button.Background>
                     <ImageBrush ImageSource="Assets/OverallUI/Chip100.png"/>
                 </Button.Background>
             </Button>
-            <Button Name="btnChip1k" Width="80" Height="70" FontSize="35" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="5" Click="btnChip1k_Click">
+            <Button Name="btnChip1k" Width="80" Height="70" FontSize="35" FontFamily="Bodoni MT Black" VerticalAlignment="Bottom" Margin="5,5,5,3" Click="btnChip1k_Click" BorderBrush="{x:Null}">
                 <Button.Background>
                     <ImageBrush ImageSource="Assets/OverallUI/Chip1000.png"/>
                 </Button.Background>
