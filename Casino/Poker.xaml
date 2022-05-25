@@ -26,62 +26,62 @@
         <Image Source="/Assets/OverallUI/PokerIcon.png" Margin="5" />
         <Image Source="/Assets/Blackjack/Cards/cardBack_blue1.png" Grid.Column="1" Grid.Row="1" Height="70" Width="50" Margin="460,22,8,188" />
 
-        <Button x:Name="btnBack" Content="BACK" Grid.Row="2" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="100" Height="25" FontSize="15" FontFamily="Bodoni MT Black" Click="btnBack_Click" >
+        <Button x:Name="btnBack" Content="BACK" Grid.Row="2" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="100" Height="25" FontSize="15" FontFamily="Bodoni MT Black" Click="btnBack_Click" BorderBrush="{x:Null}" >
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/OverallUI/ButtonUp.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnRules" Content="RULES" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="50" Height="20" FontSize="12" FontFamily="Bodoni MT Black" Click="btnRules_Click" >
+        <Button x:Name="btnRules" Content="RULES" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="50" Height="20" FontSize="12" FontFamily="Bodoni MT Black" Click="btnRules_Click" BorderBrush="{x:Null}" >
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/OverallUI/ButtonUp.png"/>
             </Button.Background>
         </Button>
 
         <StackPanel Grid.Column="2" Grid.Row="2" Margin="5">
-            <Button x:Name="btnDraw" Content="DRAW"  Margin="2" HorizontalAlignment="Right" Width="100" Height="25" FontSize="15" FontFamily="Bodoni MT Black" Click="btnDraw_Click" >
+            <Button x:Name="btnDraw" Content="DRAW"  Margin="2" HorizontalAlignment="Right" Width="100" Height="25" FontSize="15" FontFamily="Bodoni MT Black" Click="btnDraw_Click" BorderBrush="{x:Null}" >
                 <Button.Background>
                     <ImageBrush ImageSource="/Assets/OverallUI/ButtonUp.png"/>
                 </Button.Background>
             </Button>
-            <Button x:Name="btnReset" Content="RESET" Margin="2" HorizontalAlignment="Right" Width="100" Height="25" FontSize="15" FontFamily="Bodoni MT Black" Click="btnReset_Click" >
+            <Button x:Name="btnReset" Content="RESET" Margin="2" HorizontalAlignment="Right" Width="100" Height="25" FontSize="15" FontFamily="Bodoni MT Black" Click="btnReset_Click" BorderBrush="{x:Null}" >
                 <Button.Background>
                     <ImageBrush ImageSource="/Assets/OverallUI/ButtonUp.png"/>
                 </Button.Background>
-            </Button>            
+            </Button>
         </StackPanel>
 
         <WrapPanel Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button x:Name="btnChip1" Width="60" Height="45" Margin="5" FontFamily="Bodoni MT Black" BorderThickness="0" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Click="btnChip1_Click" >
+            <Button x:Name="btnChip1" Width="60" Height="45" Margin="5" FontFamily="Bodoni MT Black" BorderThickness="0" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Click="btnChip1_Click" BorderBrush="{x:Null}" >
                 <Button.Background>
                     <ImageBrush ImageSource="/Assets/OverallUI/Chip1.png"/>
                 </Button.Background>
             </Button>
-            <Button x:Name="btnChip5" Width="60" Height="45" Margin="5" FontFamily="Bodoni MT Black" BorderThickness="0" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Click="btnChip5_Click" >
+            <Button x:Name="btnChip5" Width="60" Height="45" Margin="5" FontFamily="Bodoni MT Black" BorderThickness="0" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Click="btnChip5_Click" BorderBrush="{x:Null}" >
                 <Button.Background>
                     <ImageBrush ImageSource="/Assets/OverallUI/Chip5.png"/>
                 </Button.Background>
             </Button>
-            <Button x:Name="btnChip10" Width="60" Height="45" Margin="5" FontFamily="Bodoni MT Black" BorderThickness="0" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Click="btnChip10_Click" >
+            <Button x:Name="btnChip10" Width="60" Height="45" Margin="5" FontFamily="Bodoni MT Black" BorderThickness="0" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Click="btnChip10_Click" BorderBrush="{x:Null}" >
                 <Button.Background>
                     <ImageBrush ImageSource="/Assets/OverallUI/Chip10.png"/>
                 </Button.Background>
             </Button>
-            <Button x:Name="btnChip20" Width="60" Height="45" Margin="5" FontFamily="Bodoni MT Black" BorderThickness="0" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Click="btnChip20_Click" >
+            <Button x:Name="btnChip20" Width="60" Height="45" Margin="5" FontFamily="Bodoni MT Black" BorderThickness="0" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Click="btnChip20_Click" BorderBrush="{x:Null}" >
                 <Button.Background>
                     <ImageBrush ImageSource="/Assets/OverallUI/Chip20.png"/>
                 </Button.Background>
             </Button>
-            <Button x:Name="btnChip50" Width="60" Height="45" Margin="5" FontFamily="Bodoni MT Black" BorderThickness="0" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Click="btnChip50_Click" >
+            <Button x:Name="btnChip50" Width="60" Height="45" Margin="5" FontFamily="Bodoni MT Black" BorderThickness="0" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Click="btnChip50_Click" BorderBrush="{x:Null}" >
                 <Button.Background>
                     <ImageBrush ImageSource="/Assets/OverallUI/Chip50.png"/>
                 </Button.Background>
             </Button>
-            <Button x:Name="btnChip100" Width="60" Height="45" Margin="5" FontFamily="Bodoni MT Black" BorderThickness="0" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Click="btnChip100_Click" >
+            <Button x:Name="btnChip100" Width="60" Height="45" Margin="5" FontFamily="Bodoni MT Black" BorderThickness="0" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Click="btnChip100_Click" BorderBrush="{x:Null}" >
                 <Button.Background>
                     <ImageBrush ImageSource="/Assets/OverallUI/Chip100.png"/>
                 </Button.Background>
             </Button>
-            <Button x:Name="btnChip1K" Width="60" Height="45" Margin="5" FontFamily="Bodoni MT Black" BorderThickness="0" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Click="btnChip1K_Click" >
+            <Button x:Name="btnChip1K" Width="60" Height="45" Margin="5" FontFamily="Bodoni MT Black" BorderThickness="0" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Click="btnChip1K_Click" BorderBrush="{x:Null}" >
                 <Button.Background>
                     <ImageBrush ImageSource="/Assets/OverallUI/Chip1000.png"/>
                 </Button.Background>
