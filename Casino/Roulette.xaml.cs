@@ -589,13 +589,43 @@ namespace Casino
             if (numbers == 1 || numbers == 3 || numbers == 5 || numbers == 7 || numbers == 9 || numbers == 11 || numbers == 13 || numbers == 15 || numbers == 17 || numbers == 19 || numbers == 21 || numbers == 23 || numbers == 25 || numbers == 27 || numbers == 29 || numbers == 31 || numbers == 33 || numbers == 35 && odd > 0)
             {
                 money += odd + odd;
+                odd = 0;
             }
             if (numbers == 2 || numbers == 4 || numbers == 6 || numbers == 8 || numbers == 10 || numbers == 12 || numbers == 14 || numbers == 16 || numbers == 18 || numbers == 20 || numbers == 22 || numbers == 24 || numbers == 26 || numbers == 28 || numbers == 30 || numbers == 32 || numbers == 34 || numbers == 36 && even > 0)
             {
                 money += even + even;
+                even = 0;
             }
-            //High / Low - 1:1
+            //High 19 - 36 / Low 1 - 18 - 1:1
+            if (numbers == 1 || numbers == 2 || numbers == 3 || numbers == 4 || numbers == 5 || numbers == 6 || numbers == 7 || numbers == 8 || numbers == 9 || numbers == 10 || numbers == 11 || numbers == 12 || numbers == 13 || numbers == 14 || numbers == 15 || numbers == 16 || numbers == 17 || numbers == 18 && firstHalf > 0)
+            {
+                money += firstHalf + firstHalf;
+                firstHalf = 0;
+            }
+            if (numbers == 19 || numbers == 20 || numbers == 21 || numbers == 22 || numbers == 23 || numbers == 24 || numbers == 25 || numbers == 26 || numbers == 27 || numbers == 28 || numbers == 29 || numbers == 30 || numbers == 31 || numbers == 32 || numbers == 33 || numbers == 34 || numbers == 35 || numbers == 36 && secondHalf > 0)
+            {
+                money += secondHalf + secondHalf;
+                secondHalf = 0;
+            }
             //Dozen - 3:1
+            //first dozen
+            if (numbers == 1 || numbers == 2 || numbers == 3 || numbers == 4 || numbers == 5 || numbers == 6 || numbers == 7 || numbers == 8 || numbers == 9 || numbers == 10 || numbers == 11 || numbers == 12 && first12 > 0)
+            {
+                money += first12 + (3 * first12);
+                first12 = 0;
+            }
+            //second dozen
+            if (numbers == 13 || numbers == 14 || numbers == 15 || numbers == 16 || numbers == 17 || numbers == 18 || numbers == 19 || numbers == 20 || numbers == 21 || numbers == 22 || numbers == 23 || numbers == 24 && second12 > 0)
+            {
+                money += second12 + (3 * second12);
+                first12 = 0;
+            }
+            //third dozen
+            if (numbers == 25 || numbers == 26 || numbers == 27 || numbers == 28 || numbers == 29 || numbers == 30 || numbers == 31 || numbers == 32 || numbers == 33 || numbers == 34 || numbers == 35 || numbers == 36 && third12 > 0)
+            {
+                money += third12 + (3 * third12);
+                first12 = 0;
+            }
             //Column - 3:1
             //Straight Number(1 - Number) -36:1
 
@@ -616,6 +646,11 @@ namespace Casino
             {
                 Results.Text = "No money!!!!";
             }
+        }
+
+        private void Button_Rule(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

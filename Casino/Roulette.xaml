@@ -103,6 +103,7 @@
 
             <Button Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" Content="Back" FontSize="25" Click="Button_Back"></Button>
             <Button Grid.Row="8" Grid.Column="20" Grid.ColumnSpan="2" Content="Spin" FontSize="25" Click="Button_Spin"></Button>
+            <Button Grid.Row="7" Grid.Column="20" Grid.ColumnSpan="2" Content="Rule" FontSize="25" Click="Button_Rule"></Button>
             <Button Grid.Row="8" Grid.Column="4"  Grid.ColumnSpan="2" Content="1" FontSize="15" Click="Button_Bet"/>
             <Button Grid.Row="8" Grid.Column="6"  Grid.ColumnSpan="2" Content="5" FontSize="15" Click="Button_Bet"></Button>
             <Button Grid.Row="8" Grid.Column="8"  Grid.ColumnSpan="2" Content="10" FontSize="15" Click="Button_Bet"></Button> 
