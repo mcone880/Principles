@@ -16,7 +16,8 @@ namespace Casino
 {
     /// <summary>
     /// Interaction logic for Roulette.xaml
-    /// </summary>
+    /// </summary>\
+    
     public partial class Roulette : Window
     {
         public int money;
@@ -131,6 +132,7 @@ namespace Casino
             this.bank = bank;
             InitializeComponent();
             Currency.Content = "Amount: $" + money.ToString();
+            Spin.IsEnabled = false;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -142,6 +144,8 @@ namespace Casino
             {
                 if (bettingPool <= money)
                 {
+                    Back.IsEnabled = false;
+                    Spin.IsEnabled = true;
                     if (onestr.Equals(btn.Content.ToString()))
                     {
                         one += bettingPool;
@@ -412,6 +416,8 @@ namespace Casino
         {
             if (money > 0)
             {
+                Spin.IsEnabled = false;
+                Back.IsEnabled = true;
                 //Spin and show results;
                 Random random = new Random();
                 switch (random.Next(0 , 36))
@@ -586,23 +592,23 @@ namespace Casino
                 money += black + black;
             }
             //Odd / Even - 1:1
-            if (numbers == 1 || numbers == 3 || numbers == 5 || numbers == 7 || numbers == 9 || numbers == 11 || numbers == 13 || numbers == 15 || numbers == 17 || numbers == 19 || numbers == 21 || numbers == 23 || numbers == 25 || numbers == 27 || numbers == 29 || numbers == 31 || numbers == 33 || numbers == 35 && odd > 0)
+            if (numbers == one || numbers == three || numbers == five || numbers == seven || numbers == nine || numbers == eleven || numbers == thirteen || numbers == fifteen || numbers == seventeen || numbers == nineteen || numbers == twentyOne || numbers == twentyThree || numbers == twentyFive || numbers == twentySeven || numbers == twentyNine || numbers == thirtyOne || numbers == thirtyThree || numbers == thirtyFive && odd > 0)
             {
                 money += odd + odd;
                 odd = 0;
             }
-            if (numbers == 2 || numbers == 4 || numbers == 6 || numbers == 8 || numbers == 10 || numbers == 12 || numbers == 14 || numbers == 16 || numbers == 18 || numbers == 20 || numbers == 22 || numbers == 24 || numbers == 26 || numbers == 28 || numbers == 30 || numbers == 32 || numbers == 34 || numbers == 36 && even > 0)
+            if (numbers == two || numbers == four || numbers == six || numbers == eight || numbers == ten || numbers == twelve || numbers == fourteen || numbers == sixteen || numbers == eighteen || numbers == twenty || numbers == twentyTwo || numbers == twentyFour || numbers == twentySix|| numbers == twentyEight || numbers == thirty || numbers == thirtyTwo || numbers == thirtyFour || numbers == thirtySix && even > 0)
             {
                 money += even + even;
                 even = 0;
             }
             //High 19 - 36 / Low 1 - 18 - 1:1
-            if (numbers == 1 || numbers == 2 || numbers == 3 || numbers == 4 || numbers == 5 || numbers == 6 || numbers == 7 || numbers == 8 || numbers == 9 || numbers == 10 || numbers == 11 || numbers == 12 || numbers == 13 || numbers == 14 || numbers == 15 || numbers == 16 || numbers == 17 || numbers == 18 && firstHalf > 0)
+            if (numbers == one || numbers == two || numbers == three || numbers == four || numbers == five || numbers == six || numbers == seven || numbers == eight || numbers == nine || numbers == ten || numbers == eleven || numbers == twelve || numbers == thirty || numbers == fourteen || numbers == fifteen || numbers == sixteen || numbers == seventeen || numbers == eighteen && firstHalf > 0)
             {
                 money += firstHalf + firstHalf;
                 firstHalf = 0;
             }
-            if (numbers == 19 || numbers == 20 || numbers == 21 || numbers == 22 || numbers == 23 || numbers == 24 || numbers == 25 || numbers == 26 || numbers == 27 || numbers == 28 || numbers == 29 || numbers == 30 || numbers == 31 || numbers == 32 || numbers == 33 || numbers == 34 || numbers == 35 || numbers == 36 && secondHalf > 0)
+            if (numbers == nineteen || numbers == twenty || numbers == twentyOne || numbers == twentyTwo || numbers == twentyThree || numbers == twentyFour || numbers == twentyFive || numbers == twentySix || numbers == twentySeven || numbers == twentyEight || numbers == twentyNine || numbers == thirty || numbers == thirtyOne || numbers == thirtyTwo || numbers == thirtyThree || numbers == thirtyFour || numbers == thirtyFive || numbers == thirtySix && secondHalf > 0)
             {
                 money += secondHalf + secondHalf;
                 secondHalf = 0;
@@ -626,7 +632,12 @@ namespace Casino
                 money += third12 + (3 * third12);
                 first12 = 0;
             }
-            //Column - 3:1
+            //Column - 3:1 
+            //col1
+            if (numbers == one || numbers == four || numbers == seven)
+            {
+
+            }
             //Straight Number(1 - Number) -36:1
 
             Currency.Content = "Amount: $" + money.ToString();
