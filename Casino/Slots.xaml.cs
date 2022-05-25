@@ -219,6 +219,7 @@ namespace Casino
         private void SetBet(int v)
         {
             Result.Text = "";
+            ResultBet.Text = "";
             if(v<= money && money != 0)
             {
                 bet += v;
@@ -228,6 +229,10 @@ namespace Casino
             }
         }
 
-
+        private void RulesClicked(object sender, RoutedEventArgs e) // shows the game rules in a popup window 
+        {
+            MessageBox.Show("- Click Chips to Place Bets\n" +
+                "- Click Spin Button to play\n" );
+        }
     }
 }

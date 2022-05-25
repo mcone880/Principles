@@ -22,7 +22,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Button x:Name="BackButton" Margin="10,29,665,28" Content="BACK" Click="BackButton_Click" FontSize="36" FontFamily="Bodoni MT Black" Grid.Row="1">
+        <Button x:Name="BackButton" Margin="10,29,665,28" Content="BACK" Click="BackButton_Click" FontSize="36" FontFamily="Bodoni MT Black" Grid.Row="1" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/OverallUI/ButtonUp.png"/>
             </Button.Background>
@@ -51,7 +51,7 @@
                Height="54" Width="210" FontSize="24" BorderBrush="White" BorderThickness="2" 
                VerticalContentAlignment="Center" Name="lblMoney"/>
 
-        <Button x:Name="RollButton" Margin="665,29,10,28" Content="ROLL" Click="RollButton_Click" FontSize="36" FontFamily="Bodoni MT Black" Grid.Row="1" IsEnabled="False">
+        <Button x:Name="RollButton" Margin="665,29,10,28" Content="ROLL" Click="RollButton_Click" FontSize="36" FontFamily="Bodoni MT Black" Grid.Row="1" IsEnabled="False" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/OverallUI/ButtonUp.png"/>
             </Button.Background>
@@ -60,37 +60,37 @@
             Height="54" Width="210" FontSize="24" BorderBrush="White" BorderThickness="2" 
             VerticalContentAlignment="Center" x:Name="lblBet"/>
 
-        <Button Name="btn1" Height="45" VerticalAlignment="Bottom" Margin="162,0,596,28" Grid.Row="1" Click="btnClick">
+        <Button Name="btn1" Height="45" VerticalAlignment="Bottom" Margin="162,0,596,28" Grid.Row="1" Click="btnClick" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="Assets/OverallUI/Chip1.png"/>
             </Button.Background>
         </Button>
-        <Button Name="btn5" Width="45" Height="45" VerticalAlignment="Bottom" Margin="225,0,530,28" Grid.Row="1" Click="btnClick">
+        <Button Name="btn5" Width="45" Height="45" VerticalAlignment="Bottom" Margin="225,0,530,28" Grid.Row="1" Click="btnClick" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="Assets/OverallUI/Chip5.png"/>
             </Button.Background>
         </Button>
-        <Button Name="btn10"  Width="45" Height="45" VerticalAlignment="Bottom" Margin="290,0,465,28" Grid.Row="1" Click="btnClick">
+        <Button Name="btn10"  Width="45" Height="45" VerticalAlignment="Bottom" Margin="290,0,465,28" Grid.Row="1" Click="btnClick" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="Assets/OverallUI/Chip10.png"/>
             </Button.Background>
         </Button>
-        <Button Name="btn20"  Width="45" Height="45" VerticalAlignment="Top" Margin="355,41,400,0" Grid.Row="1" Click="btnClick">
+        <Button Name="btn20"  Width="45" Height="45" VerticalAlignment="Top" Margin="355,41,400,0" Grid.Row="1" Click="btnClick" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="Assets/OverallUI/Chip20.png"/>
             </Button.Background>
         </Button>
-        <Button Name="btn50"  Width="45" Height="45" VerticalAlignment="Bottom" Margin="425,0,330,28" Grid.Row="1" Click="btnClick">
+        <Button Name="btn50"  Width="45" Height="45" VerticalAlignment="Bottom" Margin="425,0,330,28" Grid.Row="1" Click="btnClick" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="Assets/OverallUI/Chip50.png"/>
             </Button.Background>
         </Button>
-        <Button Name="btn100"  Width="45" Height="45" VerticalAlignment="Bottom" Margin="495,0,260,28" Grid.Row="1" Click="btnClick">
+        <Button Name="btn100"  Width="45" Height="45" VerticalAlignment="Bottom" Margin="495,0,260,28" Grid.Row="1" Click="btnClick" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="Assets/OverallUI/Chip100.png"/>
             </Button.Background>
         </Button>
-        <Button Name="btn1000"  Width="45" Height="45" VerticalAlignment="Bottom" Margin="565,0,190,28" Grid.Row="1" Click="btnClick">
+        <Button Name="btn1000"  Width="45" Height="45" VerticalAlignment="Bottom" Margin="565,0,190,28" Grid.Row="1" Click="btnClick" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="Assets/OverallUI/Chip1000.png"/>
             </Button.Background>

@@ -14,64 +14,64 @@
 
         <Image Source="Assets/OverallUI/BlackjackIcon.png" Width="120" Height="88" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
-        <Button Name="btnRules" Content="RULES" FontSize="15" FontFamily="Bodoni MT Black" Width="75" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="60,60,0,0" Click="RulesClicked">
+        <Button Name="btnRules" Content="RULES" FontSize="15" FontFamily="Bodoni MT Black" Width="75" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="60,60,0,0" Click="RulesClicked" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="Assets/OverallUI/ButtonUp.png"/>
             </Button.Background>
         </Button>
-        <Button Name="btnBack" Content="BACK" FontSize="35" FontFamily="Bodoni MT Black" Width="125" Height="45" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,0,10" Click="BackClicked">
+        <Button Name="btnBack" Content="BACK" FontSize="35" FontFamily="Bodoni MT Black" Width="125" Height="45" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,0,10" Click="BackClicked" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="Assets/OverallUI/ButtonUp.png"/>
             </Button.Background>
         </Button>
-        <Button Name="btnDeal" Content="DEAL" FontSize="35" FontFamily="Bodoni MT Black" Width="125" Height="45" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,10,0" Click="DealClicked" IsEnabled="False">
+        <Button Name="btnDeal" Content="DEAL" FontSize="35" FontFamily="Bodoni MT Black" Width="125" Height="45" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,10,0" Click="DealClicked" IsEnabled="False" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="Assets/OverallUI/ButtonUp.png"/>
             </Button.Background>
         </Button>
-        <Button Name="btnStand" Content="STAND" FontSize="30" FontFamily="Bodoni MT Black" Width="125" Height="45" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,60" Click="StandClicked" IsEnabled="False">
+        <Button Name="btnStand" Content="STAND" FontSize="30" FontFamily="Bodoni MT Black" Width="125" Height="45" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,60" Click="StandClicked" IsEnabled="False" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="Assets/OverallUI/ButtonUp.png"/>
             </Button.Background>
         </Button>
-        <Button Name="btnHit" Content="HIT" FontSize="30" FontFamily="Bodoni MT Black" Width="125" Height="45" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10" Click="HitClicked" IsEnabled="False">
+        <Button Name="btnHit" Content="HIT" FontSize="30" FontFamily="Bodoni MT Black" Width="125" Height="45" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10" Click="HitClicked" IsEnabled="False" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="Assets/OverallUI/ButtonUp.png"/>
             </Button.Background>
         </Button>
 
         <WrapPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="496" Height="60">
-            <Button Name="btnChip1" Width="50" Height="50" VerticalAlignment="Bottom" Margin="10, 5, 10, 5" Click="ChipClicked">
+            <Button Name="btnChip1" Width="50" Height="50" VerticalAlignment="Bottom" Margin="10, 5, 10, 5" Click="ChipClicked" BorderBrush="{x:Null}">
                 <Button.Background>
                     <ImageBrush ImageSource="Assets/OverallUI/Chip1.png"/>
                 </Button.Background>
             </Button>
-            <Button Name="btnChip5" Width="50" Height="50" VerticalAlignment="Bottom" Margin="10, 5, 10, 5" Click="ChipClicked">
+            <Button Name="btnChip5" Width="50" Height="50" VerticalAlignment="Bottom" Margin="10, 5, 10, 5" Click="ChipClicked" BorderBrush="{x:Null}">
                 <Button.Background>
                     <ImageBrush ImageSource="Assets/OverallUI/Chip5.png"/>
                 </Button.Background>
             </Button>
-            <Button Name="btnChip10" Width="50" Height="50" VerticalAlignment="Bottom" Margin="10, 5, 10, 5" Click="ChipClicked">
+            <Button Name="btnChip10" Width="50" Height="50" VerticalAlignment="Bottom" Margin="10, 5, 10, 5" Click="ChipClicked" BorderBrush="{x:Null}">
                 <Button.Background>
                     <ImageBrush ImageSource="Assets/OverallUI/Chip10.png"/>
                 </Button.Background>
             </Button>
-            <Button Name="btnChip20" Width="50" Height="50" VerticalAlignment="Bottom" Margin="10, 5, 10, 5" Click="ChipClicked">
+            <Button Name="btnChip20" Width="50" Height="50" VerticalAlignment="Bottom" Margin="10, 5, 10, 5" Click="ChipClicked" BorderBrush="{x:Null}">
                 <Button.Background>
                     <ImageBrush ImageSource="Assets/OverallUI/Chip20.png"/>
                 </Button.Background>
             </Button>
-            <Button Name="btnChip50" Width="50" Height="50" VerticalAlignment="Bottom" Margin="10, 5, 10, 5" Click="ChipClicked">
+            <Button Name="btnChip50" Width="50" Height="50" VerticalAlignment="Bottom" Margin="10, 5, 10, 5" Click="ChipClicked" BorderBrush="{x:Null}">
                 <Button.Background>
                     <ImageBrush ImageSource="Assets/OverallUI/Chip50.png"/>
                 </Button.Background>
             </Button>
-            <Button Name="btnChip100" Width="50" Height="50" VerticalAlignment="Bottom" Margin="10, 5, 10, 5" Click="ChipClicked">
+            <Button Name="btnChip100" Width="50" Height="50" VerticalAlignment="Bottom" Margin="10, 5, 10, 5" Click="ChipClicked" BorderBrush="{x:Null}">
                 <Button.Background>
                     <ImageBrush ImageSource="Assets/OverallUI/Chip100.png"/>
                 </Button.Background>
             </Button>
-            <Button Name="btnChip1k" Width="50" Height="50" VerticalAlignment="Bottom" Margin="10, 5, 10, 5" Click="ChipClicked">
+            <Button Name="btnChip1k" Width="50" Height="50" VerticalAlignment="Bottom" Margin="10, 5, 10, 5" Click="ChipClicked" BorderBrush="{x:Null}">
                 <Button.Background>
                     <ImageBrush ImageSource="Assets/OverallUI/Chip1000.png"/>
                 </Button.Background>
