@@ -219,6 +219,7 @@ namespace Casino
         private void SetBet(int v)
         {
             Result.Text = "";
+            ResultBet.Text = "";
             if(v<= money && money != 0)
             {
                 bet += v;
