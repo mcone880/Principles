@@ -54,7 +54,8 @@
             <TextBlock x:Name="txtMoney" Text="$" FontSize="24" Foreground="White" FontWeight="Bold" />
         </StackPanel>
         <TextBlock Grid.Column="1" HorizontalAlignment="Left" Text="BET :" FontSize="36" FontWeight="Bold" Foreground="White" TextWrapping="Wrap" VerticalAlignment="Top" Height="47" Width="93" Margin="187,11,0,0"/>
-        <TextBlock Grid.Column="2" HorizontalAlignment="Center" Text="" Name="Result" FontSize="36" FontWeight="Bold" Foreground="White" TextWrapping="Wrap" VerticalAlignment="Top" Height="49" Width="145" Margin="0,34,0,0" Grid.Row="1"/>
+        <TextBlock Grid.Column="2" HorizontalAlignment="Center" Text="" Name="Result" FontSize="36" FontWeight="Bold" Foreground="White" TextWrapping="Wrap" VerticalAlignment="Top" Height="49" Width="145" Margin="0,10,0,0" Grid.Row="1"/>
+        <TextBlock Grid.Column="2" HorizontalAlignment="Center" Text="" Name="ResultBet" FontSize="36" FontWeight="Bold" Foreground="White" TextWrapping="Wrap" VerticalAlignment="Top" Height="49" Width="145" Margin="0,59,0,0" Grid.Row="1"/>
         <TextBlock  x:Name="Bet" Grid.Column="1" HorizontalAlignment="Left" Text="$" FontSize="36" FontWeight="Bold" Foreground="White" TextWrapping="Wrap" VerticalAlignment="Top" Height="47" Width="127" Margin="280,14,0,0"/>
         <Image x:Name="I1" Source="/Assets/Slots/Wheel - Seven.png" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="110,103,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
         <Image x:Name="I2" Source="/Assets/Slots/Wheel - Seven.png" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="205,103,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
