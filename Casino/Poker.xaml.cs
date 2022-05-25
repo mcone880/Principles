@@ -21,8 +21,10 @@ namespace Casino
     {
         int money;
         int bank; //Do not alter or Change, This is so that we can keep track of our Bank Amount ~ Tommy
+        int betMoney = 0;
         bool firstDraw = false;
         bool gameSet = true;
+        string betAmount;// = "$";
         Deck deck = new Deck();
 
         Cards card1, card2, card3, card4, card5;
@@ -115,6 +117,15 @@ namespace Casino
                 // if firstDraw is false, then draw cards and disable back button and set firstDraw to true 
                 if (firstDraw == false)
                 {
+                    // disable bet buttons 
+                    btnChip1.IsEnabled = false; 
+                    btnChip5.IsEnabled = false; 
+                    btnChip10.IsEnabled = false; 
+                    btnChip20.IsEnabled = false; 
+                    btnChip50.IsEnabled = false; 
+                    btnChip100.IsEnabled = false; 
+                    btnChip1K.IsEnabled = false; 
+
                     // enable hold buttons
                     btnHold1.IsEnabled = true;
                     btnHold2.IsEnabled = true;
@@ -189,6 +200,15 @@ namespace Casino
 
         private void btnReset_Click(object sender, RoutedEventArgs e) // reset game 
         {
+            // enable bet buttons 
+            btnChip1.IsEnabled = true;
+            btnChip5.IsEnabled = true;
+            btnChip10.IsEnabled = true;
+            btnChip20.IsEnabled = true;
+            btnChip50.IsEnabled = true;
+            btnChip100.IsEnabled = true;
+            btnChip1K.IsEnabled = true;
+
             // disable hold cards
             btnHold1.IsEnabled = false;
             btnHold2.IsEnabled = false;
@@ -220,43 +240,108 @@ namespace Casino
             ResetCardButtonImage(btnHold4);
             ResetCardButtonImage(btnHold5);
 
+            betMoney = 0;
+            betAmount = "";
             gameSet = true;
         }
 
         // Chips Buttons
         private void btnChip1_Click(object sender, RoutedEventArgs e)
         {
+            if (money >= 1)
+            {
+                betMoney += 1;
+                money -= 1;
+            }
+            else MessageBox.Show("Not Enough Money");
 
+            betAmount = "$" + betMoney;
+            txtBetAmount.Text = betAmount;
+            txtMoney.Text = "$" + money;
         }
 
         private void btnChip5_Click(object sender, RoutedEventArgs e)
         {
+            if (money >= 5)
+            {
+                betMoney += 5;
+                money -= 5;
+            }
+            else MessageBox.Show("Not Enough Money");
 
+            betAmount = "$" + betMoney;
+            txtBetAmount.Text = betAmount;
+            txtMoney.Text = "$" + money;
         }
 
         private void btnChip10_Click(object sender, RoutedEventArgs e)
         {
+            if (money >= 10)
+            {
+                betMoney += 10;
+                money -= 10;
+            }
+            else MessageBox.Show("Not Enough Money");
 
+            betAmount = "$" + betMoney;
+            txtBetAmount.Text = betAmount;
+            txtMoney.Text = "$" + money;
         }
 
         private void btnChip20_Click(object sender, RoutedEventArgs e)
         {
+            if (money >= 20)
+            {
+                betMoney += 20;
+                money -= 20;
+            }
+            else MessageBox.Show("Not Enough Money");
 
+            betAmount = "$" + betMoney;
+            txtBetAmount.Text = betAmount;
+            txtMoney.Text = "$" + money;
         }
 
         private void btnChip50_Click(object sender, RoutedEventArgs e)
         {
+            if (money >= 50)
+            {
+                betMoney += 50;
+                money -= 50;
+            }
+            else MessageBox.Show("Not Enough Money");
 
+            betAmount = "$" + betMoney;
+            txtBetAmount.Text = betAmount;
+            txtMoney.Text = "$" + money;
         }
 
         private void btnChip100_Click(object sender, RoutedEventArgs e)
         {
+            if (money >= 100)
+            {
+                betMoney += 100;
+                money -= 100;
+            }
+            else MessageBox.Show("Not Enough Money");
 
+            betAmount = "$" + betMoney;
+            txtBetAmount.Text = betAmount;
+            txtMoney.Text = "$" + money;
         }
 
         private void btnChip1K_Click(object sender, RoutedEventArgs e)
         {
+            if (money >= 1000)
+            {
+                betMoney += 1000;
+                money -= 1000;
+            }
+            else MessageBox.Show("Not Enough Money");
 
+            betAmount = "$" + betMoney;
+            txtBetAmount.Text = betAmount;
+            txtMoney.Text = "$" + money;
         }
 
         // Hold Cards
