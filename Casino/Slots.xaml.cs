@@ -65,19 +65,32 @@ namespace Casino
                     bet = (bet * 1000) + bet;
 
                 }
+
             }
             else
             {
+                ResultBet.Text = "- $ " + bet;
+                ResultBet.Foreground = Brushes.Red;
                 bet = 0;
             }
             Bet.Text = "$ 0";
             if(bet> 0)
             {
                 Result.Text = "Winner";
+                ResultBet.Text = " + $" + bet;
+                ResultBet.Foreground = Brushes.Green;
+                if(bet> 100)
+                {
+                    ResultBet.FontSize = 24;
+                }
+                if (bet > 1000)
+                {
+                    ResultBet.FontSize = 20;
+                }
             }
             else
             {
-                Result.Text = "loser";
+                Result.Text = "Loser";
             }
             Payout(bet);
             bet = 0;
