@@ -140,250 +140,257 @@ namespace Casino
             //Roulette board;
             if (money > 0)
             {
-                if (onestr.Equals(btn.Content.ToString()))
+                if (bettingPool <= money)
                 {
-                    one += bettingPool;
-                    money -= bettingPool;
+                    if (onestr.Equals(btn.Content.ToString()))
+                    {
+                        one += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (twoStr.Equals(btn.Content.ToString()))
+                    {
+                        two += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (threeStr.Equals(btn.Content.ToString()))
+                    {
+                        three += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (fourStr.Equals(btn.Content.ToString()))
+                    {
+                        four += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (fiveStr.Equals(btn.Content.ToString()))
+                    {
+                        five += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (sixStr.Equals(btn.Content.ToString()))
+                    {
+                        six += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (sevenStr.Equals(btn.Content.ToString()))
+                    {
+                        seven += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (eightStr.Equals(btn.Content.ToString()))
+                    {
+                        eight += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (nineStr.Equals(btn.Content.ToString()))
+                    {
+                        nine += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (tenStr.Equals(btn.Content.ToString()))
+                    {
+                        ten += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (elevenStr.Equals(btn.Content.ToString()))
+                    {
+                        eleven += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (twelveStr.Equals(btn.Content.ToString()))
+                    {
+                        twelve += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (thirteenStr.Equals(btn.Content.ToString()))
+                    {
+                        thirteen += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (fourteenStr.Equals(btn.Content.ToString()))
+                    {
+                        fourteen += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (fifteenStr.Equals(btn.Content.ToString()))
+                    {
+                        fifteen += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (sixteenStr.Equals(btn.Content.ToString()))
+                    {
+                        sixteen += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (seventeenStr.Equals(btn.Content.ToString()))
+                    {
+                        seventeen += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (eighteenStr.Equals(btn.Content.ToString()))
+                    {
+                        eighteen += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (nineteenStr.Equals(btn.Content.ToString()))
+                    {
+                        nineteen += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (twentyStr.Equals(btn.Content.ToString()))
+                    {
+                        twenty += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (twentyOneStr.Equals(btn.Content.ToString()))
+                    {
+                        twentyOne += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (twentyTwoStr.Equals(btn.Content.ToString()))
+                    {
+                        twentyTwo += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (twentyThreeStr.Equals(btn.Content.ToString()))
+                    {
+                        twentyThree += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (twentyFourStr.Equals(btn.Content.ToString()))
+                    {
+                        twentyFour += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (twentyFiveStr.Equals(btn.Content.ToString()))
+                    {
+                        twentyFive += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (twentySixStr.Equals(btn.Content.ToString()))
+                    {
+                        twentySix += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (twentySevenStr.Equals(btn.Content.ToString()))
+                    {
+                        twentySeven += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (twentyEight.Equals(btn.Content.ToString()))
+                    {
+                        twentyEight += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (twentyNineStr.Equals(btn.Content.ToString()))
+                    {
+                        twentyNine += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (thirtyStr.Equals(btn.Content.ToString()))
+                    {
+                        thirty += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (thirtyOneStr.Equals(btn.Content.ToString()))
+                    {
+                        thirtyOne += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (thirtyTwoStr.Equals(btn.Content.ToString()))
+                    {
+                        thirtyTwo += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (thirtyThreeStr.Equals(btn.Content.ToString()))
+                    {
+                        thirtyThree += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (thirtyFourStr.Equals(btn.Content.ToString()))
+                    {
+                        thirtyFour += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (thirtyFiveStr.Equals(btn.Content.ToString()))
+                    {
+                        thirtyFive += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (thirtySixStr.Equals(btn.Content.ToString()))
+                    {
+                        thirtySix += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (zeroStr.Equals(btn.Content.ToString()))
+                    {
+                        zero += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (redStr.Equals(btn.Content.ToString()))
+                    {
+                        red += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (blackStr.Equals(btn.Content.ToString()))
+                    {
+                        black += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (column1Str.Equals(btn.Content.ToString()))
+                    {
+                        column1 += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (column2Str.Equals(btn.Content.ToString()))
+                    {
+                        column2 += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (column3Str.Equals(btn.Content.ToString()))
+                    {
+                        column3 += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (first12Str.Equals(btn.Content.ToString()))
+                    {
+                        first12Str += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (second12Str.Equals(btn.Content.ToString()))
+                    {
+                        second12Str += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (third12Str.Equals(btn.Content.ToString()))
+                    {
+                        third12Str += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (firstHalfStr.Equals(btn.Content.ToString()))
+                    {
+                        firstHalf += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (secondHalfStr.Equals(btn.Content.ToString()))
+                    {
+                        secondHalf += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (oddStr.Equals(btn.Content.ToString()))
+                    {
+                        odd += bettingPool;
+                        money -= bettingPool;
+                    }
+                    if (evenStr.Equals(btn.Content.ToString()))
+                    {
+                        even += bettingPool;
+                        money -= bettingPool;
+                    }
                 }
-                if (twoStr.Equals(btn.Content.ToString()))
+                else
                 {
-                    two += bettingPool;
-                    money -= bettingPool;
-                }
-                if (threeStr.Equals(btn.Content.ToString()))
-                {
-                    three += bettingPool;
-                    money -= bettingPool;
-                }
-                if (fourStr.Equals(btn.Content.ToString()))
-                {
-                    four += bettingPool;
-                    money -= bettingPool;
-                }
-                if (fiveStr.Equals(btn.Content.ToString()))
-                {
-                    five += bettingPool;
-                    money -= bettingPool;
-                }
-                if (sixStr.Equals(btn.Content.ToString()))
-                {
-                    six += bettingPool;
-                    money -= bettingPool;
-                }
-                if (sevenStr.Equals(btn.Content.ToString()))
-                {
-                    seven += bettingPool;
-                    money -= bettingPool;
-                }
-                if (eightStr.Equals(btn.Content.ToString()))
-                {
-                    eight += bettingPool;
-                    money -= bettingPool;
-                }
-                if (nineStr.Equals(btn.Content.ToString()))
-                {
-                    nine += bettingPool;
-                    money -= bettingPool;
-                }
-                if (tenStr.Equals(btn.Content.ToString()))
-                {
-                    ten += bettingPool;
-                    money -= bettingPool;
-                }
-                if (elevenStr.Equals(btn.Content.ToString()))
-                {
-                    eleven += bettingPool;
-                    money -= bettingPool;
-                }
-                if (twelveStr.Equals(btn.Content.ToString()))
-                {
-                    twelve += bettingPool;
-                    money -= bettingPool;
-                }
-                if (thirteenStr.Equals(btn.Content.ToString()))
-                {
-                    thirteen += bettingPool;
-                    money -= bettingPool;
-                }
-                if (fourteenStr.Equals(btn.Content.ToString()))
-                {
-                    fourteen += bettingPool;
-                    money -= bettingPool;
-                }
-                if (fifteenStr.Equals(btn.Content.ToString()))
-                {
-                    fifteen += bettingPool;
-                    money -= bettingPool;
-                }
-                if (sixteenStr.Equals(btn.Content.ToString()))
-                {
-                    sixteen += bettingPool;
-                    money -= bettingPool;
-                }
-                if (seventeenStr.Equals(btn.Content.ToString()))
-                {
-                    seventeen += bettingPool;
-                    money -= bettingPool;
-                }
-                if (eighteenStr.Equals(btn.Content.ToString()))
-                {
-                    eighteen += bettingPool;
-                    money -= bettingPool;
-                }
-                if (nineteenStr.Equals(btn.Content.ToString()))
-                {
-                    nineteen += bettingPool;
-                    money -= bettingPool;
-                }
-                if (twentyStr.Equals(btn.Content.ToString()))
-                {
-                    twenty += bettingPool;
-                    money -= bettingPool;
-                }
-                if (twentyOneStr.Equals(btn.Content.ToString()))
-                {
-                    twentyOne += bettingPool;
-                    money -= bettingPool;
-                }
-                if (twentyTwoStr.Equals(btn.Content.ToString()))
-                {
-                    twentyTwo += bettingPool;
-                    money -= bettingPool;
-                }
-                if (twentyThreeStr.Equals(btn.Content.ToString()))
-                {
-                    twentyThree += bettingPool;
-                    money -= bettingPool;
-                }
-                if (twentyFourStr.Equals(btn.Content.ToString()))
-                {
-                    twentyFour += bettingPool;
-                    money -= bettingPool;
-                }
-                if (twentyFiveStr.Equals(btn.Content.ToString()))
-                {
-                    twentyFive += bettingPool;
-                    money -= bettingPool;
-                }
-                if (twentySixStr.Equals(btn.Content.ToString()))
-                {
-                    twentySix += bettingPool;
-                    money -= bettingPool;
-                }
-                if (twentySevenStr.Equals(btn.Content.ToString()))
-                {
-                    twentySeven += bettingPool;
-                    money -= bettingPool;
-                }
-                if (twentyEight.Equals(btn.Content.ToString()))
-                {
-                    twentyEight += bettingPool;
-                    money -= bettingPool;
-                }
-                if (twentyNineStr.Equals(btn.Content.ToString()))
-                {
-                    twentyNine += bettingPool;
-                    money -= bettingPool;
-                }
-                if (thirtyStr.Equals(btn.Content.ToString()))
-                {
-                    thirty += bettingPool;
-                    money -= bettingPool;
-                }
-                if (thirtyOneStr.Equals(btn.Content.ToString()))
-                {
-                    thirtyOne += bettingPool;
-                    money -= bettingPool;
-                }
-                if (thirtyTwoStr.Equals(btn.Content.ToString()))
-                {
-                    thirtyTwo += bettingPool;
-                    money -= bettingPool;
-                }
-                if (thirtyThreeStr.Equals(btn.Content.ToString()))
-                {
-                    thirtyThree += bettingPool;
-                    money -= bettingPool;
-                }
-                if (thirtyFourStr.Equals(btn.Content.ToString()))
-                {
-                    thirtyFour += bettingPool;
-                    money -= bettingPool;
-                }
-                if (thirtyFiveStr.Equals(btn.Content.ToString()))
-                {
-                    thirtyFive += bettingPool;
-                    money -= bettingPool;
-                }
-                if (thirtySixStr.Equals(btn.Content.ToString()))
-                {
-                    thirtySix += bettingPool;
-                    money -= bettingPool;
-                }
-                if (zeroStr.Equals(btn.Content.ToString()))
-                {
-                    zero += bettingPool;
-                    money -= bettingPool;
-                }
-                if (redStr.Equals(btn.Content.ToString()))
-                {
-                    red += bettingPool;
-                    money -= bettingPool;
-                }
-                if (blackStr.Equals(btn.Content.ToString()))
-                {
-                    black += bettingPool;
-                    money -= bettingPool;
-                }
-                if (column1Str.Equals(btn.Content.ToString()))
-                {
-                    column1 += bettingPool;
-                    money -= bettingPool;
-                }
-                if (column2Str.Equals(btn.Content.ToString()))
-                {
-                    column2 += bettingPool;
-                    money -= bettingPool;
-                }
-                if (column3Str.Equals(btn.Content.ToString()))
-                {
-                    column3 += bettingPool;
-                    money -= bettingPool;
-                }
-                if (first12Str.Equals(btn.Content.ToString()))
-                {
-                    first12Str += bettingPool;
-                    money -= bettingPool;
-                }
-                if (second12Str.Equals(btn.Content.ToString()))
-                {
-                    second12Str += bettingPool;
-                    money -= bettingPool;
-                }
-                if (third12Str.Equals(btn.Content.ToString()))
-                {
-                    third12Str += bettingPool;
-                    money -= bettingPool;
-                }
-                if (firstHalfStr.Equals(btn.Content.ToString()))
-                {
-                    firstHalf += bettingPool;
-                    money -= bettingPool;
-                }
-                if (secondHalfStr.Equals(btn.Content.ToString()))
-                {
-                    secondHalf += bettingPool;
-                    money -= bettingPool;
-                }
-                if (oddStr.Equals(btn.Content.ToString()))
-                {
-                    odd += bettingPool;
-                    money -= bettingPool;
-                }
-                if (evenStr.Equals(btn.Content.ToString()))
-                {
-                    even += bettingPool;
-                    money -= bettingPool;
+                    Results.Text = "No money!!!!";
                 }
             }
             else
@@ -567,6 +574,32 @@ namespace Casino
             {
                 Results.Text = "No money!!!!";
             }
+
+            // Payout
+            //Red/Black - 1:1
+            if (color.Equals(redStr) && red > 0)
+            {
+                money += red + red;
+            }
+            if (color.Equals(blackStr) && black > 0)
+            {
+                money += black + black;
+            }
+            //Odd / Even - 1:1
+            if (numbers == 1 || numbers == 3 || numbers == 5 || numbers == 7 || numbers == 9 || numbers == 11 || numbers == 13 || numbers == 15 || numbers == 17 || numbers == 19 || numbers == 21 || numbers == 23 || numbers == 25 || numbers == 27 || numbers == 29 || numbers == 31 || numbers == 33 || numbers == 35 && odd > 0)
+            {
+                money += odd + odd;
+            }
+            if (numbers == 2 || numbers == 4 || numbers == 6 || numbers == 8 || numbers == 10 || numbers == 12 || numbers == 14 || numbers == 16 || numbers == 18 || numbers == 20 || numbers == 22 || numbers == 24 || numbers == 26 || numbers == 28 || numbers == 30 || numbers == 32 || numbers == 34 || numbers == 36 && even > 0)
+            {
+                money += even + even;
+            }
+            //High / Low - 1:1
+            //Dozen - 3:1
+            //Column - 3:1
+            //Straight Number(1 - Number) -36:1
+
+            Currency.Content = "Amount: $" + money.ToString();
         }
 
         //Betting
