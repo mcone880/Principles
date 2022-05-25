@@ -97,17 +97,17 @@
         </Button>
 
 
-        <Button Tag="BetButton" x:Name="Bet12" Content="" HorizontalAlignment="Left" Margin="688,322,0,0" VerticalAlignment="Top" Height="57" Width="112" Background="Transparent" BorderThickness="0"/>
-        <Button Tag="BetButton" x:Name="Bet11" Content="" HorizontalAlignment="Left" Margin="688,265,0,0" VerticalAlignment="Top" Height="57" Width="112" Background="Transparent" BorderThickness="0"/>
-        <Button Tag="BetButton" x:Name="Bet2" Content="" HorizontalAlignment="Left" Margin="580,322,0,0" VerticalAlignment="Top" Height="57" Width="108" Background="Transparent" BorderThickness="0"/>
-        <Button Tag="BetButton" x:Name="Bet3" Content="" HorizontalAlignment="Left" Margin="580,265,0,0" VerticalAlignment="Top" Height="57" Width="108" Background="Transparent" BorderThickness="0"/>
-        <Button Tag="BetButton" x:Name="Bet7" Content="" HorizontalAlignment="Left" Margin="580,208,0,0" VerticalAlignment="Top" Height="57" Width="220" Background="Transparent" BorderThickness="0"/>
-        <Button Tag="BetButton" x:Name="BetAny" Content="" HorizontalAlignment="Left" Margin="580,379,0,0" VerticalAlignment="Top" Height="57" Width="220" Background="Transparent" BorderThickness="0"/>
-        <Button Tag="BetButton" x:Name="BetDouble2" Content="" HorizontalAlignment="Left" Margin="580,34,0,0" VerticalAlignment="Top" Height="50" Width="107" Background="Transparent" BorderThickness="0"/>
-        <Button Tag="BetButton" x:Name="BetDouble3" Content="" HorizontalAlignment="Left" Margin="580,89,0,0" VerticalAlignment="Top" Height="50" Width="107" Background="Transparent" BorderThickness="0"/>
-        <Button Tag="BetButton" x:Name="BetDouble4" Content="" HorizontalAlignment="Left" Margin="693,89,0,0" VerticalAlignment="Top" Height="50" Width="107" Background="Transparent" BorderThickness="0"/>
-        <Button Tag="BetButton" x:Name="BetDouble5" Content="" HorizontalAlignment="Left" Margin="692,34,0,0" VerticalAlignment="Top" Height="50" Width="107" Background="Transparent" BorderThickness="0"/>
-        <Button Tag="BetButton" x:Name="BetField" Content="" HorizontalAlignment="Left" Margin="0,322,0,0" VerticalAlignment="Top" Height="122" Width="555" Background="Transparent" BorderThickness="0"/>
+        <Button Tag="BetButton" x:Name="Bet2" Content="" HorizontalAlignment="Left" Margin="580,322,0,0" VerticalAlignment="Top" Height="57" Width="108" Background="Transparent" BorderThickness="0" Click="BetButton_Click"/>
+        <Button Tag="BetButton" x:Name="Bet3" Content="" HorizontalAlignment="Left" Margin="580,265,0,0" VerticalAlignment="Top" Height="57" Width="108" Background="Transparent" BorderThickness="0" Click="BetButton_Click"/>
+        <Button Tag="BetButton" x:Name="Bet7" Content="" HorizontalAlignment="Left" Margin="580,208,0,0" VerticalAlignment="Top" Height="57" Width="220" Background="Transparent" BorderThickness="0" Click="BetButton_Click"/>
+        <Button Tag="BetButton" x:Name="Bet11" Content="" HorizontalAlignment="Left" Margin="688,265,0,0" VerticalAlignment="Top" Height="57" Width="112" Background="Transparent" BorderThickness="0" Click="BetButton_Click"/>
+        <Button Tag="BetButton" x:Name="Bet12" Content="" HorizontalAlignment="Left" Margin="688,322,0,0" VerticalAlignment="Top" Height="57" Width="112" Background="Transparent" BorderThickness="0" Click="BetButton_Click"/>
+        <Button Tag="BetButton" x:Name="BetAny" Content="" HorizontalAlignment="Left" Margin="580,379,0,0" VerticalAlignment="Top" Height="57" Width="220" Background="Transparent" BorderThickness="0" Click="BetButton_Click"/>
+        <Button Tag="BetButton" x:Name="BetDouble2" Content="" HorizontalAlignment="Left" Margin="580,34,0,0" VerticalAlignment="Top" Height="50" Width="107" Background="Transparent" BorderThickness="0" Click="BetButton_Click"/>
+        <Button Tag="BetButton" x:Name="BetDouble3" Content="" HorizontalAlignment="Left" Margin="580,89,0,0" VerticalAlignment="Top" Height="50" Width="107" Background="Transparent" BorderThickness="0" Click="BetButton_Click"/>
+        <Button Tag="BetButton" x:Name="BetDouble4" Content="" HorizontalAlignment="Left" Margin="693,89,0,0" VerticalAlignment="Top" Height="50" Width="107" Background="Transparent" BorderThickness="0" Click="BetButton_Click"/>
+        <Button Tag="BetButton" x:Name="BetDouble5" Content="" HorizontalAlignment="Left" Margin="692,34,0,0" VerticalAlignment="Top" Height="50" Width="107" Background="Transparent" BorderThickness="0" Click="BetButton_Click"/>
+        <Button Tag="BetButton" x:Name="BetField" Content="" HorizontalAlignment="Left" Margin="0,322,0,0" VerticalAlignment="Top" Height="122" Width="555" Background="Transparent" BorderThickness="0" Click="BetButton_Click"/>
 
     </Grid>
 </Window>
