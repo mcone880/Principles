@@ -119,10 +119,10 @@
             <Image Source = "/Assets/Slots/Wheel - Bars.png" Height = "70" Width = "54" Grid.Row="1" />
             <Image Source = "/Assets/Slots/Wheel - Bell.png" Height = "70" Width = "54" Grid.Row="2" />
             <Image Source = "/Assets/Slots/Wheel - Cherry.png" Height = "70" Width = "54" Grid.Row="3" />
-            <TextBlock Grid.Column="1" HorizontalAlignment="Center" Text="-1000:1" TextWrapping="Wrap" FontSize="19" Foreground="White" FontWeight="Bold"  VerticalAlignment="Center"/>
-            <TextBlock Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" Text="-100:1" TextWrapping="Wrap" FontSize="19" Foreground="White" FontWeight="Bold"  VerticalAlignment="Center"/>
-            <TextBlock Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" Text="-35:1" TextWrapping="Wrap" FontSize="19" Foreground="White" FontWeight="Bold"  VerticalAlignment="Center"/>
-            <TextBlock Grid.Column="1" Grid.Row="3" HorizontalAlignment="Center" Text="-15:1" TextWrapping="Wrap" FontSize="19" Foreground="White" FontWeight="Bold"  VerticalAlignment="Center"/>
+            <TextBlock Grid.Column="1" HorizontalAlignment="Center" Text="- 1000:1" TextWrapping="Wrap" FontSize="19" Foreground="White" FontWeight="Bold"  VerticalAlignment="Center"/>
+            <TextBlock Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" Text="- 100:1" TextWrapping="Wrap" FontSize="19" Foreground="White" FontWeight="Bold"  VerticalAlignment="Center"/>
+            <TextBlock Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" Text="- 35:1" TextWrapping="Wrap" FontSize="19" Foreground="White" FontWeight="Bold"  VerticalAlignment="Center"/>
+            <TextBlock Grid.Column="1" Grid.Row="3" HorizontalAlignment="Center" Text="- 15:1" TextWrapping="Wrap" FontSize="19" Foreground="White" FontWeight="Bold"  VerticalAlignment="Center"/>
         </Grid>
 
 
