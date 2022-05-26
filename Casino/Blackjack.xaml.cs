@@ -13,8 +13,10 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
 /*
- TODO:
-    Allow to show more Dealer cards
+ * 
+TODO:
+    If player gets 21 instant win
+    if player over 21 intant lose
  */
 
 namespace Casino
@@ -281,16 +283,18 @@ namespace Casino
 
             //deal cards
             playerCard1 = deck.TakeCard();
+            playerCard2 = deck.TakeCard();
 
             dealerCard1 = deck.TakeCard();
             dealerCard2 = deck.TakeCard();
 
             //update Hand count
-            playerHand += 1;
+            playerHand += 2;
             dealerHand += 2;
 
             //update playerSum **King, Queen & Jack are set to 10
             UpdatePlayerSum(playerCard1);
+            UpdatePlayerSum(playerCard2);
 
             //update dealerSum
             UpdateDealerSum(dealerCard1);
@@ -362,6 +366,8 @@ namespace Casino
 
             //update UI
             PlayerCard1.Source = SetCardUI(playerCard1);
+            PlayerCard2.Source = SetCardUI(playerCard2);
+
             DealerCard1.Source = SetCardUI(dealerCard1);
 
             Money.Content = "$ " + money;
@@ -371,20 +377,6 @@ namespace Casino
         {
             switch (playerHand)
             {
-                case 1:
-                    //player take card
-                    playerCard2 = deck.TakeCard();
-
-                    //update player hand
-                    playerHand += 1;
-
-                    //update playerSum
-                    UpdatePlayerSum(playerCard2);
-
-                    //update UI
-                    PlayerCard2.Source = SetCardUI(playerCard2);
-
-                    break;
                 case 2:
                     //take card
                     playerCard3 = deck.TakeCard();
@@ -397,6 +389,8 @@ namespace Casino
 
                     //update UI
                     PlayerCard3.Source = SetCardUI(playerCard3);
+
+                    Check21();
 
                     break;
                 case 3:
@@ -412,6 +406,8 @@ namespace Casino
                     //update UI
                     PlayerCard4.Source = SetCardUI(playerCard4);
 
+                    Check21();
+
                     break;
                 case 4:
                     //take card
@@ -426,72 +422,40 @@ namespace Casino
                     //update UI
                     PlayerCard5.Source = SetCardUI(playerCard5);
 
+                    Check21();
+
                     btnHit.IsEnabled = false;
 
                     break;
                 default:
                     break;
             }
-
-            /*while(dealerDraw)
-            {
-                switch(dealerHand)
-                {
-                    case 2:
-                        //dealer take card
-                        dealerCard3 = deck.TakeCard();
-
-                        //update dealer hand
-                        dealerHand += 1;
-
-                        //update playerSum
-                        UpdateDealerSum(dealerCard3);
-
-                        if (dealerSum >= dealerStop)
-                        {
-                            dealerDraw = false;
-                        }
-
-                        break;
-                    case 3:
-                        //dealer take card
-                        dealerCard4 = deck.TakeCard();
-
-                        //update dealer hand
-                        dealerHand += 1;
-
-                        //update playerSum
-                        UpdateDealerSum(dealerCard4);
-
-                        if (dealerSum >= dealerStop)
-                        {
-                            dealerDraw = false;
-                        }
-
-                        break;
-                    case 4:
-                        //dealer take card
-                        dealerCard5 = deck.TakeCard();
-
-                        //update dealer hand
-                        dealerHand += 1;
-
-                        //update playerSum
-                        UpdateDealerSum(dealerCard5);
-
-                        dealerDraw = false;
-
-                        break;
-                    default:
-                        break;
-                }
-            }*/
         }
 
         private void StandClicked(object sender, RoutedEventArgs e)
         {
             //disable Hit
             btnHit.IsEnabled = false;
+
+            //show Dealers card
+            DealerCard3.Visibility = Visibility.Visible;
+            DealerCard4.Visibility = Visibility.Visible;
+            DealerCard5.Visibility = Visibility.Visible;
+
+            DealerCard2.Source = SetCardUI(dealerCard2);
+
+            if(dealerCard3 != null)
+            {
+                DealerCard3.Source = SetCardUI(dealerCard3);
+            }
+            if(dealerCard4 != null)
+            {
+                DealerCard4.Source = SetCardUI(dealerCard4);
+            }
+            if(dealerCard5 != null)
+            {
+                DealerCard5.Source = SetCardUI(dealerCard5);
+            }
 
             //Win check
             Check();
@@ -539,33 +503,59 @@ namespace Casino
         private void Check()
         {
 
-            if(playerSum == 21)
+/*            if (playerSum == 21)
+            {
+                Win();
+            }*/
+
+            if (dealerSum > 21 && playerSum < 21)
             {
                 Win();
             }
-            else if(dealerSum > 21 && playerSum < 21)
-            {
-                Win();
-            }
-            else if(playerSum > dealerSum && playerSum < 21 && dealerSum < 21)
+            else if (playerSum > dealerSum && playerSum < 21 && dealerSum < 21)
             {
                 Win();
             }
 
+/*            else if (playerSum > 21 && dealerSum < 21)
+            {
+                Loss();
+            }*/
+
+            else if (dealerSum == 21)
+            {
+                Loss();
+            }
+            else if (dealerSum > playerSum && playerSum < 21 && dealerSum < 21)
+            {
+                Loss();
+            }
+
+            else if (dealerSum == playerSum)
+            {
+                Draw();
+            }
+            else if (dealerSum > 21 && playerSum > 21)
+            {
+                Draw();
+            }
+        }
+
+        private void Check21()
+        {
+            if(playerSum == 21 && (dealerSum < 21 || dealerSum > 21))
+            {
+                Win();
+            }
             else if(playerSum > 21 && dealerSum < 21)
             {
                 Loss();
             }
-            else if(dealerSum == 21)
+            else if(playerSum > 21 && dealerSum > 21)
             {
-                Loss();
+                Draw();
             }
-            else if(dealerSum > playerSum && playerSum < 21 && dealerSum < 21)
-            {
-                Loss();
-            }
-
-            else if(dealerSum == playerSum)
+            else if(playerSum == 21 && dealerSum == 21)
             {
                 Draw();
             }
@@ -576,9 +566,6 @@ namespace Casino
         {
             //Payout
             money += bet * 2;
-
-            //show Dealers card
-            DealerCard2.Source = SetCardUI(dealerCard2);
 
             //notify the player
             Notify("You Won!");
@@ -605,9 +592,6 @@ namespace Casino
             //Payout
             money += 0;
 
-            //show Dealers card
-            DealerCard2.Source = SetCardUI(dealerCard2);
-
             //notify player
             Notify("You Lost!");
 
@@ -632,9 +616,6 @@ namespace Casino
 
             //Payout
             money += bet;
-
-            //show Dealers card
-            DealerCard2.Source = SetCardUI(dealerCard2);
 
             //notify player
             Notify("It's a Draw!");
@@ -692,6 +673,9 @@ namespace Casino
 
             DealerCard1.Source = bmi;
             DealerCard2.Source = bmi;
+            DealerCard3.Source = bmi;
+            DealerCard4.Source = bmi;
+            DealerCard5.Source = bmi;
 
             btnChip1.BorderBrush = null;
             btnChip5.BorderBrush = null;
@@ -701,7 +685,7 @@ namespace Casino
             btnChip100.BorderBrush = null;
             btnChip1k.BorderBrush = null;
 
-            Money.Content = "$" + money;
+            Money.Content = "$ " + money;
             PlayerSum.Content = 0;
 
             //reset deck
@@ -726,5 +710,6 @@ namespace Casino
 
             MessageBox.Show(input, outcome);
         }
+
     }
 }
