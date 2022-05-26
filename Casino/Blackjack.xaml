@@ -127,8 +127,11 @@
             </Image.RenderTransform>
         </Image>
 
-        <Image Name="DealerCard2" Source="Assets/BlackJack/Cards/cardBack_blue1.png" HorizontalAlignment="Center" VerticalAlignment="Top" Height="76" Margin="0,30,0,0" Width="55"/>
-        <Image Name="DealerCard1" Source="Assets/BlackJack/Cards/cardBack_blue1.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="76" Margin="390,30,0,0" Width="55"/>
+        <Image Name="DealerCard5" Source="Assets/BlackJack/Cards/cardBack_blue1.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="75" Margin="325,30,0,0" Width="55" Visibility="Hidden"/>
+        <Image Name="DealerCard4" Source="Assets/BlackJack/Cards/cardBack_blue1.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="75" Margin="340,30,0,0" Width="55" Visibility="Hidden"/>
+        <Image Name="DealerCard3" Source="Assets/BlackJack/Cards/cardBack_blue1.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="75" Margin="355,30,0,0" Width="55" Visibility="Hidden"/>
+        <Image Name="DealerCard2" Source="Assets/BlackJack/Cards/cardBack_blue1.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="75" Margin="370,30,0,0" Width="55"/>
+        <Image Name="DealerCard1" Source="Assets/BlackJack/Cards/cardBack_blue1.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="75" Margin="390,30,0,0" Width="55"/>
 
         <Image Name="DeckCard" Source="Assets/BlackJack/Cards/cardBack_blue1.png" HorizontalAlignment="Left" VerticalAlignment="Top" Height="75" Margin="580,10,0,0" Width="55"/>
 

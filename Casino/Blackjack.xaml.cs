@@ -13,84 +13,10 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
 /*
- Functionality:
-    Player can select bet and change bet * 
-        bet is set with specified amount *
-        if money is not enough for bet unable to set bet *
-            player is notified if bet is too high *
-        Deal cannot be clicked until bet is set *
-        
-    Deal is clicked bet is set and cannot be changed *
-            bet buttons are disabled *
-            deal button disabled *
-            back button disabled *
-            bet is taken from player *
-            Stand button is enabled *
-            Hit button is enabled *
-            cards are delt *
-                1 card for player *
-                    UI updates with card *
-                dealer has 1 visible card & 1 hidden card *
-                    UI updates with card *
-            playerHand & dealerHand updated *
-            playerSum & dealerSum is updated *
-                check if dealerSum is >= dealerStop *
-                    if >= dealerDraw = false *
-
-    Hit allows player & dealer to draw 1 card from deck*
-        player can draw up to 5 cards *
-            UI updates every draw *
-            player stats update *
-        if player had 5 cards Hit button disabled *
-        if playerSum goes over 21 instant Loss *
-        if playerSum == 21 instant Win *
-        dealer can draw up to 5 cards *
-            dealer stats update *
-        if dealer has 5 cards dealerDraw = false *
-        dealerSum >= dealerStop dealerDraw = false *
-        if dealerSum goes over 21 instant Win *
-        if dealerSum == 21 instant Loss *
-
-    Stand shows Dealers hidden card *
-        Hit button disabled *
-        Win check happens here checking between the player and dealers sums *
-            if Player sum greater player wins *
-            if Dealer sum greater dealer wins *
-            if equal its a draw *
-
-    Win
-        bet x2 to player *
-        Reset all cards *
-        reset bet to 0 *
-        reset UI *
-        enable bet buttons *
-        enable Back button *
-        disable Stand button *
-        notify player they won *
-    Loss
-       bet not returned *
-       Reset all cards *
-       reset bet to 0 *
-       reset UI *
-       enable bet buttons *
-       enable Back button *
-       disable Stand button *
-       notify player they lost *
-    Draw
-       bet return exact *
-       Reset all cards *
-       reset bet to 0 *
-       reset UI *
-       enable bet buttons *
-       enable Back button *
-       disable Stand button *
-       notify player its a draw *
- */
-
-/*
- Issues:
-    Player or Dealer goes over 21
-        stalls game
+ * 
+TODO:
+    If player gets 21 instant win
+    if player over 21 intant lose
  */
 
 namespace Casino
@@ -161,14 +87,6 @@ namespace Casino
         //Select Bet
         private void ChipClicked(object sender, RoutedEventArgs e)
         {
-            /*
-                 Player can select bet and change bet * 
-                    bet is set with specified amount *
-                    if money is not enough for bet unable to set bet *
-                        player is notified if bet is too high *
-                    Deal cannot be clicked until bet is set *
-             */
-
             switch ((sender as Button).Name)
             {
                 case "btnChip1":
@@ -346,25 +264,6 @@ namespace Casino
 
         private void DealClicked(object sender, RoutedEventArgs e)
         {
-            /*
-                 Deal is clicked bet is set and cannot be changed *
-                        bet buttons are disabled *
-                        deal button disabled *
-                        back button disabled *
-                        bet is taken from player *
-                        Stand button is enabled *
-                        Hit button is enabled *
-                        cards are delt *
-                            1 card for player *
-                                UI updates with card *
-                            dealer has 1 visible card & 1 hidden card *
-                                UI updates with card *
-                        playerHand & dealerHand updated *
-                        playerSum & dealerSum is updated *
-                            check if dealerSum is >= dealerStop *
-                                if >= dealerDraw = false *
-             */
-
             //disable buttons
             btnChip1.IsEnabled = false;
             btnChip5.IsEnabled = false;
@@ -384,161 +283,33 @@ namespace Casino
 
             //deal cards
             playerCard1 = deck.TakeCard();
+            playerCard2 = deck.TakeCard();
 
             dealerCard1 = deck.TakeCard();
             dealerCard2 = deck.TakeCard();
 
             //update Hand count
-            playerHand += 1;
+            playerHand += 2;
             dealerHand += 2;
 
             //update playerSum **King, Queen & Jack are set to 10
             UpdatePlayerSum(playerCard1);
+            UpdatePlayerSum(playerCard2);
 
             //update dealerSum
             UpdateDealerSum(dealerCard1);
+            UpdateDealerSum(dealerCard2);
 
-            //check dealer
-            if (dealerSum >= dealerStop)
+            //update dealerDraw
+            if(dealerSum >= dealerStop)
             {
                 dealerDraw = false;
             }
 
-            //remove bet amount from money
-            money -= bet;
-
-            //update UI
-            PlayerCard1.Source = SetCardUI(playerCard1);
-            DealerCard1.Source = SetCardUI(dealerCard1);
-
-            Money.Content = "$ " + money;
-        }
-
-        private void HitClicked(object sender, RoutedEventArgs e)
-        {
-            /*
-            Hit allows player & dealer to draw 1 card from deck*
-                player can draw up to 5 cards *
-                    UI updates every draw *
-                    player stats update *
-                if player had 5 cards Hit button disabled *
-                if playerSum goes over 21 instant Loss *
-                if playerSum == 21 instant Win *
-                dealer can draw up to 5 cards *
-                    dealer stats update *
-                if dealer has 5 cards dealerDraw = false *
-                dealerSum >= dealerStop dealerDraw = false *
-                if dealerSum goes over 21 instant Win *
-                if dealerSum == 21 instant Loss *
-             */
-
-            switch (playerHand)
+            //dealer stuffs
+            while (dealerDraw)
             {
-                case 1:
-                    //player take card
-                    playerCard2 = deck.TakeCard();
-
-                    //update player hand
-                    playerHand += 1;
-
-                    //update playerSum
-                    UpdatePlayerSum(playerCard2);
-
-                    //update UI
-                    PlayerCard2.Source = SetCardUI(playerCard2);
-
-                    //check Player
-                    if (playerSum == 21)
-                    {
-                        Win();
-                    }
-                    if (playerSum > 21)
-                    {
-                        Loss();
-                    }
-
-                    break;
-                case 2:
-                    //take card
-                    playerCard3 = deck.TakeCard();
-
-                    //update hand
-                    playerHand += 1;
-
-                    //update playerSum
-                    UpdatePlayerSum(playerCard3);
-
-                    //update UI
-                    PlayerCard3.Source = SetCardUI(playerCard3);
-
-                    //check Player
-                    if (playerSum == 21)
-                    {
-                        Win();
-                    }
-                    if (playerSum > 21)
-                    {
-                        Loss();
-                    }
-
-                    break;
-                case 3:
-                    //take card
-                    playerCard4 = deck.TakeCard();
-
-                    //update hand
-                    playerHand += 1;
-
-                    //update playerSum
-                    UpdatePlayerSum(playerCard4);
-
-                    //update UI
-                    PlayerCard4.Source = SetCardUI(playerCard4);
-
-                    //check Player
-                    if (playerSum == 21)
-                    {
-                        Win();
-                    }
-                    if (playerSum > 21)
-                    {
-                        Loss();
-                    }
-
-                    break;
-                case 4:
-                    //take card
-                    playerCard5 = deck.TakeCard();
-
-                    //update hand
-                    playerHand += 1;
-
-                    //update playerSum
-                    UpdatePlayerSum(playerCard5);
-
-                    //update UI
-                    PlayerCard5.Source = SetCardUI(playerCard5);
-
-                    btnHit.IsEnabled = false;
-
-                    //check Player
-                    if (playerSum == 21)
-                    {
-                        Win();
-                    }
-                    if (playerSum > 21)
-                    {
-                        Loss();
-                    }
-
-                    break;
-                default:
-                    break;
-            }
-
-            while(dealerDraw)
-            {
-                switch(dealerHand)
+                switch (dealerHand)
                 {
                     case 2:
                         //dealer take card
@@ -553,14 +324,6 @@ namespace Casino
                         if (dealerSum >= dealerStop)
                         {
                             dealerDraw = false;
-                        }
-                        if (dealerSum == 21)
-                        {
-                            Loss();
-                        }
-                        if (dealerSum > 21)
-                        {
-                            Win();
                         }
 
                         break;
@@ -578,14 +341,6 @@ namespace Casino
                         {
                             dealerDraw = false;
                         }
-                        if (dealerSum == 21)
-                        {
-                            Loss();
-                        }
-                        if (dealerSum > 21)
-                        {
-                            Win();
-                        }
 
                         break;
                     case 4:
@@ -598,15 +353,6 @@ namespace Casino
                         //update playerSum
                         UpdateDealerSum(dealerCard5);
 
-                        if (dealerSum == 21)
-                        {
-                            Loss();
-                        }
-                        if (dealerSum > 21)
-                        {
-                            Win();
-                        }
-
                         dealerDraw = false;
 
                         break;
@@ -614,38 +360,105 @@ namespace Casino
                         break;
                 }
             }
+
+            //remove bet amount from money
+            money -= bet;
+
+            //update UI
+            PlayerCard1.Source = SetCardUI(playerCard1);
+            PlayerCard2.Source = SetCardUI(playerCard2);
+
+            DealerCard1.Source = SetCardUI(dealerCard1);
+
+            Money.Content = "$ " + money;
+        }
+
+        private void HitClicked(object sender, RoutedEventArgs e)
+        {
+            switch (playerHand)
+            {
+                case 2:
+                    //take card
+                    playerCard3 = deck.TakeCard();
+
+                    //update hand
+                    playerHand += 1;
+
+                    //update playerSum
+                    UpdatePlayerSum(playerCard3);
+
+                    //update UI
+                    PlayerCard3.Source = SetCardUI(playerCard3);
+
+                    Check21();
+
+                    break;
+                case 3:
+                    //take card
+                    playerCard4 = deck.TakeCard();
+
+                    //update hand
+                    playerHand += 1;
+
+                    //update playerSum
+                    UpdatePlayerSum(playerCard4);
+
+                    //update UI
+                    PlayerCard4.Source = SetCardUI(playerCard4);
+
+                    Check21();
+
+                    break;
+                case 4:
+                    //take card
+                    playerCard5 = deck.TakeCard();
+
+                    //update hand
+                    playerHand += 1;
+
+                    //update playerSum
+                    UpdatePlayerSum(playerCard5);
+
+                    //update UI
+                    PlayerCard5.Source = SetCardUI(playerCard5);
+
+                    Check21();
+
+                    btnHit.IsEnabled = false;
+
+                    break;
+                default:
+                    break;
+            }
         }
 
         private void StandClicked(object sender, RoutedEventArgs e)
         {
-            /*
-                Stand shows Dealers hidden card *
-                    Hit button disabled *
-                    Win check happens here checking between the player and dealers sums *
-                        if Player sum greater player wins *
-                        if Dealer sum greater dealer wins *
-                        if equal its a draw *
-             */
-
             //disable Hit
             btnHit.IsEnabled = false;
 
-            //show dealers hidden card
+            //show Dealers card
+            DealerCard3.Visibility = Visibility.Visible;
+            DealerCard4.Visibility = Visibility.Visible;
+            DealerCard5.Visibility = Visibility.Visible;
+
             DealerCard2.Source = SetCardUI(dealerCard2);
 
+            if(dealerCard3 != null)
+            {
+                DealerCard3.Source = SetCardUI(dealerCard3);
+            }
+            if(dealerCard4 != null)
+            {
+                DealerCard4.Source = SetCardUI(dealerCard4);
+            }
+            if(dealerCard5 != null)
+            {
+                DealerCard5.Source = SetCardUI(dealerCard5);
+            }
+
             //Win check
-            if (playerSum == dealerSum)
-            {
-                Draw();
-            }
-            if (playerSum > dealerSum)
-            {
-                Win();
-            }
-            if (dealerSum > playerSum)
-            {
-                Loss();
-            }
+            Check();
         }
 
         private BitmapImage SetCardUI(Cards card)
@@ -687,21 +500,70 @@ namespace Casino
             }
         }
 
+        private void Check()
+        {
+
+/*            if (playerSum == 21)
+            {
+                Win();
+            }*/
+
+            if (dealerSum > 21 && playerSum < 21)
+            {
+                Win();
+            }
+            else if (playerSum > dealerSum && playerSum < 21 && dealerSum < 21)
+            {
+                Win();
+            }
+
+/*            else if (playerSum > 21 && dealerSum < 21)
+            {
+                Loss();
+            }*/
+
+            else if (dealerSum == 21)
+            {
+                Loss();
+            }
+            else if (dealerSum > playerSum && playerSum < 21 && dealerSum < 21)
+            {
+                Loss();
+            }
+
+            else if (dealerSum == playerSum)
+            {
+                Draw();
+            }
+            else if (dealerSum > 21 && playerSum > 21)
+            {
+                Draw();
+            }
+        }
+
+        private void Check21()
+        {
+            if(playerSum == 21 && (dealerSum < 21 || dealerSum > 21))
+            {
+                Win();
+            }
+            else if(playerSum > 21 && dealerSum < 21)
+            {
+                Loss();
+            }
+            else if(playerSum > 21 && dealerSum > 21)
+            {
+                Draw();
+            }
+            else if(playerSum == 21 && dealerSum == 21)
+            {
+                Draw();
+            }
+        }
+
         //Win
         private void Win()
         {
-            /*
-                Win
-                    bet x2 to player *
-                    Reset all cards *
-                    reset bet to 0 *
-                    reset UI *
-                    enable bet buttons *
-                    enable Back button *
-                    disable Stand button *
-                    notify player they won *
-             */
-
             //Payout
             money += bet * 2;
 
@@ -811,6 +673,9 @@ namespace Casino
 
             DealerCard1.Source = bmi;
             DealerCard2.Source = bmi;
+            DealerCard3.Source = bmi;
+            DealerCard4.Source = bmi;
+            DealerCard5.Source = bmi;
 
             btnChip1.BorderBrush = null;
             btnChip5.BorderBrush = null;
@@ -820,7 +685,7 @@ namespace Casino
             btnChip100.BorderBrush = null;
             btnChip1k.BorderBrush = null;
 
-            Money.Content = money;
+            Money.Content = "$ " + money;
             PlayerSum.Content = 0;
 
             //reset deck
@@ -845,5 +710,6 @@ namespace Casino
 
             MessageBox.Show(input, outcome);
         }
+
     }
 }

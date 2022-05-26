@@ -49,7 +49,158 @@ namespace Casino
 
         private void CheckWin() // need to do this 
         {
-            MessageBox.Show("Made it to the win check! Unfortunately, I have not yet made the win check.");
+            MessageBox.Show("Made it to the win check! Unfortunately, I have not yet finished the win check.");
+            List<Cards> cards = new List<Cards> { card1, card2, card3, card4, card5 };
+
+            int card1Number = 0;
+            int card2Number = 0;
+            int card3Number = 0;
+            int card4Number = 0;
+            int card5Number = 0;
+
+            if (card1Number == 0)
+            {
+                if (card1.CardNumber == Cards.eCardNumber.Ace) card1Number = 1; 
+                else if (card1.CardNumber == Cards.eCardNumber.Two) card1Number = 2; 
+                else if (card1.CardNumber == Cards.eCardNumber.Three) card1Number = 3; 
+                else if (card1.CardNumber == Cards.eCardNumber.Four) card1Number = 4; 
+                else if (card1.CardNumber == Cards.eCardNumber.Five) card1Number = 5; 
+                else if (card1.CardNumber == Cards.eCardNumber.Six) card1Number = 6; 
+                else if (card1.CardNumber == Cards.eCardNumber.Seven) card1Number = 7; 
+                else if (card1.CardNumber == Cards.eCardNumber.Eight) card1Number = 8; 
+                else if (card1.CardNumber == Cards.eCardNumber.Nine) card1Number = 9; 
+                else if (card1.CardNumber == Cards.eCardNumber.Ten) card1Number = 10; 
+                else if (card1.CardNumber == Cards.eCardNumber.Jack) card1Number = 11; 
+                else if (card1.CardNumber == Cards.eCardNumber.Queen) card1Number = 12; 
+                else if (card1.CardNumber == Cards.eCardNumber.King) card1Number = 13;
+                else Console.WriteLine("Card1 number not set correctly.");
+            }
+            if (card2Number == 0)
+            {
+                if (card2.CardNumber == Cards.eCardNumber.Ace) card1Number = 1;
+                else if (card2.CardNumber == Cards.eCardNumber.Two) card1Number = 2;
+                else if (card2.CardNumber == Cards.eCardNumber.Three) card1Number = 3;
+                else if (card2.CardNumber == Cards.eCardNumber.Four) card1Number = 4;
+                else if (card2.CardNumber == Cards.eCardNumber.Five) card1Number = 5;
+                else if (card2.CardNumber == Cards.eCardNumber.Six) card1Number = 6;
+                else if (card2.CardNumber == Cards.eCardNumber.Seven) card1Number = 7;
+                else if (card2.CardNumber == Cards.eCardNumber.Eight) card1Number = 8;
+                else if (card2.CardNumber == Cards.eCardNumber.Nine) card1Number = 9;
+                else if (card2.CardNumber == Cards.eCardNumber.Ten) card1Number = 10;
+                else if (card2.CardNumber == Cards.eCardNumber.Jack) card1Number = 11;
+                else if (card2.CardNumber == Cards.eCardNumber.Queen) card1Number = 12;
+                else if (card2.CardNumber == Cards.eCardNumber.King) card1Number = 13;
+                else Console.WriteLine("Card1 number not set correctly.");
+            }
+            if (card3Number == 0)
+            {
+                if (card3.CardNumber == Cards.eCardNumber.Ace) card1Number = 1;
+                else if (card3.CardNumber == Cards.eCardNumber.Two) card1Number = 2;
+                else if (card3.CardNumber == Cards.eCardNumber.Three) card1Number = 3;
+                else if (card3.CardNumber == Cards.eCardNumber.Four) card1Number = 4;
+                else if (card3.CardNumber == Cards.eCardNumber.Five) card1Number = 5;
+                else if (card3.CardNumber == Cards.eCardNumber.Six) card1Number = 6;
+                else if (card3.CardNumber == Cards.eCardNumber.Seven) card1Number = 7;
+                else if (card3.CardNumber == Cards.eCardNumber.Eight) card1Number = 8;
+                else if (card3.CardNumber == Cards.eCardNumber.Nine) card1Number = 9;
+                else if (card3.CardNumber == Cards.eCardNumber.Ten) card1Number = 10;
+                else if (card3.CardNumber == Cards.eCardNumber.Jack) card1Number = 11;
+                else if (card3.CardNumber == Cards.eCardNumber.Queen) card1Number = 12;
+                else if (card3.CardNumber == Cards.eCardNumber.King) card1Number = 13;
+                else Console.WriteLine("Card1 number not set correctly.");
+            }
+            if (card4Number == 0)
+            {
+                if (card4.CardNumber == Cards.eCardNumber.Ace) card1Number = 1;
+                else if (card4.CardNumber == Cards.eCardNumber.Two) card1Number = 2;
+                else if (card4.CardNumber == Cards.eCardNumber.Three) card1Number = 3;
+                else if (card4.CardNumber == Cards.eCardNumber.Four) card1Number = 4;
+                else if (card4.CardNumber == Cards.eCardNumber.Five) card1Number = 5;
+                else if (card4.CardNumber == Cards.eCardNumber.Six) card1Number = 6;
+                else if (card4.CardNumber == Cards.eCardNumber.Seven) card1Number = 7;
+                else if (card4.CardNumber == Cards.eCardNumber.Eight) card1Number = 8;
+                else if (card4.CardNumber == Cards.eCardNumber.Nine) card1Number = 9;
+                else if (card4.CardNumber == Cards.eCardNumber.Ten) card1Number = 10;
+                else if (card4.CardNumber == Cards.eCardNumber.Jack) card1Number = 11;
+                else if (card4.CardNumber == Cards.eCardNumber.Queen) card1Number = 12;
+                else if (card4.CardNumber == Cards.eCardNumber.King) card1Number = 13;
+                else Console.WriteLine("Card1 number not set correctly.");
+            }
+            if (card5Number == 0)
+            {
+                if (card5.CardNumber == Cards.eCardNumber.Ace) card1Number = 1;
+                else if (card5.CardNumber == Cards.eCardNumber.Two) card1Number = 2;
+                else if (card5.CardNumber == Cards.eCardNumber.Three) card1Number = 3;
+                else if (card5.CardNumber == Cards.eCardNumber.Four) card1Number = 4;
+                else if (card5.CardNumber == Cards.eCardNumber.Five) card1Number = 5;
+                else if (card5.CardNumber == Cards.eCardNumber.Six) card1Number = 6;
+                else if (card5.CardNumber == Cards.eCardNumber.Seven) card1Number = 7;
+                else if (card5.CardNumber == Cards.eCardNumber.Eight) card1Number = 8;
+                else if (card5.CardNumber == Cards.eCardNumber.Nine) card1Number = 9;
+                else if (card5.CardNumber == Cards.eCardNumber.Ten) card1Number = 10;
+                else if (card5.CardNumber == Cards.eCardNumber.Jack) card1Number = 11;
+                else if (card5.CardNumber == Cards.eCardNumber.Queen) card1Number = 12;
+                else if (card5.CardNumber == Cards.eCardNumber.King) card1Number = 13;
+                else Console.WriteLine("Card1 number not set correctly.");
+            }
+
+            // win checks 
+            if (card1 == null) 
+            {
+                // placeholder
+            }
+            else if ((card1.CardNumber == card2.CardNumber) && (card3.CardNumber == card4.CardNumber) || // 1+2 and 3+4
+                     (card1.CardNumber == card2.CardNumber) && (card3.CardNumber == card5.CardNumber) || // 1+2 and 3+5
+                     (card1.CardNumber == card2.CardNumber) && (card4.CardNumber == card5.CardNumber) || // 1+2 and 4+5
+                     (card1.CardNumber == card3.CardNumber) && (card2.CardNumber == card4.CardNumber) || // 1+3 and 2+4
+                     (card1.CardNumber == card3.CardNumber) && (card2.CardNumber == card5.CardNumber) || // 1+3 and 2+5
+                     (card1.CardNumber == card3.CardNumber) && (card4.CardNumber == card5.CardNumber) || // 1+3 and 4+5
+                     (card1.CardNumber == card4.CardNumber) && (card2.CardNumber == card3.CardNumber) || // 1+4 and 2+3
+                     (card1.CardNumber == card4.CardNumber) && (card2.CardNumber == card5.CardNumber) || // 1+4 and 2+5
+                     (card1.CardNumber == card4.CardNumber) && (card3.CardNumber == card5.CardNumber) || // 1+4 and 3+4
+                     (card1.CardNumber == card5.CardNumber) && (card2.CardNumber == card3.CardNumber) || // 1+5 and 2+3
+                     (card1.CardNumber == card5.CardNumber) && (card2.CardNumber == card4.CardNumber) || // 1+5 and 2+4
+                     (card1.CardNumber == card5.CardNumber) && (card3.CardNumber == card4.CardNumber) || // 1+5 and 3+4
+                     (card2.CardNumber == card3.CardNumber) && (card4.CardNumber == card5.CardNumber) || // 2+3 and 4+5
+                     (card2.CardNumber == card4.CardNumber) && (card3.CardNumber == card5.CardNumber) || // 2+4 and 3+5
+                     (card2.CardNumber == card5.CardNumber) && (card3.CardNumber == card4.CardNumber))   // 2+5 and 3+4
+            {
+                // two pairs
+            }
+            else if ((card1.CardNumber == card2.CardNumber && card1.CardNumber == card3.CardNumber && card1.CardNumber == card4.CardNumber) || // 1+2+3+4
+                (card1.CardNumber == card2.CardNumber && card1.CardNumber == card3.CardNumber && card1.CardNumber == card5.CardNumber) ||      // 1+2+3+5
+                (card2.CardNumber == card3.CardNumber && card2.CardNumber == card4.CardNumber && card2.CardNumber == card5.CardNumber))        // 2+3+4+5
+            {
+                // four of a kind
+            }
+            else if ((card1.CardNumber == card2.CardNumber && card1.CardNumber == card3.CardNumber) || // 1+2+3
+                (card1.CardNumber == card2.CardNumber && card1.CardNumber == card4.CardNumber) ||      // 1+2+4
+                (card1.CardNumber == card2.CardNumber && card1.CardNumber == card5.CardNumber) ||      // 1+2+5
+                (card1.CardNumber == card3.CardNumber && card1.CardNumber == card4.CardNumber) ||      // 1+3+4
+                (card1.CardNumber == card3.CardNumber && card1.CardNumber == card5.CardNumber) ||      // 1+3+5
+                (card2.CardNumber == card3.CardNumber && card2.CardNumber == card4.CardNumber) ||      // 2+3+4
+                (card2.CardNumber == card3.CardNumber && card2.CardNumber == card5.CardNumber) ||      // 2+3+5
+                (card2.CardNumber == card4.CardNumber && card2.CardNumber == card5.CardNumber) ||      // 2+4+5
+                (card3.CardNumber == card4.CardNumber && card3.CardNumber == card5.CardNumber))        // 3+4+5
+            {
+                // three of a kind 
+            }
+            else if (card1.CardNumber == card2.CardNumber || card1.CardNumber == card3.CardNumber || card1.CardNumber == card4.CardNumber || card1.CardNumber == card5.CardNumber ||
+                card2.CardNumber == card3.CardNumber || card2.CardNumber == card4.CardNumber || card2.CardNumber == card5.CardNumber ||
+                card3.CardNumber == card4.CardNumber || card3.CardNumber == card5.CardNumber || card4.CardNumber == card5.CardNumber)
+            {
+                // pair 
+            }
+            else if ((card1.Suit == card2.Suit && card1.Suit == card3.Suit && card1.Suit == card4.Suit && card1.Suit == card5.Suit) &&
+                    (((card1.CardNumber == Cards.eCardNumber.Ace) && (card2.CardNumber == Cards.eCardNumber.King) && (card3.CardNumber == Cards.eCardNumber.Queen) && (card4.CardNumber == Cards.eCardNumber.Jack) && (card5.CardNumber == Cards.eCardNumber.Ten)) ||
+                    ((card1.CardNumber == Cards.eCardNumber.Ace) && (card2.CardNumber == Cards.eCardNumber.King) && (card3.CardNumber == Cards.eCardNumber.Queen) && (card4.CardNumber == Cards.eCardNumber.Jack) && (card5.CardNumber == Cards.eCardNumber.Ten))))
+            {
+                // royal flush 
+            }
+            else if (card1.Suit == card2.Suit && card1.Suit == card3.Suit && card1.Suit == card4.Suit && card1.Suit == card5.Suit)
+            {
+                // flush 
+            }
         }
 
         private void SetCardButtonImage(Button button, Cards card)
@@ -112,11 +263,12 @@ namespace Casino
         {
             if (gameSet == true)
             {
-                // bet stuff 
-
                 // if firstDraw is false, then draw cards and disable back button and set firstDraw to true 
                 if (firstDraw == false)
                 {
+                    btnReset.IsEnabled = false;
+                    btnBack.IsEnabled = false; 
+
                     // disable bet buttons 
                     btnChip1.IsEnabled = false; 
                     btnChip5.IsEnabled = false; 
@@ -155,6 +307,9 @@ namespace Casino
                 // if firstDraw is true, redraw cards for ones not held and check wins and set firstDraw to false
                 else
                 {
+                    btnReset.IsEnabled = true;
+                    btnBack.IsEnabled = true; 
+
                     // disable hold cards
                     btnHold1.IsEnabled = false;
                     btnHold2.IsEnabled = false;
@@ -240,6 +395,8 @@ namespace Casino
             ResetCardButtonImage(btnHold4);
             ResetCardButtonImage(btnHold5);
 
+            txtWinAmount.Visibility = Visibility.Hidden;
+
             betMoney = 0;
             betAmount = "";
             gameSet = true;
@@ -252,6 +409,9 @@ namespace Casino
             {
                 betMoney += 1;
                 money -= 1;
+
+                btnReset.IsEnabled = false;
+                btnBack.IsEnabled = false;
             }
             else MessageBox.Show("Not Enough Money");
 
@@ -266,6 +426,9 @@ namespace Casino
             {
                 betMoney += 5;
                 money -= 5;
+
+                btnReset.IsEnabled = false;
+                btnBack.IsEnabled = false;
             }
             else MessageBox.Show("Not Enough Money");
 
@@ -280,6 +443,9 @@ namespace Casino
             {
                 betMoney += 10;
                 money -= 10;
+
+                btnReset.IsEnabled = false;
+                btnBack.IsEnabled = false;
             }
             else MessageBox.Show("Not Enough Money");
 
@@ -294,6 +460,9 @@ namespace Casino
             {
                 betMoney += 20;
                 money -= 20;
+
+                btnReset.IsEnabled = false;
+                btnBack.IsEnabled = false;
             }
             else MessageBox.Show("Not Enough Money");
 
@@ -308,6 +477,9 @@ namespace Casino
             {
                 betMoney += 50;
                 money -= 50;
+
+                btnReset.IsEnabled = false;
+                btnBack.IsEnabled = false;
             }
             else MessageBox.Show("Not Enough Money");
 
@@ -322,6 +494,9 @@ namespace Casino
             {
                 betMoney += 100;
                 money -= 100;
+
+                btnReset.IsEnabled = false;
+                btnBack.IsEnabled = false;
             }
             else MessageBox.Show("Not Enough Money");
 
@@ -336,6 +511,9 @@ namespace Casino
             {
                 betMoney += 1000;
                 money -= 1000;
+
+                btnReset.IsEnabled = false;
+                btnBack.IsEnabled = false;
             }
             else MessageBox.Show("Not Enough Money");
 
