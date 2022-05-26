@@ -113,6 +113,7 @@ namespace Casino
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
+            credits += bet;
             GameSelection game = new GameSelection(credits, bank);
             game.Show();
             Close();
@@ -168,7 +169,6 @@ namespace Casino
                     else credits += bet * 2;
                     break;
             }
-
             bet = 0;
             lblBet.Content = "Bet: " + bet;
             lblMoney.Content = "Money: " + credits;
