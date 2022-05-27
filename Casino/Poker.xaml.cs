@@ -24,7 +24,7 @@ namespace Casino
         int betMoney = 0;
         bool firstDraw = false;
         bool gameSet = true;
-        string betAmount;// = "$";
+        string betAmount;
         Deck deck = new Deck();
 
         Cards card1, card2, card3, card4, card5;
@@ -47,10 +47,9 @@ namespace Casino
             ResetCardButtonImage(btnHold5);
         }
 
-        private void CheckWin() // need to do this 
+        private void CheckWin() 
         {
-            MessageBox.Show("Made it to the win check! Unfortunately, I have not yet finished the win check.");
-            List<Cards> cards = new List<Cards> { card1, card2, card3, card4, card5 };
+            //MessageBox.Show("Made it to the win check! Unfortunately, I have not yet finished the win check.");
 
             int card1Number = 0;
             int card2Number = 0;
@@ -144,10 +143,88 @@ namespace Casino
                 else Console.WriteLine("Card1 number not set correctly.");
             }
 
+            List<int> cardNumbers = new List<int> { card1Number, card2Number, card3Number, card4Number, card5Number };
+            cardNumbers.Sort();
+
             // win checks 
-            if (card1 == null) 
+            if (card1 == null)
             {
-                // placeholder
+                MessageBox.Show("Cards didn't get set.");
+            }
+            else if (card1.Suit == card2.Suit && card1.Suit == card3.Suit && card1.Suit == card4.Suit && card1.Suit == card5.Suit &&
+                    cardNumbers.Contains(1) && cardNumbers.Contains(10) && cardNumbers.Contains(11) && cardNumbers.Contains(12) && cardNumbers.Contains(13))
+            {
+                // royal flush - 100,000:1
+                betMoney *= 100000;
+                money += betMoney;
+                txtMoney.Text = "$" + money;
+                txtWinAmount.Content = "You won $" + betMoney + "!";
+                txtWinAmount.Visibility = Visibility.Visible;
+            }
+            else if (card1.Suit == card2.Suit && card1.Suit == card3.Suit && card1.Suit == card4.Suit && card1.Suit == card5.Suit &&
+                    card2Number == card1Number - 1 && card3Number == card2Number - 1 && card4Number == card3Number - 1 && card5Number == card4Number - 1)
+            {
+                // straight flush - 10,000:1
+                betMoney *= 10000;
+                money += betMoney;
+                txtMoney.Text = "$" + money;
+                txtWinAmount.Content = "You won $" + betMoney + "!";
+                txtWinAmount.Visibility = Visibility.Visible;
+            }
+            else if ((card1.CardNumber == card2.CardNumber && card1.CardNumber == card3.CardNumber && card1.CardNumber == card4.CardNumber) || // 1+2+3+4
+                (card1.CardNumber == card2.CardNumber && card1.CardNumber == card3.CardNumber && card1.CardNumber == card5.CardNumber) ||      // 1+2+3+5
+                (card2.CardNumber == card3.CardNumber && card2.CardNumber == card4.CardNumber && card2.CardNumber == card5.CardNumber))        // 2+3+4+5
+            {
+                // four of a kind - 1,000:1
+                betMoney *= 1000;
+                money += betMoney;
+                txtMoney.Text = "$" + money;
+                txtWinAmount.Content = "You won $" + betMoney + "!";
+                txtWinAmount.Visibility = Visibility.Visible;
+            }
+            else if (card1Number == card2Number && card1Number == card3Number && card4Number == card5Number)
+            {
+                // full house - 100:1
+                betMoney *= 100;
+                money += betMoney;
+                txtMoney.Text = "$" + money;
+                txtWinAmount.Content = "You won $" + betMoney + "!";
+                txtWinAmount.Visibility = Visibility.Visible;
+            }
+            else if (card1.Suit == card2.Suit && card1.Suit == card3.Suit && card1.Suit == card4.Suit && card1.Suit == card5.Suit)
+            {
+                // flush - 50:1 
+                betMoney *= 50;
+                money += betMoney;
+                txtMoney.Text = "$" + money;
+                txtWinAmount.Content = "You won $" + betMoney + "!";
+                txtWinAmount.Visibility = Visibility.Visible;
+            }
+            else if (card2Number == card1Number - 1 && card3Number == card2Number - 1 && card4Number == card3Number - 1 && card5Number == card4Number - 1)
+            {
+                // straight - 25:1
+                betMoney *= 25;
+                money += betMoney;
+                txtMoney.Text = "$" + money;
+                txtWinAmount.Content = "You won $" + betMoney + "!";
+                txtWinAmount.Visibility = Visibility.Visible;
+            }
+            else if ((card1.CardNumber == card2.CardNumber && card1.CardNumber == card3.CardNumber) || // 1+2+3
+                (card1.CardNumber == card2.CardNumber && card1.CardNumber == card4.CardNumber) ||      // 1+2+4
+                (card1.CardNumber == card2.CardNumber && card1.CardNumber == card5.CardNumber) ||      // 1+2+5
+                (card1.CardNumber == card3.CardNumber && card1.CardNumber == card4.CardNumber) ||      // 1+3+4
+                (card1.CardNumber == card3.CardNumber && card1.CardNumber == card5.CardNumber) ||      // 1+3+5
+                (card2.CardNumber == card3.CardNumber && card2.CardNumber == card4.CardNumber) ||      // 2+3+4
+                (card2.CardNumber == card3.CardNumber && card2.CardNumber == card5.CardNumber) ||      // 2+3+5
+                (card2.CardNumber == card4.CardNumber && card2.CardNumber == card5.CardNumber) ||      // 2+4+5
+                (card3.CardNumber == card4.CardNumber && card3.CardNumber == card5.CardNumber))        // 3+4+5
+            {
+                // three of a kind - 10:1 
+                betMoney *= 10;
+                money += betMoney;
+                txtMoney.Text = "$" + money;
+                txtWinAmount.Content = "You won $" + betMoney + "!";
+                txtWinAmount.Visibility = Visibility.Visible;
             }
             else if ((card1.CardNumber == card2.CardNumber) && (card3.CardNumber == card4.CardNumber) || // 1+2 and 3+4
                      (card1.CardNumber == card2.CardNumber) && (card3.CardNumber == card5.CardNumber) || // 1+2 and 3+5
@@ -165,41 +242,27 @@ namespace Casino
                      (card2.CardNumber == card4.CardNumber) && (card3.CardNumber == card5.CardNumber) || // 2+4 and 3+5
                      (card2.CardNumber == card5.CardNumber) && (card3.CardNumber == card4.CardNumber))   // 2+5 and 3+4
             {
-                // two pairs
-            }
-            else if ((card1.CardNumber == card2.CardNumber && card1.CardNumber == card3.CardNumber && card1.CardNumber == card4.CardNumber) || // 1+2+3+4
-                (card1.CardNumber == card2.CardNumber && card1.CardNumber == card3.CardNumber && card1.CardNumber == card5.CardNumber) ||      // 1+2+3+5
-                (card2.CardNumber == card3.CardNumber && card2.CardNumber == card4.CardNumber && card2.CardNumber == card5.CardNumber))        // 2+3+4+5
-            {
-                // four of a kind
-            }
-            else if ((card1.CardNumber == card2.CardNumber && card1.CardNumber == card3.CardNumber) || // 1+2+3
-                (card1.CardNumber == card2.CardNumber && card1.CardNumber == card4.CardNumber) ||      // 1+2+4
-                (card1.CardNumber == card2.CardNumber && card1.CardNumber == card5.CardNumber) ||      // 1+2+5
-                (card1.CardNumber == card3.CardNumber && card1.CardNumber == card4.CardNumber) ||      // 1+3+4
-                (card1.CardNumber == card3.CardNumber && card1.CardNumber == card5.CardNumber) ||      // 1+3+5
-                (card2.CardNumber == card3.CardNumber && card2.CardNumber == card4.CardNumber) ||      // 2+3+4
-                (card2.CardNumber == card3.CardNumber && card2.CardNumber == card5.CardNumber) ||      // 2+3+5
-                (card2.CardNumber == card4.CardNumber && card2.CardNumber == card5.CardNumber) ||      // 2+4+5
-                (card3.CardNumber == card4.CardNumber && card3.CardNumber == card5.CardNumber))        // 3+4+5
-            {
-                // three of a kind 
+                // two pairs - 5:1 
+                betMoney *= 5;
+                money += betMoney;
+                txtMoney.Text = "$" + money;
+                txtWinAmount.Content = "You won $" + betMoney + "!";
+                txtWinAmount.Visibility = Visibility.Visible;
             }
             else if (card1.CardNumber == card2.CardNumber || card1.CardNumber == card3.CardNumber || card1.CardNumber == card4.CardNumber || card1.CardNumber == card5.CardNumber ||
                 card2.CardNumber == card3.CardNumber || card2.CardNumber == card4.CardNumber || card2.CardNumber == card5.CardNumber ||
                 card3.CardNumber == card4.CardNumber || card3.CardNumber == card5.CardNumber || card4.CardNumber == card5.CardNumber)
             {
-                // pair 
+                // pair - 1:1
+                money += betMoney;
+                txtMoney.Text = "$" + money;
+                txtWinAmount.Content = "You won $" + betMoney + "!";
+                txtWinAmount.Visibility = Visibility.Visible;
             }
-            else if ((card1.Suit == card2.Suit && card1.Suit == card3.Suit && card1.Suit == card4.Suit && card1.Suit == card5.Suit) &&
-                    (((card1.CardNumber == Cards.eCardNumber.Ace) && (card2.CardNumber == Cards.eCardNumber.King) && (card3.CardNumber == Cards.eCardNumber.Queen) && (card4.CardNumber == Cards.eCardNumber.Jack) && (card5.CardNumber == Cards.eCardNumber.Ten)) ||
-                    ((card1.CardNumber == Cards.eCardNumber.Ace) && (card2.CardNumber == Cards.eCardNumber.King) && (card3.CardNumber == Cards.eCardNumber.Queen) && (card4.CardNumber == Cards.eCardNumber.Jack) && (card5.CardNumber == Cards.eCardNumber.Ten))))
+            else
             {
-                // royal flush 
-            }
-            else if (card1.Suit == card2.Suit && card1.Suit == card3.Suit && card1.Suit == card4.Suit && card1.Suit == card5.Suit)
-            {
-                // flush 
+                txtWinAmount.Content = "You lost $" + betMoney + "!";
+                txtWinAmount.Visibility = Visibility.Visible;
             }
         }
 
@@ -261,100 +324,108 @@ namespace Casino
 
         private void btnDraw_Click(object sender, RoutedEventArgs e) // places bet and draws cards 
         {
-            if (gameSet == true)
+            if (betMoney == 0) MessageBox.Show("Place a bet first."); 
+            else
             {
-                // if firstDraw is false, then draw cards and disable back button and set firstDraw to true 
-                if (firstDraw == false)
+                if (gameSet == true)
                 {
-                    btnReset.IsEnabled = false;
-                    btnBack.IsEnabled = false; 
-
-                    // disable bet buttons 
-                    btnChip1.IsEnabled = false; 
-                    btnChip5.IsEnabled = false; 
-                    btnChip10.IsEnabled = false; 
-                    btnChip20.IsEnabled = false; 
-                    btnChip50.IsEnabled = false; 
-                    btnChip100.IsEnabled = false; 
-                    btnChip1K.IsEnabled = false; 
-
-                    // enable hold buttons
-                    btnHold1.IsEnabled = true;
-                    btnHold2.IsEnabled = true;
-                    btnHold3.IsEnabled = true;
-                    btnHold4.IsEnabled = true;
-                    btnHold5.IsEnabled = true;
-
-                    deck.Shuffle();
-                    btnBack.IsEnabled = false;
-
-                    // draw cards 
-                    card1 = deck.TakeCard();
-                    card2 = deck.TakeCard();
-                    card3 = deck.TakeCard();
-                    card4 = deck.TakeCard();
-                    card5 = deck.TakeCard();
-
-                    SetCardButtonImage(btnHold1, card1);
-                    SetCardButtonImage(btnHold2, card2);
-                    SetCardButtonImage(btnHold3, card3);
-                    SetCardButtonImage(btnHold4, card4);
-                    SetCardButtonImage(btnHold5, card5);
-
-                    firstDraw = true;
-                }
-
-                // if firstDraw is true, redraw cards for ones not held and check wins and set firstDraw to false
-                else
-                {
-                    btnReset.IsEnabled = true;
-                    btnBack.IsEnabled = true; 
-
-                    // disable hold cards
-                    btnHold1.IsEnabled = false;
-                    btnHold2.IsEnabled = false;
-                    btnHold3.IsEnabled = false;
-                    btnHold4.IsEnabled = false;
-                    btnHold5.IsEnabled = false;
-
-                    btnBack.IsEnabled = true;
-
-                    // hold cards 
-                    if (card1.isHeld == false)
+                    // if firstDraw is false, then draw cards and disable back button and set firstDraw to true 
+                    if (firstDraw == false)
                     {
+                        btnReset.IsEnabled = false;
+                        btnBack.IsEnabled = false; 
+
+                        // disable bet buttons 
+                        btnChip1.IsEnabled = false; 
+                        btnChip5.IsEnabled = false; 
+                        btnChip10.IsEnabled = false; 
+                        btnChip20.IsEnabled = false; 
+                        btnChip50.IsEnabled = false; 
+                        btnChip100.IsEnabled = false; 
+                        btnChip1K.IsEnabled = false; 
+
+                        // enable hold buttons
+                        btnHold1.IsEnabled = true;
+                        btnHold2.IsEnabled = true;
+                        btnHold3.IsEnabled = true;
+                        btnHold4.IsEnabled = true;
+                        btnHold5.IsEnabled = true;
+
+                        deck.Shuffle();
+                        btnBack.IsEnabled = false;
+
+                        // draw cards 
                         card1 = deck.TakeCard();
-                        SetCardButtonImage(btnHold1, card1);
-                    }
-                    if (card2.isHeld == false)
-                    {
                         card2 = deck.TakeCard();
-                        SetCardButtonImage(btnHold2, card2);
-                    }
-                    if (card3.isHeld == false)
-                    {
                         card3 = deck.TakeCard();
-                        SetCardButtonImage(btnHold3, card3);
-                    }
-                    if (card4.isHeld == false)
-                    {
                         card4 = deck.TakeCard();
-                        SetCardButtonImage(btnHold4, card4);
-                    }
-                    if (card5.isHeld == false)
-                    {
                         card5 = deck.TakeCard();
+
+                        SetCardButtonImage(btnHold1, card1);
+                        SetCardButtonImage(btnHold2, card2);
+                        SetCardButtonImage(btnHold3, card3);
+                        SetCardButtonImage(btnHold4, card4);
                         SetCardButtonImage(btnHold5, card5);
+
+                        firstDraw = true;
                     }
 
-                    CheckWin();
-                    firstDraw = false;
-                    gameSet = false;
+                    // if firstDraw is true, redraw cards for ones not held and check wins and set firstDraw to false
+                    else
+                    {
+                        btnReset.IsEnabled = true;
+                        btnBack.IsEnabled = true; 
+
+                        // disable hold cards
+                        btnHold1.IsEnabled = false;
+                        btnHold2.IsEnabled = false;
+                        btnHold3.IsEnabled = false;
+                        btnHold4.IsEnabled = false;
+                        btnHold5.IsEnabled = false;
+
+                        btnBack.IsEnabled = true;
+
+                        // hold cards 
+                        if (card1.isHeld == false)
+                        {
+                            card1 = deck.TakeCard();
+                            SetCardButtonImage(btnHold1, card1);
+                        }
+                        if (card2.isHeld == false)
+                        {
+                            card2 = deck.TakeCard();
+                            SetCardButtonImage(btnHold2, card2);
+                        }
+                        if (card3.isHeld == false)
+                        {
+                            card3 = deck.TakeCard();
+                            SetCardButtonImage(btnHold3, card3);
+                        }
+                        if (card4.isHeld == false)
+                        {
+                            card4 = deck.TakeCard();
+                            SetCardButtonImage(btnHold4, card4);
+                        }
+                        if (card5.isHeld == false)
+                        {
+                            card5 = deck.TakeCard();
+                            SetCardButtonImage(btnHold5, card5);
+                        }
+
+                        CheckWin();
+                        firstDraw = false;
+                        gameSet = false;
+                    }
                 }
             }
         }
 
         private void btnReset_Click(object sender, RoutedEventArgs e) // reset game 
         {
+            // reset deck 
+            deck.Reset();
+            deck.Shuffle();
+
             // enable bet buttons 
             btnChip1.IsEnabled = true;
             btnChip5.IsEnabled = true;
@@ -398,6 +469,7 @@ namespace Casino
             txtWinAmount.Visibility = Visibility.Hidden;
 
             betMoney = 0;
+            txtBetAmount.Text = "$0"; 
             betAmount = "";
             gameSet = true;
         }
