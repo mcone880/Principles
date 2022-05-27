@@ -396,6 +396,7 @@ namespace Casino
                 else
                 {
                     Results.Text = "No money!!!!";
+                    Back.IsEnabled = true;
                 }
             }
             else
@@ -580,6 +581,7 @@ namespace Casino
             else
             {
                 Results.Text = "No money!!!!";
+                Back.IsEnabled = true;
             }
 
             // Payout
@@ -902,6 +904,7 @@ namespace Casino
             else
             {
                 Results.Text = "No money!!!!";
+                Back.IsEnabled = true;
             }
         }
 
