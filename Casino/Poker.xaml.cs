@@ -47,7 +47,7 @@ namespace Casino
             ResetCardButtonImage(btnHold5);
         }
 
-        private void CheckWin() // need to do this 
+        private void CheckWin() 
         {
             //MessageBox.Show("Made it to the win check! Unfortunately, I have not yet finished the win check.");
 
@@ -422,6 +422,10 @@ namespace Casino
 
         private void btnReset_Click(object sender, RoutedEventArgs e) // reset game 
         {
+            // reset deck 
+            deck.Reset();
+            deck.Shuffle();
+
             // enable bet buttons 
             btnChip1.IsEnabled = true;
             btnChip5.IsEnabled = true;
