@@ -575,7 +575,6 @@ namespace Casino
                     default:
                         break;
                 }
-                Results.Text = numbers + "\n" + color;
 
             }
             else
@@ -669,217 +668,217 @@ namespace Casino
                 column3 = 0;
             }
             //Straight Number(1 - Number) -36:1
-            if (numbers == one)
+            if (numbers == one && one > 0)
             {
                 money += one + (36 * one);
                 totalPool += one + (36 * one);
                 one = 0;
             }
-            if (numbers == two)
+            if (numbers == two && two > 0)
             {
                 money += two + (36 * two);
                 totalPool += two + (36 * two);
                 two = 0;
             }
-            if (numbers == three)
+            if (numbers == three && three > 0)
             {
                 money += three + (36 * three);
                 totalPool += three + (36 * three);
                 three = 0;
             }
-            if (numbers == four)
+            if (numbers == four && four > 0)
             {
                 money += four + (36 * four);
                 totalPool += four + (36 * four);
                 four = 0;
             }
-            if (numbers == five)
+            if (numbers == five && five > 0)
             {
                 money += five + (36 * five);
                 totalPool += five + (36 * five);
                 five = 0;
             }
-            if (numbers == six)
+            if (numbers == six && six > 0)
             {
                 money += six + (36 * six);
                 totalPool += six + (36 * six);
                 six = 0;
             }
-            if (numbers == seven)
+            if (numbers == seven && seven > 0)
             {
                 money += seven + (36 * seven);
                 totalPool += seven + (36 * seven);
                 seven = 0;
             }
-            if (numbers == eight)
+            if (numbers == eight && eight > 0)
             {
                 money += eight + (36 * eight);
                 totalPool += eight + (36 * eight);
                 eight = 0;
             }
-            if (numbers == nine)
+            if (numbers == nine && nine > 0)
             {
                 money += nine + (36 * nine);
                 totalPool += nine + (36 * nine);
                 nine = 0;
             }
-            if (numbers == ten)
+            if (numbers == ten && ten > 0)
             {
                 money += ten + (36 * ten);
                 totalPool += ten + (36 * ten);
                 ten = 0;
             }
-            if (numbers == eleven)
+            if (numbers == eleven && eleven > 0)
             {
                 money += eleven + (36 * eleven);
                 totalPool += eleven + (36 * eleven);
                 eleven = 0;
             }
-            if (numbers == twelve)
+            if (numbers == twelve && twelve > 0)
             {
                 money += twelve + (36 * twelve);
                 totalPool += twelve + (36 * twelve);
                 twelve = 0;
             }
-            if (numbers == thirteen)
+            if (numbers == thirteen && thirteen > 0)
             {
                 money += thirteen + (36 * thirteen);
                 totalPool += thirteen + (36 * thirteen);
                 thirteen = 0;
             }
-            if (numbers == fourteen)
+            if (numbers == fourteen && fourteen > 0)
             {
                 money += fourteen + (36 * fourteen);
                 totalPool += fourteen + (36 * fourteen);
                 fourteen = 0;
             }
-            if (numbers == fifteen)
+            if (numbers == fifteen && fifteen > 0)
             {
                 money += fifteen + (36 * fifteen);
                 totalPool += fifteen + (36 * fifteen);
                 fifteen = 0;
             }
-            if (numbers == sixteen)
+            if (numbers == sixteen && sixteen > 0)
             {
                 money += sixteen + (36 * sixteen);
                 totalPool += sixteen + (36 * sixteen);
                 sixteen = 0;
             }
-            if (numbers == seventeen)
+            if (numbers == seventeen && seventeen > 0)
             {
                 money += seventeen + (36 * seventeen);
                 totalPool += seventeen + (36 * seventeen);
                 seventeen = 0;
             }
-            if (numbers == eighteen)
+            if (numbers == eighteen && eighteen > 0)
             {
                 money += eighteen + (36 * eighteen);
                 totalPool += eighteen + (36 * eighteen);
                 eighteen = 0;
             }
-            if (numbers == nineteen)
+            if (numbers == nineteen && nineteen > 0)
             {
                 money += nineteen + (36 * nineteen);
                 totalPool += nineteen + (36 * nineteen);
                 nineteen = 0;
             }
-            if (numbers == twenty)
+            if (numbers == twenty && twenty > 0)
             {
                 money += twenty + (36 * twenty);
                 totalPool += twenty + (36 * twenty);
                 twenty = 0;
             }
-            if (numbers == twentyOne)
+            if (numbers == twentyOne && twentyOne > 0)
             {
                 money += twentyOne + (36 * twentyOne);
                 totalPool += twentyOne + (36 * twentyOne);
                 twentyOne = 0;
             }
-            if (numbers == twentyTwo)
+            if (numbers == twentyTwo && twentyTwo > 0)
             {
                 money += twentyTwo + (36 * twentyTwo);
                 totalPool += twentyTwo + (36 * twentyTwo);
                 twentyTwo = 0;
             }
-            if (numbers == twentyThree)
+            if (numbers == twentyThree && twentyThree > 0)
             {
                 money += twentyThree + (36 * twentyThree);
                 totalPool += twentyThree + (36 * twentyThree);
                 twentyThree = 0;
             }
-            if (numbers == twentyFour)
+            if (numbers == twentyFour && twentyFour > 0)
             {
                 money += twentyFour + (36 * twentyFour);
                 totalPool += twentyFour + (36 * twentyFour);
                 twentyFour = 0;
             }
-            if (numbers == twentyFive)
+            if (numbers == twentyFive && twentyFive > 0)
             {
                 money += twentyFive + (36 * twentyFive);
                 totalPool += twentyFive + (36 * twentyFive);
                 twentyFive = 0;
             }
-            if (numbers == twentySix)
+            if (numbers == twentySix && twentySix > 0)
             {
                 money += twentySix + (36 * twentySix);
                 totalPool += twentySix + (36 * twentySix);
                 twentySix = 0;
             }
-            if (numbers == twentySeven)
+            if (numbers == twentySeven && twentySeven > 0)
             {
                 money += twentySeven + (36 * twentySeven);
                 totalPool += twentySeven + (36 * twentySeven);
                 twentySeven = 0;
             }
-            if (numbers == twentyEight)
+            if (numbers == twentyEight && twentyEight > 0)
             {
                 money += twentyEight + (36 * twentyEight);
                 totalPool += twentyEight + (36 * twentyEight);
                 twentyEight = 0;
             }
-            if (numbers == twentyNine)
+            if (numbers == twentyNine && twentyNine > 0)
             {
                 money += twentyNine + (36 * twentyNine);
                 totalPool += twentyNine + (36 * twentyNine);
                 twentyNine = 0;
             }
-            if (numbers == thirty)
+            if (numbers == thirty && thirty > 0)
             {
                 money += thirty + (36 * thirty);
                 totalPool += thirty + (36 * thirty);
                 thirty = 0;
             }
-            if (numbers == thirtyOne)
+            if (numbers == thirtyOne && thirtyOne > 0)
             {
                 money += thirtyOne + (36 * thirtyOne);
                 totalPool += thirtyOne + (36 * thirtyOne);
                 thirtyOne = 0;
             }
-            if (numbers == thirtyTwo)
+            if (numbers == thirtyTwo && thirtyTwo > 0)
             {
                 money += thirtyTwo + (36 * thirtyTwo);
                 totalPool += thirtyTwo + (36 * thirtyTwo);
                 thirtyTwo = 0;
             }
-            if (numbers == thirtyThree)
+            if (numbers == thirtyThree && thirtyThree > 0)
             {
                 money += thirtyThree + (36 * thirtyThree);
                 totalPool += thirtyThree + (36 * thirtyThree);
                 thirtyThree = 0;
             }
-            if (numbers == thirtyFour)
+            if (numbers == thirtyFour && thirtyFour > 0)
             {
                 money += thirtyFour + (36 * thirtyFour);
                 totalPool += thirtyFour + (36 * thirtyFour);
                 thirtyFour = 0;
             }
-            if (numbers == thirtyFive)
+            if (numbers == thirtyFive && thirtyFive > 0)
             {
                 money += thirtyFive + (36 * thirtyFive);
                 totalPool += thirtyFive + (36 * thirtyFive);
                 thirtyFive = 0;
             }
-            if (numbers == thirtySix)
+            if (numbers == thirtySix && thirtySix > 0)
             {
                 money += thirtySix + (36 * thirtySix);
                 totalPool += thirtySix + (36 * thirtySix);
@@ -888,6 +887,7 @@ namespace Casino
 
             Currency.Content = "Amount: $" + money.ToString();
             BettingAmount.Content = "Winning: $" + totalPool.ToString();
+            Results.Text = numbers + "\n" + color;
             totalPool = 0;
         }
 
