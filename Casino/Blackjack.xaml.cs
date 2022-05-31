@@ -12,13 +12,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-/*
- * 
-TODO:
-    If player gets 21 instant win
-    if player over 21 intant lose
- */
-
 namespace Casino
 {
     /// <summary>
@@ -545,18 +538,98 @@ namespace Casino
         {
             if(playerSum == 21 && (dealerSum < 21 || dealerSum > 21))
             {
+                //show Dealers card
+                DealerCard3.Visibility = Visibility.Visible;
+                DealerCard4.Visibility = Visibility.Visible;
+                DealerCard5.Visibility = Visibility.Visible;
+
+                DealerCard2.Source = SetCardUI(dealerCard2);
+
+                if (dealerCard3 != null)
+                {
+                    DealerCard3.Source = SetCardUI(dealerCard3);
+                }
+                if (dealerCard4 != null)
+                {
+                    DealerCard4.Source = SetCardUI(dealerCard4);
+                }
+                if (dealerCard5 != null)
+                {
+                    DealerCard5.Source = SetCardUI(dealerCard5);
+                }
+
                 Win();
             }
             else if(playerSum > 21 && dealerSum < 21)
             {
+                //show Dealers card
+                DealerCard3.Visibility = Visibility.Visible;
+                DealerCard4.Visibility = Visibility.Visible;
+                DealerCard5.Visibility = Visibility.Visible;
+
+                DealerCard2.Source = SetCardUI(dealerCard2);
+
+                if (dealerCard3 != null)
+                {
+                    DealerCard3.Source = SetCardUI(dealerCard3);
+                }
+                if (dealerCard4 != null)
+                {
+                    DealerCard4.Source = SetCardUI(dealerCard4);
+                }
+                if (dealerCard5 != null)
+                {
+                    DealerCard5.Source = SetCardUI(dealerCard5);
+                }
+
                 Loss();
             }
             else if(playerSum > 21 && dealerSum > 21)
             {
+                //show Dealers card
+                DealerCard3.Visibility = Visibility.Visible;
+                DealerCard4.Visibility = Visibility.Visible;
+                DealerCard5.Visibility = Visibility.Visible;
+
+                DealerCard2.Source = SetCardUI(dealerCard2);
+
+                if (dealerCard3 != null)
+                {
+                    DealerCard3.Source = SetCardUI(dealerCard3);
+                }
+                if (dealerCard4 != null)
+                {
+                    DealerCard4.Source = SetCardUI(dealerCard4);
+                }
+                if (dealerCard5 != null)
+                {
+                    DealerCard5.Source = SetCardUI(dealerCard5);
+                }
+
                 Draw();
             }
             else if(playerSum == 21 && dealerSum == 21)
             {
+                //show Dealers card
+                DealerCard3.Visibility = Visibility.Visible;
+                DealerCard4.Visibility = Visibility.Visible;
+                DealerCard5.Visibility = Visibility.Visible;
+
+                DealerCard2.Source = SetCardUI(dealerCard2);
+
+                if (dealerCard3 != null)
+                {
+                    DealerCard3.Source = SetCardUI(dealerCard3);
+                }
+                if (dealerCard4 != null)
+                {
+                    DealerCard4.Source = SetCardUI(dealerCard4);
+                }
+                if (dealerCard5 != null)
+                {
+                    DealerCard5.Source = SetCardUI(dealerCard5);
+                }
+
                 Draw();
             }
         }
